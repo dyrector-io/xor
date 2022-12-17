@@ -166,6 +166,8 @@ func MaskAndFilter(list CNCFSequence, masked bool, startCountFilter int) CNCFSeq
 
 		if masked {
 			i.Description = Mask(i.Description, i.Name)
+			i.GithubDescription = Mask(i.GithubDescription, i.Name)
+			i.CrunchbaseDescription = Mask(i.CrunchbaseDescription, i.Name)
 		}
 		result = append(result, i)
 	}
