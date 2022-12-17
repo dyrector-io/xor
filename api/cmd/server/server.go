@@ -7,6 +7,7 @@ import (
 	"os"
 	"time"
 
+	"github.com/dyrector-io/xor/api/pkg/game"
 	"github.com/rs/zerolog/log"
 
 	"github.com/go-chi/chi"
@@ -37,6 +38,17 @@ func ReadConfig(cfg *AppConfig) error {
 	return nil
 }
 
+type LogWriter struct {
+	http.ResponseWriter
+}
+
+func (w LogWriter) Write(p []byte) {
+	_, err := w.ResponseWriter.Write(p)
+	if err != nil {
+		log.Error().Err(err).Msgf("Write failed: %v", err)
+	}
+}
+
 func main() {
 	rand.Seed(time.Now().UnixNano())
 
@@ -53,7 +65,19 @@ func main() {
 	// processing should be stopped.
 	r.Use(middleware.Timeout(HTTPTimeout))
 
-	r.Get("/", func(w http.ResponseWriter, r *http.Request) {})
+	r.Get("/", func(w http.ResponseWriter, r *http.Request) {
+		LogWriter{w}.Write([]byte("ok"))
+	})
+
+	r.Get("/quiz", game.GetQuiz)
+
+	r.Get("/ping", func(w http.ResponseWriter, r *http.Request) {
+		LogWriter{w}.Write([]byte("pong"))
+	})
+
+	r.Get("/panic", func(w http.ResponseWriter, r *http.Request) {
+		panic("test")
+	})
 
 	appConfig := &AppConfig{}
 
@@ -64,11 +88,12 @@ func main() {
 	server := &http.Server{
 		Addr:              fmt.Sprintf(":%v", appConfig.PORT),
 		ReadHeaderTimeout: HTTPReadHeaderTimeout,
+		Handler:           r,
 	}
 
+	log.Info().Msgf("starting server at: %d", appConfig.PORT)
 	err = server.ListenAndServe()
 	if err != nil {
 		log.Fatal().Err(err).Send()
 	}
-	quiz()
 }

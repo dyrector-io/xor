@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch cli",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/api/cmd/cli",
+            "cwd": "${workspaceFolder}/api/cmd/cli"
+        },
+         {
+            "name": "Launch server",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/api/cmd/server",
+            "cwd": "${workspaceFolder}/api/cmd/server"
+        },
+        {
+            "name": "Debug cli",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/api/cmd/cli",
+            "cwd": "${workspaceFolder}/api/cmd/cli"
+        },
+        {
+            "name": "Debug server",
+            "type": "go",
+            "request": "launch",
+            "buildFlags": "",
+            "mode": "debug",
+           "program": "${workspaceFolder}/api/cmd/server",
+            "cwd": "${workspaceFolder}/api/cmd/server"
+        }
+    ]
+}

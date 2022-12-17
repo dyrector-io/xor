@@ -87,7 +87,6 @@ linters:
     - errname
     - exportloopref
     - exhaustive
-    - forbidigo
     - funlen
     - gochecknoinits
     - goconst

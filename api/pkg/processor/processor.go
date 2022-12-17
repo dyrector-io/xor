@@ -1,9 +1,14 @@
-package main
+package processor
 
 import (
+	"encoding/json"
+	"fmt"
 	"io"
+	"net/http"
+	"os"
 	"strings"
 
+	"github.com/rs/zerolog/log"
 	"github.com/trimmer-io/go-csv"
 )
 
@@ -22,8 +27,8 @@ type CNCFRecord struct {
 	// License                 string
 	// Headquarters            string
 	// LatestTweetDate         string
-	// Description             string
-	// CrunchbaseDescription   string
+	Description           string `csv:"Description"`
+	CrunchbaseDescription string `csv:"Crunchbase Description" json:"Crunchbase Description"`
 	// CrunchbaseHomepage      string
 	// CrunchbaseCity          string
 	// CrunchbaseRegion        string
@@ -38,8 +43,8 @@ type CNCFRecord struct {
 	// Subcategory             string
 	// OSS                     string
 	// GithubRepo              string
-	GithubStars       string `csv:"Github Stars"`
-	GithubDescription string `csv:"Github Description"`
+	GithubStars       int    `csv:"Github Stars" json:"Github Stars"`
+	GithubDescription string `csv:"Github Description" json:"Github Description"`
 	// GithubLatestCommitDate  string
 	// GithubLatestCommitLink  string
 	// GithubReleaseDate       string
@@ -60,9 +65,46 @@ type CNCFRecord struct {
 	// ChatChannel             string
 }
 
+func (c *CNCFRecord) String() string {
+	return fmt.Sprintf("Company: %v, Short Description: %v, GH: %v, Crunchbase: %v",
+		c.Name, c.Description, c.GithubDescription, c.CrunchbaseDescription)
+}
+
 type CNCFSequence []*CNCFRecord
 
-func ReadStream(r io.Reader) (CNCFSequence, error) {
+func (c *CNCFRecord) Render(w http.ResponseWriter, r *http.Request) error {
+	return nil
+}
+
+func ReadJSONData() (CNCFSequence, error) {
+	file, err := os.Open("landscape.json")
+	if err != nil {
+		return nil, err
+	}
+	defer file.Close()
+
+	bytes, err := io.ReadAll(file)
+	if err != nil {
+		return nil, err
+	}
+
+	list := CNCFSequence{}
+	err = json.Unmarshal(bytes, &list)
+	if err != nil {
+		return nil, err
+	}
+
+	return list, nil
+}
+
+func ReadCSVStream() (CNCFSequence, error) {
+	filePath := "interactive-landscape.csv"
+
+	r, err := os.Open(filePath)
+	if err != nil {
+		log.Fatal().Err(err).Send()
+	}
+
 	records := CNCFSequence{}
 	dec := csv.NewDecoder(r)
 
@@ -97,11 +139,14 @@ func ReadStream(r io.Reader) (CNCFSequence, error) {
 			return nil, err
 		}
 
+		// process the record here
 		v.Name = strings.TrimSuffix(v.Name, "\"")
+		v.Description = strings.TrimSuffix(v.Description, "\"")
+		v.CrunchbaseDescription = strings.TrimSuffix(v.CrunchbaseDescription, "\"")
 		v.GithubDescription = strings.TrimSuffix(v.GithubDescription, "\"")
 		v.Category = strings.TrimSuffix(v.Category, "\"")
 
-		// process the record here
+		log.Info().Msgf("%v", v)
 		records = append(records, v)
 	}
 	return records, nil
