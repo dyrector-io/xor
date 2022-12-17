@@ -1,6 +1,7 @@
 <script>
 	// @ts-nocheck
 	import { score } from '../lib/score';
+	import Button from './Button.svelte';
 
 	export let question;
 	export let skip;
@@ -32,51 +33,66 @@
 </script>
 
 <div>
-	<p class="py-2">Question (GitHub) #{index + 1}: {question.GithubDescription}</p>
-	<p class="py-2">Question (Crunchbase) #{index + 1}: {question.CrunchbaseDescription}</p>
-	<p class="py-2">Question #{index + 1}: {question.Description}</p>
+	<h2 class="pb-8">Question #{index + 1}: {question.Name}</h2>
+	<span class="font-bold text-blue-500">Logo:</span>
+	<img class="w-2/12 blur py-4" src={question.Logo} draggable="false" />
 
-	<p class="py-2">GitHub Stars: {question.GithubStars}</p>
+	
+	<p><span>GitHub:</span> {question.GithubDescription}</p>
+	<p><span>Crunchbase:</span> {question.CrunchbaseDescription}</p>
+	<p><span>GitHub Stars:</span> {question.GithubStars}</p>
+
+	{#if NumberOfTry > 0 && !isCorrect}
+		<p><span>Category:</span> {question.Category}</p>
+	{/if}
+
+	{#if NumberOfTry > 1 && !isCorrect}
+		<p><span>SubCategory:</span> {question.Subcategory}</p>
+	{/if}
 </div>
-
-{#if NumberOfTry > 0 && !isCorrect}
-	<p>
-		Category {question.Category}
-	</p>
-{/if}
-
-{#if NumberOfTry > 1 && !isCorrect}
-	<p>
-		SubCategory {question.Subcategory}
-	</p>
-{/if}
 
 <form on:submit={checkQuestion}>
 	{#if NumberOfTry < 3}
-		<input bind:value={answer} class="text-black" />
+		<input bind:value={answer} class="text-black p-2 pl-2 w-1/2" />
 		{#if !isCorrect}
-			<button type="submit"> Submit / </button>
-			<button on:click={hint}> Hint </button>
+			<Button type="submit">Submit</Button>
+			{#if NumberOfTry < 2}
+			<Button on:click={hint}>Hint</Button>
+			{/if}
+			<Button on:click={skip}>Skip</Button>
 		{/if}
 	{/if}
-	{#if NumberOfTry === 3}
-		<button on:click={skip}>Next</button>
+	{#if NumberOfTry === 3 || isCorrect }
+		<Button on:click={skip}>Next</Button>
 	{/if}
 </form>
 
 {#if isAnswered}
-	<h5 class:isCorrect>
+	<div class="pt-8 animate-bounce">
 		{#if isCorrect}
-			Correct answer!
+			<span class="text-emerald-400">Correct answer!</span>
 		{:else if NumberOfTry === 3}
-			You are wrong, go on the next question. The correct answer: {question.Name}
+			<span class="text-red-600">You missed! Answer: {question.Name}</span>
 		{:else}
-			Wrong! Try harder!
+			<span class="text-yellow-600">Wrong! Try harder!</span>
 		{/if}
-	</h5>
+	</div>
 {/if}
+
 <!-- {#each allAnswers as answer}
 	<button class="answer" disabled={isAnswered} on:click={() => checkQuestion(answer.correct)}
 		>{@html answer.answer}</button
 	>
 {/each} -->
+<style>
+	p {
+		padding-bottom: 1rem; /* 8px */
+	}
+	p > span {
+		font-weight: 700;
+		color: rgb(59 130 246);
+	}
+	h5 > span {
+		padding: 1rem 0; /* 8px */
+	}
+</style>

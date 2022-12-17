@@ -3,8 +3,9 @@
 </script>
 
 <nav class="p-8 lowercase">
-	<a href="/">Quiz /</a>
-	<a href="/about">About /</a>
+	<a href="/">Home /</a>
+	<a href="/quiz">Quiz /</a>
+	<a href="/result">Results /</a>
 	<a href="/history">History</a>
 </nav>
 
@@ -21,7 +22,7 @@
 	:global(body) {
 		font-family: 'Roboto Mono', monospace;
 		color: #fefefe;
-		background: rgb(31 41 55);
+		background: rgb(12, 23, 19);
         margin: 0 auto;
 		 width: 75%;
 		align-content: center;
