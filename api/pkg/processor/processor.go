@@ -16,7 +16,7 @@ type CNCFRecord struct {
 	Name string `csv:"Name"`
 	// Organization            string
 	// Homepage                string
-	// Logo                    string
+	Logo string
 	// Twitter                 string
 	// CrunchbaseURL           string
 	// MarketCap               string
