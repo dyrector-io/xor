@@ -1,51 +1,54 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	const END_POINT = 'URL';
+	// Data
+	import { score } from '../lib/score';
+	import Question from '../components/Question.svelte';
+	import Modal from '../components/Modal.svelte';
 
-    let obj: Question
-    let answer: string
+	let activeQuestion = 0;
 
-    type Question = {
-        question: string,
-        answer: string,
-        starsNumber: number,
-        field: string
-    }
+	// Recieve questions from server Page
+	export let data;
+	const dailyQuestions = data.result;
+	let endOfTheQuiz: boolean = false
 
-	onMount(() => {
-        getQuiz()
-	});
-
-	function getQuiz(): Question {
-        const q: Question = {
-            question: "Kiscica?",
-            answer: "Aladar",
-            starsNumber: 2121,
-            field: "Service Meash"
-        }
-
-        obj = q
-
-        return q
-		// return fetch(`URL`)
-		// 	.then((resp) => resp.json())
-		// 	.then((json) => init(json))
-		// 	.catch((err) => console.log(err.message))
+	function skip() {
+		// if (questionNumber === 10) {
+		//   $score < 7 ? (isLooseModalOpen = true) : (isWinModalOpen = true);
+		// } else {
+		//   activeQuestion = activeQuestion + 1;
+		// }
+		activeQuestion = activeQuestion + 1;
 	}
 
-
-	function checkAnswer(): any {
+	function closeModal() {
+		endOfTheQuiz = false
 	}
 
-    function init() {
-        const obj: Question = getQuiz()
-        console.log(obj)
-    }
-
+	$: if (activeQuestion === 5) {
+		endOfTheQuiz = true;
+	}
 </script>
 
 <div class="">
-    <h1 class="text-3xl font-bold">XOR Quiz</h1>
-    <div>{JSON.stringify(obj)}</div>
-    <input class="text-black" bind:value={answer}>
+	<h1 class="text-2xl pb-8">XOR Quiz</h1>
+	<div>
+		{#each dailyQuestions as question, index}
+			{#if index === activeQuestion}
+				<div class="">
+					<Question {skip} {question} {index}/>
+				</div>
+			{/if}
+		{/each}
+	</div>
+
+	<div class="py-4">
+		Your result: {$score}
+	</div>
 </div>
+
+{#if endOfTheQuiz}
+<Modal on:close={closeModal}>
+    <h2>You Lost!</h2>
+    <p>Incididunt eiusmod culpa nisi voluptate in.</p>
+  </Modal>
+{/if}
