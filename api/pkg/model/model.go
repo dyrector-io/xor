@@ -12,3 +12,5 @@ type Pick struct {
 func PersistPicks(picks []int) error {
 	return nil
 }
+
+func InitPostgres() {}

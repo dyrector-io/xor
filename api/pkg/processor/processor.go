@@ -28,7 +28,7 @@ type CNCFRecord struct {
 	// Headquarters            string
 	// LatestTweetDate         string
 	Description           string `csv:"Description"`
-	CrunchbaseDescription string `csv:"Crunchbase Description" json:"Crunchbase Description"`
+	CrunchbaseDescription string `csv:"Crunchbase Description"`
 	// CrunchbaseHomepage      string
 	// CrunchbaseCity          string
 	// CrunchbaseRegion        string
@@ -39,12 +39,12 @@ type CNCFRecord struct {
 	// CrunchbaseKind          string
 	// CrunchbaseMinEmployees  string
 	// CrunchbaseMaxEmployees  string
-	Category string `csv:"Category"`
-	// Subcategory             string
+	Category    string `csv:"Category"`
+	Subcategory string
 	// OSS                     string
 	// GithubRepo              string
-	GithubStars       int    `csv:"Github Stars" json:"Github Stars"`
-	GithubDescription string `csv:"Github Description" json:"Github Description"`
+	GithubStars       int    `csv:"Github Stars"`
+	GithubDescription string `csv:"Github Description"`
 	// GithubLatestCommitDate  string
 	// GithubLatestCommitLink  string
 	// GithubReleaseDate       string

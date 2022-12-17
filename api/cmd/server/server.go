@@ -24,6 +24,10 @@ type AppConfig struct {
 	PORT uint16 `env:"PORT" env-default:"3333"`
 }
 
+type AppState struct {
+	// DBConnection db ``
+}
+
 func ReadConfig(cfg *AppConfig) error {
 	err := cleanenv.ReadConfig(".env", cfg)
 

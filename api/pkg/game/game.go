@@ -56,7 +56,7 @@ func PickByDate(amount, upperLimit int, excluded []int) []int {
 		gen := hash % uint64(upperLimit)
 		hash -= slice
 		if i > 0 {
-			for j := 1; !slices.Contains(picked, int(gen)) && !slices.Contains(excluded, int(gen)); j++ {
+			for j := 1; slices.Contains(picked, int(gen)) || slices.Contains(excluded, int(gen)); j++ {
 				gen = (hash + uint64(j)) % uint64(upperLimit)
 			}
 		}
