@@ -86,7 +86,7 @@ func GetQuiz(w http.ResponseWriter, r *http.Request) {
 
 	listAll = processor.MaskAndFilter(listAll, true, FilterIfStartLessThan)
 	qNum := 5
-	indices := PickByDate(qNum, len(listAll)-1, []int{})
+	indices := PickRandom(qNum, len(listAll)-1)
 
 	selected := processor.CNCFSequence{}
 
