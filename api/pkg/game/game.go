@@ -4,7 +4,6 @@ import (
 	"crypto/rand"
 	"math/big"
 	"net/http"
-	"strings"
 	"time"
 
 	"github.com/dyrector-io/xor/api/pkg/processor"
@@ -12,6 +11,8 @@ import (
 	"github.com/rs/zerolog/log"
 	"golang.org/x/exp/slices"
 )
+
+const FilterIfStartLessThan = 1000
 
 func PickRandom(amount, upperLimit int) []int {
 	picked := []int{}
@@ -67,10 +68,6 @@ func PickByDate(amount, upperLimit int, excluded []int) []int {
 	return picked
 }
 
-func Mask(original, mask string) string {
-	return strings.ReplaceAll(original, mask, "...")
-}
-
 func QuizListResponse(list processor.CNCFSequence) []render.Renderer {
 	result := []render.Renderer{}
 	for _, item := range list {
@@ -86,6 +83,8 @@ func GetQuiz(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, http.StatusText(http.StatusInternalServerError), http.StatusInternalServerError)
 		return
 	}
+
+	listAll = processor.MaskAndFilter(listAll, true, FilterIfStartLessThan)
 	qNum := 5
 	indices := PickByDate(qNum, len(listAll)-1, []int{})
 

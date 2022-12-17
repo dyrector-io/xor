@@ -32,7 +32,7 @@ func quiz() {
 	fmt.Printf("How well do you know the landscape? Find out who has this as a value proposition / GitHub description.")
 	for i := 0; i < qNum; i++ {
 		fmt.Printf("\n%d. Question\n%s\nStars:%d\n",
-			i+1, game.Mask(records[indices[i]].GithubDescription, records[indices[i]].Name), records[indices[i]].GithubStars)
+			i+1, processor.Mask(records[indices[i]].GithubDescription, records[indices[i]].Name), records[indices[i]].GithubStars)
 		for j := attempts; j > 0; j-- {
 			input := ""
 			fmt.Scanln(&input)

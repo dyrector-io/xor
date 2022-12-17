@@ -151,3 +151,24 @@ func ReadCSVStream() (CNCFSequence, error) {
 	}
 	return records, nil
 }
+
+func Mask(original, mask string) string {
+	return strings.ReplaceAll(original, mask, "...")
+}
+
+func MaskAndFilter(list CNCFSequence, masked bool, startCountFilter int) CNCFSequence {
+	result := CNCFSequence{}
+
+	for _, i := range list {
+		if startCountFilter > 0 && i.GithubStars < startCountFilter {
+			continue
+		}
+
+		if masked {
+			i.Description = Mask(i.Description, i.Name)
+		}
+		result = append(result, i)
+	}
+
+	return result
+}
