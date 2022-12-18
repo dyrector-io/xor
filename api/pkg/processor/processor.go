@@ -1,15 +1,13 @@
 package processor
 
 import (
+	_ "embed"
 	"encoding/json"
 	"fmt"
-	"io"
 	"net/http"
-	"os"
 	"strings"
 
 	"github.com/rs/zerolog/log"
-	"github.com/trimmer-io/go-csv"
 )
 
 type CNCFRecord struct {
@@ -65,6 +63,9 @@ type CNCFRecord struct {
 	// ChatChannel             string
 }
 
+//go:embed landscape.json
+var data []byte
+
 func (c *CNCFRecord) String() string {
 	return fmt.Sprintf("Company: %v, Short Description: %v, GH: %v, Crunchbase: %v",
 		c.Name, c.Description, c.GithubDescription, c.CrunchbaseDescription)
@@ -76,80 +77,15 @@ func (c *CNCFRecord) Render(w http.ResponseWriter, r *http.Request) error {
 	return nil
 }
 
-func ReadJSONData() (CNCFSequence, error) {
-	file, err := os.Open("landscape.json")
-	if err != nil {
-		return nil, err
-	}
-	defer file.Close()
-
-	bytes, err := io.ReadAll(file)
-	if err != nil {
-		return nil, err
-	}
-
+func ReadJSONData() CNCFSequence {
 	list := CNCFSequence{}
-	err = json.Unmarshal(bytes, &list)
+	err := json.Unmarshal(data, &list)
 	if err != nil {
-		return nil, err
+		log.Fatal().Err(err)
+		return nil
 	}
 
-	return list, nil
-}
-
-func ReadCSVStream() (CNCFSequence, error) {
-	filePath := "interactive-landscape.csv"
-
-	r, err := os.Open(filePath)
-	if err != nil {
-		log.Fatal().Err(err).Send()
-	}
-
-	records := CNCFSequence{}
-	dec := csv.NewDecoder(r)
-
-	// read and decode the file header
-	line, err := dec.ReadLine()
-	if err != nil {
-		return nil, err
-	}
-	if _, err = dec.DecodeHeader(line); err != nil {
-		return nil, err
-	}
-
-	// loop until EOF (i.e. dec.ReadLine returns an empty line and nil error);
-	// any other error during read will result in a non-nil error
-	for {
-		// read the next line from stream
-		line, err = dec.ReadLine()
-
-		// check for read errors other than EOF
-		if err != nil {
-			return nil, err
-		}
-
-		// check for EOF condition
-		if line == "" {
-			break
-		}
-
-		// decode the record
-		v := &CNCFRecord{}
-		if err := dec.DecodeRecord(v, line); err != nil {
-			return nil, err
-		}
-
-		// process the record here
-		v.Name = strings.TrimSuffix(v.Name, "\"")
-		v.Description = strings.TrimSuffix(v.Description, "\"")
-		v.CrunchbaseDescription = strings.TrimSuffix(v.CrunchbaseDescription, "\"")
-		v.GithubDescription = strings.TrimSuffix(v.GithubDescription, "\"")
-		v.Category = strings.TrimSuffix(v.Category, "\"")
-
-		log.Info().Msgf("%v", v)
-		records = append(records, v)
-	}
-	return records, nil
+	return list
 }
 
 func Mask(original, mask string) string {

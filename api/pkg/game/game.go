@@ -3,16 +3,20 @@ package game
 import (
 	"crypto/rand"
 	"math/big"
-	"net/http"
 	"time"
 
+	"github.com/dyrector-io/xor/api/internal/config"
+	"github.com/dyrector-io/xor/api/pkg/database"
 	"github.com/dyrector-io/xor/api/pkg/processor"
-	"github.com/go-chi/render"
 	"github.com/rs/zerolog/log"
 	"golang.org/x/exp/slices"
+	"gorm.io/gorm"
 )
 
-const FilterIfStartLessThan = 1000
+const (
+	FilterIfStartLessThan = 1000
+	QuestionCount         = 5
+)
 
 func PickRandom(amount, upperLimit int) []int {
 	picked := []int{}
@@ -45,9 +49,7 @@ func sdbmHash(data []byte) uint64 {
 	return hash
 }
 
-func PickByDate(amount, upperLimit int, excluded []int) []int {
-	today := time.Now()
-
+func PickByDate(today time.Time, amount, upperLimit int, excluded []int) []int {
 	hash := sdbmHash([]byte(today.Format("2006-01-02")))
 	slice := hash / uint64(amount)
 	log.Info().Msgf("%d", hash)
@@ -68,25 +70,27 @@ func PickByDate(amount, upperLimit int, excluded []int) []int {
 	return picked
 }
 
-func QuizListResponse(list processor.CNCFSequence) []render.Renderer {
-	result := []render.Renderer{}
-	for _, item := range list {
-		result = append(result, item)
-	}
-	return result
+func GetPicksIfPresent(db *gorm.DB, today time.Time) []int {
+	return database.GetPicksForDay(db, today)
 }
 
-func GetQuiz(w http.ResponseWriter, r *http.Request) {
-	listAll, err := processor.ReadJSONData()
-	if err != nil {
-		log.Error().Err(err).Send()
-		http.Error(w, http.StatusText(http.StatusInternalServerError), http.StatusInternalServerError)
-		return
-	}
+func SelectAQuiz(state *config.AppState, today time.Time) {
+	log.Info().Msg("quiz select running")
+	listAll := processor.MaskAndFilter(processor.ReadJSONData(), true, FilterIfStartLessThan)
 
-	listAll = processor.MaskAndFilter(listAll, true, FilterIfStartLessThan)
-	qNum := 5
-	indices := PickRandom(qNum, len(listAll)-1)
+	indices := GetPicksIfPresent(state.DBConn, today)
+	if len(indices) == 0 {
+		log.Info().Msg("generating new quiz")
+		if state.AppConfig.Method == "RANDOM" {
+			indices = PickRandom(QuestionCount, len(listAll)-1)
+		} else {
+			indices = PickByDate(today, QuestionCount, len(listAll)-1, database.GetExclusionList(state.DBConn))
+		}
+		err := database.PersistPicks(state.DBConn, today, indices)
+		if err != nil {
+			log.Error().Err(err).Msg("persisting quiz picks for the day")
+		}
+	}
 
 	selected := processor.CNCFSequence{}
 
@@ -94,8 +98,5 @@ func GetQuiz(w http.ResponseWriter, r *http.Request) {
 		selected = append(selected, listAll[i])
 	}
 
-	err = render.RenderList(w, r, QuizListResponse(selected))
-	if err != nil {
-		log.Error().Err(err)
-	}
+	state.QuizList = selected
 }

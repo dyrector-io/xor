@@ -6,7 +6,6 @@ import (
 
 	"github.com/dyrector-io/xor/api/pkg/game"
 	"github.com/dyrector-io/xor/api/pkg/processor"
-	"github.com/rs/zerolog/log"
 )
 
 const gradingSplit = 3
@@ -19,10 +18,8 @@ func printAnswer(right bool) string {
 }
 
 func quiz() {
-	records, err := processor.ReadJSONData()
-	if err != nil {
-		log.Fatal().Err(err).Send()
-	}
+	records := processor.ReadJSONData()
+
 	qNum := 5
 	attempts := 3
 
