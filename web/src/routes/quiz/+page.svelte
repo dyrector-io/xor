@@ -8,8 +8,9 @@
 	// Components
 	import Question from '../../components/Question.svelte';
 	import Modal from '../../components/Modal.svelte';
+	import type { QuizResponse } from 'src/types/quiz.type';
 
-	export let data: any;
+	export let data: QuizResponse;
 	const dailyQuestions = data.result;
 	let activeQuestion = 0;
 	let endOfTheQuiz = false;
@@ -40,21 +41,15 @@
 
 	$: if (activeQuestion === 5) {
 		endOfTheQuiz = true;
+		todayDone = true;
 		scorePoints = $score.join('');
-	}
 
-	$: if (endOfTheQuiz) {
 		const todayDate = new Date().toISOString().slice(0, 10);
-		$results.push({ date: todayDate, points: $score });
-	}
 
-	// TODO REMOVE LOCALSTORAGE
-	// $: if (endOfTheQuiz) {
-	// 	const todayDate = new Date().toISOString().slice(0, 10);
-	// 	let temporary: [] = $results;
-	// 	temporary.push({ date: todayDate, points: $score });
-	// 	results.set(temporary);
-	// }
+		let temporary: [] = $results;
+		temporary.push({ date: todayDate, points: $score });
+		results.set(temporary);
+	}
 </script>
 
 <h1 class="text-2xl pb-8">XOR Quiz</h1>

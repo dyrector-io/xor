@@ -2,9 +2,9 @@
 	// @ts-nocheck
 	import { score } from '../lib/score';
 	import Button from './Button.svelte';
-	import FuzzySet from 'fuzzyset.js'
+	import FuzzySet from 'fuzzyset.js';
 
-	export let question;
+	export let question: Array<QuizItem>;
 	export let nextQuestion;
 	export let index;
 
@@ -18,29 +18,29 @@
 		$score.splice(index, 1, '🔴');
 	}
 
+	function hint() {
+		hintNumber++;
+	}
 
 	function checkQuestion() {
 		guessNumber++;
 
-		let fuzzy = new FuzzySet([question.Name], true)
-		let res = fuzzy.get(answer)
-		if (res) {
-			console.log(res[0][0])
-		}
+		let fuzzy = new FuzzySet([question.Name], true);
+		let res = fuzzy.get(answer);
+
 		// maybe 0.87 is enough
-		if (res && res[0][0] > 0.9) {
-	
+		if (res && res[0][0] > 0.87) {
 			isCorrect = true;
 
 			switch (hintNumber) {
 				case 0:
-				$score.splice(index, 1, '🟢');
+					$score.splice(index, 1, '🟢');
 					break;
 				case 1:
-				$score.splice(index, 1, '🟡');
+					$score.splice(index, 1, '🟡');
 					break;
 				case 2:
-				$score.splice(index, 1, '🟠');
+					$score.splice(index, 1, '🟠');
 					break;
 			}
 
@@ -51,12 +51,7 @@
 				nextQuestion();
 			}
 		}
-
 		isAnswered = true;
-	}
-
-	function hint() {
-		hintNumber++;
 	}
 </script>
 
@@ -99,14 +94,10 @@
 	{#if (index < 4 && guessNumber === 3) || (index < 4 && isCorrect)}
 		<Button on:click={nextQuestion}>Next</Button>
 	{/if}
-	{#if (index === 4 && guessNumber === 3) || (index === 4 && isCorrect)}
+	<!-- {#if (index === 4 && guessNumber === 3) || (index === 4 && isCorrect)}
 		<Button on:click={nextQuestion}>Finish</Button>
-	{/if}
+	{/if} -->
 </form>
-
-<div class="py-4">
-	Your result: {$score.join('')}
-</div>
 
 {#if isAnswered}
 	<div class="pt-8 animate-bounce">
@@ -118,15 +109,9 @@
 	</div>
 {/if}
 
-{#if isAnswered}
-	<div class="pt-8 animate-bounce">
-		{#if !isCorrect}
-			<span class="text-yellow-600">Wrong! Try harder!</span>
-		{:else if NumberOfTry === 3}
-			<span class="text-red-600">You missed! Answer: {question.Name}</span>
-		{/if}
-	</div>
-{/if}
+<div class="py-4">
+	Your result: {$score.join('')}
+</div>
 
 <style>
 	p {
