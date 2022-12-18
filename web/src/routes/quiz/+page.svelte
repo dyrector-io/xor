@@ -5,18 +5,13 @@
 	import Question from '../../components/Question.svelte';
 	import Modal from '../../components/Modal.svelte';
 
-	let activeQuestion = 0;
 	export let data: any;
-	let endOfTheQuiz= false;
-	let todayDone = false;
 	const dailyQuestions = data.result;
+	let activeQuestion = 0;
+	let endOfTheQuiz = false;
+	let todayDone = false;
 
-	function skip() {
-		// if (questionNumber === 10) {
-		//   $score < 7 ? (isLooseModalOpen = true) : (isWinModalOpen = true);
-		// } else {
-		//   activeQuestion = activeQuestion + 1;
-		// }
+	function nextQuestion() {
 		activeQuestion = activeQuestion + 1;
 	}
 
@@ -25,13 +20,10 @@
 	}
 
 	onMount(async () => {
-		
-		
-
 		const filledForToday = $results.find((x) => x.date === new Date().toISOString().slice(0, 10));
 
 		if (filledForToday) {
-			todayDone = true
+			todayDone = true;
 		}
 	});
 
@@ -50,21 +42,21 @@
 
 <h1 class="text-2xl pb-8">XOR Quiz</h1>
 {#if todayDone}
-<div class="py-4">
-	You are done with the today quiz. Check your results <a href="/result">here.</a>
-</div>
+	<div class="py-4">
+		You are done with the today quiz. Check your results <a href="/result">here.</a>
+	</div>
 {:else}
-<div>
-	{#each dailyQuestions as question, index}
-		{#if index === activeQuestion}
-			<Question {skip} {question} {index} />
-		{/if}
-	{/each}
-</div>
+	<div>
+		{#each dailyQuestions as question, index}
+			{#if index === activeQuestion}
+				<Question {nextQuestion} {question} {index} />
+			{/if}
+		{/each}
+	</div>
 
-<div class="py-4">
-	Your result: {$score}
-</div>
+	<div class="py-4">
+		Your result: {$score}
+	</div>
 {/if}
 
 {#if endOfTheQuiz}

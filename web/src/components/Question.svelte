@@ -4,7 +4,7 @@
 	import Button from './Button.svelte';
 
 	export let question;
-	export let skip;
+	export let nextQuestion;
 	export let index;
 
 	let answer;
@@ -15,7 +15,7 @@
 
 	function checkQuestion() {
 		if (NumberOfTry === 3) {
-			skip();
+			nextQuestion();
 		}
 		NumberOfTry++;
 
@@ -58,7 +58,7 @@
 		{#if !isCorrect}
 			<Button on:click={checkQuestion}>Submit</Button>
 			{#if index < 4}
-				<Button on:click={skip}>Skip</Button>
+				<Button on:click={nextQuestion}>Skip</Button>
 			{/if}
 			{#if hintNumber < 2}
 				<Button on:click={hint}>Hint</Button>
@@ -66,10 +66,10 @@
 		{/if}
 	{/if}
 	{#if (index < 4 && NumberOfTry === 3) || (index < 4 && isCorrect)}
-		<Button on:click={skip}>Next</Button>
+		<Button on:click={nextQuestion}>Next</Button>
 	{/if}
 	{#if (index === 4 && NumberOfTry === 3) || (index === 4 && isCorrect)}
-		<Button on:click={skip}>Finish</Button>
+		<Button on:click={nextQuestion}>Finish</Button>
 	{/if}
 </form>
 
