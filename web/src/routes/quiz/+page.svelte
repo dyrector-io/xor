@@ -1,24 +1,32 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { onMount, onDestroy } from 'svelte';
+
+	// Store
 	import { score } from '../../lib/score';
 	import { results } from '../../lib/results';
+
+	// Components
 	import Question from '../../components/Question.svelte';
 	import Modal from '../../components/Modal.svelte';
 
 	export let data: any;
 	const dailyQuestions = data.result;
 	let activeQuestion = 0;
-	let endOfTheQuiz = true;
+	let endOfTheQuiz = false;
 	let todayDone = false;
-	let scorePoints: string ="";
+	let scorePoints: string = "";
 
 	function nextQuestion() {
-		activeQuestion = activeQuestion + 1;
+		activeQuestion++;
 	}
 
 	function closeModal() {
 		endOfTheQuiz = false;
 	}
+
+	onDestroy(() => {
+		$score.splice(0,5)
+	});
 
 	onMount(async () => {
 		const filledForToday = $results.find(
@@ -33,6 +41,11 @@
 	$: if (activeQuestion === 5) {
 		endOfTheQuiz = true;
 		scorePoints = $score.join('');
+	}
+
+	$: if (endOfTheQuiz) {
+		const todayDate = new Date().toISOString().slice(0, 10);
+		$results.push({ date: todayDate, points: $score });
 	}
 
 	// TODO REMOVE LOCALSTORAGE
@@ -60,10 +73,5 @@
 {/if}
 
 {#if endOfTheQuiz}
-	<Modal on:close={closeModal}>
-		<h2>Share your results on social media:</h2>
-		Today: {new Date().toISOString().slice(0, 10)} //
-		I tried the CNCF #XORQuiz, my results:
-		<p class="pb-8">{scorePoints}</p>
-	</Modal>
+	<Modal on:close={closeModal} scorePoints={scorePoints}></Modal>
 {/if}
