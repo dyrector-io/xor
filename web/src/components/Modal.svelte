@@ -2,38 +2,25 @@
 	// Modules
 	import { fly, fade } from 'svelte/transition';
 	import { createEventDispatcher } from 'svelte';
+
 	const dispatch = createEventDispatcher();
+	import Button from '../components/Button.svelte';
 </script>
 
-<div class="modal-wrapper text-black" transition:fade>
-	<div class="modal" transition:fly={{ y: -100 }}>
-		<button
+<div class="modal-wrapper flex flex-col  justify-center backdrop-blur-sm bg-gray-800 inset-0 fixed w-full text-black" transition:fade>
+	<div class="bg-white p-8" transition:fly={{ y: -100 }}>
+		
+		<slot />
+		<Button
 			on:click={() => {
 				dispatch('close');
-			}}>Close</button
-		>
-		<slot />
+			}}>Close</Button>
 	</div>
 </div>
 
 <style>
 	.modal-wrapper {
-		position: fixed;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-		background: rgba(0, 0, 0, 0.8);
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
+		background: rgba(0, 0, 0, 0.7);
 		align-items: center;
-	}
-	.modal {
-		background: white;
-		padding: 20px;
-		border-radius: 15px;
-		width: 275px;
-		height: 200px;
 	}
 </style>
