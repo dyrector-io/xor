@@ -11,6 +11,7 @@
 	let isCorrect = false;
 	let isAnswered = false;
 	let NumberOfTry = 0;
+	let hintNumber = 0;
 
 	function checkQuestion() {
 		if (NumberOfTry === 3) {
@@ -28,41 +29,47 @@
 
 	function hint() {
 		// TODO Implement
-		NumberOfTry++;
+		hintNumber++;
 	}
 </script>
 
 <div>
-	<h2 class="pb-8">Question #{index + 1}: {question.Name}</h2>
-	<span class="font-bold text-blue-500">Logo:</span>
+	<h2 class="pb-2">Question #{index + 1}: {question.Name}</h2>
+	<span class="text-amber-300">Attempt:</span> {NumberOfTry}/3 <span class="text-amber-300">Hints:</span> {hintNumber}/2
+	<p><span>Logo:</span></p>
 	<img class="w-2/12 blur py-4" src={question.Logo} draggable="false" />
 
 	<p><span>GitHub:</span> {question.GithubDescription}</p>
 	<p><span>Crunchbase:</span> {question.CrunchbaseDescription}</p>
 	<p><span>GitHub Stars:</span> {question.GithubStars}</p>
 
-	{#if NumberOfTry > 0 && !isCorrect}
+	{#if hintNumber > 0 && !isCorrect}
 		<p><span>Category:</span> {question.Category}</p>
 	{/if}
 
-	{#if NumberOfTry > 1 && !isCorrect}
+	{#if hintNumber > 1 && !isCorrect}
 		<p><span>SubCategory:</span> {question.Subcategory}</p>
 	{/if}
 </div>
 
-<form on:submit={checkQuestion}>
-	{#if NumberOfTry < 3}
+<form>
+		{#if NumberOfTry < 3}
 		<input bind:value={answer} class="text-black p-2 pl-2 w-1/2" />
 		{#if !isCorrect}
-			<Button type="submit">Submit</Button>
-			{#if NumberOfTry < 2}
+			<Button on:click={checkQuestion}>Submit</Button>
+			{#if index < 4}
+				<Button on:click={skip}>Skip</Button>
+			{/if}
+			{#if hintNumber < 2}
 				<Button on:click={hint}>Hint</Button>
 			{/if}
-			<Button on:click={skip}>Skip</Button>
 		{/if}
 	{/if}
-	{#if NumberOfTry === 3 || isCorrect}
+	{#if (index < 4 && NumberOfTry === 3) || (index < 4 && isCorrect)}
 		<Button on:click={skip}>Next</Button>
+	{/if}
+	{#if (index === 4 && NumberOfTry === 3) || (index === 4 && isCorrect)}
+		<Button on:click={skip}>Finish</Button>
 	{/if}
 </form>
 

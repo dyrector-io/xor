@@ -6,12 +6,10 @@
 	import Modal from '../../components/Modal.svelte';
 
 	let activeQuestion = 0;
-
-	// Recieve questions from server Page
-	export let data;
-	const dailyQuestions = data.result;
+	export let data: any;
 	let endOfTheQuiz= false;
 	let todayDone = false;
+	const dailyQuestions = data.result;
 
 	function skip() {
 		// if (questionNumber === 10) {
@@ -27,6 +25,9 @@
 	}
 
 	onMount(async () => {
+		
+		
+
 		const filledForToday = $results.find((x) => x.date === new Date().toISOString().slice(0, 10));
 
 		if (filledForToday) {
@@ -48,8 +49,6 @@
 </script>
 
 <h1 class="text-2xl pb-8">XOR Quiz</h1>
-
-
 {#if todayDone}
 <div class="py-4">
 	You are done with the today quiz. Check your results <a href="/result">here.</a>
@@ -67,7 +66,6 @@
 	Your result: {$score}
 </div>
 {/if}
-
 
 {#if endOfTheQuiz}
 	<Modal on:close={closeModal}>

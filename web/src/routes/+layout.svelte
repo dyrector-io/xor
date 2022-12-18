@@ -14,9 +14,9 @@
 </div>
 
 
-<footer class="text-center text-sm absolute inset-x-0 bottom-0 h-8">
+<!-- <footer class="text-center text-sm absolute inset-x-0 bottom-0 h-8">
 	Created by <a href='https://github.com/dyrector-io/xor'>dyrector.io</a> team with love. If you wanna submit extra question please visit the repository.
-</footer>
+</footer> -->
 
 <style>
 	:global(body) {
