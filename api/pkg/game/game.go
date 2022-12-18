@@ -18,6 +18,10 @@ const (
 	QuestionCount         = 5
 )
 
+const (
+	RandomGenMethod = "RANDOM"
+)
+
 func PickRandom(amount, upperLimit int) []int {
 	picked := []int{}
 	min := 0
@@ -78,18 +82,20 @@ func SelectAQuiz(state *config.AppState) {
 	today := time.Now()
 	log.Info().Msgf("quiz select running %v", today)
 	listAll := processor.MaskAndFilter(processor.ReadJSONData(), true, FilterIfStartLessThan)
+	indices := []int{}
+	if state.AppConfig.Method == RandomGenMethod {
+		indices = PickRandom(QuestionCount, len(listAll)-1)
+	} else {
+		indices = GetPicksIfPresent(state.DBConn, today)
+		if len(indices) == 0 {
+			log.Info().Msg("generating new quiz")
 
-	indices := GetPicksIfPresent(state.DBConn, today)
-	if len(indices) == 0 {
-		log.Info().Msg("generating new quiz")
-		if state.AppConfig.Method == "RANDOM" {
-			indices = PickRandom(QuestionCount, len(listAll)-1)
-		} else {
 			indices = PickByDate(today, QuestionCount, len(listAll)-1, database.GetExclusionList(state.DBConn))
-		}
-		err := database.PersistPicks(state.DBConn, today, indices)
-		if err != nil {
-			log.Error().Err(err).Msg("persisting quiz picks for the day")
+
+			err := database.PersistPicks(state.DBConn, today, indices)
+			if err != nil {
+				log.Error().Err(err).Msg("persisting quiz picks for the day")
+			}
 		}
 	}
 

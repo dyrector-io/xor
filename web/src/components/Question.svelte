@@ -2,6 +2,7 @@
 	// @ts-nocheck
 	import { score } from '../lib/score';
 	import Button from './Button.svelte';
+	import FuzzySet from 'fuzzyset.js'
 
 	export let question;
 	export let nextQuestion;
@@ -12,6 +13,7 @@
 	let isAnswered = false;
 	let NumberOfTry = 0;
 	let hintNumber = 0;
+	
 
 	function checkQuestion() {
 		if (NumberOfTry === 3) {
@@ -19,7 +21,14 @@
 		}
 		NumberOfTry++;
 
-		if (answer === question.Name) {
+
+		let fuzzy = new FuzzySet([question.Name], true)
+		let res = fuzzy.get(answer) 
+		if (res) {
+			console.log(res[0][0])
+		}
+		// maybe 0.87 is enough
+		if (res && res[0][0] > 0.9) {
 			isCorrect = true;
 			score.update((currentVal) => currentVal + 1);
 		}
