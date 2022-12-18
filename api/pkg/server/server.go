@@ -45,8 +45,7 @@ func GetChi(appConfig *config.AppConfig) *http.Server {
 		DBConn:    db,
 	}
 
-	today := time.Now()
-	game.SelectAQuiz(appState, today)
+	game.SelectAQuiz(appState)
 
 	r.Use(func(next http.Handler) http.Handler {
 		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
@@ -79,7 +78,7 @@ func GetChi(appConfig *config.AppConfig) *http.Server {
 	}
 
 	s := gocron.NewScheduler(time.UTC)
-	_, err := s.Every(1).Minute().Do(game.SelectAQuiz, appState, today)
+	_, err := s.Every(1).Day().At("00:01").Do(game.SelectAQuiz, appState)
 	if err != nil {
 		log.Error().Err(err).Msg("daily quiz gen cron is not ok")
 	}

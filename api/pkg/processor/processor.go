@@ -25,7 +25,7 @@ type CNCFRecord struct {
 	// License                 string
 	// Headquarters            string
 	// LatestTweetDate         string
-	Description           string `csv:"Description"`
+	// Description           string `csv:"Description"`
 	CrunchbaseDescription string `csv:"Crunchbase Description"`
 	// CrunchbaseHomepage      string
 	// CrunchbaseCity          string
@@ -67,8 +67,8 @@ type CNCFRecord struct {
 var data []byte
 
 func (c *CNCFRecord) String() string {
-	return fmt.Sprintf("Company: %v, Short Description: %v, GH: %v, Crunchbase: %v",
-		c.Name, c.Description, c.GithubDescription, c.CrunchbaseDescription)
+	return fmt.Sprintf("Company: %v, GH: %v, Crunchbase: %v",
+		c.Name, c.GithubDescription, c.CrunchbaseDescription)
 }
 
 type CNCFSequence []*CNCFRecord
@@ -101,7 +101,6 @@ func MaskAndFilter(list CNCFSequence, masked bool, startCountFilter int) CNCFSeq
 		}
 
 		if masked {
-			i.Description = Mask(i.Description, i.Name)
 			i.GithubDescription = Mask(i.GithubDescription, i.Name)
 			i.CrunchbaseDescription = Mask(i.CrunchbaseDescription, i.Name)
 		}

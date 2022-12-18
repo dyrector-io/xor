@@ -74,8 +74,9 @@ func GetPicksIfPresent(db *gorm.DB, today time.Time) []int {
 	return database.GetPicksForDay(db, today)
 }
 
-func SelectAQuiz(state *config.AppState, today time.Time) {
-	log.Info().Msg("quiz select running")
+func SelectAQuiz(state *config.AppState) {
+	today := time.Now()
+	log.Info().Msgf("quiz select running %v", today)
 	listAll := processor.MaskAndFilter(processor.ReadJSONData(), true, FilterIfStartLessThan)
 
 	indices := GetPicksIfPresent(state.DBConn, today)
