@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	// @ts-nocheck
 	import { score } from '../lib/score';
 	import Button from './Button.svelte';
@@ -13,29 +13,50 @@
 	let NumberOfTry = 0;
 	let hintNumber = 0;
 
-	function checkQuestion() {
-		if (NumberOfTry === 3) {
-			nextQuestion();
-		}
-		NumberOfTry++;
+	function skip() {
+		$score.push('🔴');
+	}
 
+	function checkQuestion() {
+		console.log(NumberOfTry);
+		NumberOfTry++;
 		if (answer === question.Name) {
 			isCorrect = true;
-			score.update((currentVal) => currentVal + 1);
+
+			switch (hintNumber) {
+				case 0:
+					$score.push('🟢');
+					break;
+				case 1:
+					$score.push('🟡');
+					break;
+				case 2:
+					$score.push('🟠');
+					break;
+			}
+
+			nextQuestion();
+		} else {
+			if (NumberOfTry === 3) {
+				console.log('asd');
+				$score.push('🔴');
+				nextQuestion();
+			}
 		}
 
 		isAnswered = true;
 	}
 
 	function hint() {
-		// TODO Implement
 		hintNumber++;
 	}
 </script>
 
 <div>
 	<h2 class="pb-2">Question #{index + 1}: {question.Name}</h2>
-	<span class="text-amber-300">Attempt:</span> {NumberOfTry}/3 <span class="text-amber-300">Hints:</span> {hintNumber}/2
+	<span class="text-amber-300">Attempt:</span>
+	{NumberOfTry}/3 <span class="text-amber-300">Hints:</span>
+	{hintNumber}/2
 	<p><span>Logo:</span></p>
 	<img class="w-2/12 blur py-4" src={question.Logo} draggable="false" />
 
@@ -53,12 +74,12 @@
 </div>
 
 <form>
-		{#if NumberOfTry < 3}
+	{#if NumberOfTry < 3}
 		<input bind:value={answer} class="text-black p-2 pl-2 w-1/2" />
 		{#if !isCorrect}
 			<Button on:click={checkQuestion}>Submit</Button>
 			{#if index < 4}
-				<Button on:click={nextQuestion}>Skip</Button>
+				<Button on:click={nextQuestion} on:click={skip}>Skip</Button>
 			{/if}
 			{#if hintNumber < 2}
 				<Button on:click={hint}>Hint</Button>
@@ -69,11 +90,18 @@
 		<Button on:click={nextQuestion}>Next</Button>
 	{/if}
 	{#if (index === 4 && NumberOfTry === 3) || (index === 4 && isCorrect)}
+		<!-- TODO MOST EZT NEM MUTATJA -->
 		<Button on:click={nextQuestion}>Finish</Button>
 	{/if}
 </form>
 
-{#if isAnswered}
+<!-- Utolso kerdesnel nem rendeli ki -->
+<div class="py-4">
+	Your result: {$score}
+</div>
+
+<!-- FEEDBACK FOR THE USER
+	 {#if isAnswered}
 	<div class="pt-8 animate-bounce">
 		{#if isCorrect}
 			<span class="text-emerald-400">Correct answer!</span>
@@ -83,13 +111,18 @@
 			<span class="text-yellow-600">Wrong! Try harder!</span>
 		{/if}
 	</div>
+{/if} -->
+
+{#if isAnswered}
+	<div class="pt-8 animate-bounce">
+		{#if !isCorrect}
+			<span class="text-yellow-600">Wrong! Try harder!</span>
+		{:else if NumberOfTry === 3}
+			<span class="text-red-600">You missed! Answer: {question.Name}</span>
+		{/if}
+	</div>
 {/if}
 
-<!-- {#each allAnswers as answer}
-	<button class="answer" disabled={isAnswered} on:click={() => checkQuestion(answer.correct)}
-		>{@html answer.answer}</button
-	>
-{/each} -->
 <style>
 	p {
 		padding-bottom: 1rem; /* 8px */

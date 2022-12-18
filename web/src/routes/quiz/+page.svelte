@@ -8,8 +8,9 @@
 	export let data: any;
 	const dailyQuestions = data.result;
 	let activeQuestion = 0;
-	let endOfTheQuiz = false;
+	let endOfTheQuiz = true;
 	let todayDone = false;
+	let scorePoints: string ="";
 
 	function nextQuestion() {
 		activeQuestion = activeQuestion + 1;
@@ -20,7 +21,9 @@
 	}
 
 	onMount(async () => {
-		const filledForToday = $results.find((x) => x.date === new Date().toISOString().slice(0, 10));
+		const filledForToday = $results.find(
+			(x) => x['date'] === new Date().toISOString().slice(0, 10)
+		);
 
 		if (filledForToday) {
 			todayDone = true;
@@ -29,15 +32,16 @@
 
 	$: if (activeQuestion === 5) {
 		endOfTheQuiz = true;
+		scorePoints = $score.join('');
 	}
 
-	$: if (endOfTheQuiz) {
-		const todayDate = new Date().toISOString().slice(0, 10);
-
-		let temporary: [] = $results;
-		temporary.push({ date: todayDate, points: $score });
-		results.set(temporary);
-	}
+	// TODO REMOVE LOCALSTORAGE
+	// $: if (endOfTheQuiz) {
+	// 	const todayDate = new Date().toISOString().slice(0, 10);
+	// 	let temporary: [] = $results;
+	// 	temporary.push({ date: todayDate, points: $score });
+	// 	results.set(temporary);
+	// }
 </script>
 
 <h1 class="text-2xl pb-8">XOR Quiz</h1>
@@ -53,15 +57,13 @@
 			{/if}
 		{/each}
 	</div>
-
-	<div class="py-4">
-		Your result: {$score}
-	</div>
 {/if}
 
 {#if endOfTheQuiz}
 	<Modal on:close={closeModal}>
-		<h2>You Lost!</h2>
-		<p>Incididunt eiusmod culpa nisi voluptate in.</p>
+		<h2>Share your results on social media:</h2>
+		Today: {new Date().toISOString().slice(0, 10)} //
+		I tried the CNCF #XORQuiz, my results:
+		<p class="pb-8">{scorePoints}</p>
 	</Modal>
 {/if}

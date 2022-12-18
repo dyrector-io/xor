@@ -21,7 +21,7 @@ services:
     ports:
       - "3333:3333"
     environment:
-      DSN: ${DSN:-host=localhost user=postgres password=password dbname=postgres port=5432 sslmode=disable}
+      DSN: ${DSN:-host=host.docker.internal user=postgres password=password dbname=postgres port=5432 sslmode=disable}
 
 volumes:
   postgres:
