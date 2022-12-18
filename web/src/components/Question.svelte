@@ -10,36 +10,34 @@
 	let answer;
 	let isCorrect = false;
 	let isAnswered = false;
-	let NumberOfTry = 0;
+	let guessNumber = 0;
 	let hintNumber = 0;
 
 	function skip() {
-		$score.push('🔴');
+		$score.splice(index, 1, '🔴');
 	}
 
 	function checkQuestion() {
-		console.log(NumberOfTry);
-		NumberOfTry++;
+		guessNumber++;
 		if (answer === question.Name) {
 			isCorrect = true;
 
 			switch (hintNumber) {
 				case 0:
-					$score.push('🟢');
+				$score.splice(index, 1, '🟢');
 					break;
 				case 1:
-					$score.push('🟡');
+				$score.splice(index, 1, '🟡');
 					break;
 				case 2:
-					$score.push('🟠');
+				$score.splice(index, 1, '🟠');
 					break;
 			}
 
 			nextQuestion();
 		} else {
-			if (NumberOfTry === 3) {
-				console.log('asd');
-				$score.push('🔴');
+			if (guessNumber === 3) {
+				$score.splice(index, 1, '🔴');
 				nextQuestion();
 			}
 		}
@@ -55,7 +53,7 @@
 <div>
 	<h2 class="pb-2">Question #{index + 1}: {question.Name}</h2>
 	<span class="text-amber-300">Attempt:</span>
-	{NumberOfTry}/3 <span class="text-amber-300">Hints:</span>
+	{guessNumber}/3 <span class="text-amber-300">Hints:</span>
 	{hintNumber}/2
 	<p><span>Logo:</span></p>
 	<img class="w-2/12 blur py-4" src={question.Logo} draggable="false" />
@@ -74,50 +72,38 @@
 </div>
 
 <form>
-	{#if NumberOfTry < 3}
+	{#if guessNumber < 3}
 		<input bind:value={answer} class="text-black p-2 pl-2 w-1/2" />
 		{#if !isCorrect}
-			<Button on:click={checkQuestion}>Submit</Button>
 			{#if index < 4}
+				<Button on:click={checkQuestion}>Submit</Button>
 				<Button on:click={nextQuestion} on:click={skip}>Skip</Button>
+			{:else}
+				<Button on:click={checkQuestion}>Finish</Button>
 			{/if}
 			{#if hintNumber < 2}
 				<Button on:click={hint}>Hint</Button>
 			{/if}
 		{/if}
 	{/if}
-	{#if (index < 4 && NumberOfTry === 3) || (index < 4 && isCorrect)}
+	{#if (index < 4 && guessNumber === 3) || (index < 4 && isCorrect)}
 		<Button on:click={nextQuestion}>Next</Button>
 	{/if}
-	{#if (index === 4 && NumberOfTry === 3) || (index === 4 && isCorrect)}
+	{#if (index === 4 && guessNumber === 3) || (index === 4 && isCorrect)}
 		<!-- TODO MOST EZT NEM MUTATJA -->
 		<Button on:click={nextQuestion}>Finish</Button>
 	{/if}
 </form>
 
-<!-- Utolso kerdesnel nem rendeli ki -->
 <div class="py-4">
-	Your result: {$score}
+	Your result: {$score.join('')}
 </div>
-
-<!-- FEEDBACK FOR THE USER
-	 {#if isAnswered}
-	<div class="pt-8 animate-bounce">
-		{#if isCorrect}
-			<span class="text-emerald-400">Correct answer!</span>
-		{:else if NumberOfTry === 3}
-			<span class="text-red-600">You missed! Answer: {question.Name}</span>
-		{:else}
-			<span class="text-yellow-600">Wrong! Try harder!</span>
-		{/if}
-	</div>
-{/if} -->
 
 {#if isAnswered}
 	<div class="pt-8 animate-bounce">
 		{#if !isCorrect}
 			<span class="text-yellow-600">Wrong! Try harder!</span>
-		{:else if NumberOfTry === 3}
+		{:else if guessNumber === 3}
 			<span class="text-red-600">You missed! Answer: {question.Name}</span>
 		{/if}
 	</div>
