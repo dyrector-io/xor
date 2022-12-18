@@ -37,7 +37,6 @@
 	<span class="font-bold text-blue-500">Logo:</span>
 	<img class="w-2/12 blur py-4" src={question.Logo} draggable="false" />
 
-	
 	<p><span>GitHub:</span> {question.GithubDescription}</p>
 	<p><span>Crunchbase:</span> {question.CrunchbaseDescription}</p>
 	<p><span>GitHub Stars:</span> {question.GithubStars}</p>
@@ -57,12 +56,12 @@
 		{#if !isCorrect}
 			<Button type="submit">Submit</Button>
 			{#if NumberOfTry < 2}
-			<Button on:click={hint}>Hint</Button>
+				<Button on:click={hint}>Hint</Button>
 			{/if}
 			<Button on:click={skip}>Skip</Button>
 		{/if}
 	{/if}
-	{#if NumberOfTry === 3 || isCorrect }
+	{#if NumberOfTry === 3 || isCorrect}
 		<Button on:click={skip}>Next</Button>
 	{/if}
 </form>
@@ -91,8 +90,5 @@
 	p > span {
 		font-weight: 700;
 		color: rgb(59 130 246);
-	}
-	h5 > span {
-		padding: 1rem 0; /* 8px */
 	}
 </style>
