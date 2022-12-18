@@ -82,7 +82,7 @@ func ParsePicksToIntArr(pickStr string) []int {
 
 func GetHistoryDB(db *gorm.DB) HistoryList {
 	picks := []Pick{}
-	result := db.Find(&picks)
+	result := db.Where("Date < ?", SimpleDay(time.Now())).Find(&picks)
 	if result.Error != nil {
 		log.Error().Err(result.Error).Msg("could not load history returning empty set")
 		return HistoryList{}
