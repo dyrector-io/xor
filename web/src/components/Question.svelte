@@ -1,30 +1,35 @@
 <script lang="ts">
 	// @ts-nocheck
-	import { score } from '../lib/store';
+	import { score, hintNumber, guessNumber } from '../lib/store';
 	import Button from './Button.svelte';
 	import FuzzySet from 'fuzzyset.js';
 	import type { QuizItem } from 'src/types/quiz.type';
+	import { onDestroy } from 'svelte';
 
 	export let question: QuizItem;
 	export let nextQuestion;
 	export let index;
 
-	let answer;
+	let answer = '';
 	let isCorrect = false;
 	let isAnswered = false;
-	let guessNumber = 0;
-	let hintNumber = 0;
 
 	function skip() {
 		$score.splice(index, 1, '🔴');
 	}
 
 	function hint() {
-		hintNumber++;
+		$hintNumber++;
 	}
 
+	// Reset the hint and guess store
+	onDestroy(() => {
+		$guessNumber = 0;
+		$hintNumber = 0;
+	});
+
 	function checkQuestion() {
-		guessNumber++;
+		$guessNumber++;
 
 		let fuzzy = new FuzzySet([question.Name], true);
 		let res = fuzzy.get(answer);
@@ -33,7 +38,7 @@
 		if (res && res[0][0] > 0.87) {
 			isCorrect = true;
 
-			switch (hintNumber) {
+			switch ($hintNumber) {
 				case 0:
 					$score.splice(index, 1, '🟢');
 					break;
@@ -47,7 +52,7 @@
 
 			nextQuestion();
 		} else {
-			if (guessNumber === 3) {
+			if ($guessNumber >= 3) {
 				$score.splice(index, 1, '🔴');
 				nextQuestion();
 			}
@@ -57,58 +62,61 @@
 </script>
 
 <div>
-	<h2 class="pb-2">Question #{index + 1}: {question.Name}</h2>
-	<span class="text-amber-300">Attempt:</span>
-	{guessNumber}/3 <span class="text-amber-300">Hints:</span>
-	{hintNumber}/2
+	<!-- Dashboard -->
+	<span class="text-amber-300">Question:</span>
+	{index + 1}/5
+	<span class="text-amber-300">Attempts:</span>
+	{$guessNumber}/3
+	<span class="text-amber-300">Hints:</span>
+	{$hintNumber}/2
+
+	<!-- Informations -->
 	<p><span>Logo:</span></p>
-	<img class="bg-white w-2/12 blur-lg mt-4 mb-8" src={question.Logo} draggable="false" />
-
-
+	<img
+		class="bg-white w-2/12 blur-lg mt-4 mb-8"
+		src={question.Logo}
+		draggable="false"
+		alt="Project Logo"
+	/>
 	<p><span>GitHub:</span> {question.GithubDescription}</p>
 	<p><span>Crunchbase:</span> {question.CrunchbaseDescription}</p>
 	<p><span>GitHub Stars:</span> {question.GithubStars}</p>
 
-	{#if hintNumber > 0 && !isCorrect}
+	{#if $hintNumber > 0}
 		<p><span>Category:</span> {question.Category}</p>
 	{/if}
 
-	{#if hintNumber > 1 && !isCorrect}
+	{#if $hintNumber > 1}
 		<p><span>SubCategory:</span> {question.Subcategory}</p>
 	{/if}
 </div>
 
 <form>
-	{#if guessNumber < 3}
-		<input bind:value={answer} class="text-black p-2 pl-2 w-1/2" />
-		{#if !isCorrect}
-			{#if index < 4}
-				<Button on:click={checkQuestion}>Submit</Button>
-				<Button on:click={nextQuestion} on:click={skip}>Skip</Button>
-			{:else}
-				<Button on:click={checkQuestion}>Finish</Button>
-			{/if}
-			{#if hintNumber < 2}
-				<Button on:click={hint}>Hint</Button>
-			{/if}
+	<input required type="text" bind:value={answer} class="text-black p-2 pl-2 w-1/2" />
+	{#if index < 4}
+		<Button on:click={checkQuestion}>Submit</Button>
+		<Button on:click={nextQuestion} on:click={skip}>Skip</Button>
+	{:else}
+		{#if $guessNumber === 2}
+			<Button on:click={checkQuestion}>Finish</Button>
+		{:else}
+			<Button on:click={checkQuestion}>Submit</Button>
 		{/if}
+		<Button on:click={skip} on:click={nextQuestion}>Skip</Button>
 	{/if}
-	{#if (index < 4 && guessNumber === 3) || (index < 4 && isCorrect)}
-		<Button on:click={nextQuestion}>Next</Button>
+
+	<!-- Hint button logic -->
+	{#if $hintNumber < 2}
+		<Button on:click={hint}>Hint</Button>
 	{/if}
-	<!-- {#if (index === 4 && guessNumber === 3) || (index === 4 && isCorrect)}
-		<Button on:click={nextQuestion}>Finish</Button>
-	{/if} -->
 </form>
 
 {#if isAnswered}
-	<div class="pt-8 animate-bounce">
-		{#if !isCorrect}
+	{#if !isCorrect}
+		<div class="pt-8 animate-bounce">
 			<span class="text-yellow-600">Wrong! Try harder!</span>
-		{:else if guessNumber === 3}
-			<span class="text-red-600">You missed! Answer: {question.Name}</span>
-		{/if}
-	</div>
+		</div>
+	{/if}
 {/if}
 
 <div class="py-4">
