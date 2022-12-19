@@ -8,8 +8,13 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter()
-	}
+		adapter: adapter({
+			fallback: "index.html",
+		}),
+		prerender: {
+			entries: ["*"],
+		}
+	},
 };
 
 export default config;

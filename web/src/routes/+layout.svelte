@@ -1,5 +1,6 @@
 <script>
 	import '../app.css';
+	export const prerender = true
 </script>
 
 <div class="flex flex-col  h-screen">
@@ -18,8 +19,7 @@
 
 	<footer class="text-center text-sm mt-auto h-8">
 		deployed & hosted using <a class="text-emerald-300" href="https://dyrector.io" target="_blank"
-			>dyrector.io</a
-		>
+			>dyrector.io</a>
 	</footer>
 </div>
 

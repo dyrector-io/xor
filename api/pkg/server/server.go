@@ -12,6 +12,7 @@ import (
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
 	"github.com/go-chi/cors"
+	"github.com/go-chi/httprate"
 	"github.com/go-co-op/gocron"
 	"github.com/rs/zerolog/log"
 )
@@ -19,6 +20,7 @@ import (
 const (
 	HTTPReadHeaderTimeout = 3 * time.Second
 	HTTPTimeout           = 60 * time.Second
+	RateLimitPerMin       = 100
 )
 
 type LogWriter struct {
@@ -64,6 +66,12 @@ func GetChi(appConfig *config.AppConfig) *http.Server {
 			next.ServeHTTP(w, r.WithContext(ctx.SetContextVar(r.Context(), ctx.StateKey, appState)))
 		})
 	})
+
+	r.Use(httprate.Limit(
+		RateLimitPerMin,
+		1*time.Minute,
+		httprate.WithKeyFuncs(httprate.KeyByRealIP, httprate.KeyByEndpoint),
+	))
 
 	r.Use(middleware.Timeout(HTTPTimeout))
 

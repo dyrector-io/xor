@@ -1,6 +1,5 @@
 <script lang="ts">
 	import SvelteMarkdown from 'svelte-markdown';
-
 	const homeContent = `
 Hello! 👋
 <br />

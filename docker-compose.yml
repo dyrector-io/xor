@@ -23,7 +23,20 @@ services:
     ports:
       - "3333:3333"
     environment:
-      DSN: ${DSN:-host=host.docker.internal user=postgres password=password dbname=postgres port=5432 sslmode=disable}
+      DSN: ${DSN:-host=172.17.0.1 user=postgres password=password dbname=postgres port=5432 sslmode=disable}
+  ui:
+    depends_on:
+      - "api"
+    container_name: xor-ui
+    image: github.com/dyrector-io/xor/ui:v1
+    volumes:
+      - "./web/nginx/ui.conf:/etc/nginx/conf.d/ui.conf"
+    build:
+      context: web
+    ports:
+      - "8080:8080"
+    environment:
+      PUBLIC_API_URL: ""
 
 volumes:
   postgres:
