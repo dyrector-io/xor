@@ -4,19 +4,19 @@
 Hello! 👋
 <br />
 
-We're Levente and Nandor,  as we were brainstorming about our company's value proposition, we checked out some CNCF projects.  Levente started asking questions to see if others are able to guess. Where the fun began... so we decided to convert it into a super simple online quiz.
+We're Levente and Nandor. As we were brainstorming to find our company's value proposition, we checked out some CNCF projects. Levente started asking questions to see if others are able to guess. This where the fun began... So we decided to convert it into a super simple quiz!
 <br />
-Every day you get the value propositions of 5 projects. You have 3 attempts per project, and 2 hints for each of them.
+Every day you get the value propositions of 5 CNCF projects and you have to guess what the projects are! You have three attempts per project, and can get two hints should you need it.
 <br />
-You can get 4 types of results depending on how many hints you use:
+Depending how many hints you use, you <TBD what happens here?>:
 🟢 - You got the project right without any hints.
 🟡 - You got the project right using 1 hint.
 🟠 - You got the project right using 2 hints.
 🔴 - You didn't get the project right.
+⚪ - Unanswered questions.
 <br />
-Your data is stored client-side (browser local storage). More details [here](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).
-If you'd like us to create similar games, drop us an email at [hello@dyrector.io](mailto:hello@dyrector.io), or join us on [Discord](https://discord.gg/pZWbd4fxga).
-<br />`;
+Your data is stored client-side (browser local storage). More details [here](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage). The quiz is reset every noon (UTC).
+`;
 </script>
 
 <div class="">
@@ -28,5 +28,6 @@ If you'd like us to create similar games, drop us an email at [hello@dyrector.io
 				breaks: true
 			}}
 		/>
+		<p class="mt-4">contact: <a class="text-emerald-300" href="mailto:hello@dyrector.io" target="_blank">hello@dyrector.io</a> / repository:  <a class="text-emerald-300"  href="https://github.com/dyrector-io/xor/">dyrector-io/xor</a></p>
 	</div>
 </div>
