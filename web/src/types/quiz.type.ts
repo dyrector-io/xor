@@ -9,5 +9,6 @@ export type QuizItem = {
 };
 
 export type QuizResponse = {
-	result: Array<QuizItem>;
+	List: Array<QuizItem>;
+	Date: string;
 };

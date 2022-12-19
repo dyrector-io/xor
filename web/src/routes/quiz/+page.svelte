@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { onMount, onDestroy } from 'svelte';
+	import { onMount } from 'svelte';
 	import { PUBLIC_API_PATH } from '$env/static/public';
 
 	// Store
@@ -10,9 +10,9 @@
 	// Components
 	import Question from '../../components/Question.svelte';
 	import Modal from '../../components/Modal.svelte';
-	import type { QuizItem } from 'src/types/quiz.type';
+	import type { QuizResponse } from 'src/types/quiz.type';
 
-	let dailyQuestions: Array<QuizItem> = [];
+	let quiz: QuizResponse
 	let endOfTheQuiz = false;
 	let todayDone = false;
 
@@ -23,8 +23,8 @@
 			endOfTheQuiz = true;
 			todayDone = true;
 
-			const todayDate = new Date().toISOString().slice(0, 10);
-			resultStore.set([...$resultStore, { date: todayDate, points: $score }]);
+			
+			resultStore.set([...$resultStore, { date: quiz.Date, points: $score }]);
 		}
 	}
 
@@ -33,7 +33,7 @@
 	}
 
 	onMount(async () => {
-		dailyQuestions = await fetch(`${PUBLIC_API_PATH}/quiz`)
+		quiz = await fetch(`${PUBLIC_API_PATH}/quiz`)
 			.then((resp) => resp.json())
 			.catch((err) => console.log(err.message));
 
@@ -53,7 +53,7 @@
 	</div>
 {:else}
 	<div>
-		{#each dailyQuestions as question, index}
+		{#each quiz.List as question, index}
 			{#if index === $questionNumber}
 				<Question {nextQuestion} {question} {index} />
 			{/if}

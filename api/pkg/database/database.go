@@ -17,7 +17,11 @@ import (
 	_ "github.com/proullon/ramsql/driver" // ramsql
 )
 
-const SimpleDateFormat = "2006-01-02"
+const (
+	SimpleDateFormat        = "2006-01-02"
+	DBconnectAttempt        = 3
+	DBconnectBackoffSeconds = 10
+)
 
 type Pick struct {
 	gorm.Model
@@ -143,9 +147,15 @@ func connect(cfg *config.AppConfig) *gorm.DB {
 
 		return db
 	}
-	db, err := gorm.Open(postgres.Open(cfg.DSN), &gorm.Config{})
-	if err != nil {
-		log.Fatal().Msgf("sql.Open: %s\n", err)
+	for i := 0; i < DBconnectAttempt; i++ {
+		db, err := gorm.Open(postgres.Open(cfg.DSN), &gorm.Config{})
+		if err != nil {
+			log.Error().Err(err).Msgf("sql error, backoff %d %d/%d\n", DBconnectBackoffSeconds, i+1, DBconnectAttempt)
+			time.Sleep(DBconnectBackoffSeconds * time.Second)
+		} else {
+			return db
+		}
 	}
-	return db
+	log.Fatal().Msg("db connect unreachable code")
+	return nil
 }
