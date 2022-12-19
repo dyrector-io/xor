@@ -14,6 +14,8 @@ services:
       - "5432:5432"
     restart: unless-stopped
   api:
+    depends_on:
+      - "postgres"
     container_name: xor-api
     image: github.com/dyrector-io/xor/api:v1
     build:

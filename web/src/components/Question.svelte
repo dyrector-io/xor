@@ -1,6 +1,6 @@
 <script lang="ts">
 	// @ts-nocheck
-	import { score } from '../lib/score';
+	import { score } from '../lib/store';
 	import Button from './Button.svelte';
 	import FuzzySet from 'fuzzyset.js';
 	import type { QuizItem } from 'src/types/quiz.type';
@@ -62,7 +62,8 @@
 	{guessNumber}/3 <span class="text-amber-300">Hints:</span>
 	{hintNumber}/2
 	<p><span>Logo:</span></p>
-	<img class="w-2/12 blur py-4" src={question.Logo} draggable="false" />
+	<img class="bg-white w-2/12 blur-lg mt-4 mb-8" src={question.Logo} draggable="false" />
+
 
 	<p><span>GitHub:</span> {question.GithubDescription}</p>
 	<p><span>Crunchbase:</span> {question.CrunchbaseDescription}</p>

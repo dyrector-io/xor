@@ -2,12 +2,8 @@
 	import { onMount, onDestroy } from 'svelte';
 	import { PUBLIC_API_PATH } from '$env/static/public';
 
-
-	export const load: PageServerLoad = () => {
-		console.log(PUBLIC_API_PATH) // public
-	}
 	// Store
-	import { score } from '../../lib/score';
+	import { score, questionNumber } from '../../lib/store';
 	import { resultStore } from '../../lib/results';
 	import { get } from 'svelte/store'
 
@@ -15,26 +11,19 @@
 	import Question from '../../components/Question.svelte';
 	import Modal from '../../components/Modal.svelte';
 	import type { QuizItem } from 'src/types/quiz.type';
-	import type { PageServerLoad } from './$types';
-
 
 	let dailyQuestions: Array<QuizItem> = []
-	let activeQuestion = 0;
 	let endOfTheQuiz = false;
 	let todayDone = false;
-	let scorePoints: string = "";
+	let scorePoints = "";
 
 	function nextQuestion() {
-		activeQuestion++;
+		$questionNumber++;
 	}
 
 	function closeModal() {
 		endOfTheQuiz = false;
 	}
-
-	onDestroy(() => {
-		$score.splice(0,5)
-	});
 
 	onMount(async () => {
 		console.log("env:", PUBLIC_API_PATH)
@@ -52,7 +41,11 @@
 		}
 	});
 
-	$: if (activeQuestion === 5) {
+	// onDestroy(() => {
+	// 	$score.splice(0,5)
+	// });
+
+	$: if ($questionNumber === 5) {
 		endOfTheQuiz = true;
 		todayDone = true;
 		scorePoints = $score.join('');
@@ -72,7 +65,7 @@
 {:else}
 	<div>
 		{#each dailyQuestions as question, index}
-			{#if index === activeQuestion}
+			{#if index === $questionNumber}
 				<Question {nextQuestion} {question} {index} />
 			{/if}
 		{/each}

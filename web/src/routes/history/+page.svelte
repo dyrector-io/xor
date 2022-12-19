@@ -3,7 +3,6 @@
 	import { onMount } from 'svelte';
 	import { PUBLIC_API_PATH } from '$env/static/public';
 
-	
 	let history: Array<HistoryItem> = []
 
 	onMount(async () => {
@@ -15,6 +14,7 @@
 
 <div class="">
 	<h1 class="text-2xl pb-8">History</h1>
+	<p>Take a look at previously included projects.</p>
 	<div>
 		{#each history as item}
 			<li class="list-none">{item.Date}: {item.Projects}</li>
