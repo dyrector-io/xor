@@ -1,0 +1,7 @@
+node_modules
+.eslint*
+.prettier
+.git*
+public
+.svelte-kit
+build

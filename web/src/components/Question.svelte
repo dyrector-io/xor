@@ -3,8 +3,9 @@
 	import { score } from '../lib/score';
 	import Button from './Button.svelte';
 	import FuzzySet from 'fuzzyset.js';
+	import type { QuizItem } from 'src/types/quiz.type';
 
-	export let question: Array<QuizItem>;
+	export let question: QuizItem;
 	export let nextQuestion;
 	export let index;
 

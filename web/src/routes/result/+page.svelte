@@ -1,13 +1,24 @@
 <script lang="ts">
-	import { results } from '../../lib/results';
+	import type { ResultItem } from 'src/types/result.type';
+	import { onMount } from 'svelte';
+	import { get } from 'svelte/store';
+	import { resultStore } from '../../lib/results';
 
-	const resultsHistory = $results;
+	let resultsHistory:Array<ResultItem> = get(resultStore)
+
+	onMount(() => {
+		resultStore.update(item => {
+			resultsHistory = item
+			return resultsHistory
+		})
+
+	})
 </script>
 
 <div class="">
 	<h1 class="text-2xl pb-8">Results</h1>
 
-	{#each resultsHistory as result, i}
-		<li class="list-none">{JSON.stringify(result.date)}: {JSON.stringify(result.points)}</li>
+	{#each resultsHistory as result}
+		<li class="list-none">{result.date}: {result.points.join("")}</li>
 	{/each}
 </div>

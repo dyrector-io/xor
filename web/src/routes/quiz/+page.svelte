@@ -1,17 +1,24 @@
 <script lang="ts">
 	import { onMount, onDestroy } from 'svelte';
+	import { PUBLIC_API_PATH } from '$env/static/public';
 
+
+	export const load: PageServerLoad = () => {
+		console.log(PUBLIC_API_PATH) // public
+	}
 	// Store
 	import { score } from '../../lib/score';
-	import { results } from '../../lib/results';
+	import { resultStore } from '../../lib/results';
+	import { get } from 'svelte/store'
 
 	// Components
 	import Question from '../../components/Question.svelte';
 	import Modal from '../../components/Modal.svelte';
-	import type { QuizResponse } from 'src/types/quiz.type';
+	import type { QuizItem } from 'src/types/quiz.type';
+	import type { PageServerLoad } from './$types';
 
-	export let data: QuizResponse;
-	const dailyQuestions = data.result;
+
+	let dailyQuestions: Array<QuizItem> = []
 	let activeQuestion = 0;
 	let endOfTheQuiz = false;
 	let todayDone = false;
@@ -30,7 +37,13 @@
 	});
 
 	onMount(async () => {
-		const filledForToday = $results.find(
+		console.log("env:", PUBLIC_API_PATH)
+		dailyQuestions = await fetch(`${PUBLIC_API_PATH}/quiz`)
+		.then((resp) => resp.json())
+		.catch((err) => console.log(err.message));
+
+		const res = get(resultStore)
+		const filledForToday = res.find(
 			(x) => x['date'] === new Date().toISOString().slice(0, 10)
 		);
 
@@ -46,9 +59,8 @@
 
 		const todayDate = new Date().toISOString().slice(0, 10);
 
-		let temporary: [] = $results;
-		temporary.push({ date: todayDate, points: $score });
-		results.set(temporary);
+		const earlierResults = get(resultStore)
+		resultStore.set([...earlierResults, { date: todayDate, points: $score }])
 	}
 </script>
 
