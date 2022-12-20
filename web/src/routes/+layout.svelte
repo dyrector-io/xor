@@ -20,7 +20,7 @@
 	</main>
 
 	<footer class="text-center text-sm mt-auto h-8">
-		deployed & hosted using<a class="text-emerald-300" href="https://dyrector.io" target="_blank">dyrector.io</a>
+		deployed & hosted using <a class="text-emerald-300" href="https://dyrector.io" target="_blank">dyrector.io</a>
 	</footer>
 </div>
 
