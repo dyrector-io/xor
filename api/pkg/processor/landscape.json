@@ -2446,7 +2446,7 @@
     "Category": "App Definition and Development",
     "Subcategory": "Continuous Integration \u0026 Delivery",
     "GithubStars": 6648,
-    "GithubDescription": "Main repository for GoCD - Continuous Delivery server",
+    "GithubDescription": "Main repository for ... - Continuous Delivery server",
     "GithubContributorsCount": 175
   },
   {
@@ -2456,7 +2456,7 @@
     "Category": "App Definition and Development",
     "Subcategory": "Continuous Integration \u0026 Delivery",
     "GithubStars": 19969,
-    "GithubDescription": "Jenkins automation server",
+    "GithubDescription": "... automation server",
     "GithubContributorsCount": 1054
   },
   {
@@ -2466,7 +2466,7 @@
     "Category": "App Definition and Development",
     "Subcategory": "Continuous Integration \u0026 Delivery",
     "GithubStars": 4297,
-    "GithubDescription": "Jenkins X provides automated CI+CD for Kubernetes with Preview Environments on Pull Requests using Cloud Native pipelines from Tekton",
+    "GithubDescription": "... provides automated CI+CD for Kubernetes with Preview Environments on Pull Requests using Cloud Native pipelines from Tekton",
     "GithubContributorsCount": 229
   },
   {
@@ -2476,7 +2476,7 @@
     "Category": "App Definition and Development",
     "Subcategory": "Continuous Integration \u0026 Delivery",
     "GithubStars": 18774,
-    "GithubDescription": "A modern load testing tool, using Go and JavaScript - https://k6.io",
+    "GithubDescription": "A modern load testing tool, using Go and JavaScript",
     "GithubContributorsCount": 150
   },
   {
@@ -2496,7 +2496,7 @@
     "Category": "App Definition and Development",
     "Subcategory": "Continuous Integration \u0026 Delivery",
     "GithubStars": 1571,
-    "GithubDescription": "Cloud-native application life-cycle orchestration. Keptn automates your SLO-driven multi-stage delivery and operations \u0026 remediation of your applications.",
+    "GithubDescription": "Cloud-native application life-cycle orchestration. ... automates your SLO-driven multi-stage delivery and operations \u0026 remediation of your applications.",
     "GithubContributorsCount": 116
   },
   {
@@ -2516,7 +2516,7 @@
     "Category": "App Definition and Development",
     "Subcategory": "Continuous Integration \u0026 Delivery",
     "GithubStars": 8734,
-    "GithubDescription": "Spinnaker is an open source, multi-cloud continuous delivery platform for releasing software changes with high velocity and confidence.",
+    "GithubDescription": "... is an open source, multi-cloud continuous delivery platform for releasing software changes with high velocity and confidence.",
     "GithubContributorsCount": 129
   },
   {
@@ -2546,28 +2546,8 @@
     "Category": "App Definition and Development",
     "Subcategory": "Continuous Integration \u0026 Delivery",
     "GithubStars": 1838,
-    "GithubDescription": "Woodpecker is a community fork of the Drone CI system.",
+    "GithubDescription": "... is a community fork of the Drone CI system.",
     "GithubContributorsCount": 378
-  },
-  {
-    "Name": "Amazon Elastic Kubernetes Service Distro (Amazon EKS-D)",
-    "Logo": "https://landscape.cncf.io/logos/amazon-elastic-kubernetes-service-distro-amazon-eks-d.svg",
-    "CrunchbaseDescription": "Amazon Web Services provides information technology infrastructure services to businesses in the form of web services.",
-    "Category": "Platform",
-    "Subcategory": "Certified Kubernetes - Distribution",
-    "GithubStars": 1194,
-    "GithubDescription": "Amazon EKS Distro (EKS-D) is a Kubernetes distribution based on and used by Amazon Elastic Kubernetes Service (EKS) to create reliable and secure Kubernetes clusters.",
-    "GithubContributorsCount": 37
-  },
-  {
-    "Name": "Azure (AKS) Engine",
-    "Logo": "https://landscape.cncf.io/logos/azure-aks-engine.svg",
-    "CrunchbaseDescription": "Microsoft is a software corporation that develops, manufactures, licenses, supports, and sells a range of software products and services.",
-    "Category": "Platform",
-    "Subcategory": "Certified Kubernetes - Distribution",
-    "GithubStars": 1006,
-    "GithubDescription": "AKS Engine: legacy tool for Kubernetes on Azure (see status)",
-    "GithubContributorsCount": 361
   },
   {
     "Name": "k3s",
@@ -2596,7 +2576,7 @@
     "Category": "Platform",
     "Subcategory": "Certified Kubernetes - Distribution",
     "GithubStars": 7007,
-    "GithubDescription": "MicroK8s is a small, fast, single-package Kubernetes for developers, IoT and edge.",
+    "GithubDescription": "... is a small, fast, single-package Kubernetes for developers, IoT and edge.",
     "GithubContributorsCount": 146
   },
   {
@@ -2612,7 +2592,7 @@
   {
     "Name": "Typhoon",
     "Logo": "https://landscape.cncf.io/logos/typhoon.svg",
-    "CrunchbaseDescription": "Typhoon is a minimal and free Kubernetes distribution.",
+    "CrunchbaseDescription": "... is a minimal and free Kubernetes distribution.",
     "Category": "Platform",
     "Subcategory": "Certified Kubernetes - Distribution",
     "GithubStars": 1745,
@@ -2626,18 +2606,8 @@
     "Category": "Platform",
     "Subcategory": "Certified Kubernetes - Distribution",
     "GithubStars": 2202,
-    "GithubDescription": "vcluster - Create fully functional virtual Kubernetes clusters - Each vcluster runs inside a namespace of the underlying k8s cluster. It's cheaper than creating separate full-blown clusters and it offers better multi-tenancy and isolation than regular namespaces.",
+    "GithubDescription": "... - Create fully functional virtual Kubernetes clusters - Each ... runs inside a namespace of the underlying k8s cluster. It's cheaper than creating separate full-blown clusters and it offers better multi-tenancy and isolation than regular namespaces.",
     "GithubContributorsCount": 62
-  },
-  {
-    "Name": "Amazon Elastic Kubernetes Service Anywhere (Amazon EKS Anywhere)",
-    "Logo": "https://landscape.cncf.io/logos/amazon-elastic-kubernetes-service-anywhere-amazon-eks-anywhere.svg",
-    "CrunchbaseDescription": "Amazon Web Services provides information technology infrastructure services to businesses in the form of web services.",
-    "Category": "Platform",
-    "Subcategory": "Certified Kubernetes - Installer",
-    "GithubStars": 1675,
-    "GithubDescription": "Run Amazon EKS on your own infrastructure 🚀",
-    "GithubContributorsCount": 70
   },
   {
     "Name": "Gardener",
@@ -2666,7 +2636,7 @@
     "Category": "Platform",
     "Subcategory": "Certified Kubernetes - Installer",
     "GithubStars": 14536,
-    "GithubDescription": "Kubernetes Operations (kOps) - Production Grade k8s Installation, Upgrades and Management",
+    "GithubDescription": "Kubernetes Operations (...) - Production Grade k8s Installation, Upgrades and Management",
     "GithubContributorsCount": 941
   },
   {
@@ -2690,23 +2660,13 @@
     "GithubContributorsCount": 80
   },
   {
-    "Name": "KubeOperator",
-    "Logo": "https://landscape.cncf.io/logos/kube-operator.svg",
-    "CrunchbaseDescription": "FIT2CLOUD, is a leading Multi-Cloud Management Platform provider in China.",
-    "Category": "Platform",
-    "Subcategory": "Certified Kubernetes - Installer",
-    "GithubStars": 4513,
-    "GithubDescription": "KubeOperator 是一个开源的轻量级 Kubernetes 发行版，专注于帮助企业规划、部署和运营生产级别的 K8s 集群。",
-    "GithubContributorsCount": 27
-  },
-  {
     "Name": "Kubermatic KubeOne",
     "Logo": "https://landscape.cncf.io/logos/kubermatic-kube-one.svg",
-    "CrunchbaseDescription": "Kubermatic empowers organizations worldwide to automate their Kubernetes and cloud native operations across multi-cloud, edge and on-prem.",
+    "CrunchbaseDescription": "... empowers organizations worldwide to automate their Kubernetes and cloud native operations across multi-cloud, edge and on-prem.",
     "Category": "Platform",
     "Subcategory": "Certified Kubernetes - Installer",
     "GithubStars": 1072,
-    "GithubDescription": "Kubermatic KubeOne automate cluster operations on all your cloud, on-prem, edge, and IoT environments.  ",
+    "GithubDescription": "... automate cluster operations on all your cloud, on-prem, edge, and IoT environments.  ",
     "GithubContributorsCount": 68
   },
   {
@@ -2730,23 +2690,13 @@
     "GithubContributorsCount": 834
   },
   {
-    "Name": "Rancher Kubernetes Engine (RKE)",
-    "Logo": "https://landscape.cncf.io/logos/rancher-kubernetes-engine-rke.svg",
-    "CrunchbaseDescription": "SUSE provides reliable and interoperable Linux and cloud infrastructure solutions that give enterprises greater control and flexibility.",
-    "Category": "Platform",
-    "Subcategory": "Certified Kubernetes - Installer",
-    "GithubStars": 2860,
-    "GithubDescription": "Rancher Kubernetes Engine (RKE), an extremely simple, lightning fast Kubernetes distribution that runs entirely within containers.",
-    "GithubContributorsCount": 113
-  },
-  {
     "Name": "Sidero Talos Linux",
     "Logo": "https://landscape.cncf.io/logos/sidero-talos-linux.svg",
-    "CrunchbaseDescription": "Sidero makes Talos OS, a modern operating system designed for Kubernetes, and Sidero Metal, which automates Kubernetes on bare metal.",
+    "CrunchbaseDescription": "... makes ... OS, a modern operating system designed for Kubernetes, and ... Metal, which automates Kubernetes on bare metal.",
     "Category": "Platform",
     "Subcategory": "Certified Kubernetes - Installer",
     "GithubStars": 3472,
-    "GithubDescription": "Talos Linux is a modern Linux distribution built for Kubernetes.",
+    "GithubDescription": "... is a modern Linux distribution built for Kubernetes.",
     "GithubContributorsCount": 110
   },
   {
@@ -2760,23 +2710,13 @@
     "GithubContributorsCount": 1038
   },
   {
-    "Name": "Cloud Foundry Application Runtime",
-    "Logo": "https://landscape.cncf.io/logos/cloud-foundry-application-runtime.svg",
-    "CrunchbaseDescription": "Cloud Foundry Foundation is an Independent non-profit organization that supports the Cloud Foundry collection of open source projects.",
-    "Category": "Platform",
-    "Subcategory": "PaaS/Container Service",
-    "GithubStars": 1680,
-    "GithubDescription": "The official command line client for Cloud Foundry",
-    "GithubContributorsCount": 501
-  },
-  {
     "Name": "JHipster",
     "Logo": "https://landscape.cncf.io/logos/j-hipster.svg",
     "CrunchbaseDescription": "PaaS/Container Service",
     "Category": "Platform",
     "Subcategory": "PaaS/Container Service",
     "GithubStars": 20142,
-    "GithubDescription": "JHipster is a development platform to quickly generate, develop, \u0026 deploy modern web applications \u0026 microservice architectures.",
+    "GithubDescription": "... is a development platform to quickly generate, develop, \u0026 deploy modern web applications \u0026 microservice architectures.",
     "GithubContributorsCount": 916
   },
   {
@@ -2810,19 +2750,9 @@
     "GithubContributorsCount": 25
   },
   {
-    "Name": "PaaSTA",
-    "Logo": "https://landscape.cncf.io/logos/paa-sta.svg",
-    "CrunchbaseDescription": "Yelp operates an online platform that connects people with local businesses.",
-    "Category": "Platform",
-    "Subcategory": "PaaS/Container Service",
-    "GithubStars": 1632,
-    "GithubDescription": "An open, distributed platform as a service",
-    "GithubContributorsCount": 223
-  },
-  {
     "Name": "Portainer",
     "Logo": "https://landscape.cncf.io/logos/portainer.svg",
-    "CrunchbaseDescription": "Portainer is a universal container management platform for Kubernetes, Docker \u0026 Nomad that helps improve container adoption and management.",
+    "CrunchbaseDescription": "... is a universal container management platform for Kubernetes, Docker \u0026 Nomad that helps improve container adoption and management.",
     "Category": "Platform",
     "Subcategory": "PaaS/Container Service",
     "GithubStars": 23824,
@@ -2840,16 +2770,6 @@
     "GithubContributorsCount": 43
   },
   {
-    "Name": "Sogou C++ Workflow",
-    "Logo": "https://landscape.cncf.io/logos/sogou-c-workflow.svg",
-    "CrunchbaseDescription": "Sogou.com is a Chinese search engine that enables users to search text, images, music, and maps.",
-    "Category": "Platform",
-    "Subcategory": "PaaS/Container Service",
-    "GithubStars": 9601,
-    "GithubDescription": "C++ Parallel Computing and Asynchronous Networking Engine",
-    "GithubContributorsCount": 30
-  },
-  {
     "Name": "Tsuru",
     "Logo": "https://landscape.cncf.io/logos/tsuru.svg",
     "CrunchbaseDescription": "PaaS/Container Service",
@@ -2860,44 +2780,14 @@
     "GithubContributorsCount": 138
   },
   {
-    "Name": "Hasura GraphQL Engine",
+    "Name": "Hasura",
     "Logo": "https://landscape.cncf.io/logos/hasura-graph-ql-engine.svg",
-    "CrunchbaseDescription": "Hasura is a software technology company that provides developer-focused tooling products.",
+    "CrunchbaseDescription": "... is a software technology company that provides developer-focused tooling products.",
     "Category": "Serverless",
     "Subcategory": "Tools",
     "GithubStars": 28793,
     "GithubDescription": "Blazing fast, instant realtime GraphQL APIs on your DB with fine grained access control, also trigger webhooks on database events.",
     "GithubContributorsCount": 397
-  },
-  {
-    "Name": "Node Lambda",
-    "Logo": "https://landscape.cncf.io/logos/node-lambda.svg",
-    "CrunchbaseDescription": "App Definition \u0026 Development",
-    "Category": "Serverless",
-    "Subcategory": "Tools",
-    "GithubStars": 1311,
-    "GithubDescription": "Command line tool to locally run and deploy your node.js application to Amazon Lambda",
-    "GithubContributorsCount": 76
-  },
-  {
-    "Name": "Serverless Devs",
-    "Logo": "https://landscape.cncf.io/logos/serverless-devs.svg",
-    "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-    "Category": "Serverless",
-    "Subcategory": "Tools",
-    "GithubStars": 1291,
-    "GithubDescription": ":fire::fire::fire: Serverless Devs developer tool ( Serverless Devs 开发者工具 )",
-    "GithubContributorsCount": 38
-  },
-  {
-    "Name": "AWS Server Application Model (SAM)",
-    "Logo": "https://landscape.cncf.io/logos/aws-server-application-model-sam.svg",
-    "CrunchbaseDescription": "Amazon Web Services provides information technology infrastructure services to businesses in the form of web services.",
-    "Category": "Serverless",
-    "Subcategory": "Framework",
-    "GithubStars": 8842,
-    "GithubDescription": "The AWS Serverless Application Model (AWS SAM) transform is a AWS CloudFormation macro that transforms SAM templates into CloudFormation templates.",
-    "GithubContributorsCount": 254
   },
   {
     "Name": "Chalice",
@@ -2916,17 +2806,17 @@
     "Category": "Serverless",
     "Subcategory": "Framework",
     "GithubStars": 19984,
-    "GithubDescription": "Dapr is a portable, event-driven, runtime for building distributed applications across cloud and edge.",
+    "GithubDescription": "... is a portable, event-driven, runtime for building distributed applications across cloud and edge.",
     "GithubContributorsCount": 207
   },
   {
     "Name": "Encore",
     "Logo": "https://landscape.cncf.io/logos/encore.svg",
-    "CrunchbaseDescription": "Encore is the end-to-end backend development platform that automatically provisions your cloud infrastructure, based on your business logic.",
+    "CrunchbaseDescription": "... is the end-to-end backend development platform that automatically provisions your cloud infrastructure, based on your business logic.",
     "Category": "Serverless",
     "Subcategory": "Framework",
     "GithubStars": 3417,
-    "GithubDescription": "Encore is the Backend Development Platform that lets you escape cloud complexity by logically declaring infrastructure needs directly in application code.",
+    "GithubDescription": "... is the Backend Development Platform that lets you escape cloud complexity by logically declaring infrastructure needs directly in application code.",
     "GithubContributorsCount": 25
   },
   {
@@ -2936,7 +2826,7 @@
     "Category": "Serverless",
     "Subcategory": "Framework",
     "GithubStars": 1112,
-    "GithubDescription": "EventMesh is a dynamic event-driven application runtime used to decouple the application and backend middleware layer, which supports a wide range of use cases that encompass complex multi-cloud, widely distributed topologies using diverse technology stacks.",
+    "GithubDescription": "... is a dynamic event-driven application runtime used to decouple the application and backend middleware layer, which supports a wide range of use cases that encompass complex multi-cloud, widely distributed topologies using diverse technology stacks.",
     "GithubContributorsCount": 254
   },
   {
@@ -2946,7 +2836,7 @@
     "Category": "Serverless",
     "Subcategory": "Framework",
     "GithubStars": 2154,
-    "GithubDescription": "Project Flogo is an open source ecosystem of opinionated  event-driven capabilities to simplify building efficient \u0026 modern serverless functions, microservices \u0026 edge apps.",
+    "GithubDescription": "Project ... is an open source ecosystem of opinionated  event-driven capabilities to simplify building efficient \u0026 modern serverless functions, microservices \u0026 edge apps.",
     "GithubContributorsCount": 49
   },
   {
@@ -2966,7 +2856,7 @@
     "Category": "Serverless",
     "Subcategory": "Framework",
     "GithubStars": 43856,
-    "GithubDescription": "⚡ Serverless Framework – Build web, mobile and IoT applications with serverless architectures using AWS Lambda, Azure Functions, Google CloudFunctions \u0026 more! – ",
+    "GithubDescription": "⚡ ... Framework – Build web, mobile and IoT applications with serverless architectures using AWS Lambda, Azure Functions, Google CloudFunctions \u0026 more! – ",
     "GithubContributorsCount": 1161
   },
   {
@@ -2976,7 +2866,7 @@
     "Category": "Serverless",
     "Subcategory": "Framework",
     "GithubStars": 10001,
-    "GithubDescription": "💥 SST makes it easy to build full-stack serverless apps.",
+    "GithubDescription": "💥 ... makes it easy to build full-stack serverless apps.",
     "GithubContributorsCount": 109
   },
   {
@@ -2990,33 +2880,23 @@
     "GithubContributorsCount": 71
   },
   {
-    "Name": "Azure Functions",
-    "Logo": "https://landscape.cncf.io/logos/azure-functions.svg",
-    "CrunchbaseDescription": "Microsoft is a software corporation that develops, manufactures, licenses, supports, and sells a range of software products and services.",
-    "Category": "Serverless",
-    "Subcategory": "Hosted Platform",
-    "GithubStars": 1777,
-    "GithubDescription": "The host/runtime that powers Azure Functions",
-    "GithubContributorsCount": 117
-  },
-  {
     "Name": "Apache OpenWhisk",
     "Logo": "https://landscape.cncf.io/logos/apache-open-whisk.svg",
     "CrunchbaseDescription": "Apache Software Foundation provides organizational, legal and financial support for Apache open-source software projects.",
     "Category": "Serverless",
     "Subcategory": "Installable Platform",
     "GithubStars": 5865,
-    "GithubDescription": "Apache OpenWhisk is an open source serverless cloud platform",
+    "GithubDescription": "... is an open source serverless cloud platform",
     "GithubContributorsCount": 227
   },
   {
     "Name": "AppScale",
     "Logo": "https://landscape.cncf.io/logos/app-scale.svg",
-    "CrunchbaseDescription": "AppScale is hybrid cloud infrastructure software that emulates the core AWS APIs.",
+    "CrunchbaseDescription": "... is hybrid cloud infrastructure software that emulates the core AWS APIs.",
     "Category": "Serverless",
     "Subcategory": "Installable Platform",
     "GithubStars": 2421,
-    "GithubDescription": "AppScale is an easy-to-manage serverless platform for building and running scalable web and mobile applications on any infrastructure.",
+    "GithubDescription": "... is an easy-to-manage serverless platform for building and running scalable web and mobile applications on any infrastructure.",
     "GithubContributorsCount": 69
   },
   {
@@ -3036,7 +2916,7 @@
     "Category": "Serverless",
     "Subcategory": "Installable Platform",
     "GithubStars": 5743,
-    "GithubDescription": " KEDA is a Kubernetes-based Event Driven Autoscaling component. It provides event driven scale for any container running in Kubernetes ",
+    "GithubDescription": " ... is a Kubernetes-based Event Driven Autoscaling component. It provides event driven scale for any container running in Kubernetes ",
     "GithubContributorsCount": 238
   },
   {
@@ -3082,11 +2962,11 @@
   {
     "Name": "OpenFaaS",
     "Logo": "https://landscape.cncf.io/logos/open-faa-s.svg",
-    "CrunchbaseDescription": "OpenFaaS provides a platform for building serverless functions with containers, anywhere (in cloud, on Edge or IoT devices, on-prem DCs)",
+    "CrunchbaseDescription": "... provides a platform for building serverless functions with containers, anywhere (in cloud, on Edge or IoT devices, on-prem DCs)",
     "Category": "Serverless",
     "Subcategory": "Installable Platform",
     "GithubStars": 22421,
-    "GithubDescription": "OpenFaaS - Serverless Functions Made Simple",
+    "GithubDescription": "... - Serverless Functions Made Simple",
     "GithubContributorsCount": 180
   },
   {
@@ -3096,7 +2976,7 @@
     "Category": "Serverless",
     "Subcategory": "Installable Platform",
     "GithubStars": 4142,
-    "GithubDescription": "PipelineAI Kubeflow Distribution",
+    "GithubDescription": "... Kubeflow Distribution",
     "GithubContributorsCount": 6
   },
   {
@@ -3106,7 +2986,7 @@
     "Category": "Serverless",
     "Subcategory": "Installable Platform",
     "GithubStars": 3650,
-    "GithubDescription": "Virtual Kubelet is an open source Kubernetes kubelet implementation.",
+    "GithubDescription": "... is an open source Kubernetes kubelet implementation.",
     "GithubContributorsCount": 116
   },
   {
@@ -3116,7 +2996,7 @@
     "Category": "Observability and Analysis",
     "Subcategory": "Monitoring",
     "GithubStars": 11409,
-    "GithubDescription": ":tropical_fish: Beats - Lightweight shippers for Elasticsearch \u0026 Logstash ",
+    "GithubDescription": ":tropical_fish: ... - Lightweight shippers for Elasticsearch \u0026 Logstash ",
     "GithubContributorsCount": 728
   },
   {
@@ -3166,7 +3046,7 @@
     "Category": "Observability and Analysis",
     "Subcategory": "Monitoring",
     "GithubStars": 2666,
-    "GithubDescription": "Grafana Mimir provides horizontally scalable, highly available, multi-tenant, long-term storage for Prometheus.",
+    "GithubDescription": "... provides horizontally scalable, highly available, multi-tenant, long-term storage for Prometheus.",
     "GithubContributorsCount": 304
   },
   {
@@ -3196,13 +3076,13 @@
     "Category": "Observability and Analysis",
     "Subcategory": "Monitoring",
     "GithubStars": 2353,
-    "GithubDescription": "Hubble - Network, Service \u0026 Security Observability for Kubernetes using eBPF",
+    "GithubDescription": "... - Network, Service \u0026 Security Observability for Kubernetes using eBPF",
     "GithubContributorsCount": 36
   },
   {
     "Name": "Icinga",
     "Logo": "https://landscape.cncf.io/logos/icinga.svg",
-    "CrunchbaseDescription": "Icinga is a monitoring software project that began as a fork of Nagios.",
+    "CrunchbaseDescription": "... is a monitoring software project that began as a fork of Nagios.",
     "Category": "Observability and Analysis",
     "Subcategory": "Monitoring",
     "GithubStars": 1781,
@@ -3212,7 +3092,7 @@
   {
     "Name": "InfluxData",
     "Logo": "https://landscape.cncf.io/logos/influx-data.svg",
-    "CrunchbaseDescription": "InfluxData is the creator of InfluxDB, the open source time series database.",
+    "CrunchbaseDescription": "... is the creator of InfluxDB, the open source time series database.",
     "Category": "Observability and Analysis",
     "Subcategory": "Monitoring",
     "GithubStars": 24567,
@@ -3226,7 +3106,7 @@
     "Category": "Observability and Analysis",
     "Subcategory": "Monitoring",
     "GithubStars": 2994,
-    "GithubDescription": "Kiali project, observability for the Istio service mesh",
+    "GithubDescription": "... project, observability for the Istio service mesh",
     "GithubContributorsCount": 110
   },
   {
@@ -3246,7 +3126,7 @@
     "Category": "Observability and Analysis",
     "Subcategory": "Monitoring",
     "GithubStars": 2330,
-    "GithubDescription": "LinDB is a scalable, high performance, high availability distributed time series database.",
+    "GithubDescription": "... is a scalable, high performance, high availability distributed time series database.",
     "GithubContributorsCount": 23
   },
   {
@@ -3256,27 +3136,27 @@
     "Category": "Observability and Analysis",
     "Subcategory": "Monitoring",
     "GithubStars": 4310,
-    "GithubDescription": "M3 monorepo - Distributed TSDB, Aggregator and Query Engine, Prometheus Sidecar, Graphite Compatible, Metrics Platform",
+    "GithubDescription": "... monorepo - Distributed TSDB, Aggregator and Query Engine, Prometheus Sidecar, Graphite Compatible, Metrics Platform",
     "GithubContributorsCount": 113
   },
   {
     "Name": "Nagios",
     "Logo": "https://landscape.cncf.io/logos/nagios.svg",
-    "CrunchbaseDescription": "Nagios Enterprises offers monitoring and alerting solutions for servers, switches, applications, and services.",
+    "CrunchbaseDescription": "... Enterprises offers monitoring and alerting solutions for servers, switches, applications, and services.",
     "Category": "Observability and Analysis",
     "Subcategory": "Monitoring",
     "GithubStars": 1199,
-    "GithubDescription": "Nagios Core",
+    "GithubDescription": "... Core",
     "GithubContributorsCount": 83
   },
   {
     "Name": "Netdata",
     "Logo": "https://landscape.cncf.io/logos/netdata.svg",
-    "CrunchbaseDescription": "Netdata is an open-source, distributed, real-time, performance, and monitoring solution for systems and applications to help IT teams.",
+    "CrunchbaseDescription": "... is an open-source, distributed, real-time, performance, and monitoring solution for systems and applications to help IT teams.",
     "Category": "Observability and Analysis",
     "Subcategory": "Monitoring",
     "GithubStars": 61379,
-    "GithubDescription": "Real-time performance monitoring, done right! https://www.netdata.cloud",
+    "GithubDescription": "Real-time performance monitoring, done right!",
     "GithubContributorsCount": 561
   },
   {
@@ -3336,7 +3216,7 @@
     "Category": "Observability and Analysis",
     "Subcategory": "Monitoring",
     "GithubStars": 45835,
-    "GithubDescription": "The Prometheus monitoring system and time series database.",
+    "GithubDescription": "The ... monitoring system and time series database.",
     "GithubContributorsCount": 861
   },
   {
@@ -3346,7 +3226,7 @@
     "Category": "Observability and Analysis",
     "Subcategory": "Monitoring",
     "GithubStars": 1261,
-    "GithubDescription": "Promscale is a unified metric and trace observability backend for Prometheus, Jaeger and OpenTelemetry built on PostgreSQL and TimescaleDB.",
+    "GithubDescription": "... is a unified metric and trace observability backend for Prometheus, Jaeger and OpenTelemetry built on PostgreSQL and TimescaleDB.",
     "GithubContributorsCount": 72
   },
   {
@@ -3362,7 +3242,7 @@
   {
     "Name": "sysdig",
     "Logo": "https://landscape.cncf.io/logos/sysdig.svg",
-    "CrunchbaseDescription": "Sysdig is driving the standard for cloud and container security.",
+    "CrunchbaseDescription": "... is driving the standard for cloud and container security.",
     "Category": "Observability and Analysis",
     "Subcategory": "Monitoring",
     "GithubStars": 7098,
@@ -3406,7 +3286,7 @@
     "Category": "Observability and Analysis",
     "Subcategory": "Monitoring",
     "GithubStars": 7490,
-    "GithubDescription": "VictoriaMetrics: fast, cost-effective monitoring solution and time series database",
+    "GithubDescription": "...: fast, cost-effective monitoring solution and time series database",
     "GithubContributorsCount": 158
   },
   {
@@ -3422,7 +3302,7 @@
   {
     "Name": "Zabbix",
     "Logo": "https://landscape.cncf.io/logos/zabbix.svg",
-    "CrunchbaseDescription": "ZABBIX SIA is based in Riga, Latvia.",
+    "CrunchbaseDescription": "... SIA is based in Riga, Latvia.",
     "Category": "Observability and Analysis",
     "Subcategory": "Monitoring",
     "GithubStars": 2664,
@@ -3436,7 +3316,7 @@
     "Category": "Observability and Analysis",
     "Subcategory": "Logging",
     "GithubStars": 11653,
-    "GithubDescription": "Fluentd: Unified Logging Layer (project under CNCF)",
+    "GithubDescription": "...: Unified Logging Layer (project under CNCF)",
     "GithubContributorsCount": 254
   },
   {
@@ -3456,7 +3336,7 @@
     "Category": "Observability and Analysis",
     "Subcategory": "Logging",
     "GithubStars": 13176,
-    "GithubDescription": "Logstash - transport and process your logs, events, or other data",
+    "GithubDescription": "... - transport and process your logs, events, or other data",
     "GithubContributorsCount": 570
   },
   {
@@ -3470,23 +3350,13 @@
     "GithubContributorsCount": 1796
   },
   {
-    "Name": "Elastic APM",
-    "Logo": "https://landscape.cncf.io/logos/elastic-apm.svg",
-    "CrunchbaseDescription": "Elastic builds software to make data usable in real time and at scale for search, logging, security, and analytics use cases.",
-    "Category": "Observability and Analysis",
-    "Subcategory": "Tracing",
-    "GithubStars": 1055,
-    "GithubDescription": "APM Server",
-    "GithubContributorsCount": 96
-  },
-  {
     "Name": "Grafana Tempo",
     "Logo": "https://landscape.cncf.io/logos/grafana-tempo.svg",
     "CrunchbaseDescription": "Grafana Labs is an open source software platform built to support monitoring, visualization, and metric analytics.",
     "Category": "Observability and Analysis",
     "Subcategory": "Tracing",
     "GithubStars": 2586,
-    "GithubDescription": "Grafana Tempo is a high volume, minimal dependency distributed tracing backend.",
+    "GithubDescription": "... is a high volume, minimal dependency distributed tracing backend.",
     "GithubContributorsCount": 113
   },
   {
@@ -3496,18 +3366,8 @@
     "Category": "Observability and Analysis",
     "Subcategory": "Tracing",
     "GithubStars": 16803,
-    "GithubDescription": "CNCF Jaeger, a Distributed Tracing Platform",
+    "GithubDescription": "CNCF ..., a Distributed Tracing Platform",
     "GithubContributorsCount": 261
-  },
-  {
-    "Name": "OpenTracing",
-    "Logo": "https://landscape.cncf.io/logos/open-tracing.svg",
-    "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-    "Category": "Observability and Analysis",
-    "Subcategory": "Tracing",
-    "GithubStars": 3422,
-    "GithubDescription": "OpenTracing API for Go. 🛑 This library is DEPRECATED! https://github.com/opentracing/specification/issues/163",
-    "GithubContributorsCount": 54
   },
   {
     "Name": "Pinpoint",
@@ -3536,7 +3396,7 @@
     "Category": "Observability and Analysis",
     "Subcategory": "Tracing",
     "GithubStars": 1019,
-    "GithubDescription": "SOFATracer is a component for the distributed system call trace. And through a unified traceId logging the logs of various network calls in the invoking link. These logs can be used for quick discovery of faults, service governance, etc.",
+    "GithubDescription": "... is a component for the distributed system call trace. And through a unified traceId logging the logs of various network calls in the invoking link. These logs can be used for quick discovery of faults, service governance, etc.",
     "GithubContributorsCount": 21
   },
   {
@@ -3556,7 +3416,7 @@
     "Category": "Observability and Analysis",
     "Subcategory": "Tracing",
     "GithubStars": 15848,
-    "GithubDescription": "Zipkin is a distributed tracing system",
+    "GithubDescription": "... is a distributed tracing system",
     "GithubContributorsCount": 120
   },
   {
@@ -3570,33 +3430,23 @@
     "GithubContributorsCount": 159
   },
   {
-    "Name": "Chaos Toolkit",
-    "Logo": "https://landscape.cncf.io/logos/chaos-toolkit.svg",
-    "CrunchbaseDescription": "The Chaos Engineering Open Source Company",
-    "Category": "Observability and Analysis",
-    "Subcategory": "Chaos Engineering",
-    "GithubStars": 1638,
-    "GithubDescription": "Chaos Engineering Toolkit \u0026 Orchestration for Developers",
-    "GithubContributorsCount": 18
-  },
-  {
     "Name": "Chaosblade",
     "Logo": "https://landscape.cncf.io/logos/chaosblade.svg",
     "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
     "Category": "Observability and Analysis",
     "Subcategory": "Chaos Engineering",
     "GithubStars": 5089,
-    "GithubDescription": "An easy to use and powerful chaos engineering experiment toolkit.（阿里巴巴开源的一款简单易用、功能强大的混沌实验注入工具）",
+    "GithubDescription": "An easy to use and powerful chaos engineering experiment toolkit.",
     "GithubContributorsCount": 42
   },
   {
     "Name": "chaoskube",
     "Logo": "https://landscape.cncf.io/logos/chaoskube.svg",
-    "CrunchbaseDescription": "chaoskube periodically kills random pods in your Kubernetes cluster.",
+    "CrunchbaseDescription": "... periodically kills random pods in your Kubernetes cluster.",
     "Category": "Observability and Analysis",
     "Subcategory": "Chaos Engineering",
     "GithubStars": 1581,
-    "GithubDescription": "chaoskube periodically kills random pods in your Kubernetes cluster.",
+    "GithubDescription": "... periodically kills random pods in your Kubernetes cluster.",
     "GithubContributorsCount": 35
   },
   {
@@ -3606,7 +3456,7 @@
     "Category": "Observability and Analysis",
     "Subcategory": "Chaos Engineering",
     "GithubStars": 3414,
-    "GithubDescription": "Litmus helps  SREs and developers practice chaos engineering in a Cloud-native way. Chaos experiments are published at the ChaosHub  (https://hub.litmuschaos.io). Community notes is at https://hackmd.io/a4Zu_sH4TZGeih-xCimi3Q",
+    "GithubDescription": "... helps  SREs and developers practice chaos engineering in a Cloud-native way. Chaos experiments are published at the ChaosHub.",
     "GithubContributorsCount": 181
   },
   {
@@ -3626,13 +3476,13 @@
     "Category": "Observability and Analysis",
     "Subcategory": "Continuous Optimization",
     "GithubStars": 1056,
-    "GithubDescription": "Crane is a FinOps Platform for Cloud Resource Analytics and Economics in Kubernetes clusters. The goal is not only help user to manage cloud cost easier but also ensure the quality of applications.  https://gocrane.io/",
+    "GithubDescription": "... is a FinOps Platform for Cloud Resource Analytics and Economics in Kubernetes clusters. The goal is not only help user to manage cloud cost easier but also ensure the quality of applications.",
     "GithubContributorsCount": 48
   },
   {
     "Name": "Infracost",
     "Logo": "https://landscape.cncf.io/logos/infracost.svg",
-    "CrunchbaseDescription": "Infracost is a cloud cost estimator that is open source and fully focused on developers.",
+    "CrunchbaseDescription": "... is a cloud cost estimator that is open source and fully focused on developers.",
     "Category": "Observability and Analysis",
     "Subcategory": "Continuous Optimization",
     "GithubStars": 8329,
@@ -3642,7 +3492,7 @@
   {
     "Name": "Kubecost",
     "Logo": "https://landscape.cncf.io/logos/kubecost.svg",
-    "CrunchbaseDescription": "Kubecost provides real-time cost visibility and insights for teams using Kubernetes.",
+    "CrunchbaseDescription": "... provides real-time cost visibility and insights for teams using Kubernetes.",
     "Category": "Observability and Analysis",
     "Subcategory": "Continuous Optimization",
     "GithubStars": 3075,
@@ -3686,7 +3536,7 @@
     "Category": "Wasm",
     "Subcategory": "Runtime",
     "GithubStars": 20547,
-    "GithubDescription": "The official mirror of the V8 Git repository",
+    "GithubDescription": "... is Google's open source JavaScript engine.",
     "GithubContributorsCount": 973
   },
   {
@@ -3696,7 +3546,7 @@
     "Category": "Wasm",
     "Subcategory": "Runtime",
     "GithubStars": 3278,
-    "GithubDescription": "WebAssembly Micro Runtime (WAMR)",
+    "GithubDescription": "WebAssembly Micro Runtime",
     "GithubContributorsCount": 104
   },
   {
@@ -3716,13 +3566,13 @@
     "Category": "Wasm",
     "Subcategory": "Runtime",
     "GithubStars": 4803,
-    "GithubDescription": "WasmEdge is a lightweight, high-performance, and extensible WebAssembly runtime for cloud native, edge, and decentralized applications. It powers serverless apps, embedded functions, microservices, smart contracts, and IoT devices.",
+    "GithubDescription": "... is a lightweight, high-performance, and extensible WebAssembly runtime for cloud native, edge, and decentralized applications. It powers serverless apps, embedded functions, microservices, smart contracts, and IoT devices.",
     "GithubContributorsCount": 121
   },
   {
     "Name": "Wasmer",
     "Logo": "https://landscape.cncf.io/logos/wasmer.svg",
-    "CrunchbaseDescription": "Wasmer provides a way to execute WebAssembly files universally",
+    "CrunchbaseDescription": "... provides a way to execute WebAssembly files universally",
     "Category": "Wasm",
     "Subcategory": "Runtime",
     "GithubStars": 13885,
