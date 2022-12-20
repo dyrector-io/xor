@@ -5,30 +5,30 @@
 	// Store
 	import { score, questionNumber } from '../../lib/store';
 	import { resultStore } from '../../lib/results';
-	import { get } from 'svelte/store';
 
 	// Components
 	import Question from '../../components/Question.svelte';
 	import Modal from '../../components/Modal.svelte';
 	import type { QuizItem, QuizResponse } from 'src/types/quiz.type';
+	import type { ResultItem } from 'src/types/result.type';
 
 	let quiz: QuizResponse = {
-		Date: "",
-		List: new Array<QuizItem>
-	}
+		Date: '',
+		List: new Array<QuizItem>()
+	};
 	let endOfTheQuiz = false;
-	let todayDone = false;
+	let filledForToday = false;
 	let closed = false;
+	let todayResult: ResultItem | undefined;
 
 	function nextQuestion() {
 		$questionNumber++;
 
 		if ($questionNumber === 5) {
 			endOfTheQuiz = true;
-			todayDone = true;
+			filledForToday = true;
 
-			
-			resultStore.set([...$resultStore, { date: quiz.Date, points: $score }]);
+			$resultStore = [...$resultStore, { date: quiz.Date, points: $score }]
 		}
 	}
 
@@ -42,17 +42,15 @@
 			.then((resp) => resp.json())
 			.catch((err) => console.log(err.message));
 
-		const res = get(resultStore);
-		const filledForToday = res.find((e) => e['date'] === quiz.Date);
-
-		if (filledForToday) {
-			todayDone = true;
-		}
+		todayResult = $resultStore.find((e) => e['date'])
+		filledForToday = todayResult?.date === quiz.Date;
 	});
+
 </script>
 
 <h1 class="text-2xl pb-8">XOR Quiz</h1>
-{#if todayDone}
+
+{#if filledForToday}
 	<div class="py-4">
 		You are done with the today quiz. Check your results <a href="/result">here.</a>
 	</div>
@@ -66,6 +64,6 @@
 	</div>
 {/if}
 
-{#if quiz.Date && $resultStore.find((e) => e['date'] === quiz.Date) && !closed}
-	<Modal on:close={closeModal} />
+{#if quiz.Date && filledForToday && !closed}
+	<Modal on:close={closeModal} todayResult={todayResult} />
 {/if}

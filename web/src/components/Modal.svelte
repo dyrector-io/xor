@@ -2,9 +2,11 @@
 	import { fly, fade } from 'svelte/transition';
 	import { createEventDispatcher } from 'svelte';
 	import { score } from '$lib/store';
+	import { resultStore } from '../lib/results';
 	import Button from '../components/Button.svelte';
 
 	const dispatch = createEventDispatcher();
+	export let todayResult;
 
 	const copy = () => {
 		const text = document.getElementById('resultText').innerText;
@@ -19,8 +21,8 @@
 	<div class="bg-white p-8" transition:fly={{ y: -100 }}>
 		<h2>Proven your familiarity with the CNCF landscape, flex to others with your score.</h2>
 		<div class="my-8" id="resultText">
-			Today: {new Date().toISOString().slice(0, 10)} // I tried the CNCF #XORQuiz, my results:
-			{$score.join('')}
+			Today: {todayResult.date} // I tried the CNCF #XORQuiz, my results:
+			{todayResult.points.join('')}
 		</div>
 
 		<Button on:click={copy}>Copy</Button>
