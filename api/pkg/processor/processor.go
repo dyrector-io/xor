@@ -26,7 +26,7 @@ type CNCFRecord struct {
 	// Headquarters            string
 	// LatestTweetDate         string
 	// Description           string `csv:"Description"`
-	CrunchbaseDescription string `csv:"Crunchbase Description"`
+	CrunchbaseDescription string
 	// CrunchbaseHomepage      string
 	// CrunchbaseCity          string
 	// CrunchbaseRegion        string
@@ -37,19 +37,19 @@ type CNCFRecord struct {
 	// CrunchbaseKind          string
 	// CrunchbaseMinEmployees  string
 	// CrunchbaseMaxEmployees  string
-	Category    string `csv:"Category"`
+	Category    string
 	Subcategory string
 	// OSS                     string
 	// GithubRepo              string
-	GithubStars       int    `csv:"Github Stars"`
-	GithubDescription string `csv:"Github Description"`
+	GithubStars       int
+	GithubDescription string
 	// GithubLatestCommitDate  string
 	// GithubLatestCommitLink  string
 	// GithubReleaseDate       string
 	// GithubReleaseLink       string
 	// GithubStartCommitDate   string
 	// GithubStartCommitLink   string
-	// GithubContributorsCount string
+	GithubContributorsCount int
 	// GithubContributorsLink  string
 	// Accepted                string
 	// Incubation              string
@@ -79,12 +79,12 @@ func (c *CNCFRecord) Render(w http.ResponseWriter, r *http.Request) error {
 
 func ReadJSONData() CNCFSequence {
 	list := CNCFSequence{}
+	fmt.Printf("%d", len(data))
 	err := json.Unmarshal(data, &list)
 	if err != nil {
 		log.Fatal().Err(err)
 		return nil
 	}
-
 	return list
 }
 

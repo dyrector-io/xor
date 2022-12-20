@@ -6,6 +6,7 @@ export type QuizItem = {
 	Category: string;
 	Subcategory: string;
 	GithubStars: number;
+	GithubContributorsCount: number;
 };
 
 export type QuizResponse = {

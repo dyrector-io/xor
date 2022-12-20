@@ -80,7 +80,7 @@
 	/>
 	<p><span>GitHub:</span> {question.GithubDescription}</p>
 	<p><span>Crunchbase:</span> {question.CrunchbaseDescription}</p>
-	<p><span>GitHub Stars:</span> {question.GithubStars}</p>
+	<p><span>GitHub Stars:</span> {question.GithubStars} <span>GitHub Contributors:</span> {question.GithubContributorsCount}</p>
 
 	{#if $hintNumber > 0}
 		<p><span>Category:</span> {question.Category}</p>

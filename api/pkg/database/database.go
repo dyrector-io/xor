@@ -155,6 +155,9 @@ func connect(cfg *config.AppConfig) *gorm.DB {
 		} else {
 			return db
 		}
+		if i == DBconnectAttempt {
+			log.Fatal().Msg("could not open sql connection")
+		}
 	}
 	log.Fatal().Msg("db connect unreachable code")
 	return nil

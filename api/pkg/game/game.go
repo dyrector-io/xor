@@ -82,7 +82,7 @@ func SelectAQuiz(state *config.AppState) {
 	today := time.Now()
 	log.Info().Msgf("quiz select running %v", today)
 	listAll := processor.MaskAndFilter(processor.ReadJSONData(), true, FilterIfStartLessThan)
-	indices := []int{}
+	var indices []int
 	if state.AppConfig.Method == RandomGenMethod {
 		indices = PickRandom(QuestionCount, len(listAll)-1)
 	} else {
