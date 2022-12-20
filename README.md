@@ -1,8 +1,13 @@
 # xor
 
+CNCF quiz repository
+### Dislaimer
+This project is a side project, and a product of a half weekend, if people will find joy in it, we will put more effort into it.
+Both of us creating it, used a personally new framework. It was fun.
+
 Every day you get the value propositions of 5 CNCF projects and you have to guess what the projects are! You have three attempts per project, and can get two hints should you need it.
 
-Depending how many hints you use, you <TBD what happens here?>:
+Depending how many hints you use:
 - 🟢 You got the project right without any hints.
 - 🟡 You got the project right using 1 hint.
 - 🟠 You got the project right using 2 hints.
@@ -11,3 +16,6 @@ Depending how many hints you use, you <TBD what happens here?>:
 
 
 Your data is stored client-side (browser local storage). More details [here](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage). The quiz is reset every noon (UTC).
+
+
+**Drop a star if you want to see more like this!**
