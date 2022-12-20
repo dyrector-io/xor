@@ -14,7 +14,7 @@
 
 <div class="">
 	<h1 class="text-2xl pb-8">History</h1>
-	<p>Take a look at previously included projects.</p>
+	<p class="mb-8">Take a look at previously included projects.</p>
 	<div>
 		{#each history as item}
 			<li class="list-none">{item.Date}: {item.Projects}</li>

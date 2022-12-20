@@ -1,12 +1,11 @@
 <script lang="ts">
 	import { fly, fade } from 'svelte/transition';
 	import { createEventDispatcher } from 'svelte';
-	import { score } from '$lib/store';
-	import { resultStore } from '../lib/results';
 	import Button from '../components/Button.svelte';
+	import type { ResultItem } from 'src/types/result.type';
 
 	const dispatch = createEventDispatcher();
-	export let todayResult;
+	export let todayResult: ResultItem | undefined;
 
 	const copy = () => {
 		const text = document.getElementById('resultText').innerText;
@@ -18,11 +17,11 @@
 	class="modal-wrapper flex flex-col  justify-center backdrop-blur-sm bg-gray-800 inset-0 fixed w-full text-black"
 	transition:fade
 >
-	<div class="bg-white p-8" transition:fly={{ y: -100 }}>
-		<h2>Proven your familiarity with the CNCF landscape, flex to others with your score.</h2>
+	<div class="bg-white p-8 md:w-8/12" transition:fly={{ y: -100 }}>
+		<h2>Proven your familiarity with the CNCF landscape, flex to others with your score. Share on socials: </h2>
 		<div class="my-8" id="resultText">
-			Today: {todayResult.date} // I tried the CNCF #XORQuiz, my results:
-			{todayResult.points.join('')}
+			{todayResult?.date} CNCF #XORQuiz results:
+			{todayResult?.points.join('')}
 		</div>
 
 		<Button on:click={copy}>Copy</Button>

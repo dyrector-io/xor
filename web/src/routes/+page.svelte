@@ -1,7 +1,7 @@
 <script lang="ts">
 	import SvelteMarkdown from 'svelte-markdown';
 	const homeContent = `
-Hello! 👋
+👋 Hello,
 <br />
 
 We're Levente and Nandor. As we were brainstorming to find our company's value proposition, we checked out some CNCF projects. Levente started asking questions to see if others are able to guess. This where the fun began... So we decided to convert it into a super simple quiz!
@@ -15,7 +15,10 @@ Depending how many hints you use, you <TBD what happens here?>:
 🔴 - You didn't get the project right.
 ⚪ - Unanswered questions.
 <br />
-Your data is stored client-side (browser local storage). More details [here](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage). The quiz is reset every noon (UTC).
+Your data is stored client-side (browser local storage). More details [here](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).
+The quiz is reset every noon (UTC) and will be running approximately until late January.
+<br />
+Have Fun and Happy Holidays 🎄🍾
 `;
 </script>
 
@@ -28,6 +31,6 @@ Your data is stored client-side (browser local storage). More details [here](htt
 				breaks: true
 			}}
 		/>
-		<p class="mt-4">contact: <a class="text-emerald-300" href="mailto:hello@dyrector.io" target="_blank">hello@dyrector.io</a> / repository:  <a class="text-emerald-300"  href="https://github.com/dyrector-io/xor/">dyrector-io/xor</a></p>
+		<p class="mt-4">contact: <a class="text-emerald-300" href="mailto:hello@dyrector.io" target="_blank">hello@dyrector.io</a> / repository:  <a class="text-emerald-300"  href="https://github.com/dyrector-io/xor/" target="_blank">dyrector-io/xor</a></p>
 	</div>
 </div>

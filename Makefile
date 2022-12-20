@@ -1,12 +1,11 @@
 .PHONY: cli
-cli: 
+cli:
 	cd api/cmd/cli && \
 	go run .; \
 	cd -
 
-
 .PHONY: server
-server: 
+server:
 	cd api/cmd/server && \
 	go run .; \
 	cd -
@@ -21,4 +20,3 @@ compile:
 build-api:
 	cd api && \
 	docker build -t github.com/dyrector-io/xor/api:v1 .
-	
