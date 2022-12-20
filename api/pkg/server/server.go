@@ -6,6 +6,7 @@ import (
 	"strings"
 	"time"
 
+	chiprometheus "github.com/766b/chi-prometheus"
 	"github.com/dyrector-io/xor/api/internal/config"
 	"github.com/dyrector-io/xor/api/internal/ctx"
 	"github.com/dyrector-io/xor/api/pkg/database"
@@ -15,6 +16,7 @@ import (
 	"github.com/go-chi/cors"
 	"github.com/go-chi/httprate"
 	"github.com/go-co-op/gocron"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/rs/zerolog/log"
 )
 
@@ -43,6 +45,8 @@ func GetChi(appConfig *config.AppConfig) *http.Server {
 	r.Use(middleware.Logger)
 	r.Use(middleware.Recoverer)
 
+	m := chiprometheus.NewMiddleware("xor-quiz-api")
+	r.Use(m)
 	origins := []string{}
 	if appConfig.Debug {
 		origins = append(origins, "http://*", "https://*")
@@ -82,6 +86,7 @@ func GetChi(appConfig *config.AppConfig) *http.Server {
 
 	r.Use(middleware.Timeout(HTTPTimeout))
 
+	r.Handle("/metrics", promhttp.Handler())
 	r.Get("/", func(w http.ResponseWriter, r *http.Request) {
 		LogWriter{w}.WriteHeader(http.StatusOK)
 	})

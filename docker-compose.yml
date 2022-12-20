@@ -32,6 +32,8 @@ services:
       - "traefik.http.routers.xor-api.middlewares=xor-strip"
     environment:
       DSN: ${DSN:-host=172.17.0.1 user=postgres password=password dbname=postgres port=5432 sslmode=disable}
+      ALLOWED_ORIGINS: ${ALLOWED_ORIGINS:-http://*, https://*"}
+
   ui:
     depends_on:
       - "api"
