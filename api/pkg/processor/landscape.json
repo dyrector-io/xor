@@ -1,25 +1,5 @@
 [
  {
-  "Name": "Airship",
-  "Logo": "https://landscape.cncf.io/logos/airship.svg",
-  "CrunchbaseDescription": "Helping people build and operate open infrastructure that runs in production",
-  "Category": "Provisioning",
-  "Subcategory": "Automation \u0026 Configuration",
-  "GithubStars": 42,
-  "GithubDescription": "Reference Airship manifests, CICD, and reference architecture.",
-  "GithubContributorsCount": 116
- },
- {
-  "Name": "Akri",
-  "Logo": "https://landscape.cncf.io/logos/akri.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Provisioning",
-  "Subcategory": "Automation \u0026 Configuration",
-  "GithubStars": 875,
-  "GithubDescription": "A Kubernetes Resource Interface for the Edge",
-  "GithubContributorsCount": 29
- },
- {
   "Name": "Ansible",
   "Logo": "https://landscape.cncf.io/logos/ansible.svg",
   "CrunchbaseDescription": "Red Hat is a multinational software company engaged in providing open-source software products to the enterprise community.",
@@ -70,16 +50,6 @@
   "GithubContributorsCount": 58
  },
  {
-  "Name": "CFEngine",
-  "Logo": "https://landscape.cncf.io/logos/cf-engine.svg",
-  "CrunchbaseDescription": "CFEngine is an open source configuration management product written by Mark Burgess and one of the products developed by Northern.tech, Inc.",
-  "Category": "Provisioning",
-  "Subcategory": "Automation \u0026 Configuration",
-  "GithubStars": 424,
-  "GithubDescription": "CFEngine Community",
-  "GithubContributorsCount": 144
- },
- {
   "Name": "Chef Infra",
   "Logo": "https://landscape.cncf.io/logos/chef-infra.svg",
   "CrunchbaseDescription": "Chef is a continuous automation platform powered by community and open source software engines.",
@@ -98,46 +68,6 @@
   "GithubStars": 4551,
   "GithubDescription": "Rules engine for cloud security, cost optimization, and governance, DSL in yaml for policies to query, filter, and take actions on resources",
   "GithubContributorsCount": 394
- },
- {
-  "Name": "Cloudify",
-  "Logo": "https://landscape.cncf.io/logos/cloudify.svg",
-  "CrunchbaseDescription": "Cloudify specializes in IT operations automation technology that manages application and network services through open orchestration",
-  "Category": "Provisioning",
-  "Subcategory": "Automation \u0026 Configuration",
-  "GithubStars": 134,
-  "GithubDescription": "Cloudify's manager related code",
-  "GithubContributorsCount": 99
- },
- {
-  "Name": "Couler",
-  "Logo": "https://landscape.cncf.io/logos/couler.svg",
-  "CrunchbaseDescription": "Ant Group strives to enable all consumers and small businesses to have equal access to financial and other services through technology.",
-  "Category": "Provisioning",
-  "Subcategory": "Automation \u0026 Configuration",
-  "GithubStars": 778,
-  "GithubDescription": "Unified Interface for Constructing and Managing Workflows on different workflow engines, such as Argo Workflows, Tekton Pipelines, and Apache Airflow.",
-  "GithubContributorsCount": 33
- },
- {
-  "Name": "DevStream",
-  "Logo": "https://landscape.cncf.io/logos/dev-stream.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Provisioning",
-  "Subcategory": "Automation \u0026 Configuration",
-  "GithubStars": 685,
-  "GithubDescription": "DevStream: the open-source DevOps toolchain manager (DTM).",
-  "GithubContributorsCount": 62
- },
- {
-  "Name": "Digital Rebar",
-  "Logo": "https://landscape.cncf.io/logos/digital-rebar.svg",
-  "CrunchbaseDescription": "Collaborative IaC pipeline and automation platform",
-  "Category": "Provisioning",
-  "Subcategory": "Automation \u0026 Configuration",
-  "GithubStars": 138,
-  "GithubDescription": "Docs, API bindings, clients and integrations supporting RackN Digital Rebar data center provisioning and workflow system.",
-  "GithubContributorsCount": 32
  },
  {
   "Name": "Foreman",
@@ -160,26 +90,6 @@
   "GithubContributorsCount": 254
  },
  {
-  "Name": "kiosk",
-  "Logo": "https://landscape.cncf.io/logos/kiosk.svg",
-  "CrunchbaseDescription": "Loft Labs enables any organization to scale self-service access to Kubernetes from 10 to 10,000 engineers.",
-  "Category": "Provisioning",
-  "Subcategory": "Automation \u0026 Configuration",
-  "GithubStars": 905,
-  "GithubDescription": "kiosk 🏢 Multi-Tenancy Extension For Kubernetes - Secure Cluster Sharing \u0026 Self-Service Namespace Provisioning",
-  "GithubContributorsCount": 9
- },
- {
-  "Name": "KubeDL",
-  "Logo": "https://landscape.cncf.io/logos/kube-dl.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Provisioning",
-  "Subcategory": "Automation \u0026 Configuration",
-  "GithubStars": 393,
-  "GithubDescription": "Run your deep learning workloads on Kubernetes more easily and efficiently.",
-  "GithubContributorsCount": 22
- },
- {
   "Name": "KubeEdge",
   "Logo": "https://landscape.cncf.io/logos/kube-edge.svg",
   "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
@@ -190,36 +100,6 @@
   "GithubContributorsCount": 309
  },
  {
-  "Name": "Kubefirst",
-  "Logo": "https://landscape.cncf.io/logos/kubefirst.svg",
-  "CrunchbaseDescription": "At Kubeshop, our mission is to build a thriving open-source ecosystem and pipeline of next generation Kubernetes products and projects.",
-  "Category": "Provisioning",
-  "Subcategory": "Automation \u0026 Configuration",
-  "GithubStars": 252,
-  "GithubDescription": "The Kubefirst Open Source Platform",
-  "GithubContributorsCount": 15
- },
- {
-  "Name": "KubeZoo",
-  "Logo": "https://landscape.cncf.io/logos/kube-zoo.svg",
-  "CrunchbaseDescription": "ByteDance is an internet technology company that operates creative content platforms.",
-  "Category": "Provisioning",
-  "Subcategory": "Automation \u0026 Configuration",
-  "GithubStars": 511,
-  "GithubDescription": "a lightweight kubernetes multi-tenancy gateway",
-  "GithubContributorsCount": 9
- },
- {
-  "Name": "KusionStack",
-  "Logo": "https://landscape.cncf.io/logos/kusion-stack.svg",
-  "CrunchbaseDescription": "Ant Group strives to enable all consumers and small businesses to have equal access to financial and other services through technology.",
-  "Category": "Provisioning",
-  "Subcategory": "Automation \u0026 Configuration",
-  "GithubStars": 375,
-  "GithubDescription": "Kusion is the engine to deliver intentions to clouds",
-  "GithubContributorsCount": 9
- },
- {
   "Name": "LinuxKit",
   "Logo": "https://landscape.cncf.io/logos/linux-kit.svg",
   "CrunchbaseDescription": "Docker’s platform helps millions of developers efficiently and collaboratively build, share, and run applications.",
@@ -228,16 +108,6 @@
   "GithubStars": 7595,
   "GithubDescription": "A toolkit for building secure, portable and lean operating systems for containers",
   "GithubContributorsCount": 171
- },
- {
-  "Name": "MAAS",
-  "Logo": "https://landscape.cncf.io/logos/maas.svg",
-  "CrunchbaseDescription": "Canonical is a computer software company that markets commercial support and related services for Ubuntu and related projects.",
-  "Category": "Provisioning",
-  "Subcategory": "Automation \u0026 Configuration",
-  "GithubStars": 234,
-  "GithubDescription": "Official MAAS repository mirror (may be out of date). Development happens in Launchpad (https://git.launchpad.net/maas/).",
-  "GithubContributorsCount": 168
  },
  {
   "Name": "ManageIQ",
@@ -330,16 +200,6 @@
   "GithubContributorsCount": 192
  },
  {
-  "Name": "SuperEdge",
-  "Logo": "https://landscape.cncf.io/logos/super-edge.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Provisioning",
-  "Subcategory": "Automation \u0026 Configuration",
-  "GithubStars": 880,
-  "GithubDescription": "An edge-native container management system for edge computing",
-  "GithubContributorsCount": 52
- },
- {
   "Name": "Terraform",
   "Logo": "https://landscape.cncf.io/logos/terraform.svg",
   "CrunchbaseDescription": "HashiCorp is a remote-first company that solves development, security, and operations challenges in infrastructure.",
@@ -350,16 +210,6 @@
   "GithubContributorsCount": 2051
  },
  {
-  "Name": "Tinkerbell",
-  "Logo": "https://landscape.cncf.io/logos/tinkerbell.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Provisioning",
-  "Subcategory": "Automation \u0026 Configuration",
-  "GithubStars": 713,
-  "GithubDescription": "A workflow engine for provisioning bare metal.",
-  "GithubContributorsCount": 49
- },
- {
   "Name": "Distribution",
   "Logo": "https://landscape.cncf.io/logos/distribution.svg",
   "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
@@ -368,16 +218,6 @@
   "GithubStars": 7114,
   "GithubDescription": "The toolkit to pack, ship, store, and deliver container content",
   "GithubContributorsCount": 487
- },
- {
-  "Name": "Dragonfly",
-  "Logo": "https://landscape.cncf.io/logos/dragonfly.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Provisioning",
-  "Subcategory": "Container Registry",
-  "GithubStars": 912,
-  "GithubDescription": "Dragonfly is an intelligent P2P based image and file distribution system, it also provides a variety of enterprise-level (efficiency, stability, safety, low-cost) product features.",
-  "GithubContributorsCount": 36
  },
  {
   "Name": "Harbor",
@@ -398,16 +238,6 @@
   "GithubStars": 5252,
   "GithubDescription": "P2P Docker registry capable of distributing TBs of data in seconds",
   "GithubContributorsCount": 35
- },
- {
-  "Name": "Open Policy Registry",
-  "Logo": "https://landscape.cncf.io/logos/open-policy-registry.svg",
-  "CrunchbaseDescription": "Aserto enables SaaS application developers to roll out enterprise-ready permissions and RBAC through its modern authorization platform.",
-  "Category": "Provisioning",
-  "Subcategory": "Container Registry",
-  "GithubStars": 120,
-  "GithubDescription": "CLI for building OPA policies into OCI images",
-  "GithubContributorsCount": 11
  },
  {
   "Name": "Portus",
@@ -438,26 +268,6 @@
   "GithubStars": 1514,
   "GithubDescription": "A service that analyzes docker images and scans for vulnerabilities",
   "GithubContributorsCount": 55
- },
- {
-  "Name": "Aserto",
-  "Logo": "https://landscape.cncf.io/logos/aserto.svg",
-  "CrunchbaseDescription": "Aserto enables SaaS application developers to roll out enterprise-ready permissions and RBAC through its modern authorization platform.",
-  "Category": "Provisioning",
-  "Subcategory": "Security \u0026 Compliance",
-  "GithubStars": 22,
-  "GithubDescription": "an abstraction library on top of OPA",
-  "GithubContributorsCount": 7
- },
- {
-  "Name": "Cerbos",
-  "Logo": "https://landscape.cncf.io/logos/cerbos.svg",
-  "CrunchbaseDescription": "Cerbos is a software company that makes user permissions and authorization simple to implement and manage.",
-  "Category": "Provisioning",
-  "Subcategory": "Security \u0026 Compliance",
-  "GithubStars": 876,
-  "GithubDescription": "Cerbos is the open core, language-agnostic, scalable authorization solution that makes user permissions and authorization simple to implement and manage by writing context-aware access control policies for your application resources.",
-  "GithubContributorsCount": 16
  },
  {
   "Name": "cert-manager",
@@ -500,26 +310,6 @@
   "GithubContributorsCount": 133
  },
  {
-  "Name": "CloudMatos",
-  "Logo": "https://landscape.cncf.io/logos/cloud-matos.svg",
-  "CrunchbaseDescription": "CloudMatos specializes in cloud security, intelligent remediation, self-healing cloud infrastructure, and governance solution.",
-  "Category": "Provisioning",
-  "Subcategory": "Security \u0026 Compliance",
-  "GithubStars": 4,
-  "GithubDescription": "Matos is an open-source cloud security tool for analyzing multi-cloud infrastructure security.",
-  "GithubContributorsCount": 2
- },
- {
-  "Name": "Confidential Containers",
-  "Logo": "https://landscape.cncf.io/logos/confidential-containers.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Provisioning",
-  "Subcategory": "Security \u0026 Compliance",
-  "GithubStars": 44,
-  "GithubDescription": "Documentation for the confidential containers project",
-  "GithubContributorsCount": 20
- },
- {
   "Name": "ContainerSSH",
   "Logo": "https://landscape.cncf.io/logos/container-ssh.svg",
   "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
@@ -528,16 +318,6 @@
   "GithubStars": 2013,
   "GithubDescription": "ContainerSSH: Launch containers on demand",
   "GithubContributorsCount": 11
- },
- {
-  "Name": "Curiefense",
-  "Logo": "https://landscape.cncf.io/logos/curiefense.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Provisioning",
-  "Subcategory": "Security \u0026 Compliance",
-  "GithubStars": 565,
-  "GithubDescription": "Curiefense is a unified, open source platform protecting cloud native applications.",
-  "GithubContributorsCount": 32
  },
  {
   "Name": "Datree",
@@ -610,36 +390,6 @@
   "GithubContributorsCount": 81
  },
  {
-  "Name": "Hexa",
-  "Logo": "https://landscape.cncf.io/logos/hexa.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Provisioning",
-  "Subcategory": "Security \u0026 Compliance",
-  "GithubStars": 56,
-  "GithubDescription": "Hexa Policy Orchestrator enables you to manage all of your access policies consistently across software providers.",
-  "GithubContributorsCount": 13
- },
- {
-  "Name": "in-toto",
-  "Logo": "https://landscape.cncf.io/logos/in-toto.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Provisioning",
-  "Subcategory": "Security \u0026 Compliance",
-  "GithubStars": 652,
-  "GithubDescription": "in-toto is a framework to protect supply chain integrity.",
-  "GithubContributorsCount": 34
- },
- {
-  "Name": "Keylime",
-  "Logo": "https://landscape.cncf.io/logos/keylime.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Provisioning",
-  "Subcategory": "Security \u0026 Compliance",
-  "GithubStars": 288,
-  "GithubDescription": "A CNCF Project to Bootstrap \u0026 Maintain Trust on the Edge / Cloud and IoT",
-  "GithubContributorsCount": 62
- },
- {
   "Name": "KICS",
   "Logo": "https://landscape.cncf.io/logos/kics.svg",
   "CrunchbaseDescription": "Checkmarx is a global leader in application security.",
@@ -668,26 +418,6 @@
   "GithubStars": 4026,
   "GithubDescription": "Hunt for security weaknesses in Kubernetes clusters",
   "GithubContributorsCount": 76
- },
- {
-  "Name": "KubeArmor",
-  "Logo": "https://landscape.cncf.io/logos/kube-armor.svg",
-  "CrunchbaseDescription": "AccuKnox is a provider of zero-trust kubernetes security solutions.",
-  "Category": "Provisioning",
-  "Subcategory": "Security \u0026 Compliance",
-  "GithubStars": 538,
-  "GithubDescription": "Cloud-native Runtime Security Enforcement System",
-  "GithubContributorsCount": 50
- },
- {
-  "Name": "Kubewarden",
-  "Logo": "https://landscape.cncf.io/logos/kubewarden.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Provisioning",
-  "Subcategory": "Security \u0026 Compliance",
-  "GithubStars": 97,
-  "GithubDescription": "Manage admission policies in your Kubernetes cluster with ease",
-  "GithubContributorsCount": 12
  },
  {
   "Name": "Kyverno",
@@ -720,16 +450,6 @@
   "GithubContributorsCount": 351
  },
  {
-  "Name": "OpenFGA",
-  "Logo": "https://landscape.cncf.io/logos/open-fga.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Provisioning",
-  "Subcategory": "Security \u0026 Compliance",
-  "GithubStars": 648,
-  "GithubDescription": "A high performance and flexible authorization/permission engine built for developers and inspired by Google Zanzibar",
-  "GithubContributorsCount": 16
- },
- {
   "Name": "OpenSCAP",
   "Logo": "https://landscape.cncf.io/logos/open-scap.svg",
   "CrunchbaseDescription": "Red Hat is a multinational software company engaged in providing open-source software products to the enterprise community.",
@@ -738,16 +458,6 @@
   "GithubStars": 1020,
   "GithubDescription": "NIST Certified SCAP 1.2 toolkit",
   "GithubContributorsCount": 140
- },
- {
-  "Name": "Parsec",
-  "Logo": "https://landscape.cncf.io/logos/parsec.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Provisioning",
-  "Subcategory": "Security \u0026 Compliance",
-  "GithubStars": 378,
-  "GithubDescription": "Platform AbstRaction for SECurity service",
-  "GithubContributorsCount": 27
  },
  {
   "Name": "Pluto",
@@ -770,16 +480,6 @@
   "GithubContributorsCount": 53
  },
  {
-  "Name": "RBAC Lookup",
-  "Logo": "https://landscape.cncf.io/logos/rbac-lookup.svg",
-  "CrunchbaseDescription": "Kubernetes security, policy and compliance experts",
-  "Category": "Provisioning",
-  "Subcategory": "Security \u0026 Compliance",
-  "GithubStars": 682,
-  "GithubDescription": "Easily find roles and cluster roles attached to any user, service account, or group name in your Kubernetes cluster",
-  "GithubContributorsCount": 17
- },
- {
   "Name": "RBAC Manager",
   "Logo": "https://landscape.cncf.io/logos/rbac-manager.svg",
   "CrunchbaseDescription": "Kubernetes security, policy and compliance experts",
@@ -788,26 +488,6 @@
   "GithubStars": 1155,
   "GithubDescription": "A Kubernetes operator that simplifies the management of Role Bindings and Service Accounts.",
   "GithubContributorsCount": 27
- },
- {
-  "Name": "Rudder",
-  "Logo": "https://landscape.cncf.io/logos/rudder.svg",
-  "CrunchbaseDescription": "Continuous Configuration \u0026 Auditing. Automation to measure and/or correct configuration drift on Linux/Windows/AIX.",
-  "Category": "Provisioning",
-  "Subcategory": "Security \u0026 Compliance",
-  "GithubStars": 404,
-  "GithubDescription": "Rudder is a configuration and security automation platform. Manage your Cloud, hybrid or on-premises infrastructure in a simple, scalable and dynamic way.",
-  "GithubContributorsCount": 44
- },
- {
-  "Name": "sigstore",
-  "Logo": "https://landscape.cncf.io/logos/sigstore.svg",
-  "CrunchbaseDescription": "sigstore is a non-profit , public good, software cryptographic signing service.",
-  "Category": "Provisioning",
-  "Subcategory": "Security \u0026 Compliance",
-  "GithubStars": 349,
-  "GithubDescription": "Common go library shared across sigstore services and clients",
-  "GithubContributorsCount": 41
  },
  {
   "Name": "Sonobuoy",
@@ -870,16 +550,6 @@
   "GithubContributorsCount": 34
  },
  {
-  "Name": "Topaz",
-  "Logo": "https://landscape.cncf.io/logos/topaz.svg",
-  "CrunchbaseDescription": "Aserto enables SaaS application developers to roll out enterprise-ready permissions and RBAC through its modern authorization platform.",
-  "Category": "Provisioning",
-  "Subcategory": "Security \u0026 Compliance",
-  "GithubStars": 530,
-  "GithubDescription": "Cloud-native authorization for modern applications and APIs",
-  "GithubContributorsCount": 8
- },
- {
   "Name": "Trivy",
   "Logo": "https://landscape.cncf.io/logos/trivy.svg",
   "CrunchbaseDescription": "Aqua Security is a software company providing cloud-native security technology.",
@@ -888,36 +558,6 @@
   "GithubStars": 15131,
   "GithubDescription": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more",
   "GithubContributorsCount": 260
- },
- {
-  "Name": "Athenz",
-  "Logo": "https://landscape.cncf.io/logos/athenz.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Provisioning",
-  "Subcategory": "Key Management",
-  "GithubStars": 734,
-  "GithubDescription": "Open source platform for X.509 certificate based service authentication and fine grained access control in dynamic infrastructures. Athenz supports provisioning and configuration (centralized authorization) use cases as well as serving/runtime (decentralized authorization) use cases.",
-  "GithubContributorsCount": 63
- },
- {
-  "Name": "Authing",
-  "Logo": "https://landscape.cncf.io/logos/authing.svg",
-  "CrunchbaseDescription": "Authing provides identity authentication and authorization services for enterprises and developers.",
-  "Category": "Provisioning",
-  "Subcategory": "Key Management",
-  "GithubStars": 942,
-  "GithubDescription": "🔥Authing - IDaaS/IAM solution that can Auth to web and mobile applications.",
-  "GithubContributorsCount": 6
- },
- {
-  "Name": "CyberArk Conjur",
-  "Logo": "https://landscape.cncf.io/logos/cyber-ark-conjur.svg",
-  "CrunchbaseDescription": "CyberArk is a security company focused on striking down targeted cyber threats before they affect business operations.",
-  "Category": "Provisioning",
-  "Subcategory": "Key Management",
-  "GithubStars": 588,
-  "GithubDescription": "CyberArk Conjur automatically secures secrets used by privileged users and machine identities",
-  "GithubContributorsCount": 85
  },
  {
   "Name": "Keycloak",
@@ -948,16 +588,6 @@
   "GithubStars": 13505,
   "GithubDescription": "OpenID Certified™ OpenID Connect and OAuth Provider written in Go - cloud native, security-first, open source API security for your infrastructure. SDKs for any language. Works with Hardware Security Modules. Compatible with MITREid.",
   "GithubContributorsCount": 276
- },
- {
-  "Name": "Pinniped",
-  "Logo": "https://landscape.cncf.io/logos/pinniped.svg",
-  "CrunchbaseDescription": "VMware is a provider of multi-cloud services for all apps, enabling digital innovation with enterprise control.",
-  "Category": "Provisioning",
-  "Subcategory": "Key Management",
-  "GithubStars": 376,
-  "GithubDescription": "Pinniped is the easy, secure way to log in to your Kubernetes clusters.",
-  "GithubContributorsCount": 30
  },
  {
   "Name": "Pomerium",
@@ -1050,16 +680,6 @@
   "GithubContributorsCount": 1408
  },
  {
-  "Name": "Carina",
-  "Logo": "https://landscape.cncf.io/logos/carina.svg",
-  "CrunchbaseDescription": "BoCloud provides professional cloud computing services for enterprise customers, focusing on PaaS technology.",
-  "Category": "Runtime",
-  "Subcategory": "Cloud Native Storage",
-  "GithubStars": 515,
-  "GithubDescription": "Carina: an high performance and ops-free local storage for kubernetes",
-  "GithubContributorsCount": 15
- },
- {
   "Name": "Ceph",
   "Logo": "https://landscape.cncf.io/logos/ceph.svg",
   "CrunchbaseDescription": "The Ceph Foundation exists to enable industry members to collaborate and pool resources to support the Ceph project community.",
@@ -1110,16 +730,6 @@
   "GithubContributorsCount": 407
  },
  {
-  "Name": "HwameiStor",
-  "Logo": "https://landscape.cncf.io/logos/hwamei-stor.svg",
-  "CrunchbaseDescription": "DaoCloud is a digital innovation leader in enterprise cloud computing.",
-  "Category": "Runtime",
-  "Subcategory": "Cloud Native Storage",
-  "GithubStars": 359,
-  "GithubDescription": "Hwameistor is an HA local storage system for cloud-native stateful workloads. ",
-  "GithubContributorsCount": 18
- },
- {
   "Name": "JuiceFS",
   "Logo": "https://landscape.cncf.io/logos/juice-fs.svg",
   "CrunchbaseDescription": "Juicedata is helping engineers to access and manage data easily in cloud.",
@@ -1128,26 +738,6 @@
   "GithubStars": 7088,
   "GithubDescription": "JuiceFS is a distributed POSIX file system built on top of Redis and S3.",
   "GithubContributorsCount": 79
- },
- {
-  "Name": "K8up",
-  "Logo": "https://landscape.cncf.io/logos/k8up.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Runtime",
-  "Subcategory": "Cloud Native Storage",
-  "GithubStars": 358,
-  "GithubDescription": "Kubernetes and OpenShift Backup Operator",
-  "GithubContributorsCount": 40
- },
- {
-  "Name": "LINSTOR",
-  "Logo": "https://landscape.cncf.io/logos/linstor.svg",
-  "CrunchbaseDescription": "LINBIT is an open source partner for block storage.",
-  "Category": "Runtime",
-  "Subcategory": "Cloud Native Storage",
-  "GithubStars": 618,
-  "GithubDescription": "High Performance Software-Defined Block Storage for container, cloud and virtualisation. Fully integrated with Docker, Kubernetes, Openstack, Proxmox etc.",
-  "GithubContributorsCount": 17
  },
  {
   "Name": "Longhorn",
@@ -1190,36 +780,6 @@
   "GithubContributorsCount": 233
  },
  {
-  "Name": "OpenIO",
-  "Logo": "https://landscape.cncf.io/logos/open-io.svg",
-  "CrunchbaseDescription": "OpenIO is an Open source object storage solution for massive storage infrastructures. ",
-  "Category": "Runtime",
-  "Subcategory": "Cloud Native Storage",
-  "GithubStars": 572,
-  "GithubDescription": "High Performance Software-Defined Object Storage for Big Data and AI, that supports Amazon S3 and Openstack Swift",
-  "GithubContributorsCount": 52
- },
- {
-  "Name": "ORAS",
-  "Logo": "https://landscape.cncf.io/logos/oras.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Runtime",
-  "Subcategory": "Cloud Native Storage",
-  "GithubStars": 787,
-  "GithubDescription": "OCI registry client - managing content like artifacts, images, packages",
-  "GithubContributorsCount": 39
- },
- {
-  "Name": "Piraeus Datastore",
-  "Logo": "https://landscape.cncf.io/logos/piraeus-datastore.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Runtime",
-  "Subcategory": "Cloud Native Storage",
-  "GithubStars": 340,
-  "GithubDescription": "High Available Datastore for Kubernetes",
-  "GithubContributorsCount": 12
- },
- {
   "Name": "Rook",
   "Logo": "https://landscape.cncf.io/logos/rook.svg",
   "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
@@ -1228,16 +788,6 @@
   "GithubStars": 10550,
   "GithubDescription": "Storage Orchestration for Kubernetes",
   "GithubContributorsCount": 471
- },
- {
-  "Name": "Soda Foundation",
-  "Logo": "https://landscape.cncf.io/logos/soda-foundation.svg",
-  "CrunchbaseDescription": "Soda Foundation is an open source project established to address integration challenges for Storage Defined Storage (SDS) vendors.",
-  "Category": "Runtime",
-  "Subcategory": "Cloud Native Storage",
-  "GithubStars": 806,
-  "GithubDescription": "SODA Terra Project API module : is an open source implementation of SODA API connecting storage to platforms like Kubernetes, OpenStack, and VMware",
-  "GithubContributorsCount": 55
  },
  {
   "Name": "Swift",
@@ -1250,16 +800,6 @@
   "GithubContributorsCount": 448
  },
  {
-  "Name": "Triton Object Storage",
-  "Logo": "https://landscape.cncf.io/logos/triton-object-storage.svg",
-  "CrunchbaseDescription": "MNX Solutions offers cybersecurity, cloud hosting, business VoIP, Linux server management and managed IT services for various industries.",
-  "Category": "Runtime",
-  "Subcategory": "Cloud Native Storage",
-  "GithubStars": 581,
-  "GithubDescription": "Manta is a scalable HTTP-based object store",
-  "GithubContributorsCount": 29
- },
- {
   "Name": "Velero",
   "Logo": "https://landscape.cncf.io/logos/velero.svg",
   "CrunchbaseDescription": "VMware is a provider of multi-cloud services for all apps, enabling digital innovation with enterprise control.",
@@ -1268,26 +808,6 @@
   "GithubStars": 6850,
   "GithubDescription": "Backup and migrate Kubernetes applications and their persistent volumes",
   "GithubContributorsCount": 279
- },
- {
-  "Name": "Vineyard",
-  "Logo": "https://landscape.cncf.io/logos/vineyard.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Runtime",
-  "Subcategory": "Cloud Native Storage",
-  "GithubStars": 649,
-  "GithubDescription": "vineyard (v6d): an in-memory immutable data manager. (Project under CNCF, TAG-Storage)",
-  "GithubContributorsCount": 36
- },
- {
-  "Name": "Zenko",
-  "Logo": "https://landscape.cncf.io/logos/zenko.svg",
-  "CrunchbaseDescription": "Scality is a venture-backed software company that solves problems associated with large-scale storage management and infrastructure.",
-  "Category": "Runtime",
-  "Subcategory": "Cloud Native Storage",
-  "GithubStars": 466,
-  "GithubDescription": "Zenko is the open source multi-cloud data controller: own and keep control of your data on any cloud.",
-  "GithubContributorsCount": 67
  },
  {
   "Name": "containerd",
@@ -1328,26 +848,6 @@
   "GithubStars": 13313,
   "GithubDescription": "Application Kernel for Containers",
   "GithubContributorsCount": 206
- },
- {
-  "Name": "Inclavare Containers",
-  "Logo": "https://landscape.cncf.io/logos/inclavare-containers.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Runtime",
-  "Subcategory": "Container Runtime",
-  "GithubStars": 517,
-  "GithubDescription": "A novel container runtime, aka confidential container, for cloud-native confidential computing and enclave runtime ecosystem.",
-  "GithubContributorsCount": 24
- },
- {
-  "Name": "iSulad",
-  "Logo": "https://landscape.cncf.io/logos/i-sulad.svg",
-  "CrunchbaseDescription": "The OpenAtom Foundation is a non-profit organization dedicated to promoting the development of the global open-source cause.",
-  "Category": "Runtime",
-  "Subcategory": "Container Runtime",
-  "GithubStars": 303,
-  "GithubDescription": "[mirror]A light weight container runtime daemon for IOT and Cloud infrastructure.",
-  "GithubContributorsCount": 72
  },
  {
   "Name": "Kata Containers",
@@ -1460,16 +960,6 @@
   "GithubContributorsCount": 574
  },
  {
-  "Name": "CNI-Genie",
-  "Logo": "https://landscape.cncf.io/logos/cni-genie.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Runtime",
-  "Subcategory": "Cloud Native Network",
-  "GithubStars": 491,
-  "GithubDescription": "CNI-Genie for choosing pod network of your choice during deployment time. Supported pod networks - Calico, Flannel, Romana, Weave ",
-  "GithubContributorsCount": 23
- },
- {
   "Name": "Container Network Interface (CNI)",
   "Logo": "https://landscape.cncf.io/logos/container-network-interface-cni.svg",
   "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
@@ -1478,36 +968,6 @@
   "GithubStars": 4554,
   "GithubDescription": "Container Network Interface - networking for Linux containers",
   "GithubContributorsCount": 157
- },
- {
-  "Name": "DANM",
-  "Logo": "https://landscape.cncf.io/logos/danm.svg",
-  "CrunchbaseDescription": "Nokia is a Finnish multinational communications corporation engaged in the manufacturing of mobile devices and network infrastructure.",
-  "Category": "Runtime",
-  "Subcategory": "Cloud Native Network",
-  "GithubStars": 333,
-  "GithubDescription": "TelCo grade network management in a Kubernetes cluster",
-  "GithubContributorsCount": 24
- },
- {
-  "Name": "FabEdge",
-  "Logo": "https://landscape.cncf.io/logos/fab-edge.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Runtime",
-  "Subcategory": "Cloud Native Network",
-  "GithubStars": 464,
-  "GithubDescription": "Secure Edge Networking Solution Based On Kubernetes",
-  "GithubContributorsCount": 16
- },
- {
-  "Name": "FD.io",
-  "Logo": "https://landscape.cncf.io/logos/fd-io.svg",
-  "CrunchbaseDescription": "LF Networking is the center of gravity for global carrier and enterprise networking success",
-  "Category": "Runtime",
-  "Subcategory": "Cloud Native Network",
-  "GithubStars": 869,
-  "GithubDescription": "",
-  "GithubContributorsCount": 458
  },
  {
   "Name": "Flannel",
@@ -1550,16 +1010,6 @@
   "GithubContributorsCount": 117
  },
  {
-  "Name": "Ligato",
-  "Logo": "https://landscape.cncf.io/logos/ligato.svg",
-  "CrunchbaseDescription": "Cisco develops, manufactures, and sells networking hardware, telecommunications equipment, and other technology services and products.",
-  "Category": "Runtime",
-  "Subcategory": "Cloud Native Network",
-  "GithubStars": 202,
-  "GithubDescription": "⚡️ Control plane management agent for FD.io's VPP",
-  "GithubContributorsCount": 60
- },
- {
   "Name": "Multus",
   "Logo": "https://landscape.cncf.io/logos/multus.svg",
   "CrunchbaseDescription": "Intel designs, manufactures, and sells integrated digital technology platforms worldwide.",
@@ -1568,16 +1018,6 @@
   "GithubStars": 1671,
   "GithubDescription": "A CNI meta-plugin for multi-homed pods in Kubernetes",
   "GithubContributorsCount": 80
- },
- {
-  "Name": "Network Service Mesh",
-  "Logo": "https://landscape.cncf.io/logos/network-service-mesh.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Runtime",
-  "Subcategory": "Cloud Native Network",
-  "GithubStars": 503,
-  "GithubDescription": "The Hybrid/Multi-cloud IP Service Mesh",
-  "GithubContributorsCount": 63
  },
  {
   "Name": "Open vSwitch",
@@ -1610,16 +1050,6 @@
   "GithubContributorsCount": 42
  },
  {
-  "Name": "Tungsten Fabric",
-  "Logo": "https://landscape.cncf.io/logos/tungsten-fabric.svg",
-  "CrunchbaseDescription": "LF Networking is the center of gravity for global carrier and enterprise networking success",
-  "Category": "Runtime",
-  "Subcategory": "Cloud Native Network",
-  "GithubStars": 444,
-  "GithubDescription": "Contrail Controller",
-  "GithubContributorsCount": 345
- },
- {
   "Name": "Weave Net",
   "Logo": "https://landscape.cncf.io/logos/weave-net.svg",
   "CrunchbaseDescription": "Weaveworks simplifies operating Kubernetes workloads and provides a developer-centric operating model for cloud-native applications.",
@@ -1650,16 +1080,6 @@
   "GithubContributorsCount": 47
  },
  {
-  "Name": "Capsule",
-  "Logo": "https://landscape.cncf.io/logos/capsule.svg",
-  "CrunchbaseDescription": "Kubernetes multi-tenancy made easy",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "Scheduling \u0026 Orchestration",
-  "GithubStars": 986,
-  "GithubDescription": "Multi-tenancy and policy-based framework for Kubernetes.",
-  "GithubContributorsCount": 40
- },
- {
   "Name": "Clusternet",
   "Logo": "https://landscape.cncf.io/logos/clusternet.svg",
   "CrunchbaseDescription": "Tencent Cloud is one of the leading cloud providers in the world with a focus on helping global enterprises succeed in China.",
@@ -1668,16 +1088,6 @@
   "GithubStars": 1056,
   "GithubDescription": "Managing your Kubernetes clusters (including public, private, edge, etc) as easily as visiting the Internet ⎈",
   "GithubContributorsCount": 31
- },
- {
-  "Name": "Clusterpedia",
-  "Logo": "https://landscape.cncf.io/logos/clusterpedia.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "Scheduling \u0026 Orchestration",
-  "GithubStars": 518,
-  "GithubDescription": "The Encyclopedia of Kubernetes clusters",
-  "GithubContributorsCount": 32
  },
  {
   "Name": "Crossplane",
@@ -1720,26 +1130,6 @@
   "GithubContributorsCount": 164
  },
  {
-  "Name": "Koordinator",
-  "Logo": "https://landscape.cncf.io/logos/koordinator.svg",
-  "CrunchbaseDescription": "Alibaba Cloud develops highly scalable cloud computing and data management services.",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "Scheduling \u0026 Orchestration",
-  "GithubStars": 653,
-  "GithubDescription": "QoS based scheduling system for hybrid orchestration workloads on Kubernetes, bringing workloads the best layout and status.",
-  "GithubContributorsCount": 39
- },
- {
-  "Name": "kube-green",
-  "Logo": "https://landscape.cncf.io/logos/kube-green.svg",
-  "CrunchbaseDescription": "Mia‑Platform provides the first end‑to‑end Digital Integration Hub on the market with full DevOps Lifecycle Management.",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "Scheduling \u0026 Orchestration",
-  "GithubStars": 351,
-  "GithubDescription": "A K8s operator to reduce CO2 footprint of your clusters",
-  "GithubContributorsCount": 8
- },
- {
   "Name": "kube-rs",
   "Logo": "https://landscape.cncf.io/logos/kube-rs.svg",
   "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
@@ -1780,26 +1170,6 @@
   "GithubContributorsCount": 691
  },
  {
-  "Name": "Open Cluster Management",
-  "Logo": "https://landscape.cncf.io/logos/open-cluster-management.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "Scheduling \u0026 Orchestration",
-  "GithubStars": 481,
-  "GithubDescription": "Contains useful documentation on the OCM project. Report here if you found any issues in OCM.",
-  "GithubContributorsCount": 10
- },
- {
-  "Name": "OpenNebula",
-  "Logo": "https://landscape.cncf.io/logos/open-nebula.svg",
-  "CrunchbaseDescription": "The open source Cloud \u0026 Edge Computing Platform bringing real freedom to your Enterprise Cloud",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "Scheduling \u0026 Orchestration",
-  "GithubStars": 939,
-  "GithubDescription": "The open source Cloud \u0026 Edge Computing Platform bringing real freedom to your Enterprise Cloud 🚀",
-  "GithubContributorsCount": 200
- },
- {
   "Name": "Prefect",
   "Logo": "https://landscape.cncf.io/logos/prefect.svg",
   "CrunchbaseDescription": "Prefect is a workflow management system that helps to eliminate data flow problems for companies’ data teams.",
@@ -1818,16 +1188,6 @@
   "GithubStars": 2740,
   "GithubDescription": "A Cloud Native Batch System (Project under CNCF)",
   "GithubContributorsCount": 219
- },
- {
-  "Name": "wasmCloud",
-  "Logo": "https://landscape.cncf.io/logos/wasm-cloud.svg",
-  "CrunchbaseDescription": "wasmcloud is a platform for writing portable business logic.",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "Scheduling \u0026 Orchestration",
-  "GithubStars": 707,
-  "GithubDescription": "Project homepage. wasmCloud allows for simple, secure, distributed application development using WebAssembly actors and capability providers.",
-  "GithubContributorsCount": 17
  },
  {
   "Name": "Apache Zookeeper",
@@ -1858,26 +1218,6 @@
   "GithubStars": 42045,
   "GithubDescription": "Distributed reliable key-value store for the most critical data of a distributed system",
   "GithubContributorsCount": 901
- },
- {
-  "Name": "k8gb",
-  "Logo": "https://landscape.cncf.io/logos/k8gb.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "Coordination \u0026 Service Discovery",
-  "GithubStars": 520,
-  "GithubDescription": "A cloud native Kubernetes Global Balancer",
-  "GithubContributorsCount": 16
- },
- {
-  "Name": "KubeBrain",
-  "Logo": "https://landscape.cncf.io/logos/kube-brain.svg",
-  "CrunchbaseDescription": "ByteDance is an internet technology company that operates creative content platforms.",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "Coordination \u0026 Service Discovery",
-  "GithubStars": 476,
-  "GithubDescription": "A High Performance Metadata System for Kubernetes",
-  "GithubContributorsCount": 8
  },
  {
   "Name": "Nacos",
@@ -2040,16 +1380,6 @@
   "GithubContributorsCount": 1091
  },
  {
-  "Name": "Gimbal",
-  "Logo": "https://landscape.cncf.io/logos/gimbal.svg",
-  "CrunchbaseDescription": "VMware is a provider of multi-cloud services for all apps, enabling digital innovation with enterprise control.",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "Service Proxy",
-  "GithubStars": 667,
-  "GithubDescription": "Gimbal is an ingress load balancing platform capable of routing traffic to multiple Kubernetes and OpenStack clusters. Built by Heptio in partnership with Actapio.",
-  "GithubContributorsCount": 21
- },
- {
   "Name": "HAProxy",
   "Logo": "https://landscape.cncf.io/logos/ha-proxy.svg",
   "CrunchbaseDescription": "HAProxy Technologies is the company behind HAProxy, the world’s fastest and most widely used software load balancer.",
@@ -2058,16 +1388,6 @@
   "GithubStars": 3324,
   "GithubDescription": "HAProxy Load Balancer's development branch (mirror of git.haproxy.org)",
   "GithubContributorsCount": 360
- },
- {
-  "Name": "Inlets",
-  "Logo": "https://landscape.cncf.io/logos/inlets.svg",
-  "CrunchbaseDescription": "OpenFaaS provides a platform for building serverless functions with containers, anywhere (in cloud, on Edge or IoT devices, on-prem DCs)",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "Service Proxy",
-  "GithubStars": 448,
-  "GithubDescription": "Secure HTTP and TCP tunnels that just work",
-  "GithubContributorsCount": 9
  },
  {
   "Name": "MetalLB",
@@ -2140,16 +1460,6 @@
   "GithubContributorsCount": 160
  },
  {
-  "Name": "STUNner",
-  "Logo": "https://landscape.cncf.io/logos/stu-nner.svg",
-  "CrunchbaseDescription": "Integrating real-time communications workloads, especially WebRTC and cloud-gaming, into the cloud native ecosystem.",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "Service Proxy",
-  "GithubStars": 407,
-  "GithubDescription": "A Kubernetes media gateway for WebRTC. Contact: info@l7mp.io",
-  "GithubContributorsCount": 11
- },
- {
   "Name": "Tengine",
   "Logo": "https://landscape.cncf.io/logos/tengine.svg",
   "CrunchbaseDescription": "Alibaba Cloud develops highly scalable cloud computing and data management services.",
@@ -2170,26 +1480,6 @@
   "GithubContributorsCount": 760
  },
  {
-  "Name": "3Scale",
-  "Logo": "https://landscape.cncf.io/logos/3-scale.svg",
-  "CrunchbaseDescription": "Red Hat is a multinational software company engaged in providing open-source software products to the enterprise community.",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "API Gateway",
-  "GithubStars": 278,
-  "GithubDescription": "3scale API Gateway",
-  "GithubContributorsCount": 46
- },
- {
-  "Name": "APIOAK",
-  "Logo": "https://landscape.cncf.io/logos/apioak.svg",
-  "CrunchbaseDescription": "Full Lifecycle Management API Gateway",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "API Gateway",
-  "GithubStars": 381,
-  "GithubDescription": "Full Lifecycle Management API Gateway.",
-  "GithubContributorsCount": 19
- },
- {
   "Name": "APISIX",
   "Logo": "https://landscape.cncf.io/logos/apisix.svg",
   "CrunchbaseDescription": "Apache Software Foundation provides organizational, legal and financial support for Apache open-source software projects.",
@@ -2198,16 +1488,6 @@
   "GithubStars": 10832,
   "GithubDescription": "The Cloud-Native API Gateway",
   "GithubContributorsCount": 345
- },
- {
-  "Name": "Azure API Management",
-  "Logo": "https://landscape.cncf.io/logos/azure-api-management.svg",
-  "CrunchbaseDescription": "Microsoft is a software corporation that develops, manufactures, licenses, supports, and sells a range of software products and services.",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "API Gateway",
-  "GithubStars": 98,
-  "GithubDescription": "Repository with Azure API Management release notes.",
-  "GithubContributorsCount": 7
  },
  {
   "Name": "Easegress",
@@ -2230,16 +1510,6 @@
   "GithubContributorsCount": 237
  },
  {
-  "Name": "EnRoute OneStep Ingress",
-  "Logo": "https://landscape.cncf.io/logos/en-route-one-step-ingress.svg",
-  "CrunchbaseDescription": "Security, Observability and Policy for your (micro)service/API across clouds and platforms",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "API Gateway",
-  "GithubStars": 175,
-  "GithubDescription": "EnRoute Ingress API Gateway - Connectivity and Security for your Microservice at Kubernetes Ingress using one helm command. Built on Envoy Proxy.",
-  "GithubContributorsCount": 7
- },
- {
   "Name": "Gloo",
   "Logo": "https://landscape.cncf.io/logos/gloo.svg",
   "CrunchbaseDescription": "Solo.io develops tools to help the enterprise adapt and make the most of innovative cloud technologies.",
@@ -2258,26 +1528,6 @@
   "GithubStars": 1533,
   "GithubDescription": "Gravitee.io - OpenSource API Management",
   "GithubContributorsCount": 115
- },
- {
-  "Name": "Hango",
-  "Logo": "https://landscape.cncf.io/logos/hango.svg",
-  "CrunchbaseDescription": "NetEase, Inc. (NASDAQ: NTES) is a leading internet technology company dedicated to providing premium online services.",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "API Gateway",
-  "GithubStars": 380,
-  "GithubDescription": "Hango API Gateway, build on Envoy \u0026 Istio.",
-  "GithubContributorsCount": 12
- },
- {
-  "Name": "Higress",
-  "Logo": "https://landscape.cncf.io/logos/higress.svg",
-  "CrunchbaseDescription": "Alibaba Cloud develops highly scalable cloud computing and data management services.",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "API Gateway",
-  "GithubStars": 705,
-  "GithubDescription": "Next-generation Cloud Native Gateway",
-  "GithubContributorsCount": 14
  },
  {
   "Name": "Kong",
@@ -2300,36 +1550,6 @@
   "GithubContributorsCount": 38
  },
  {
-  "Name": "Kusk Gateway",
-  "Logo": "https://landscape.cncf.io/logos/kusk-gateway.svg",
-  "CrunchbaseDescription": "At Kubeshop, our mission is to build a thriving open-source ecosystem and pipeline of next generation Kubernetes products and projects.",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "API Gateway",
-  "GithubStars": 167,
-  "GithubDescription": "Kusk-gateway is an OpenAPI-driven API Gateway for Kubernetes",
-  "GithubContributorsCount": 14
- },
- {
-  "Name": "MuleSoft",
-  "Logo": "https://landscape.cncf.io/logos/mule-soft.svg",
-  "CrunchbaseDescription": "Salesforce is a global cloud computing company that develops CRM solutions and provides business software on a subscription basis.",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "API Gateway",
-  "GithubStars": 339,
-  "GithubDescription": "Mule Community Edition",
-  "GithubContributorsCount": 198
- },
- {
-  "Name": "Reactive Interaction Gateway",
-  "Logo": "https://landscape.cncf.io/logos/reactive-interaction-gateway.svg",
-  "CrunchbaseDescription": "Accenture is a professional services company, providing services and solutions in strategy, consulting, digital, technology and operations.",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "API Gateway",
-  "GithubStars": 549,
-  "GithubDescription": "Create low-latency, interactive user experiences for stateless microservices.",
-  "GithubContributorsCount": 26
- },
- {
   "Name": "Sentinel",
   "Logo": "https://landscape.cncf.io/logos/sentinel.svg",
   "CrunchbaseDescription": "Alibaba Cloud develops highly scalable cloud computing and data management services.",
@@ -2350,26 +1570,6 @@
   "GithubContributorsCount": 105
  },
  {
-  "Name": "WSO2 API Microgateway",
-  "Logo": "https://landscape.cncf.io/logos/wso2-api-microgateway.svg",
-  "CrunchbaseDescription": "WSO2 is an open source API-first integration vendor that offers a broad technology platform to rapidly build digital products.",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "API Gateway",
-  "GithubStars": 234,
-  "GithubDescription": "Choreo Connect is a cloud-native, open-source, and developer-centric API gateway.",
-  "GithubContributorsCount": 48
- },
- {
-  "Name": "Aeraki Mesh",
-  "Logo": "https://landscape.cncf.io/logos/aeraki-mesh.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "Service Mesh",
-  "GithubStars": 603,
-  "GithubDescription": "Manage any layer-7 protocols in a Service Mesh.",
-  "GithubContributorsCount": 26
- },
- {
   "Name": "Consul",
   "Logo": "https://landscape.cncf.io/logos/consul.svg",
   "CrunchbaseDescription": "HashiCorp is a remote-first company that solves development, security, and operations challenges in infrastructure.",
@@ -2378,26 +1578,6 @@
   "GithubStars": 25744,
   "GithubDescription": "Consul is a distributed, highly available, and data center aware solution to connect and configure applications across dynamic, distributed infrastructure.",
   "GithubContributorsCount": 965
- },
- {
-  "Name": "EaseMesh",
-  "Logo": "https://landscape.cncf.io/logos/ease-mesh.svg",
-  "CrunchbaseDescription": "High performance software architecture",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "Service Mesh",
-  "GithubStars": 443,
-  "GithubDescription": "A service mesh implementation for connecting,  control, and observe services in spring-cloud.",
-  "GithubContributorsCount": 12
- },
- {
-  "Name": "Gloo Mesh",
-  "Logo": "https://landscape.cncf.io/logos/gloo-mesh.svg",
-  "CrunchbaseDescription": "Solo.io develops tools to help the enterprise adapt and make the most of innovative cloud technologies.",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "Service Mesh",
-  "GithubStars": 994,
-  "GithubDescription": "The Service Mesh Orchestration Platform",
-  "GithubContributorsCount": 29
  },
  {
   "Name": "Istio",
@@ -2430,16 +1610,6 @@
   "GithubContributorsCount": 285
  },
  {
-  "Name": "Merbridge",
-  "Logo": "https://landscape.cncf.io/logos/merbridge.svg",
-  "CrunchbaseDescription": "DaoCloud is a digital innovation leader in enterprise cloud computing.",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "Service Mesh",
-  "GithubStars": 497,
-  "GithubDescription": "Use eBPF to speed up your Service Mesh like crossing an Einstein-Rosen Bridge.",
-  "GithubContributorsCount": 15
- },
- {
   "Name": "Meshery",
   "Logo": "https://landscape.cncf.io/logos/meshery.svg",
   "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
@@ -2458,46 +1628,6 @@
   "GithubStars": 2514,
   "GithubDescription": "Open Service Mesh (OSM) is a lightweight, extensible, cloud native service mesh that allows users to uniformly manage, secure, and get out-of-the-box observability features for highly dynamic microservice environments.",
   "GithubContributorsCount": 99
- },
- {
-  "Name": "Sermant",
-  "Logo": "https://landscape.cncf.io/logos/sermant.svg",
-  "CrunchbaseDescription": "Huawei Technologies provides infrastructure application software and devices with wireline, wireless, and IP technologies.",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "Service Mesh",
-  "GithubStars": 383,
-  "GithubDescription": "Sermant, a proxyless service mesh solution based on Javaagent.",
-  "GithubContributorsCount": 29
- },
- {
-  "Name": "Service Mesh Interface (SMI)",
-  "Logo": "https://landscape.cncf.io/logos/service-mesh-interface-smi.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "Service Mesh",
-  "GithubStars": 992,
-  "GithubDescription": "Service Mesh Interface",
-  "GithubContributorsCount": 36
- },
- {
-  "Name": "Service Mesh Performance",
-  "Logo": "https://landscape.cncf.io/logos/service-mesh-performance.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "Service Mesh",
-  "GithubStars": 234,
-  "GithubDescription": "Standardizing Service Mesh Value Measurement",
-  "GithubContributorsCount": 79
- },
- {
-  "Name": "Slime",
-  "Logo": "https://landscape.cncf.io/logos/slime.svg",
-  "CrunchbaseDescription": "NetEase, Inc. (NASDAQ: NTES) is a leading internet technology company dedicated to providing premium online services.",
-  "Category": "Orchestration \u0026 Management",
-  "Subcategory": "Service Mesh",
-  "GithubStars": 350,
-  "GithubDescription": "An intelligent ServiceMesh manager based on Istio",
-  "GithubContributorsCount": 12
  },
  {
   "Name": "Traefik Mesh",
@@ -2578,16 +1708,6 @@
   "GithubStars": 26328,
   "GithubDescription": "ClickHouse® is a free analytics DBMS for big data",
   "GithubContributorsCount": 1591
- },
- {
-  "Name": "Couchbase",
-  "Logo": "https://landscape.cncf.io/logos/couchbase.svg",
-  "CrunchbaseDescription": "Couchbase is a NoSQL cloud database for business-critical applications.",
-  "Category": "App Definition and Development",
-  "Subcategory": "Database",
-  "GithubStars": 202,
-  "GithubDescription": "Top-level source repository for Couchbase Server source code and build projects",
-  "GithubContributorsCount": 147
  },
  {
   "Name": "Crate.io",
@@ -2730,16 +1850,6 @@
   "GithubContributorsCount": 194
  },
  {
-  "Name": "Percona Server for MySQL",
-  "Logo": "https://landscape.cncf.io/logos/percona-server-for-my-sql.svg",
-  "CrunchbaseDescription": "The Percona Platform provides a unified experience to monitor, manage, secure, and optimize open database environments",
-  "Category": "App Definition and Development",
-  "Subcategory": "Database",
-  "GithubStars": 977,
-  "GithubDescription": "Percona Server",
-  "GithubContributorsCount": 879
- },
- {
   "Name": "Pilosa",
   "Logo": "https://landscape.cncf.io/logos/pilosa.svg",
   "CrunchbaseDescription": "Pilosa is an open source, distributed bitmap index that dramatically accelerates continuous analysis across multiple, massive data sets.",
@@ -2788,26 +1898,6 @@
   "GithubStars": 25819,
   "GithubDescription": "The open-source database for the realtime web.",
   "GithubContributorsCount": 238
- },
- {
-  "Name": "Scalar DB",
-  "Logo": "https://landscape.cncf.io/logos/scalar-db.svg",
-  "CrunchbaseDescription": "Scalar provides reliable data management technology.",
-  "Category": "App Definition and Development",
-  "Subcategory": "Database",
-  "GithubStars": 345,
-  "GithubDescription": "Universal transaction manager",
-  "GithubContributorsCount": 24
- },
- {
-  "Name": "SchemaHero",
-  "Logo": "https://landscape.cncf.io/logos/schema-hero.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "App Definition and Development",
-  "Subcategory": "Database",
-  "GithubStars": 698,
-  "GithubDescription": "A Kubernetes operator for declarative database schema management (gitops for database schemas)",
-  "GithubContributorsCount": 36
  },
  {
   "Name": "Scylla",
@@ -3000,16 +2090,6 @@
   "GithubContributorsCount": 1388
  },
  {
-  "Name": "CDEvents",
-  "Logo": "https://landscape.cncf.io/logos/cd-events.svg",
-  "CrunchbaseDescription": "A Neutral Home for the Next Generation of Continuous Delivery Collaboration",
-  "Category": "App Definition and Development",
-  "Subcategory": "Streaming \u0026 Messaging",
-  "GithubStars": 42,
-  "GithubDescription": "A common specification for Continuous Delivery events",
-  "GithubContributorsCount": 7
- },
- {
   "Name": "CloudEvents",
   "Logo": "https://landscape.cncf.io/logos/cloud-events.svg",
   "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
@@ -3070,16 +2150,6 @@
   "GithubContributorsCount": 1179
  },
  {
-  "Name": "KubeMQ",
-  "Logo": "https://landscape.cncf.io/logos/kube-mq.svg",
-  "CrunchbaseDescription": "KubeMQ is an enterprise grade message broker for containers.",
-  "Category": "App Definition and Development",
-  "Subcategory": "Streaming \u0026 Messaging",
-  "GithubStars": 546,
-  "GithubDescription": "KubeMQ is a Kubernetes native message queue broker",
-  "GithubContributorsCount": 8
- },
- {
   "Name": "Memphis",
   "Logo": "https://landscape.cncf.io/logos/memphis.svg",
   "CrunchbaseDescription": "Memphis.dev is an open-source, real-time data processing platform for in-app streaming use cases.",
@@ -3098,16 +2168,6 @@
   "GithubStars": 11916,
   "GithubDescription": "High-Performance server for NATS.io, the cloud and edge native messaging system.",
   "GithubContributorsCount": 135
- },
- {
-  "Name": "OpenMessaging",
-  "Logo": "https://landscape.cncf.io/logos/open-messaging.svg",
-  "CrunchbaseDescription": "The Linux Foundation builds sustainable ecosystems around open source projects to accelerate technology development and industry adoption.",
-  "Category": "App Definition and Development",
-  "Subcategory": "Streaming \u0026 Messaging",
-  "GithubStars": 716,
-  "GithubDescription": "OpenMessaging Runtime Interface for Java",
-  "GithubContributorsCount": 18
  },
  {
   "Name": "Pravega",
@@ -3180,16 +2240,6 @@
   "GithubContributorsCount": 197
  },
  {
-  "Name": "Tremor",
-  "Logo": "https://landscape.cncf.io/logos/tremor.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "App Definition and Development",
-  "Subcategory": "Streaming \u0026 Messaging",
-  "GithubStars": 709,
-  "GithubDescription": "Main Tremor Project Rust Codebase",
-  "GithubContributorsCount": 47
- },
- {
   "Name": "Artifact Hub",
   "Logo": "https://landscape.cncf.io/logos/artifact-hub.svg",
   "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
@@ -3240,26 +2290,6 @@
   "GithubContributorsCount": 212
  },
  {
-  "Name": "CloudARK KubePlus",
-  "Logo": "https://landscape.cncf.io/logos/cloud-ark-kube-plus.svg",
-  "CrunchbaseDescription": "CloudARK enables building SaaS for containerized applications",
-  "Category": "App Definition and Development",
-  "Subcategory": "Application Definition \u0026 Image Build",
-  "GithubStars": 443,
-  "GithubDescription": "Kubernetes Operator to create Multi-Instance SaaS from Helm charts",
-  "GithubContributorsCount": 6
- },
- {
-  "Name": "Devfile",
-  "Logo": "https://landscape.cncf.io/logos/devfile.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "App Definition and Development",
-  "Subcategory": "Application Definition \u0026 Image Build",
-  "GithubStars": 95,
-  "GithubDescription": "Kube-native API for cloud development workspaces specification",
-  "GithubContributorsCount": 20
- },
- {
   "Name": "DevSpace",
   "Logo": "https://landscape.cncf.io/logos/dev-space.svg",
   "CrunchbaseDescription": "Loft Labs enables any organization to scale self-service access to Kubernetes from 10 to 10,000 engineers.",
@@ -3290,16 +2320,6 @@
   "GithubContributorsCount": 201
  },
  {
-  "Name": "Gefyra",
-  "Logo": "https://landscape.cncf.io/logos/gefyra.svg",
-  "CrunchbaseDescription": "Blueshoe is a digital agency that specializes in web and software development, conception and marketing of digital products.",
-  "Category": "App Definition and Development",
-  "Subcategory": "Application Definition \u0026 Image Build",
-  "GithubStars": 326,
-  "GithubDescription": "Blazingly-fast :rocket:, rock-solid, local application development :arrow_right: with Kubernetes.",
-  "GithubContributorsCount": 13
- },
- {
   "Name": "Gradle Build Tool",
   "Logo": "https://landscape.cncf.io/logos/gradle-build-tool.svg",
   "CrunchbaseDescription": "Gradle provides the most popular open source build tool for the Java ecosystem and the Gradle Enterprise commercial build analytics solution",
@@ -3328,56 +2348,6 @@
   "GithubStars": 11457,
   "GithubDescription": "Build Container Images In Kubernetes",
   "GithubContributorsCount": 256
- },
- {
-  "Name": "Konveyor",
-  "Logo": "https://landscape.cncf.io/logos/konveyor.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "App Definition and Development",
-  "Subcategory": "Application Definition \u0026 Image Build",
-  "GithubStars": 5,
-  "GithubDescription": "Documentation for Konveyor Community",
-  "GithubContributorsCount": 10
- },
- {
-  "Name": "KOTS",
-  "Logo": "https://landscape.cncf.io/logos/kots.svg",
-  "CrunchbaseDescription": "Replicated provides a platform for delivering and managing Kubernetes applications in any environment.",
-  "Category": "App Definition and Development",
-  "Subcategory": "Application Definition \u0026 Image Build",
-  "GithubStars": 787,
-  "GithubDescription": "KOTS provides the framework, tools and integrations that enable the delivery and management of 3rd-party Kubernetes applications, a.k.a. Kubernetes Off-The-Shelf (KOTS) Software.",
-  "GithubContributorsCount": 64
- },
- {
-  "Name": "Krator",
-  "Logo": "https://landscape.cncf.io/logos/krator.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "App Definition and Development",
-  "Subcategory": "Application Definition \u0026 Image Build",
-  "GithubStars": 100,
-  "GithubDescription": "Kubernetes Rust State Machine Operator",
-  "GithubContributorsCount": 23
- },
- {
-  "Name": "KubeCarrier",
-  "Logo": "https://landscape.cncf.io/logos/kube-carrier.svg",
-  "CrunchbaseDescription": "Kubermatic empowers organizations worldwide to automate their Kubernetes and cloud native operations across multi-cloud, edge and on-prem.",
-  "Category": "App Definition and Development",
-  "Subcategory": "Application Definition \u0026 Image Build",
-  "GithubStars": 283,
-  "GithubDescription": "KubeCarrier - Service Management at Scale ",
-  "GithubContributorsCount": 8
- },
- {
-  "Name": "KubeOrbit",
-  "Logo": "https://landscape.cncf.io/logos/kube-orbit.svg",
-  "CrunchbaseDescription": "TeamCode is a toolchain that helps developers work collaboratively in the cloud, auto-generates, builds, and deploys the dev environment.",
-  "Category": "App Definition and Development",
-  "Subcategory": "Application Definition \u0026 Image Build",
-  "GithubStars": 450,
-  "GithubDescription": "Test your application on Kubernetes in a brand new simple way⚡ 轻量高效的微服务本地联调测试工具",
-  "GithubContributorsCount": 3
  },
  {
   "Name": "KubeVela",
@@ -3418,26 +2388,6 @@
   "GithubStars": 2359,
   "GithubDescription": "A hybrid command-line/UI development experience for cloud-native development",
   "GithubContributorsCount": 27
- },
- {
-  "Name": "Lagoon",
-  "Logo": "https://landscape.cncf.io/logos/lagoon.svg",
-  "CrunchbaseDescription": "Your ZeroOps application delivery hub.",
-  "Category": "App Definition and Development",
-  "Subcategory": "Application Definition \u0026 Image Build",
-  "GithubStars": 458,
-  "GithubDescription": "Lagoon, the developer-focused application delivery platform",
-  "GithubContributorsCount": 95
- },
- {
-  "Name": "Monokle",
-  "Logo": "https://landscape.cncf.io/logos/monokle.svg",
-  "CrunchbaseDescription": "At Kubeshop, our mission is to build a thriving open-source ecosystem and pipeline of next generation Kubernetes products and projects.",
-  "Category": "App Definition and Development",
-  "Subcategory": "Application Definition \u0026 Image Build",
-  "GithubStars": 712,
-  "GithubDescription": "🧐 Monokle is a unified visual tool for authoring, analysis and deployment of Kubernetes configurations. from manifest to live clusters",
-  "GithubContributorsCount": 38
  },
  {
   "Name": "Nocalhost",
@@ -3530,16 +2480,6 @@
   "GithubContributorsCount": 504
  },
  {
-  "Name": "Porter",
-  "Logo": "https://landscape.cncf.io/logos/porter.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "App Definition and Development",
-  "Subcategory": "Application Definition \u0026 Image Build",
-  "GithubStars": 940,
-  "GithubDescription": "Porter enables you to package your application artifact, client tools, configuration and deployment logic together as an installer that you can distribute, and install with a single command.",
-  "GithubContributorsCount": 75
- },
- {
   "Name": "sealer",
   "Logo": "https://landscape.cncf.io/logos/sealer.svg",
   "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
@@ -3550,16 +2490,6 @@
   "GithubContributorsCount": 67
  },
  {
-  "Name": "Serverless Workflow",
-  "Logo": "https://landscape.cncf.io/logos/serverless-workflow.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "App Definition and Development",
-  "Subcategory": "Application Definition \u0026 Image Build",
-  "GithubStars": 515,
-  "GithubDescription": "Serverless Workflow Specification",
-  "GithubContributorsCount": 38
- },
- {
   "Name": "ServiceComb",
   "Logo": "https://landscape.cncf.io/logos/service-comb.svg",
   "CrunchbaseDescription": "Apache Software Foundation provides organizational, legal and financial support for Apache open-source software projects.",
@@ -3568,16 +2498,6 @@
   "GithubStars": 1821,
   "GithubDescription": "ServiceComb Java Chassis is a Software Development Kit (SDK) for rapid development of microservices in Java, providing service registration, service discovery, dynamic routing, and service management features",
   "GithubContributorsCount": 146
- },
- {
-  "Name": "Shipwright",
-  "Logo": "https://landscape.cncf.io/logos/shipwright.svg",
-  "CrunchbaseDescription": "A Neutral Home for the Next Generation of Continuous Delivery Collaboration",
-  "Category": "App Definition and Development",
-  "Subcategory": "Application Definition \u0026 Image Build",
-  "GithubStars": 10,
-  "GithubDescription": "Community documentation for Shipwright",
-  "GithubContributorsCount": 10
  },
  {
   "Name": "Skaffold",
@@ -3670,16 +2590,6 @@
   "GithubContributorsCount": 49
  },
  {
-  "Name": "Cartographer",
-  "Logo": "https://landscape.cncf.io/logos/cartographer.svg",
-  "CrunchbaseDescription": "VMware is a provider of multi-cloud services for all apps, enabling digital innovation with enterprise control.",
-  "Category": "App Definition and Development",
-  "Subcategory": "Continuous Integration \u0026 Delivery",
-  "GithubStars": 394,
-  "GithubDescription": "Cartographer is a Supply Chain Choreographer.",
-  "GithubContributorsCount": 28
- },
- {
   "Name": "Concourse",
   "Logo": "https://landscape.cncf.io/logos/concourse.svg",
   "CrunchbaseDescription": "VMware is a provider of multi-cloud services for all apps, enabling digital innovation with enterprise control.",
@@ -3760,16 +2670,6 @@
   "GithubContributorsCount": 175
  },
  {
-  "Name": "HyScale",
-  "Logo": "https://landscape.cncf.io/logos/hy-scale.svg",
-  "CrunchbaseDescription": "An acceleration platform for Kubernetes. Offers self-service app deployments, container sprawl management across clusters, and DevSecOps.",
-  "Category": "App Definition and Development",
-  "Subcategory": "Continuous Integration \u0026 Delivery",
-  "GithubStars": 438,
-  "GithubDescription": "HyScale is an Application Centric Abstraction Framework over K8s.",
-  "GithubContributorsCount": 26
- },
- {
   "Name": "Jenkins",
   "Logo": "https://landscape.cncf.io/logos/jenkins.svg",
   "CrunchbaseDescription": "A Neutral Home for the Next Generation of Continuous Delivery Collaboration",
@@ -3820,26 +2720,6 @@
   "GithubContributorsCount": 116
  },
  {
-  "Name": "OpenFeature",
-  "Logo": "https://landscape.cncf.io/logos/open-feature.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "App Definition and Development",
-  "Subcategory": "Continuous Integration \u0026 Delivery",
-  "GithubStars": 67,
-  "GithubDescription": "OpenFeature project community and governance",
-  "GithubContributorsCount": 48
- },
- {
-  "Name": "OpenGitOps",
-  "Logo": "https://landscape.cncf.io/logos/open-git-ops.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "App Definition and Development",
-  "Subcategory": "Continuous Integration \u0026 Delivery",
-  "GithubStars": 467,
-  "GithubDescription": "Repository for top-level information about the OpenGitOps project",
-  "GithubContributorsCount": 10
- },
- {
   "Name": "OpenKruise",
   "Logo": "https://landscape.cncf.io/logos/open-kruise.svg",
   "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
@@ -3848,46 +2728,6 @@
   "GithubStars": 3472,
   "GithubDescription": "Automate application management on Kubernetes (project under CNCF)",
   "GithubContributorsCount": 86
- },
- {
-  "Name": "Ortelius",
-  "Logo": "https://landscape.cncf.io/logos/ortelius.svg",
-  "CrunchbaseDescription": "A Neutral Home for the Next Generation of Continuous Delivery Collaboration",
-  "Category": "App Definition and Development",
-  "Subcategory": "Continuous Integration \u0026 Delivery",
-  "GithubStars": 263,
-  "GithubDescription": "Ortelius simplifies the implementation of microservices.  By providing a central catalog of services with their deployment specs, application teams can easily consume and deploy services across cluster. Ortelius tracks application versions based on service updates and maps their service dependencies eliminating confusion and guess work. ",
-  "GithubContributorsCount": 77
- },
- {
-  "Name": "PipeCD",
-  "Logo": "https://landscape.cncf.io/logos/pipe-cd.svg",
-  "CrunchbaseDescription": "CyberAgent operates “Ameba,” which is one of leading Internet media in Japan.",
-  "Category": "App Definition and Development",
-  "Subcategory": "Continuous Integration \u0026 Delivery",
-  "GithubStars": 639,
-  "GithubDescription": "The One CD for All {applications, platforms, operations}",
-  "GithubContributorsCount": 49
- },
- {
-  "Name": "Razee",
-  "Logo": "https://landscape.cncf.io/logos/razee.svg",
-  "CrunchbaseDescription": "IBM is an IT technology and consulting firm providing computer hardware, software, infrastructure, and hosting services.",
-  "Category": "App Definition and Development",
-  "Subcategory": "Continuous Integration \u0026 Delivery",
-  "GithubStars": 418,
-  "GithubDescription": "Overview and docs",
-  "GithubContributorsCount": 19
- },
- {
-  "Name": "Screwdriver",
-  "Logo": "https://landscape.cncf.io/logos/screwdriver.svg",
-  "CrunchbaseDescription": "A Neutral Home for the Next Generation of Continuous Delivery Collaboration",
-  "Category": "App Definition and Development",
-  "Subcategory": "Continuous Integration \u0026 Delivery",
-  "GithubStars": 955,
-  "GithubDescription": "An open source build platform designed for continuous delivery.",
-  "GithubContributorsCount": 84
  },
  {
   "Name": "Spinnaker",
@@ -3910,26 +2750,6 @@
   "GithubContributorsCount": 294
  },
  {
-  "Name": "Testkube",
-  "Logo": "https://landscape.cncf.io/logos/testkube.svg",
-  "CrunchbaseDescription": "At Kubeshop, our mission is to build a thriving open-source ecosystem and pipeline of next generation Kubernetes products and projects.",
-  "Category": "App Definition and Development",
-  "Subcategory": "Continuous Integration \u0026 Delivery",
-  "GithubStars": 565,
-  "GithubDescription": "☸️ Kubernetes-native testing framework for test execution and orchestration",
-  "GithubContributorsCount": 43
- },
- {
-  "Name": "Travis CI",
-  "Logo": "https://landscape.cncf.io/logos/travis-ci.svg",
-  "CrunchbaseDescription": "Hosted Continuous Integration Platform",
-  "Category": "App Definition and Development",
-  "Subcategory": "Continuous Integration \u0026 Delivery",
-  "GithubStars": 608,
-  "GithubDescription": "The Ember web client for Travis CI",
-  "GithubContributorsCount": 159
- },
- {
   "Name": "werf",
   "Logo": "https://landscape.cncf.io/logos/werf.svg",
   "CrunchbaseDescription": "Flant offers DevOps as a Service, Managed Kubernetes, and Okmeter monitoring system.",
@@ -3948,26 +2768,6 @@
   "GithubStars": 1838,
   "GithubDescription": "Woodpecker is a community fork of the Drone CI system.",
   "GithubContributorsCount": 378
- },
- {
-  "Name": "AgoraKube",
-  "Logo": "https://landscape.cncf.io/logos/agora-kube.svg",
-  "CrunchbaseDescription": "Supporting companies to transform their IT architecture",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Distribution",
-  "GithubStars": 84,
-  "GithubDescription": "Agorakube is a Certified Kubernetes Distribution built on top of CNCF ecosystem that provides an enterprise grade solution following best practices to manage a conformant Kubernetes cluster for on-premise and public cloud providers.",
-  "GithubContributorsCount": 33
- },
- {
-  "Name": "AlviStack Ansible Collection for Kubernetes",
-  "Logo": "https://landscape.cncf.io/logos/alvi-stack-ansible-collection-for-kubernetes.svg",
-  "CrunchbaseDescription": "PantaRei Design Limited is an open-source software company that supports Cloud Computing-based apps.",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Distribution",
-  "GithubStars": 26,
-  "GithubDescription": "Ansible collection for deploying Kubernetes",
-  "GithubContributorsCount": 1
  },
  {
   "Name": "Amazon Elastic Kubernetes Service Distro (Amazon EKS-D)",
@@ -3990,86 +2790,6 @@
   "GithubContributorsCount": 361
  },
  {
-  "Name": "Canonical Charmed Kubernetes",
-  "Logo": "https://landscape.cncf.io/logos/canonical-charmed-kubernetes.svg",
-  "CrunchbaseDescription": "Canonical is a computer software company that markets commercial support and related services for Ubuntu and related projects.",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Distribution",
-  "GithubStars": 131,
-  "GithubDescription": "Charmed Kubernetes bundles. Report bugs at https://bugs.launchpad.net/charmed-kubernetes",
-  "GithubContributorsCount": 32
- },
- {
-  "Name": "Desktop Kubernetes",
-  "Logo": "https://landscape.cncf.io/logos/desktop-kubernetes.svg",
-  "CrunchbaseDescription": "Desktop Kubernetes is a Bash shell project that provisions a desktop Kubernetes cluster using VirtualBox",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Distribution",
-  "GithubStars": 6,
-  "GithubDescription": "Stands up a three-VM Kubernetes development cluster on the desktop using VirtualBox, by running a single Bash script. The script command line options support different cluster configs: like monitoring, networking, etc.",
-  "GithubContributorsCount": 3
- },
- {
-  "Name": "Elastisys Compliant Kubernetes",
-  "Logo": "https://landscape.cncf.io/logos/elastisys-compliant-kubernetes.svg",
-  "CrunchbaseDescription": "We offer Compliant Kubernetes as a fully-managed service, cloud native consulting, and Linux Foundation official training.",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Distribution",
-  "GithubStars": 16,
-  "GithubDescription": "Infrastructure and kubernetes provisioner for compliant kubernetes.",
-  "GithubContributorsCount": 11
- },
- {
-  "Name": "Flant Deckhouse",
-  "Logo": "https://landscape.cncf.io/logos/flant-deckhouse.svg",
-  "CrunchbaseDescription": "Flant offers DevOps as a Service, Managed Kubernetes, and Okmeter monitoring system.",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Distribution",
-  "GithubStars": 749,
-  "GithubDescription": "Kubernetes platform from Flant",
-  "GithubContributorsCount": 87
- },
- {
-  "Name": "Flexkube",
-  "Logo": "https://landscape.cncf.io/logos/flexkube.svg",
-  "CrunchbaseDescription": "Flexible Kubernetes distribution",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Distribution",
-  "GithubStars": 30,
-  "GithubDescription": "Go library for installing and managing Kubernetes clusters",
-  "GithubContributorsCount": 1
- },
- {
-  "Name": "Fury Distribution",
-  "Logo": "https://landscape.cncf.io/logos/fury-distribution.svg",
-  "CrunchbaseDescription": "SIGHUP is specialized on Kubernetes and Cloud-Native infrastructures.",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Distribution",
-  "GithubStars": 70,
-  "GithubDescription": "Kubernetes Fury Distribution (Core Modules) - A battle-tested open-source Kubernetes distribution",
-  "GithubContributorsCount": 6
- },
- {
-  "Name": "Intel Smart Edge Open",
-  "Logo": "https://landscape.cncf.io/logos/intel-smart-edge-open.svg",
-  "CrunchbaseDescription": "Intel designs, manufactures, and sells integrated digital technology platforms worldwide.",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Distribution",
-  "GithubStars": 16,
-  "GithubDescription": "Source code for experience kits that use Edge Software Provisioner for deployment.",
-  "GithubContributorsCount": 2
- },
- {
-  "Name": "k0s",
-  "Logo": "https://landscape.cncf.io/logos/k0s.svg",
-  "CrunchbaseDescription": "Mirantis helps organizations ship code faster on public and private clouds. We provide a public cloud experience on any infrastructure.",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Distribution",
-  "GithubStars": 220,
-  "GithubDescription": "k0s - The Zero Friction Kubernetes",
-  "GithubContributorsCount": 74
- },
- {
   "Name": "k3s",
   "Logo": "https://landscape.cncf.io/logos/k3s.svg",
   "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
@@ -4078,36 +2798,6 @@
   "GithubStars": 21679,
   "GithubDescription": "Lightweight Kubernetes",
   "GithubContributorsCount": 183
- },
- {
-  "Name": "Kamaji",
-  "Logo": "https://landscape.cncf.io/logos/kamaji.svg",
-  "CrunchbaseDescription": "Kubernetes multi-tenancy made easy",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Distribution",
-  "GithubStars": 226,
-  "GithubDescription": "Build and operate Kubernetes at scale with a fraction of operational burden.",
-  "GithubContributorsCount": 9
- },
- {
-  "Name": "KubeCube",
-  "Logo": "https://landscape.cncf.io/logos/kube-cube.svg",
-  "CrunchbaseDescription": "NetEase, Inc. (NASDAQ: NTES) is a leading internet technology company dedicated to providing premium online services.",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Distribution",
-  "GithubStars": 331,
-  "GithubDescription": "KubeCube is an open source enterprise-level container platform",
-  "GithubContributorsCount": 10
- },
- {
-  "Name": "Kubermatic Kubernetes Platform",
-  "Logo": "https://landscape.cncf.io/logos/kubermatic-kubernetes-platform.svg",
-  "CrunchbaseDescription": "Kubermatic empowers organizations worldwide to automate their Kubernetes and cloud native operations across multi-cloud, edge and on-prem.",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Distribution",
-  "GithubStars": 903,
-  "GithubDescription": "Kubermatic Kubernetes Platform - the Central Kubernetes Management Platform For Any Infrastructure ",
-  "GithubContributorsCount": 112
  },
  {
   "Name": "Kubesphere",
@@ -4120,26 +2810,6 @@
   "GithubContributorsCount": 143
  },
  {
-  "Name": "kURL",
-  "Logo": "https://landscape.cncf.io/logos/k-url.svg",
-  "CrunchbaseDescription": "Replicated provides a platform for delivering and managing Kubernetes applications in any environment.",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Distribution",
-  "GithubStars": 628,
-  "GithubDescription": "Production-grade, airgapped Kubernetes installer combining upstream k8s with overlays and popular components",
-  "GithubContributorsCount": 78
- },
- {
-  "Name": "MetalK8s",
-  "Logo": "https://landscape.cncf.io/logos/metal-k8s.svg",
-  "CrunchbaseDescription": "Scality is a venture-backed software company that solves problems associated with large-scale storage management and infrastructure.",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Distribution",
-  "GithubStars": 294,
-  "GithubDescription": "An opinionated Kubernetes distribution with a focus on long-term on-prem deployments",
-  "GithubContributorsCount": 41
- },
- {
   "Name": "MicroK8s",
   "Logo": "https://landscape.cncf.io/logos/micro-k8s.svg",
   "CrunchbaseDescription": "Canonical is a computer software company that markets commercial support and related services for Ubuntu and related projects.",
@@ -4150,26 +2820,6 @@
   "GithubContributorsCount": 146
  },
  {
-  "Name": "Paas-TA Container Platform",
-  "Logo": "https://landscape.cncf.io/logos/paas-ta-container-platform.svg",
-  "CrunchbaseDescription": "National Information Society Agency develops policies related to the promotion of informatization of Korean national institutions.",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Distribution",
-  "GithubStars": 5,
-  "GithubDescription": "PaaS-TA 컨테이너 플랫폼",
-  "GithubContributorsCount": 12
- },
- {
-  "Name": "QBO",
-  "Logo": "https://landscape.cncf.io/logos/qbo.svg",
-  "CrunchbaseDescription": "QBO is the fastest and easiest k8s deployment out there. It uses https://kind.sigs.k8s.io/ node images to deploy k8s clusters everywhere.",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Distribution",
-  "GithubStars": 4,
-  "GithubDescription": "",
-  "GithubContributorsCount": 2
- },
- {
   "Name": "Rancher Kubernetes",
   "Logo": "https://landscape.cncf.io/logos/rancher-kubernetes.svg",
   "CrunchbaseDescription": "SUSE provides reliable and interoperable Linux and cloud infrastructure solutions that give enterprises greater control and flexibility.",
@@ -4178,26 +2828,6 @@
   "GithubStars": 20286,
   "GithubDescription": "Complete container management platform",
   "GithubContributorsCount": 239
- },
- {
-  "Name": "Red Hat OpenShift",
-  "Logo": "https://landscape.cncf.io/logos/red-hat-open-shift.svg",
-  "CrunchbaseDescription": "Red Hat is a multinational software company engaged in providing open-source software products to the enterprise community.",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Distribution",
-  "GithubStars": 52,
-  "GithubDescription": "This is the repo that tracks all patches to the OpenShift distribution of Kubernetes on branches corresponding to OpenShift releases.  See https://github.com/openshift/kubernetes/blob/master/README.openshift.md for more",
-  "GithubContributorsCount": 4463
- },
- {
-  "Name": "RKE Government",
-  "Logo": "https://landscape.cncf.io/logos/rke-government.svg",
-  "CrunchbaseDescription": "SUSE provides reliable and interoperable Linux and cloud infrastructure solutions that give enterprises greater control and flexibility.",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Distribution",
-  "GithubStars": 818,
-  "GithubDescription": "",
-  "GithubContributorsCount": 95
  },
  {
   "Name": "Typhoon",
@@ -4220,56 +2850,6 @@
   "GithubContributorsCount": 62
  },
  {
-  "Name": "Wind River Studio Cloud Platform",
-  "Logo": "https://landscape.cncf.io/logos/wind-river-studio-cloud-platform.svg",
-  "CrunchbaseDescription": "Wind River is a technology company that develops, runs, and manages device software.",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Distribution",
-  "GithubStars": 0,
-  "GithubDescription": "A github mirror of https://github.com/starlingx/config",
-  "GithubContributorsCount": 107
- },
- {
-  "Name": "Catalyst Kubernetes Service",
-  "Logo": "https://landscape.cncf.io/logos/catalyst-kubernetes-service.svg",
-  "CrunchbaseDescription": "We deliver robust and innovative cloud services in New Zealand",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Hosted",
-  "GithubStars": 2,
-  "GithubDescription": "Container Infrastructure Management Service for OpenStack",
-  "GithubContributorsCount": 352
- },
- {
-  "Name": "KubeSphere®️ (QKE)",
-  "Logo": "https://landscape.cncf.io/logos/kube-sphere-qke.svg",
-  "CrunchbaseDescription": "QingCloud is a cloud computing platform that provides IaaS-based flexible cloud services.",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Hosted",
-  "GithubStars": 27,
-  "GithubDescription": "KubeSphere is an open source container application platform by QingCloud based on Kubernetes.",
-  "GithubContributorsCount": 19
- },
- {
-  "Name": "Microsoft AKS Engine for Azure Stack",
-  "Logo": "https://landscape.cncf.io/logos/microsoft-aks-engine-for-azure-stack.svg",
-  "CrunchbaseDescription": "Microsoft is a software corporation that develops, manufactures, licenses, supports, and sells a range of software products and services.",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Hosted",
-  "GithubStars": 6,
-  "GithubDescription": "AKS Engine: Units of Kubernetes on Azure!",
-  "GithubContributorsCount": 354
- },
- {
-  "Name": "AlviStack Vagrant Box Packaging for Kubernetes",
-  "Logo": "https://landscape.cncf.io/logos/alvi-stack-vagrant-box-packaging-for-kubernetes.svg",
-  "CrunchbaseDescription": "PantaRei Design Limited is an open-source software company that supports Cloud Computing-based apps.",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Installer",
-  "GithubStars": 11,
-  "GithubDescription": "Vagrant Box Packaging for Kubernetes",
-  "GithubContributorsCount": 1
- },
- {
   "Name": "Amazon Elastic Kubernetes Service Anywhere (Amazon EKS Anywhere)",
   "Logo": "https://landscape.cncf.io/logos/amazon-elastic-kubernetes-service-anywhere-amazon-eks-anywhere.svg",
   "CrunchbaseDescription": "Amazon Web Services provides information technology infrastructure services to businesses in the form of web services.",
@@ -4278,26 +2858,6 @@
   "GithubStars": 1675,
   "GithubDescription": "Run Amazon EKS on your own infrastructure 🚀",
   "GithubContributorsCount": 70
- },
- {
-  "Name": "Crane",
-  "Logo": "https://landscape.cncf.io/logos/crane.svg",
-  "CrunchbaseDescription": "The Crane is a superb Kubernetes distribution for all of your Deploy needs.",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Installer",
-  "GithubStars": 58,
-  "GithubDescription": "Kubernetes Deploy Tools。基于 Ansible 部署 Kubernetes Cluster 支持 18 种特定功能 StaticPod 部署模式。",
-  "GithubContributorsCount": 4
- },
- {
-  "Name": "Cybozu Kubernetes Engine",
-  "Logo": "https://landscape.cncf.io/logos/cybozu-kubernetes-engine.svg",
-  "CrunchbaseDescription": "Cybozu is a technology company specializing in application Platform as a Service.",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Installer",
-  "GithubStars": 155,
-  "GithubDescription": "Cybozu Kubernetes Engine",
-  "GithubContributorsCount": 27
  },
  {
   "Name": "Gardener",
@@ -4340,16 +2900,6 @@
   "GithubContributorsCount": 77
  },
  {
-  "Name": "KubeClipper",
-  "Logo": "https://landscape.cncf.io/logos/kube-clipper.svg",
-  "CrunchbaseDescription": "99Cloud is an OpenStack-based cloud-computing solutions and operations company.",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Installer",
-  "GithubStars": 125,
-  "GithubDescription": "Manage kubernetes in the most light and convenient way ☸️",
-  "GithubContributorsCount": 11
- },
- {
   "Name": "Kubekey",
   "Logo": "https://landscape.cncf.io/logos/kubekey.svg",
   "CrunchbaseDescription": "QingCloud is a cloud computing platform that provides IaaS-based flexible cloud services.",
@@ -4380,16 +2930,6 @@
   "GithubContributorsCount": 68
  },
  {
-  "Name": "Kubernetes - The Easier Way",
-  "Logo": "https://landscape.cncf.io/logos/kubernetes-the-easier-way.svg",
-  "CrunchbaseDescription": "A CLI tool to generate the configuration for a Kubernetes cluster",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Installer",
-  "GithubStars": 293,
-  "GithubDescription": "Kubernetes - The Easier Way",
-  "GithubContributorsCount": 4
- },
- {
   "Name": "Kubespray",
   "Logo": "https://landscape.cncf.io/logos/kubespray.svg",
   "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
@@ -4400,16 +2940,6 @@
   "GithubContributorsCount": 1030
  },
  {
-  "Name": "Magnum",
-  "Logo": "https://landscape.cncf.io/logos/magnum.svg",
-  "CrunchbaseDescription": "Helping people build and operate open infrastructure that runs in production",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Installer",
-  "GithubStars": 307,
-  "GithubDescription": "Container Infrastructure Management Service for OpenStack. Mirror of code maintained at opendev.org.",
-  "GithubContributorsCount": 378
- },
- {
   "Name": "minikube",
   "Logo": "https://landscape.cncf.io/logos/minikube.svg",
   "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
@@ -4418,16 +2948,6 @@
   "GithubStars": 25265,
   "GithubDescription": "Run Kubernetes locally",
   "GithubContributorsCount": 834
- },
- {
-  "Name": "puppetlabs-kubernetes",
-  "Logo": "https://landscape.cncf.io/logos/puppetlabs-kubernetes.svg",
-  "CrunchbaseDescription": "Puppet is an information technology automation software company designed for system administrators.",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Installer",
-  "GithubStars": 86,
-  "GithubDescription": "This module install and configures a Kubernetes cluster",
-  "GithubContributorsCount": 103
  },
  {
   "Name": "Rancher Kubernetes Engine (RKE)",
@@ -4448,16 +2968,6 @@
   "GithubStars": 3472,
   "GithubDescription": "Talos Linux is a modern Linux distribution built for Kubernetes.",
   "GithubContributorsCount": 110
- },
- {
-  "Name": "Symplegma",
-  "Logo": "https://landscape.cncf.io/logos/symplegma.svg",
-  "CrunchbaseDescription": "We build Cloud Native infrastructure, from an application on your laptop to a scalable infrastructure, define as code",
-  "Category": "Platform",
-  "Subcategory": "Certified Kubernetes - Installer",
-  "GithubStars": 38,
-  "GithubDescription": "Streamlined Ansible Kubernetes deployment tool",
-  "GithubContributorsCount": 7
  },
  {
   "Name": "Akka",
@@ -4570,16 +3080,6 @@
   "GithubContributorsCount": 138
  },
  {
-  "Name": "Cloud Native Landscape",
-  "Logo": "https://landscape.cncf.io/logos/cloud-native-landscape.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Serverless",
-  "Subcategory": "Tools",
-  "GithubStars": 197,
-  "GithubDescription": "🌄Upstream landscape generation application",
-  "GithubContributorsCount": 12
- },
- {
   "Name": "Hasura GraphQL Engine",
   "Logo": "https://landscape.cncf.io/logos/hasura-graph-ql-engine.svg",
   "CrunchbaseDescription": "Hasura is a software technology company that provides developer-focused tooling products.",
@@ -4600,16 +3100,6 @@
   "GithubContributorsCount": 76
  },
  {
-  "Name": "SCAR",
-  "Logo": "https://landscape.cncf.io/logos/scar.svg",
-  "CrunchbaseDescription": "Polytechnic University of Valencia is a school in Valencia.",
-  "Category": "Serverless",
-  "Subcategory": "Tools",
-  "GithubStars": 584,
-  "GithubDescription": "Serverless Container-aware ARchitectures (e.g. Docker in AWS Lambda)",
-  "GithubContributorsCount": 16
- },
- {
   "Name": "Serverless Devs",
   "Logo": "https://landscape.cncf.io/logos/serverless-devs.svg",
   "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
@@ -4618,16 +3108,6 @@
   "GithubStars": 1291,
   "GithubDescription": ":fire::fire::fire: Serverless Devs developer tool ( Serverless Devs 开发者工具 )",
   "GithubContributorsCount": 38
- },
- {
-  "Name": "Architect",
-  "Logo": "https://landscape.cncf.io/logos/architect.svg",
-  "CrunchbaseDescription": "OpenJS Foundation specializes in the development of open-source infrastructure projects.",
-  "Category": "Serverless",
-  "Subcategory": "Framework",
-  "GithubStars": 149,
-  "GithubDescription": "AWS Lambda Node runtime helpers for Architect apps ",
-  "GithubContributorsCount": 24
  },
  {
   "Name": "AWS Server Application Model (SAM)",
@@ -4690,16 +3170,6 @@
   "GithubContributorsCount": 49
  },
  {
-  "Name": "Layotto",
-  "Logo": "https://landscape.cncf.io/logos/layotto.svg",
-  "CrunchbaseDescription": "Ant Group strives to enable all consumers and small businesses to have equal access to financial and other services through technology.",
-  "Category": "Serverless",
-  "Subcategory": "Framework",
-  "GithubStars": 674,
-  "GithubDescription": "A fast and efficient cloud native application runtime",
-  "GithubContributorsCount": 63
- },
- {
   "Name": "Midway Serverless",
   "Logo": "https://landscape.cncf.io/logos/midway-serverless.svg",
   "CrunchbaseDescription": "Alibaba Group enables businesses to transform the way they market, sell, operate, and improve their efficiencies.",
@@ -4708,16 +3178,6 @@
   "GithubStars": 6271,
   "GithubDescription": "🍔 A Node.js Serverless Framework for front-end/full-stack developers. Build the application for next decade. Works on AWS, Alibaba Cloud, Tencent Cloud and traditional VM/Container. Super easy integrate with React and Vue. 🌈",
   "GithubContributorsCount": 131
- },
- {
-  "Name": "Nitric",
-  "Logo": "https://landscape.cncf.io/logos/nitric.svg",
-  "CrunchbaseDescription": "Making cloud-native \u0026 serverless dev fun and productive. Quickly build, test and deploy on AWS, Microsoft Azure or Google Cloud.",
-  "Category": "Serverless",
-  "Subcategory": "Framework",
-  "GithubStars": 458,
-  "GithubDescription": "Nitric is a framework for cloud-native apps and infrastructure from code. It takes care of infrastructure and config without limiting your language or cloud, so you can spend your time writing application code.",
-  "GithubContributorsCount": 8
  },
  {
   "Name": "Serverless",
@@ -4730,26 +3190,6 @@
   "GithubContributorsCount": 1161
  },
  {
-  "Name": "Sparta",
-  "Logo": "https://landscape.cncf.io/logos/sparta.svg",
-  "CrunchbaseDescription": "Serverless- Frameworks",
-  "Category": "Serverless",
-  "Subcategory": "Framework",
-  "GithubStars": 713,
-  "GithubDescription": "go microservices, powered by AWS Lambda",
-  "GithubContributorsCount": 16
- },
- {
-  "Name": "Spring Cloud Function",
-  "Logo": "https://landscape.cncf.io/logos/spring-cloud-function.svg",
-  "CrunchbaseDescription": "VMware is a provider of multi-cloud services for all apps, enabling digital innovation with enterprise control.",
-  "Category": "Serverless",
-  "Subcategory": "Framework",
-  "GithubStars": 921,
-  "GithubDescription": "",
-  "GithubContributorsCount": 88
- },
- {
   "Name": "SST",
   "Logo": "https://landscape.cncf.io/logos/sst.svg",
   "CrunchbaseDescription": "Serverless Stack is the easiest way to use serverless",
@@ -4758,16 +3198,6 @@
   "GithubStars": 10001,
   "GithubDescription": "💥 SST makes it easy to build full-stack serverless apps.",
   "GithubContributorsCount": 109
- },
- {
-  "Name": "Stateful Functions",
-  "Logo": "https://landscape.cncf.io/logos/stateful-functions.svg",
-  "CrunchbaseDescription": "Ververica provides Ververica Platform, with open source apache flink and application manager, to the enterprise.",
-  "Category": "Serverless",
-  "Subcategory": "Framework",
-  "GithubStars": 416,
-  "GithubDescription": "Apache Flink Stateful Functions",
-  "GithubContributorsCount": 46
  },
  {
   "Name": "Webiny",
@@ -4788,16 +3218,6 @@
   "GithubStars": 1777,
   "GithubDescription": "The host/runtime that powers Azure Functions",
   "GithubContributorsCount": 117
- },
- {
-  "Name": "Apache Camel K",
-  "Logo": "https://landscape.cncf.io/logos/apache-camel-k.svg",
-  "CrunchbaseDescription": "Apache Software Foundation provides organizational, legal and financial support for Apache open-source software projects.",
-  "Category": "Serverless",
-  "Subcategory": "Installable Platform",
-  "GithubStars": 738,
-  "GithubDescription": "Apache Camel K is a lightweight integration platform, born on Kubernetes, with serverless superpowers",
-  "GithubContributorsCount": 109
  },
  {
   "Name": "Apache OpenWhisk",
@@ -4850,16 +3270,6 @@
   "GithubContributorsCount": 265
  },
  {
-  "Name": "Knix",
-  "Logo": "https://landscape.cncf.io/logos/knix.svg",
-  "CrunchbaseDescription": "Nokia is a Finnish multinational communications corporation engaged in the manufacturing of mobile devices and network infrastructure.",
-  "Category": "Serverless",
-  "Subcategory": "Installable Platform",
-  "GithubStars": 175,
-  "GithubDescription": "Serverless computing platform with process-based lightweight function execution and container-based application isolation. Works in Knative and bare metal/VM environments.",
-  "GithubContributorsCount": 15
- },
- {
   "Name": "Krustlet",
   "Logo": "https://landscape.cncf.io/logos/krustlet.svg",
   "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
@@ -4900,16 +3310,6 @@
   "GithubContributorsCount": 180
  },
  {
-  "Name": "OpenFunction",
-  "Logo": "https://landscape.cncf.io/logos/open-function.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Serverless",
-  "Subcategory": "Installable Platform",
-  "GithubStars": 933,
-  "GithubDescription": "Cloud Native Function-as-a-Service Platform (CNCF Sandbox Project)",
-  "GithubContributorsCount": 25
- },
- {
   "Name": "PipelineAI",
   "Logo": "https://landscape.cncf.io/logos/pipeline-ai.svg",
   "CrunchbaseDescription": "Real-Time Enterprise AI Platform",
@@ -4918,16 +3318,6 @@
   "GithubStars": 4142,
   "GithubDescription": "PipelineAI Kubeflow Distribution",
   "GithubContributorsCount": 6
- },
- {
-  "Name": "Riff",
-  "Logo": "https://landscape.cncf.io/logos/riff.svg",
-  "CrunchbaseDescription": "VMware is a provider of multi-cloud services for all apps, enabling digital innovation with enterprise control.",
-  "Category": "Serverless",
-  "Subcategory": "Installable Platform",
-  "GithubStars": 802,
-  "GithubDescription": "riff is for functions",
-  "GithubContributorsCount": 26
  },
  {
   "Name": "Virtual Kubelet",
@@ -4960,26 +3350,6 @@
   "GithubContributorsCount": 82
  },
  {
-  "Name": "Centreon",
-  "Logo": "https://landscape.cncf.io/logos/centreon.svg",
-  "CrunchbaseDescription": "An industry reference for open source monitoring",
-  "Category": "Observability and Analysis",
-  "Subcategory": "Monitoring",
-  "GithubStars": 10,
-  "GithubDescription": "Centreon is a network, system and application monitoring tool. Centreon is the only AIOps Platform Providing Holistic Visibility to Complex IT Workflows from Cloud to Edge.",
-  "GithubContributorsCount": 214
- },
- {
-  "Name": "Checkmk",
-  "Logo": "https://landscape.cncf.io/logos/checkmk.svg",
-  "CrunchbaseDescription": "Creators of checkmk, an IT monitoring software",
-  "Category": "Observability and Analysis",
-  "Subcategory": "Monitoring",
-  "GithubStars": 854,
-  "GithubDescription": "Checkmk - Best-in-class infrastructure \u0026 application monitoring",
-  "GithubContributorsCount": 270
- },
- {
   "Name": "Cortex",
   "Logo": "https://landscape.cncf.io/logos/cortex.svg",
   "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
@@ -4990,16 +3360,6 @@
   "GithubContributorsCount": 253
  },
  {
-  "Name": "DeepFlow",
-  "Logo": "https://landscape.cncf.io/logos/deep-flow.svg",
-  "CrunchbaseDescription": "Yunshan is a leading Software-Defined Networking and IBN service provider, focuses on software-defined data center networking innovation.",
-  "Category": "Observability and Analysis",
-  "Subcategory": "Monitoring",
-  "GithubStars": 480,
-  "GithubDescription": "Automated observability using eBPF",
-  "GithubContributorsCount": 54
- },
- {
   "Name": "Falcon",
   "Logo": "https://landscape.cncf.io/logos/falcon.svg",
   "CrunchbaseDescription": "Xiaomi is an electronics and software company that focuses on mobile devices and technology.",
@@ -5008,16 +3368,6 @@
   "GithubStars": 6986,
   "GithubDescription": " An open-source and enterprise-level monitoring system.",
   "GithubContributorsCount": 125
- },
- {
-  "Name": "Fonio",
-  "Logo": "https://landscape.cncf.io/logos/fonio.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Observability and Analysis",
-  "Subcategory": "Monitoring",
-  "GithubStars": 380,
-  "GithubDescription": "Data first monitoring agent using (e)BPF, built on RedBPF",
-  "GithubContributorsCount": 6
  },
  {
   "Name": "Grafana",
@@ -5150,26 +3500,6 @@
   "GithubContributorsCount": 561
  },
  {
-  "Name": "Netis",
-  "Logo": "https://landscape.cncf.io/logos/netis.svg",
-  "CrunchbaseDescription": "Netis Technologies focuses on the management of connected data, business, and network performance.",
-  "Category": "Observability and Analysis",
-  "Subcategory": "Monitoring",
-  "GithubStars": 917,
-  "GithubDescription": "A toolset for network packet capture in Cloud/Kubernetes and Virtualized environment.",
-  "GithubContributorsCount": 17
- },
- {
-  "Name": "NexClipper",
-  "Logo": "https://landscape.cncf.io/logos/nex-clipper.svg",
-  "CrunchbaseDescription": "NexClipper helps our customers to manage their Cloud Native infrastructure in an easier and more stable way.",
-  "Category": "Observability and Analysis",
-  "Subcategory": "Monitoring",
-  "GithubStars": 556,
-  "GithubDescription": "Metrics Pipeline for interoperability and Enterprise Prometheus",
-  "GithubContributorsCount": 11
- },
- {
   "Name": "Nightingale",
   "Logo": "https://landscape.cncf.io/logos/nightingale.svg",
   "CrunchbaseDescription": "Didi Labs develops new tools, technologies, modules, app-based transportation services and solutions for the global transportation industry.",
@@ -5240,16 +3570,6 @@
   "GithubContributorsCount": 72
  },
  {
-  "Name": "Sensu",
-  "Logo": "https://landscape.cncf.io/logos/sensu.svg",
-  "CrunchbaseDescription": "Sensu is a full-stack monitoring platform for dynamic operating environments.",
-  "Category": "Observability and Analysis",
-  "Subcategory": "Monitoring",
-  "GithubStars": 834,
-  "GithubDescription": "Simple. Scalable. Multi-cloud monitoring.",
-  "GithubContributorsCount": 59
- },
- {
   "Name": "Sidekick",
   "Logo": "https://landscape.cncf.io/logos/sidekick.svg",
   "CrunchbaseDescription": "Thundra is a private company providing modern observability solutions on cloud area",
@@ -5258,16 +3578,6 @@
   "GithubStars": 1569,
   "GithubDescription": "Free and open-source live application debugger. Like chrome dev tools but for your backend",
   "GithubContributorsCount": 9
- },
- {
-  "Name": "Skooner",
-  "Logo": "https://landscape.cncf.io/logos/skooner.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Observability and Analysis",
-  "Subcategory": "Monitoring",
-  "GithubStars": 998,
-  "GithubDescription": "Simple Kubernetes real-time dashboard and management.",
-  "GithubContributorsCount": 53
  },
  {
   "Name": "sysdig",
@@ -5360,16 +3670,6 @@
   "GithubContributorsCount": 656
  },
  {
-  "Name": "Loggie",
-  "Logo": "https://landscape.cncf.io/logos/loggie.svg",
-  "CrunchbaseDescription": "NetEase, Inc. (NASDAQ: NTES) is a leading internet technology company dedicated to providing premium online services.",
-  "Category": "Observability and Analysis",
-  "Subcategory": "Logging",
-  "GithubStars": 799,
-  "GithubDescription": "A lightweight, cloud-native data transfer agent and aggregator",
-  "GithubContributorsCount": 17
- },
- {
   "Name": "Logstash",
   "Logo": "https://landscape.cncf.io/logos/logstash.svg",
   "CrunchbaseDescription": "Elastic builds software to make data usable in real time and at scale for search, logging, security, and analytics use cases.",
@@ -5388,26 +3688,6 @@
   "GithubStars": 6098,
   "GithubDescription": "🔎 Open source distributed and RESTful search engine.",
   "GithubContributorsCount": 1796
- },
- {
-  "Name": "Parseable",
-  "Logo": "https://landscape.cncf.io/logos/parseable.svg",
-  "CrunchbaseDescription": "Free and Open Source Log Storage and Observability Platform",
-  "Category": "Observability and Analysis",
-  "Subcategory": "Logging",
-  "GithubStars": 640,
-  "GithubDescription": "Simple, efficient \u0026 fast log storage and observability platform. Open source alternative to Splunk.",
-  "GithubContributorsCount": 16
- },
- {
-  "Name": "EaseAgent",
-  "Logo": "https://landscape.cncf.io/logos/ease-agent.svg",
-  "CrunchbaseDescription": "High performance software architecture",
-  "Category": "Observability and Analysis",
-  "Subcategory": "Tracing",
-  "GithubStars": 479,
-  "GithubDescription": "An agent component for the Java system",
-  "GithubContributorsCount": 24
  },
  {
   "Name": "Elastic APM",
@@ -5438,16 +3718,6 @@
   "GithubStars": 16803,
   "GithubDescription": "CNCF Jaeger, a Distributed Tracing Platform",
   "GithubContributorsCount": 261
- },
- {
-  "Name": "OpenTelemetry",
-  "Logo": "https://landscape.cncf.io/logos/open-telemetry.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Observability and Analysis",
-  "Subcategory": "Tracing",
-  "GithubStars": 548,
-  "GithubDescription": "OpenTelemetry community content",
-  "GithubContributorsCount": 102
  },
  {
   "Name": "OpenTracing",
@@ -5498,16 +3768,6 @@
   "GithubStars": 1646,
   "GithubDescription": "Distributed tracing for spring cloud",
   "GithubContributorsCount": 148
- },
- {
-  "Name": "Tracetest",
-  "Logo": "https://landscape.cncf.io/logos/tracetest.svg",
-  "CrunchbaseDescription": "At Kubeshop, our mission is to build a thriving open-source ecosystem and pipeline of next generation Kubernetes products and projects.",
-  "Category": "Observability and Analysis",
-  "Subcategory": "Tracing",
-  "GithubStars": 308,
-  "GithubDescription": "Tracetest - Generate end-to-end tests automatically from your traces. For QA, Dev, \u0026 Ops.",
-  "GithubContributorsCount": 18
  },
  {
   "Name": "Zipkin",
@@ -5620,16 +3880,6 @@
   "GithubContributorsCount": 65
  },
  {
-  "Name": "ewasm",
-  "Logo": "https://landscape.cncf.io/logos/ewasm.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Wasm",
-  "Subcategory": "Specifications",
-  "GithubStars": 992,
-  "GithubDescription": "Ewasm Design Overview and Specification",
-  "GithubContributorsCount": 28
- },
- {
   "Name": "WASI",
   "Logo": "https://landscape.cncf.io/logos/wasi.svg",
   "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
@@ -5640,16 +3890,6 @@
   "GithubContributorsCount": 43
  },
  {
-  "Name": "wasi-nn",
-  "Logo": "https://landscape.cncf.io/logos/wasi-nn.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Wasm",
-  "Subcategory": "Specifications",
-  "GithubStars": 156,
-  "GithubDescription": "Neural Network proposal for WASI",
-  "GithubContributorsCount": 33
- },
- {
   "Name": "Wasm",
   "Logo": "https://landscape.cncf.io/logos/wasm.svg",
   "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
@@ -5658,16 +3898,6 @@
   "GithubStars": 2753,
   "GithubDescription": "WebAssembly specification, reference interpreter, and test suite.",
   "GithubContributorsCount": 131
- },
- {
-  "Name": "crunw",
-  "Logo": "https://landscape.cncf.io/logos/crunw.svg",
-  "CrunchbaseDescription": "Open source software container optimized for edge computing (Jamstack, serverless, SaaS, automotive, factory, edge networks, edge devices)",
-  "Category": "Wasm",
-  "Subcategory": "Runtime",
-  "GithubStars": 24,
-  "GithubDescription": "Add WasmEdge support to crun so that Docker and k8s tools can manage WasmEdge runtimes side by side with Docker-like application containers.",
-  "GithubContributorsCount": 60
  },
  {
   "Name": "V8",
@@ -5770,36 +4000,6 @@
   "GithubContributorsCount": 4206
  },
  {
-  "Name": "solang",
-  "Logo": "https://landscape.cncf.io/logos/solang.svg",
-  "CrunchbaseDescription": "Hyperledger is an open source collaborative effort created to advance cross-industry blockchain technologies.",
-  "Category": "Wasm",
-  "Subcategory": "Toolchain",
-  "GithubStars": 916,
-  "GithubDescription": "Solidity Compiler for Solana and Substrate",
-  "GithubContributorsCount": 28
- },
- {
-  "Name": "Subo CLI",
-  "Logo": "https://landscape.cncf.io/logos/subo-cli.svg",
-  "CrunchbaseDescription": "Suborbital leverages Atmo to create web services in an entirely new way, taking advantage of cloud native WebAssembly's capabilities.",
-  "Category": "Wasm",
-  "Subcategory": "Toolchain",
-  "GithubStars": 68,
-  "GithubDescription": "The Suborbital CLI",
-  "GithubContributorsCount": 23
- },
- {
-  "Name": "WaPC",
-  "Logo": "https://landscape.cncf.io/logos/wa-pc.svg",
-  "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
-  "Category": "Wasm",
-  "Subcategory": "Toolchain",
-  "GithubStars": 24,
-  "GithubDescription": "waPC JavaScript Host (Node + Browser)",
-  "GithubContributorsCount": 2
- },
- {
   "Name": "wasm-pack",
   "Logo": "https://landscape.cncf.io/logos/wasm-pack.svg",
   "CrunchbaseDescription": "CNCF is an open source software foundation that hosts and nurtures projects like Kubernetes and Prometheus.",
@@ -5818,26 +4018,6 @@
   "GithubStars": 9809,
   "GithubDescription": "CLI tool for spawning and running containers according to the OCI specification",
   "GithubContributorsCount": 388
- },
- {
-  "Name": "Atmo",
-  "Logo": "https://landscape.cncf.io/logos/atmo.svg",
-  "CrunchbaseDescription": "Suborbital leverages Atmo to create web services in an entirely new way, taking advantage of cloud native WebAssembly's capabilities.",
-  "Category": "Wasm",
-  "Subcategory": "Installable Platform",
-  "GithubStars": 636,
-  "GithubDescription": "Server for sandboxed third-party plugins, powered by WebAssembly",
-  "GithubContributorsCount": 21
- },
- {
-  "Name": "hippo",
-  "Logo": "https://landscape.cncf.io/logos/hippo.svg",
-  "CrunchbaseDescription": "Deis is an Open Source company building tools for the Kubernetes ecosystem such as Helm and Workflow.",
-  "Category": "Wasm",
-  "Subcategory": "Installable Platform",
-  "GithubStars": 338,
-  "GithubDescription": "The WebAssembly Platform",
-  "GithubContributorsCount": 16
  },
  {
   "Name": "krustlet",
