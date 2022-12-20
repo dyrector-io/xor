@@ -1,15 +1,17 @@
 <script>
+	import { page } from '$app/stores';
+	export let href;
 	import '../app.css';
-	export const prerender = true
+	export const prerender = true;
 </script>
 
 <div class="flex flex-col  h-screen">
 	<header>
 		<nav class="p-8 lowercase">
-			<a href="/">Home /</a>
-			<a href="/quiz">Quiz /</a>
-			<a href="/result">Results /</a>
-			<a href="/history">History</a>
+			<a class:active={$page.url.pathname === '/'} href="/">Home</a> /
+			<a class:active={$page.url.pathname === '/quiz'} href="/quiz">Quiz</a> /
+			<a class:active={$page.url.pathname === '/result'} href="/result">Results</a> /
+			<a class:active={$page.url.pathname === '/history'} href="/history">History</a>
 		</nav>
 	</header>
 
@@ -17,9 +19,10 @@
 		<slot />
 	</main>
 
-	<footer class="text-center text-sm mt-auto h-8">
+	<footer class="text-center text-sm mt-auto  h-8 mt-16">
 		deployed & hosted using <a class="text-emerald-300" href="https://dyrector.io" target="_blank"
-			>dyrector.io</a>
+			>dyrector.io</a
+		>
 	</footer>
 </div>
 
@@ -29,7 +32,11 @@
 		color: #fefefe;
 		background-color: rgb(39 39 42);
 		margin: 0 auto;
-		width: 75%;
+		width: 85%;
 		align-content: center;
+	}
+
+	.active {
+		color: rgb(110 231 183);
 	}
 </style>
