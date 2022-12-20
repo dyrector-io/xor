@@ -10,11 +10,15 @@
 	// Components
 	import Question from '../../components/Question.svelte';
 	import Modal from '../../components/Modal.svelte';
-	import type { QuizResponse } from 'src/types/quiz.type';
+	import type { QuizItem, QuizResponse } from 'src/types/quiz.type';
 
-	let quiz: QuizResponse
+	let quiz: QuizResponse = {
+		Date: "",
+		List: new Array<QuizItem>
+	}
 	let endOfTheQuiz = false;
 	let todayDone = false;
+	let closed = false;
 
 	function nextQuestion() {
 		$questionNumber++;
@@ -30,6 +34,7 @@
 
 	function closeModal() {
 		endOfTheQuiz = false;
+		closed = true;
 	}
 
 	onMount(async () => {
@@ -38,7 +43,7 @@
 			.catch((err) => console.log(err.message));
 
 		const res = get(resultStore);
-		const filledForToday = res.find((e) => e['date'] === new Date().toISOString().slice(0, 10));
+		const filledForToday = res.find((e) => e['date'] === quiz.Date);
 
 		if (filledForToday) {
 			todayDone = true;
@@ -61,6 +66,6 @@
 	</div>
 {/if}
 
-{#if endOfTheQuiz}
+{#if quiz.Date && $resultStore.find((e) => e['date'] === quiz.Date) && !closed}
 	<Modal on:close={closeModal} />
 {/if}
