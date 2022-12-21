@@ -21,6 +21,16 @@
 
 	function hint() {
 		$hintNumber++;
+
+		nameHint = question.Name.slice(0, 1);
+
+		if ($hintNumber > 1) {
+			if (question.Name.length > 10) {
+				nameHint = question.Name.slice(0, 4);
+			} else {
+				nameHint = question.Name.slice(0, 2);
+			}
+		}
 	}
 
 	// Reset the hint and guess store
@@ -28,14 +38,6 @@
 		$guessNumber = 0;
 		$hintNumber = 0;
 	});
-
-	onMount(() => {
-		if (question.Name.length > 10) {
-			nameHint = question.Name.slice(0, 6)
-		} else {
-			nameHint = question.Name.slice(0, 3)
-		}
-	})
 
 	function checkQuestion() {
 		$guessNumber++;
@@ -83,7 +85,7 @@
 	<p><span>Logo:</span></p>
 	<img
 		class:blur={$hintNumber > 0}
-		class:none-blur={$hintNumber > 1}
+		class:blur-sm={$hintNumber > 1}
 		class="bg-white w-2/12 blur-md mt-4 mb-8"
 		src={question.Logo}
 		draggable="false"
@@ -105,7 +107,7 @@
 		</p>
 	{/if}
 
-	{#if $hintNumber > 1}
+	{#if $hintNumber > 0}
 		<p><span>Project Name:</span> {nameHint}...</p>
 	{/if}
 </div>
@@ -123,8 +125,8 @@
 		{/if}
 		<Button on:click={skip} on:click={nextQuestion}>Skip</Button>
 	{/if}
-		<!-- Hint button logic -->
-		{#if $hintNumber < 2}
+	<!-- Hint button logic -->
+	{#if $hintNumber < 2}
 		<Button on:click={hint}>Hint</Button>
 	{/if}
 </form>
@@ -154,7 +156,7 @@
 		filter: blur(8px);
 	}
 
-	.none-blur {
-		filter: blur(0px);
+	.blur-sm {
+		filter: blur(4px);
 	}
 </style>

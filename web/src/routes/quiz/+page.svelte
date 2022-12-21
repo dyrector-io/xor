@@ -66,7 +66,14 @@
 
 {#if filledForToday}
 	<div class="py-4">
-		You are done with the today quiz. Check your results <a href="/result">here.</a>
+		You are done with the today quiz. Check your results <a class="text-emerald-300" href="/result"
+			>here</a
+		>.
+
+		<h2 class="my-4">Today solutions:</h2>
+		{#each quiz.List as question, index}
+				<li class="ml-2 list-none">#{index+1} {question.Name} <br></li>
+		{/each}
 	</div>
 {:else}
 	<div>
