@@ -4,7 +4,7 @@
 	import Button from './Button.svelte';
 	import FuzzySet from 'fuzzyset.js';
 	import type { QuizItem } from 'src/types/quiz.type';
-	import { onDestroy } from 'svelte';
+	import { onDestroy, onMount } from 'svelte';
 
 	export let question: QuizItem;
 	export let nextQuestion;
@@ -13,6 +13,7 @@
 	let answer = '';
 	let isCorrect = false;
 	let isAnswered = false;
+	let nameHint: string;
 
 	function skip() {
 		$score.splice(index, 1, '🔴');
@@ -27,6 +28,14 @@
 		$guessNumber = 0;
 		$hintNumber = 0;
 	});
+
+	onMount(() => {
+		if (question.Name.length > 10) {
+			nameHint = question.Name.slice(0, 6)
+		} else {
+			nameHint = question.Name.slice(0, 3)
+		}
+	})
 
 	function checkQuestion() {
 		$guessNumber++;
@@ -73,21 +82,31 @@
 	<!-- Informations -->
 	<p><span>Logo:</span></p>
 	<img
-		class="bg-white w-2/12 blur-lg mt-4 mb-8"
+		class:blur={$hintNumber > 0}
+		class:none-blur={$hintNumber > 1}
+		class="bg-white w-2/12 blur-md mt-4 mb-8"
 		src={question.Logo}
 		draggable="false"
 		alt="Project Logo"
 	/>
 	<p><span>GitHub:</span> {question.GithubDescription}</p>
 	<p><span>Crunchbase:</span> {question.CrunchbaseDescription}</p>
-	<p><span>GitHub Stars:</span> {question.GithubStars} <span>GitHub Contributors:</span> {question.GithubContributorsCount}</p>
+	<p>
+		<span>GitHub Stars:</span>
+		{question.GithubStars} / <span>GitHub Contributors:</span>
+		{question.GithubContributorsCount}
+	</p>
 
 	{#if $hintNumber > 0}
-		<p><span>Category:</span> {question.Category}</p>
+		<p>
+			<span>Category:</span>
+			{question.Category} / <span>SubCategory:</span>
+			{question.Subcategory}
+		</p>
 	{/if}
 
 	{#if $hintNumber > 1}
-		<p><span>SubCategory:</span> {question.Subcategory}</p>
+		<p><span>Project Name:</span> {nameHint}...</p>
 	{/if}
 </div>
 
@@ -104,9 +123,8 @@
 		{/if}
 		<Button on:click={skip} on:click={nextQuestion}>Skip</Button>
 	{/if}
-
-	<!-- Hint button logic -->
-	{#if $hintNumber < 2}
+		<!-- Hint button logic -->
+		{#if $hintNumber < 2}
 		<Button on:click={hint}>Hint</Button>
 	{/if}
 </form>
@@ -130,5 +148,13 @@
 	p > span {
 		font-weight: 700;
 		color: rgb(59 130 246);
+	}
+
+	.blur {
+		filter: blur(8px);
+	}
+
+	.none-blur {
+		filter: blur(0px);
 	}
 </style>

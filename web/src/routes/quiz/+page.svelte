@@ -7,7 +7,6 @@
 	import { resultStore } from '../../lib/results';
 	import { get } from 'svelte/store';
 
-
 	// Components
 	import Question from '../../components/Question.svelte';
 	import Modal from '../../components/Modal.svelte';
@@ -32,7 +31,6 @@
 			closed = false;
 
 			resultStore.set([...$resultStore, { date: quiz.Date, points: $score }]);
-
 		}
 	}
 
@@ -46,12 +44,24 @@
 			.then((resp) => resp.json())
 			.catch((err) => console.log(err.message));
 
-		filledForToday = todayResult?.date === quiz.Date;
+		if (todayResult) {
+			if (todayResult?.date === quiz.Date) {
+				filledForToday = true;
+			} else {
+				filledForToday = false;
+			}
+		} else {
+			if ($resultStore.length === 0) {
+				filledForToday = false;
+			} else {
+				filledForToday = true;
+			}
+		}
 	});
 
-	$: todayResult = $resultStore.find((e) => e['date'])
-
+	$: todayResult = $resultStore.find((e) => e['date'] === quiz.Date);
 </script>
+
 <h1 class="text-2xl pb-8">XOR Quiz</h1>
 
 {#if filledForToday}
@@ -69,5 +79,5 @@
 {/if}
 
 {#if quiz.Date && filledForToday && !closed && todayResult}
-	<Modal on:close={closeModal} todayResult={todayResult} />
+	<Modal on:close={closeModal} {todayResult} />
 {/if}
