@@ -44,6 +44,8 @@
 			.then((resp) => resp.json())
 			.catch((err) => console.log(err.message));
 
+		todayResult = $resultStore.find((e) => e['date'] === quiz.Date);
+
 		if (todayResult) {
 			if (todayResult?.date === quiz.Date) {
 				filledForToday = true;
@@ -53,8 +55,6 @@
 		} else {
 			if ($resultStore.length === 0) {
 				filledForToday = false;
-			} else {
-				filledForToday = true;
 			}
 		}
 	});
