@@ -55,7 +55,10 @@ func PersistPicks(db *gorm.DB, today time.Time, picks []int) error {
 	}
 
 	str := strings.Join(strArr, ",")
-	db.Create(&Pick{Picks: str, Date: SimpleDay(today)})
+	tx := db.Create(&Pick{Picks: str, Date: SimpleDay(today)})
+	if tx.Error != nil {
+		return tx.Error
+	}
 	return nil
 }
 

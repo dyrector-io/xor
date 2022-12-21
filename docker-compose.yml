@@ -2,7 +2,7 @@ version: "3.5"
 
 services:
   postgres:
-    container_name: postgres-container
+    container_name: postgres
     image: postgres
     environment:
       POSTGRES_USER: ${POSTGRES_USER:-postgres}
@@ -10,8 +10,8 @@ services:
       PGDATA: /data/postgres
     volumes:
       - postgres:/data/postgres
-    ports:
-      - "5432"
+    #    ports:
+    #      - "5432"
     restart: unless-stopped
   api:
     depends_on:
@@ -21,7 +21,7 @@ services:
     restart: unless-stopped
     build:
       context: api
-    ports:
+    expose:
       - "3333"
     labels:
       - "traefik.enable=true"
@@ -44,8 +44,8 @@ services:
     #   - "./web/nginx/ui.conf:/etc/nginx/conf.d/ui.conf"
     build:
       context: web
-    ports:
-      - "8080"
+    #    ports:
+    #      - "8080"
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.xor-ui.rule=Host(`cncf.xor.dyrector.io`) && PathPrefix(`/`)"
