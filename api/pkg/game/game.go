@@ -80,11 +80,23 @@ func GetPicksIfPresent(db *gorm.DB, today time.Time) []int {
 
 func SelectAQuiz(state *config.AppState) {
 	today := time.Now()
-	log.Info().Msgf("quiz select running %v", today)
+	log.Info().Msgf("SelectAQuiz running %v", today)
 	listAll := processor.MaskAndFilter(processor.ReadJSONData(), true, FilterIfStartLessThan)
 	var indices []int
-	if state.AppConfig.Method == RandomGenMethod {
+	if state.AppConfig.EndDate != "" {
+		end, err := time.Parse("2006-01-02", state.AppConfig.EndDate)
+		if err != nil {
+			log.Err(err).Msg("invalid ending date format, expected: 2006-01-02")
+		}
+		if today.After(end) {
+			log.Info().Msgf("End date passed %v>%v", today, state.AppConfig.EndDate)
+			state.QuizList = processor.CNCFSequence{}
+			state.Ended = true
+			return
+		}
+	} else if state.AppConfig.Method == RandomGenMethod {
 		indices = PickRandom(QuestionCount, len(listAll)-1)
+		log.Info().Msg("generating new random quiz")
 	} else {
 		indices = GetPicksIfPresent(state.DBConn, today)
 		if len(indices) == 0 {
@@ -96,6 +108,8 @@ func SelectAQuiz(state *config.AppState) {
 			if err != nil {
 				log.Error().Err(err).Msg("persisting quiz picks for the day")
 			}
+		} else {
+			log.Info().Msg("found already generated quiz for today")
 		}
 	}
 

@@ -31,6 +31,10 @@ func QuizHistoryResponse(list database.HistoryList) []render.Renderer {
 
 func GetQuiz(w http.ResponseWriter, r *http.Request) {
 	appState := ctx.GetContextVar[*config.AppState](r.Context(), ctx.StateKey)
+	if appState.Ended {
+		http.Error(w, http.StatusText(http.StatusGone), http.StatusGone)
+		return
+	}
 	err := render.Render(w, r, &QuizListResponse{
 		List: appState.QuizList,
 		Date: time.Now().Format(database.SimpleDateFormat),

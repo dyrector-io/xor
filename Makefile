@@ -19,4 +19,4 @@ compile:
 .PHONY: build-api
 build-api:
 	cd api && \
-	docker build -t github.com/dyrector-io/xor/api:v1 .
+	docker build -t github.com/dyrector-io/xor/api:1.1 .

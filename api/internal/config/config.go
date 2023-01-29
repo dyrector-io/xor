@@ -11,9 +11,11 @@ type AppConfig struct {
 	Debug          bool   `env:"DEBUG"`
 	DSN            string `env:"DSN"`
 	Method         string `env:"METHOD"`
+	EndDate        string `env:"END_DATE"`
 }
 type AppState struct {
 	AppConfig *AppConfig
 	DBConn    *gorm.DB
+	Ended     bool
 	QuizList  processor.CNCFSequence
 }

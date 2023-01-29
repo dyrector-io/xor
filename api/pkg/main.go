@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"os"
 
 	"github.com/dyrector-io/xor/api/pkg/processor"
 )
@@ -10,10 +11,18 @@ import (
 func main() {
 	seq := processor.ReadJSONData()
 
-	fmt.Printf("%d", len(seq))
-	bytes, err := json.MarshalIndent(seq, "", " ")
+	toWrite := processor.CNCFSequence{}
+	for _, i := range seq {
+		if i.GithubStars > 1000 {
+			toWrite = append(toWrite, i)
+		}
+	}
+
+	bytes, err := json.MarshalIndent(toWrite, "", " ")
 	if err != nil {
 		panic(err)
 	}
 	fmt.Printf("%v", bytes)
+
+	os.WriteFile("landscape.json", bytes, os.ModePerm)
 }
