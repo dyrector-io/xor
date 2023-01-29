@@ -54,6 +54,11 @@ func sdbmHash(data []byte) uint64 {
 }
 
 func PickByDate(today time.Time, amount, upperLimit int, excluded []int) []int {
+	if len(excluded)+amount >= upperLimit {
+		log.Info().Msgf("ran out of item indices %v/%v", len(excluded), upperLimit)
+		return []int{}
+	}
+
 	hash := sdbmHash([]byte(today.Format("2006-01-02")))
 	slice := hash / uint64(amount)
 	log.Info().Msgf("%d", hash)
@@ -111,6 +116,12 @@ func SelectAQuiz(state *config.AppState) {
 		} else {
 			log.Info().Msg("found already generated quiz for today")
 		}
+	}
+
+	if len(indices) == 0 {
+		state.Ended = true
+		log.Info().Msg("no quiz indices were picked, assuming the end")
+		return
 	}
 
 	selected := processor.CNCFSequence{}
