@@ -1,0 +1,631 @@
+[
+  {
+    "Name": "Lodash",
+    "Description": "... makes JavaScript easier by taking the hassle out of working with arrays, numbers, objects, strings, etc.",
+    "CodeExample": "```....defaults({ 'a': 1 }, { 'a': 3, 'b': 2 });```",
+    "RandomFact": "2015 was big year! ... became the most depended on npm package, passed 1 billion downloads, & its v3 release saw massive adoption!",
+    "GithubStars": 55500,
+    "GitHubLink": "",
+    "WeeklyDownloads": 46000000
+  },
+  {
+    "Name": "Cloudinary",
+    "Description": "Effortlessly optimize, transform, upload and manage your cloud's assets.",
+    "CodeExample": "```....url('sample.jpg', {width: 100, height: 150, crop: 'fill', fetch_format: 'auto'})```",
+    "RandomFact": "Image and Video API for Powerful Visual Experiences - Store, transform, optimize, and deliver all your media assets with easy-to-use APIs, widgets, or user interface.",
+    "GithubStars": 567,
+    "GitHubLink": "",
+    "WeeklyDownloads": 183000
+  },
+  {
+    "Name": "Axios",
+    "Description": "Promise based HTTP client for the browser and node.js",
+    "CodeExample": "```...({ method: 'post', url: '/user/12345', data: { firstName: 'Fred', lastName: 'Flintstone'} });```",
+    "RandomFact": "Matt Zabriskie is the founder of the npm package, started in the summer of 2014.",
+    "GithubStars": 98500,
+    "GitHubLink": "",
+    "WeeklyDownloads": 39000000
+  },
+  {
+    "Name": "chalk",
+    "Description": "Terminal string styling done right",
+    "CodeExample": "```log(....blue.bgRed.bold('Hello world!'));```",
+    "RandomFact": "",
+    "GithubStars": 19700,
+    "GitHubLink": "",
+    "WeeklyDownloads": 233114855
+  },
+  {
+    "Name": "mustache.js",
+    "Description": "Logic-less {{...}} templates with JavaScript.  ... is a zero-dependency implementation of the ... template system in JavaScript.",
+    "CodeExample": "",
+    "RandomFact": "You can use ... to render mustache templates anywhere you can use JavaScript. This includes web browsers, server-side environments such as Node.js, and CouchDB views.",
+    "GithubStars": 15700,
+    "GitHubLink": "https://github.com/janl/mustache.js",
+    "WeeklyDownloads": 3139159
+  },
+  {
+    "Name": "minimist",
+    "Description": "This module is the guts of optimist's argument parser without all the fanciful decoration.",
+    "CodeExample": "```$ node example/parse.js -a beep -b boop { _: [], a: 'beep', b: 'boop' }```",
+    "RandomFact": "",
+    "GithubStars": 120,
+    "GitHubLink": "https://github.com/minimistjs/minimist",
+    "WeeklyDownloads": 53595074
+  },
+  {
+    "Name": "Commander.js",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "github.com/tj/commander.js",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "react",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "github.com/facebook/react",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "vue",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "github.com/vuejs/core",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "js-tokens",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "github.com/lydell/js-tokens",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "express",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "github.com/expressjs/express",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "underscore",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "https://www.npmjs.com/package/underscore",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "async",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "https://www.npmjs.com/package/async",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "moment",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "glob",
+    "Description": "Match files using the patterns the shell uses, like stars and stuff.",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "github.com/isaacs/node-glob",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "readable-stream",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "github.com/nodejs/readable-stream",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "jQuery",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "github.com/jquery/jquery",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "mkdirp",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "github.com/isaacs/node-mkdirp",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "colors.js",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "github.com/Marak/colors.js",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "semver",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "github.com/npm/node-semver",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "fs-extra",
+    "Description": "... adds file system methods that aren't included in the native fs module and adds promise support to the fs methods. It also uses graceful-fs to prevent EMFILE errors. It should be a drop in replacement for fs.",
+    "CodeExample": "```// Async with promises: ....copy('/tmp/myfile', '/tmp/mynewfile') .then(() => console.log('success!')).catch(err => console.error(err))```",
+    "RandomFact": "Why? I got tired of including mkdirp, rimraf, and ncp in most of my projects.",
+    "GithubStars": 0,
+    "GitHubLink": "github.com/jprichardson/node-fs-extra",
+    "WeeklyDownloads": 77438580
+  },
+  {
+    "Name": "escape-string-regexp",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "github.com/sindresorhus/escape-string-regexp",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "create-t3-app",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "github.com/t3-oss/create-t3-app",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "uuid",
+    "Description": "For the creation of RFC4122 ....s",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "github.com/uuidjs/uuid",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  }
+]
