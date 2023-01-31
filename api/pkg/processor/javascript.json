@@ -14,7 +14,7 @@
     "CodeExample": "```....url('sample.jpg', {width: 100, height: 150, crop: 'fill', fetch_format: 'auto'})```",
     "RandomFact": "Image and Video API for Powerful Visual Experiences - Store, transform, optimize, and deliver all your media assets with easy-to-use APIs, widgets, or user interface.",
     "GithubStars": 567,
-    "GitHubLink": "",
+    "GitHubLink": "https://github.com/cloudinary/cloudinary_npm",
     "WeeklyDownloads": 183000
   },
   {
@@ -23,7 +23,7 @@
     "CodeExample": "```...({ method: 'post', url: '/user/12345', data: { firstName: 'Fred', lastName: 'Flintstone'} });```",
     "RandomFact": "Matt Zabriskie is the founder of the npm package, started in the summer of 2014.",
     "GithubStars": 98500,
-    "GitHubLink": "",
+    "GitHubLink": "https://github.com/axios/axios",
     "WeeklyDownloads": 39000000
   },
   {
@@ -32,13 +32,13 @@
     "CodeExample": "```log(....blue.bgRed.bold('Hello world!'));```",
     "RandomFact": "",
     "GithubStars": 19700,
-    "GitHubLink": "",
+    "GitHubLink": "https://github.com/chalk/chalk",
     "WeeklyDownloads": 233114855
   },
   {
     "Name": "mustache.js",
     "Description": "Logic-less {{...}} templates with JavaScript.  ... is a zero-dependency implementation of the ... template system in JavaScript.",
-    "CodeExample": "",
+    "CodeExample": "```\nconst view = {\r\n  title: \"Joe\",\r\n  calc: () => ( 2 + 4 )\r\n};\r\n\r\nconst output = *redacted*.render(\"{{title}} spends {{calc}}\", view);```",
     "RandomFact": "You can use ... to render mustache templates anywhere you can use JavaScript. This includes web browsers, server-side environments such as Node.js, and CouchDB views.",
     "GithubStars": 15700,
     "GitHubLink": "https://github.com/janl/mustache.js",
@@ -55,170 +55,188 @@
   },
   {
     "Name": "Commander.js",
-    "Description": "",
-    "CodeExample": "",
-    "RandomFact": "",
-    "GithubStars": 0,
+    "Description": "The complete solution for node.js command-line interfaces.",
+    "CodeExample": "```\nprogram\r\n  .option('--first')\r\n  .option('-s, --separator <char>');\r\n\r\nprogram.parse();```",
+    "RandomFact": "There is an old-school DOS | OS/2 | Windows file manager with a similar name.",
+    "GithubStars": 24145,
     "GitHubLink": "github.com/tj/commander.js",
-    "WeeklyDownloads": 0
+    "WeeklyDownloads": 109892199
   },
   {
     "Name": "react",
-    "Description": "",
-    "CodeExample": "",
-    "RandomFact": "",
-    "GithubStars": 0,
+    "Description": "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
+    "CodeExample": "```function HelloMessage({ name }) {\r\n  return <div>Hello {name}</div>;\r\n}\r\n\r\nconst root = createRoot(document.getElementById('container'));\r\nroot.render(<HelloMessage name=\"Taylor\" />);```",
+    "RandomFact": "... is not a framework.",
+    "GithubStars": 201267,
     "GitHubLink": "github.com/facebook/react",
-    "WeeklyDownloads": 0
+    "WeeklyDownloads": 18599591
   },
   {
     "Name": "vue",
-    "Description": "",
-    "CodeExample": "",
-    "RandomFact": "",
-    "GithubStars": 0,
+    "Description": "... is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.",
+    "CodeExample": "```\n<div id=\"app\">{{ message }}</div>\r\n\r\n<script>\r\n// ...\r\n  createApp({\r\n    data() {\r\n      return {\r\n        message: 'Hello Vue!'\r\n      }\r\n    }\r\n  }).mount('#app')\r\n</script>",
+    "RandomFact": "Single File Components",
+    "GithubStars": 202078,
     "GitHubLink": "github.com/vuejs/core",
-    "WeeklyDownloads": 0
+    "WeeklyDownloads": 3673548
   },
   {
     "Name": "js-tokens",
-    "Description": "",
-    "CodeExample": "",
+    "Description": "The tiny, regex powered, lenient, almost spec-compliant JavaScript tokenizer that never fails.",
+    "CodeExample": "```// Get all tokens as an array:\r\nconst tokens = Array.from(*redacted*(\"hello, !world\"));```",
     "RandomFact": "",
-    "GithubStars": 0,
+    "GithubStars": 364,
     "GitHubLink": "github.com/lydell/js-tokens",
-    "WeeklyDownloads": 0
+    "WeeklyDownloads": 38561642
   },
   {
     "Name": "express",
-    "Description": "",
-    "CodeExample": "",
-    "RandomFact": "",
-    "GithubStars": 0,
+    "Description": "Fast, unopinionated, minimalist web framework for Node.js.",
+    "CodeExample": "```\napp.get('/', function (req, res) {\r\n  res.send('Hello World')\r\n})\r\n\r\napp.listen(3000)```",
+    "RandomFact": "\"Most of nike.com's ecommerce experience is on top of <...>... in fact they've left the x-powered-by headers intact.\" -- Reddit",
+    "GithubStars": 59753,
     "GitHubLink": "github.com/expressjs/express",
-    "WeeklyDownloads": 0
+    "WeeklyDownloads": 27413998
   },
   {
     "Name": "underscore",
-    "Description": "",
-    "CodeExample": "",
+    "Description": "... is a utility-belt library for JavaScript that provides support for the usual functional suspects (each, map, reduce, filter...) without extending any core JavaScript objects.",
+    "CodeExample": "```\nvar numbers = [1, 2, 3, 4, 5];\r\n_.each(numbers, function(value, index){\r\nconsole.log(value, index);\r\n});```",
     "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "https://www.npmjs.com/package/underscore",
-    "WeeklyDownloads": 0
+    "GithubStars": 26828,
+    "GitHubLink": "https://github.com/jashkenas/underscore",
+    "WeeklyDownloads": 10716149
   },
   {
     "Name": "async",
-    "Description": "",
-    "CodeExample": "",
+    "Description": "Async is a utility module which provides straight-forward, powerful functions for working with asynchronous JavaScript.",
+    "CodeExample": "```\n*redacted*.mapLimit(urls, 5, async function(url) {\r\n    const response = await fetch(url)\r\n    return response.body\r\n}, (err, results) => {\r\n    if (err) throw err\r\n    // results is now an array of the response bodies\r\n    console.log(results)\r\n})```",
     "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "https://www.npmjs.com/package/async",
-    "WeeklyDownloads": 0
+    "GithubStars": 27798,
+    "GitHubLink": "https://github.com/caolan/async",
+    "WeeklyDownloads": 50417200
   },
   {
     "Name": "moment",
-    "Description": "",
-    "CodeExample": "",
+    "Description": "A JavaScript date library for parsing, validating, manipulating, and formatting dates.",
+    "CodeExample": "```\nlet now = *redacted*.format('LLLL');\n```",
     "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
+    "GithubStars": 47187,
+    "GitHubLink": "github.com/moment/moment",
+    "WeeklyDownloads": 20462039
   },
   {
     "Name": "glob",
     "Description": "Match files using the patterns the shell uses, like stars and stuff.",
-    "CodeExample": "",
+    "CodeExample": "```\n*redacted*(\"**/*.js\", options, function (er, files) {\r\n  // files is an array of filenames.\r\n  // If the `nonull` option is set, and nothing\r\n  // was found, then files is [\"**/*.js\"]\r\n  // er is an error object or null.\r\n})```",
     "RandomFact": "",
-    "GithubStars": 0,
+    "GithubStars": 7837,
     "GitHubLink": "github.com/isaacs/node-glob",
-    "WeeklyDownloads": 0
+    "WeeklyDownloads": 90118870
   },
   {
     "Name": "readable-stream",
-    "Description": "",
-    "CodeExample": "",
+    "Description": "Some Node.js functionality for userland",
+    "CodeExample": "```\nconsole.log(\"Every time you press a key, you will see more contents of the source file. Let's begin!\\n\\n\")\r\nprocess.stdin.setRawMode(true)\r\nprocess.stdin.on('data', function () {\r\n  const c = rst.read(100)\r\n  if (!c) {\r\n    return setTimeout(process.exit, 500)\r\n  }\r\n  process.stdout.write(c)\r\n})\r\nprocess.stdin.resume()```",
     "RandomFact": "",
-    "GithubStars": 0,
+    "GithubStars": 986,
     "GitHubLink": "github.com/nodejs/readable-stream",
-    "WeeklyDownloads": 0
+    "WeeklyDownloads": 120467683
   },
   {
     "Name": "jQuery",
-    "Description": "",
-    "CodeExample": "",
-    "RandomFact": "",
-    "GithubStars": 0,
+    "Description": "... is a fast, small, and feature-rich JavaScript library.",
+    "CodeExample": "```\n$(\"#test\").hide();```",
+    "RandomFact": "... was found on more than 80 million websites in 2022.",
+    "GithubStars": 57146,
     "GitHubLink": "github.com/jquery/jquery",
-    "WeeklyDownloads": 0
+    "WeeklyDownloads": 6231090
   },
   {
     "Name": "mkdirp",
-    "Description": "",
-    "CodeExample": "",
+    "Description": "A POSIX feature within Node.js",
+    "CodeExample": "```\n// return value is a Promise resolving to the first directory created\r\n*redacted*('/tmp/foo/bar/baz').then(made =>\r\n  console.log(`made directories, starting with ${made}`)\r\n)```",
     "RandomFact": "",
-    "GithubStars": 0,
+    "GithubStars": 140,
     "GitHubLink": "github.com/isaacs/node-mkdirp",
-    "WeeklyDownloads": 0
+    "WeeklyDownloads": 70745905
   },
   {
     "Name": "colors.js",
-    "Description": "",
-    "CodeExample": "",
+    "Description": "get colors in your node.js console",
+    "CodeExample": "```\nconsole.log('hello'.green); // outputs green text\r\nconsole.log('i like cake and pies'.underline.red); // outputs red underlined text\r\nconsole.log('inverse the color'.inverse); // inverses the color\r\nconsole.log('OMG Rainbows!'.rainbow); // rainbow\r\nconsole.log('Run the trap'.trap); // Drops the bass```",
     "RandomFact": "",
-    "GithubStars": 0,
+    "GithubStars": 5033,
     "GitHubLink": "github.com/Marak/colors.js",
-    "WeeklyDownloads": 0
+    "WeeklyDownloads": 21357058
   },
   {
     "Name": "semver",
-    "Description": "",
-    "CodeExample": "",
+    "Description": "The semantic versioner for npm",
+    "CodeExample": "```\n*redacted*.minVersion('>=1.0.0'```",
     "RandomFact": "",
-    "GithubStars": 0,
+    "GithubStars": 4519,
     "GitHubLink": "github.com/npm/node-semver",
-    "WeeklyDownloads": 0
+    "WeeklyDownloads": 240233516
   },
   {
     "Name": "fs-extra",
     "Description": "... adds file system methods that aren't included in the native fs module and adds promise support to the fs methods. It also uses graceful-fs to prevent EMFILE errors. It should be a drop in replacement for fs.",
     "CodeExample": "```// Async with promises: ....copy('/tmp/myfile', '/tmp/mynewfile') .then(() => console.log('success!')).catch(err => console.error(err))```",
     "RandomFact": "Why? I got tired of including mkdirp, rimraf, and ncp in most of my projects.",
-    "GithubStars": 0,
+    "GithubStars": 8885,
     "GitHubLink": "github.com/jprichardson/node-fs-extra",
     "WeeklyDownloads": 77438580
   },
   {
     "Name": "escape-string-regexp",
-    "Description": "",
-    "CodeExample": "",
-    "RandomFact": "",
-    "GithubStars": 0,
+    "Description": "Escape RegExp special characters",
+    "CodeExample": "```\nconst escapedString = *redacted*('How much $ for a \uD83E\uDD84?');\r\n//=> 'How much \\\\$ for a \uD83E\uDD84\\\\?'\r\n\r\nnew RegExp(escapedString);```",
+    "RandomFact": "It is from sindresorhus.",
+    "GithubStars": 532,
     "GitHubLink": "github.com/sindresorhus/escape-string-regexp",
-    "WeeklyDownloads": 0
+    "WeeklyDownloads": 95918625
   },
   {
     "Name": "create-t3-app",
-    "Description": "",
-    "CodeExample": "",
+    "Description": "Interactive CLI to start a full-stack, typesafe Next.js app.",
+    "CodeExample": "```\npnpm dlx *redacted*@latest --CI --trpc --tailwind```",
     "RandomFact": "",
-    "GithubStars": 0,
+    "GithubStars": 13914,
     "GitHubLink": "github.com/t3-oss/create-t3-app",
-    "WeeklyDownloads": 0
+    "WeeklyDownloads": 3832
   },
   {
     "Name": "uuid",
     "Description": "For the creation of RFC4122 ....s",
-    "CodeExample": "",
+    "CodeExample": "```\n*redacted*(); // ⇨ '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d'```",
     "RandomFact": "",
-    "GithubStars": 0,
+    "GithubStars": 13051,
     "GitHubLink": "github.com/uuidjs/uuid",
-    "WeeklyDownloads": 0
+    "WeeklyDownloads": 78849945
+  },
+  {
+    "Name": "webpack",
+    "Description": "... is a module bundler. Its main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset.",
+    "CodeExample": "```\nmodule.exports = {\nentry: './src/index.js',\n  output: {\n  filename: 'main.js',\n  path: path.resolve(__dirname, 'dist'),\n},\n};",
+    "RandomFact": "",
+    "GithubStars": 62454,
+    "GitHubLink": "github.com/webpack/webpack",
+    "WeeklyDownloads": 26567685
+  },
+  {
+    "Name": "rimraf",
+    "Description": "The UNIX command ... for node.",
+    "CodeExample": "```\n*redacted*('./tools/setup', error => {\n  if (error) throw new Error(error);\n });```",
+    "RandomFact": "Do not drink and ...!",
+    "GithubStars": 5023,
+    "GitHubLink": "https://github.com/isaacs/rimraf",
+    "WeeklyDownloads": 75112476
   },
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -227,7 +245,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -236,7 +254,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -245,7 +263,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -254,7 +272,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -263,7 +281,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -272,7 +290,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -281,7 +299,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -290,7 +308,15 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "",
+    "Description": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -299,7 +325,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -308,15 +334,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "WeeklyDownloads": 0
-  },
-  {
-    "Name": "",
-    "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -325,7 +343,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -334,7 +352,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -343,7 +361,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -352,7 +370,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -361,7 +379,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -370,7 +388,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -379,7 +397,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -388,7 +406,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -397,7 +415,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -406,7 +424,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -415,7 +433,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -424,7 +442,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -433,7 +451,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -442,7 +460,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -451,7 +469,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -460,7 +478,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -469,7 +487,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -478,7 +496,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -487,7 +505,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -496,7 +514,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -505,7 +523,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -514,7 +532,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -523,7 +541,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -532,7 +550,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -541,7 +559,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -550,7 +568,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -559,7 +577,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -568,7 +586,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -577,7 +595,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -586,7 +604,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -595,7 +613,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
@@ -604,25 +622,7 @@
   {
     "Name": "",
     "Description": "",
-    "CodeExample": "",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
-  },
-  {
-    "Name": "",
-    "Description": "",
-    "CodeExample": "",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
-  },
-  {
-    "Name": "",
-    "Description": "",
-    "CodeExample": "",
+    "CodeExample": "```\n```",
     "RandomFact": "",
     "GithubStars": 0,
     "GitHubLink": "",
