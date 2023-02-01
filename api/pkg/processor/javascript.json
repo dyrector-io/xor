@@ -234,7 +234,52 @@
     "WeeklyDownloads": 75112476
   },
   {
-    "Name": "",
+    "Name": "Next.js",
+    "Description": "The React Framework, that has uses cases like: Server-side Rendering or Static Generation, and updating or creating content at runtime with Incremental Static Regeneration.",
+    "CodeExample": "```\nexport default function IndexPage() {\r\n  return (\r\n    <div>\r\n      Hello World. <Link href=\"/about\">About</Link>\r\n    </div>\r\n  )\r\n}```",
+    "RandomFact": "",
+    "GithubStars": 100078,
+    "GitHubLink": "https://github.com/vercel/next.js",
+    "WeeklyDownloads": 3758910
+  },
+  {
+    "Name": "Angular",
+    "Description": "... is a development platform for building mobile and desktop web applications using Typescript/JavaScript and other languages.",
+    "CodeExample": "```\n<h2>Products</h2>\r\n\r\n<div *ngFor=\"let product of products\">\r\n</div>```",
+    "RandomFact": "",
+    "GithubStars": 86092,
+    "GitHubLink": "github.com/angular/angular",
+    "WeeklyDownloads": 3175765
+  },
+  {
+    "Name": "Redux",
+    "Description": "... is a predictable state container for JavaScript apps.",
+    "CodeExample": "```function counter(state = 0, action) {\r\n  switch (action.type) {\r\n    case 'INCREMENT':\r\n      return state + 1\r\n    case 'DECREMENT':\r\n      return state - 1\r\n    default:\r\n      return state\r\n  }\r\n}\n```",
+    "RandomFact": "",
+    "GithubStars": 59184,
+    "GitHubLink": "https://github.com/reduxjs/redux",
+    "WeeklyDownloads": 8788728
+  },
+  {
+    "Name": "socket.io",
+    "Description": "... enables real-time bidirectional event-based communication.",
+    "CodeExample": "```\n*redacted*.on('connection', socket => {\r\n  socket.emit('request', /* \u2026 */); // emit an event to the socket\r\n  io.emit('broadcast', /* \u2026 */); // emit an event to all connected sockets\r\n  socket.on('reply', () => { /* \u2026 */ }); // listen to the event\r\n});```",
+    "RandomFact": "",
+    "GithubStars": 57526,
+    "GitHubLink": "github.com/socketio/socket.io",
+    "WeeklyDownloads": 5232194
+  },
+  {
+    "Name": "Jest",
+    "Description": "Delightful JavaScript Testing.",
+    "CodeExample": "```\ntest('adds 1 + 2 to equal 3', () => {\r\n  expect(sum(1, 2)).toBe(3);\r\n});\r\n// output:\r\n// PASS  ./sum.test.js\r\n// \u2713 adds 1 + 2 to equal 3 (5ms)```",
+    "RandomFact": "from Facebook",
+    "GithubStars": 41310,
+    "GitHubLink": "github.com/facebook/jest",
+    "WeeklyDownloads": 20194322
+  },
+  {
+    "Name": "Prettier",
     "Description": "",
     "CodeExample": "```\n```",
     "RandomFact": "",
@@ -243,7 +288,7 @@
     "WeeklyDownloads": 0
   },
   {
-    "Name": "",
+    "Name": "electron",
     "Description": "",
     "CodeExample": "```\n```",
     "RandomFact": "",
@@ -252,7 +297,7 @@
     "WeeklyDownloads": 0
   },
   {
-    "Name": "",
+    "Name": "gatsby",
     "Description": "",
     "CodeExample": "```\n```",
     "RandomFact": "",
@@ -261,52 +306,7 @@
     "WeeklyDownloads": 0
   },
   {
-    "Name": "",
-    "Description": "",
-    "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
-  },
-  {
-    "Name": "",
-    "Description": "",
-    "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
-  },
-  {
-    "Name": "",
-    "Description": "",
-    "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
-  },
-  {
-    "Name": "",
-    "Description": "",
-    "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
-  },
-  {
-    "Name": "",
-    "Description": "",
-    "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
-  },
-  {
-    "Name": "",
+    "Name": "yarn",
     "Description": "",
     "CodeExample": "```\n```",
     "RandomFact": "",
