@@ -9,7 +9,17 @@ export type QuizItem = {
 	GithubContributorsCount: number;
 };
 
+export type JavascriptQuizItem = {
+	Name: string;
+	Description: string;
+	CodeExample: string;
+	RandomFact: string;
+	GitHubLink: string;
+	GithubStars: number;
+	WeeklyDownloads: number;
+};
+
 export type QuizResponse = {
-	List: Array<QuizItem>;
+	List: Array<QuizItem | JavascriptQuizItem>;
 	Date: string;
 };

@@ -35,6 +35,7 @@
 	"type": "module",
 	"dependencies": {
 		"@sveltejs/adapter-static": "^1.0.0",
+		"highlight.js": "^11.7.0",
 		"svelte-local-storage-store": "^0.3.2",
 		"svelte-markdown": "^0.2.3"
 	}

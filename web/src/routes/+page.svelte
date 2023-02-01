@@ -3,24 +3,20 @@
 	const homeContent = `
 👋 Hello,
 <br />
-
-We're Levente and Nandor. As we were brainstorming to find our company's value proposition, we checked out some CNCF projects. Levente started asking questions to see if others are able to guess. This where the fun began... So we decided to convert it into a super simple quiz!
-<br />
-Every day you get the value propositions of 5 CNCF projects and you have to guess what the projects are! You have three attempts per project, and can get two hints should you need it.
+Every day you get the short description of 5 npm projects and you have to guess what the projects are! You have three attempts per project.
 <br />
 Depending how many hints you use:
 🟢 - You got the project right without any hints.
-🟡 - You got the project right using 1 hint.
-🟠 - You got the project right using 2 hints.
+🟡 - You got the project right, but not on the first try.
 🔴 - You didn't get the project right.
 ⚪ - Unanswered questions.
 `;
 
 	const information = `
 Your data is stored client-side (browser local storage). More details [here](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).
-The quiz is reset every noon (UTC) and will be running approximately until late January.
+The quiz is reset every noon (UTC) quiz starts on February 3 and runs for 15 days, ending on February 18..
 <br />
-Have Fun and Happy Holidays 🎄🍾
+Have Fun and Good Luck! 🍾
 `;
 </script>
 
@@ -34,7 +30,11 @@ Have Fun and Happy Holidays 🎄🍾
 			}}
 		/>
 
-		<a href="/quiz"><button class="bg-emerald-300 hover:bg-emerald-700 text-zinc-800 font-bold p-2 my-8">Start</button></a>
+		<a href="/quiz"
+			><button class="bg-emerald-300 hover:bg-emerald-700 text-zinc-800 font-bold p-2 my-8"
+				>Start</button
+			></a
+		>
 		<SvelteMarkdown
 			source={information}
 			options={{

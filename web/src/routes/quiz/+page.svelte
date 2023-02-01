@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { PUBLIC_API_PATH } from '$env/static/public';
 
 	// Store
 	import { score, questionNumber } from '../../lib/store';
@@ -10,12 +9,14 @@
 	// Components
 	import Question from '../../components/Question.svelte';
 	import Modal from '../../components/Modal.svelte';
-	import type { QuizItem, QuizResponse } from 'src/types/quiz.type';
+	import type { JavascriptQuizItem, QuizResponse } from 'src/types/quiz.type';
 	import type { ResultItem } from 'src/types/result.type';
+
+	import quizJson from './javascript-test.json';
 
 	let quiz: QuizResponse = {
 		Date: '',
-		List: new Array<QuizItem>()
+		List: new Array<JavascriptQuizItem>()
 	};
 	let endOfTheQuiz = false;
 	let filledForToday = false;
@@ -40,9 +41,11 @@
 	}
 
 	onMount(async () => {
-		quiz = await fetch(`${PUBLIC_API_PATH}/quiz`)
-			.then((resp) => resp.json())
-			.catch((err) => console.log(err.message));
+		// quiz = await fetch(`${PUBLIC_API_PATH}/quiz`)
+		// 	.then((resp) => resp.json())
+		// 	.catch((err) => console.log(err.message));
+
+		quiz = quizJson;
 
 		todayResult = $resultStore.find((e) => e['date'] === quiz.Date);
 
@@ -72,7 +75,7 @@
 
 		<h2 class="my-4">Today solutions:</h2>
 		{#each quiz.List as question, index}
-				<li class="ml-2 list-none">#{index+1} {question.Name} <br></li>
+			<li class="ml-2 list-none">#{index + 1} {question.Name} <br /></li>
 		{/each}
 	</div>
 {:else}

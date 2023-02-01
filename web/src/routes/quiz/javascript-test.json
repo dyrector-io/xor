@@ -1,0 +1,50 @@
+{
+	"Date": "2023-02-01",
+	"List": [
+		{
+			"Name": "readable-stream",
+			"Description": "Some Node.js functionality for userland",
+			"CodeExample": "```console.log(\"Every time you press a key, you will see more contents of the source file. Let's begin!\\n\\n\")\r\nprocess.stdin.setRawMode(true)\r\nprocess.stdin.on('data', function () {\r\n  const c = rst.read(100)\r\n  if (!c) {\r\n    return setTimeout(process.exit, 500)\r\n  }\r\n  process.stdout.write(c)\r\n})\r\nprocess.stdin.resume()```",
+			"RandomFact": "",
+			"GithubStars": 986,
+			"GitHubLink": "github.com/nodejs/readable-stream",
+			"WeeklyDownloads": 120467683
+		},
+		{
+			"Name": "jQuery",
+			"Description": "... is a fast, small, and feature-rich JavaScript library.",
+			"CodeExample": "```$(\"#test\").hide();```",
+			"RandomFact": "... was found on more than 80 million websites in 2022.",
+			"GithubStars": 57146,
+			"GitHubLink": "github.com/jquery/jquery",
+			"WeeklyDownloads": 6231090
+		},
+		{
+			"Name": "mkdirp",
+			"Description": "A POSIX feature within Node.js",
+			"CodeExample": "```// return value is a Promise resolving to the first directory created\r\n*redacted*('/tmp/foo/bar/baz').then(made =>\r\n  console.log(`made directories, starting with ${made}`)\r\n)```",
+			"RandomFact": "",
+			"GithubStars": 140,
+			"GitHubLink": "github.com/isaacs/node-mkdirp",
+			"WeeklyDownloads": 70745905
+		},
+		{
+			"Name": "colors.js",
+			"Description": "Get colors in your node.js console",
+			"CodeExample": "```console.log('hello'.green); // outputs green text\r\nconsole.log('i like cake and pies'.underline.red); // outputs red underlined text\r\nconsole.log('inverse the color'.inverse); // inverses the color\r\nconsole.log('OMG Rainbows!'.rainbow); // rainbow\r\nconsole.log('Run the trap'.trap); // Drops the bass```",
+			"RandomFact": "",
+			"GithubStars": 5033,
+			"GitHubLink": "github.com/Marak/colors.js",
+			"WeeklyDownloads": 21357058
+		},
+		{
+			"Name": "semver",
+			"Description": "The semantic versioner for npm",
+			"CodeExample": "```*redacted*.minVersion('>=1.0.0'```",
+			"RandomFact": "",
+			"GithubStars": 4519,
+			"GitHubLink": "github.com/npm/node-semver",
+			"WeeklyDownloads": 240233516
+		}
+	]
+}
