@@ -38,7 +38,7 @@
   {
     "Name": "mustache.js",
     "Description": "Logic-less {{...}} templates with JavaScript.  ... is a zero-dependency implementation of the ... template system in JavaScript.",
-    "CodeExample": "```\nconst view = {\r\n  title: \"Joe\",\r\n  calc: () => ( 2 + 4 )\r\n};\r\n\r\nconst output = *redacted*.render(\"{{title}} spends {{calc}}\", view);```",
+    "CodeExample": "```const view = {\r\n  title: \"Joe\",\r\n  calc: () => ( 2 + 4 )\r\n};\r\n\r\nconst output = *redacted*.render(\"{{title}} spends {{calc}}\", view);```",
     "RandomFact": "You can use ... to render mustache templates anywhere you can use JavaScript. This includes web browsers, server-side environments such as Node.js, and CouchDB views.",
     "GithubStars": 15700,
     "GitHubLink": "https://github.com/janl/mustache.js",
@@ -56,7 +56,7 @@
   {
     "Name": "Commander.js",
     "Description": "The complete solution for node.js command-line interfaces.",
-    "CodeExample": "```\nprogram\r\n  .option('--first')\r\n  .option('-s, --separator <char>');\r\n\r\nprogram.parse();```",
+    "CodeExample": "```program\r\n  .option('--first')\r\n  .option('-s, --separator <char>');\r\n\r\nprogram.parse();```",
     "RandomFact": "There is an old-school DOS | OS/2 | Windows file manager with a similar name.",
     "GithubStars": 24145,
     "GitHubLink": "github.com/tj/commander.js",
@@ -74,7 +74,7 @@
   {
     "Name": "vue",
     "Description": "... is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.",
-    "CodeExample": "```\n<div id=\"app\">{{ message }}</div>\r\n\r\n<script>\r\n// ...\r\n  createApp({\r\n    data() {\r\n      return {\r\n        message: 'Hello Vue!'\r\n      }\r\n    }\r\n  }).mount('#app')\r\n</script>",
+    "CodeExample": "```<div id=\"app\">{{ message }}</div>\r\n\r\n<script>\r\n// ...\r\n  createApp({\r\n    data() {\r\n      return {\r\n        message: 'Hello Vue!'\r\n      }\r\n    }\r\n  }).mount('#app')\r\n</script>",
     "RandomFact": "Single File Components",
     "GithubStars": 202078,
     "GitHubLink": "github.com/vuejs/core",
@@ -92,7 +92,7 @@
   {
     "Name": "express",
     "Description": "Fast, unopinionated, minimalist web framework for Node.js.",
-    "CodeExample": "```\napp.get('/', function (req, res) {\r\n  res.send('Hello World')\r\n})\r\n\r\napp.listen(3000)```",
+    "CodeExample": "```app.get('/', function (req, res) {\r\n  res.send('Hello World')\r\n})\r\n\r\napp.listen(3000)```",
     "RandomFact": "\"Most of nike.com's ecommerce experience is on top of <...>... in fact they've left the x-powered-by headers intact.\" -- Reddit",
     "GithubStars": 59753,
     "GitHubLink": "github.com/expressjs/express",
@@ -101,7 +101,7 @@
   {
     "Name": "underscore",
     "Description": "... is a utility-belt library for JavaScript that provides support for the usual functional suspects (each, map, reduce, filter...) without extending any core JavaScript objects.",
-    "CodeExample": "```\nvar numbers = [1, 2, 3, 4, 5];\r\n_.each(numbers, function(value, index){\r\nconsole.log(value, index);\r\n});```",
+    "CodeExample": "```var numbers = [1, 2, 3, 4, 5];\r\n_.each(numbers, function(value, index){\r\nconsole.log(value, index);\r\n});```",
     "RandomFact": "",
     "GithubStars": 26828,
     "GitHubLink": "https://github.com/jashkenas/underscore",
@@ -110,7 +110,7 @@
   {
     "Name": "async",
     "Description": "Async is a utility module which provides straight-forward, powerful functions for working with asynchronous JavaScript.",
-    "CodeExample": "```\n*redacted*.mapLimit(urls, 5, async function(url) {\r\n    const response = await fetch(url)\r\n    return response.body\r\n}, (err, results) => {\r\n    if (err) throw err\r\n    // results is now an array of the response bodies\r\n    console.log(results)\r\n})```",
+    "CodeExample": "```*redacted*.mapLimit(urls, 5, async function(url) {\r\n    const response = await fetch(url)\r\n    return response.body\r\n}, (err, results) => {\r\n    if (err) throw err\r\n    // results is now an array of the response bodies\r\n    console.log(results)\r\n})```",
     "RandomFact": "",
     "GithubStars": 27798,
     "GitHubLink": "https://github.com/caolan/async",
@@ -119,7 +119,7 @@
   {
     "Name": "moment",
     "Description": "A JavaScript date library for parsing, validating, manipulating, and formatting dates.",
-    "CodeExample": "```\nlet now = *redacted*.format('LLLL');\n```",
+    "CodeExample": "```let now = *redacted*.format('LLLL');\n```",
     "RandomFact": "",
     "GithubStars": 47187,
     "GitHubLink": "github.com/moment/moment",
@@ -128,7 +128,7 @@
   {
     "Name": "glob",
     "Description": "Match files using the patterns the shell uses, like stars and stuff.",
-    "CodeExample": "```\n*redacted*(\"**/*.js\", options, function (er, files) {\r\n  // files is an array of filenames.\r\n  // If the `nonull` option is set, and nothing\r\n  // was found, then files is [\"**/*.js\"]\r\n  // er is an error object or null.\r\n})```",
+    "CodeExample": "```*redacted*(\"**/*.js\", options, function (er, files) {\r\n  // files is an array of filenames.\r\n  // If the `nonull` option is set, and nothing\r\n  // was found, then files is [\"**/*.js\"]\r\n  // er is an error object or null.\r\n})```",
     "RandomFact": "",
     "GithubStars": 7837,
     "GitHubLink": "github.com/isaacs/node-glob",
@@ -137,7 +137,7 @@
   {
     "Name": "readable-stream",
     "Description": "Some Node.js functionality for userland",
-    "CodeExample": "```\nconsole.log(\"Every time you press a key, you will see more contents of the source file. Let's begin!\\n\\n\")\r\nprocess.stdin.setRawMode(true)\r\nprocess.stdin.on('data', function () {\r\n  const c = rst.read(100)\r\n  if (!c) {\r\n    return setTimeout(process.exit, 500)\r\n  }\r\n  process.stdout.write(c)\r\n})\r\nprocess.stdin.resume()```",
+    "CodeExample": "```console.log(\"Every time you press a key, you will see more contents of the source file. Let's begin!\\n\\n\")\r\nprocess.stdin.setRawMode(true)\r\nprocess.stdin.on('data', function () {\r\n  const c = rst.read(100)\r\n  if (!c) {\r\n    return setTimeout(process.exit, 500)\r\n  }\r\n  process.stdout.write(c)\r\n})\r\nprocess.stdin.resume()```",
     "RandomFact": "",
     "GithubStars": 986,
     "GitHubLink": "github.com/nodejs/readable-stream",
@@ -146,7 +146,7 @@
   {
     "Name": "jQuery",
     "Description": "... is a fast, small, and feature-rich JavaScript library.",
-    "CodeExample": "```\n$(\"#test\").hide();```",
+    "CodeExample": "```$(\"#test\").hide();```",
     "RandomFact": "... was found on more than 80 million websites in 2022.",
     "GithubStars": 57146,
     "GitHubLink": "github.com/jquery/jquery",
@@ -155,7 +155,7 @@
   {
     "Name": "mkdirp",
     "Description": "A POSIX feature within Node.js",
-    "CodeExample": "```\n// return value is a Promise resolving to the first directory created\r\n*redacted*('/tmp/foo/bar/baz').then(made =>\r\n  console.log(`made directories, starting with ${made}`)\r\n)```",
+    "CodeExample": "```// return value is a Promise resolving to the first directory created\r\n*redacted*('/tmp/foo/bar/baz').then(made =>\r\n  console.log(`made directories, starting with ${made}`)\r\n)```",
     "RandomFact": "",
     "GithubStars": 140,
     "GitHubLink": "github.com/isaacs/node-mkdirp",
@@ -164,7 +164,7 @@
   {
     "Name": "colors.js",
     "Description": "get colors in your node.js console",
-    "CodeExample": "```\nconsole.log('hello'.green); // outputs green text\r\nconsole.log('i like cake and pies'.underline.red); // outputs red underlined text\r\nconsole.log('inverse the color'.inverse); // inverses the color\r\nconsole.log('OMG Rainbows!'.rainbow); // rainbow\r\nconsole.log('Run the trap'.trap); // Drops the bass```",
+    "CodeExample": "```console.log('hello'.green); // outputs green text\r\nconsole.log('i like cake and pies'.underline.red); // outputs red underlined text\r\nconsole.log('inverse the color'.inverse); // inverses the color\r\nconsole.log('OMG Rainbows!'.rainbow); // rainbow\r\nconsole.log('Run the trap'.trap); // Drops the bass```",
     "RandomFact": "",
     "GithubStars": 5033,
     "GitHubLink": "github.com/Marak/colors.js",
@@ -173,7 +173,7 @@
   {
     "Name": "semver",
     "Description": "The semantic versioner for npm",
-    "CodeExample": "```\n*redacted*.minVersion('>=1.0.0'```",
+    "CodeExample": "```*redacted*.minVersion('>=1.0.0'```",
     "RandomFact": "",
     "GithubStars": 4519,
     "GitHubLink": "github.com/npm/node-semver",
@@ -191,7 +191,7 @@
   {
     "Name": "escape-string-regexp",
     "Description": "Escape RegExp special characters",
-    "CodeExample": "```\nconst escapedString = *redacted*('How much $ for a \uD83E\uDD84?');\r\n//=> 'How much \\\\$ for a \uD83E\uDD84\\\\?'\r\n\r\nnew RegExp(escapedString);```",
+    "CodeExample": "```const escapedString = *redacted*('How much $ for a \uD83E\uDD84?');\r\n//=> 'How much \\\\$ for a \uD83E\uDD84\\\\?'\r\n\r\nnew RegExp(escapedString);```",
     "RandomFact": "It is from sindresorhus.",
     "GithubStars": 532,
     "GitHubLink": "github.com/sindresorhus/escape-string-regexp",
@@ -200,7 +200,7 @@
   {
     "Name": "create-t3-app",
     "Description": "Interactive CLI to start a full-stack, typesafe Next.js app.",
-    "CodeExample": "```\npnpm dlx *redacted*@latest --CI --trpc --tailwind```",
+    "CodeExample": "```pnpm dlx *redacted*@latest --CI --trpc --tailwind```",
     "RandomFact": "",
     "GithubStars": 13914,
     "GitHubLink": "github.com/t3-oss/create-t3-app",
@@ -209,7 +209,7 @@
   {
     "Name": "uuid",
     "Description": "For the creation of RFC4122 ....s",
-    "CodeExample": "```\n*redacted*(); // ⇨ '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d'```",
+    "CodeExample": "```*redacted*(); // ⇨ '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d'```",
     "RandomFact": "",
     "GithubStars": 13051,
     "GitHubLink": "github.com/uuidjs/uuid",
@@ -218,7 +218,7 @@
   {
     "Name": "webpack",
     "Description": "... is a module bundler. Its main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset.",
-    "CodeExample": "```\nmodule.exports = {\nentry: './src/index.js',\n  output: {\n  filename: 'main.js',\n  path: path.resolve(__dirname, 'dist'),\n},\n};",
+    "CodeExample": "```module.exports = {\nentry: './src/index.js',\n  output: {\n  filename: 'main.js',\n  path: path.resolve(__dirname, 'dist'),\n},\n};",
     "RandomFact": "",
     "GithubStars": 62454,
     "GitHubLink": "github.com/webpack/webpack",
@@ -227,7 +227,7 @@
   {
     "Name": "rimraf",
     "Description": "The UNIX command ... for node.",
-    "CodeExample": "```\n*redacted*('./tools/setup', error => {\n  if (error) throw new Error(error);\n });```",
+    "CodeExample": "```*redacted*('./tools/setup', error => {\n  if (error) throw new Error(error);\n });```",
     "RandomFact": "Do not drink and ...!",
     "GithubStars": 5023,
     "GitHubLink": "https://github.com/isaacs/rimraf",
@@ -236,7 +236,7 @@
   {
     "Name": "Next.js",
     "Description": "The React Framework, that has uses cases like: Server-side Rendering or Static Generation, and updating or creating content at runtime with Incremental Static Regeneration.",
-    "CodeExample": "```\nexport default function IndexPage() {\r\n  return (\r\n    <div>\r\n      Hello World. <Link href=\"/about\">About</Link>\r\n    </div>\r\n  )\r\n}```",
+    "CodeExample": "```export default function IndexPage() {\r\n  return (\r\n    <div>\r\n      Hello World. <Link href=\"/about\">About</Link>\r\n    </div>\r\n  )\r\n}```",
     "RandomFact": "",
     "GithubStars": 100078,
     "GitHubLink": "https://github.com/vercel/next.js",
@@ -245,7 +245,7 @@
   {
     "Name": "Angular",
     "Description": "... is a development platform for building mobile and desktop web applications using Typescript/JavaScript and other languages.",
-    "CodeExample": "```\n<h2>Products</h2>\r\n\r\n<div *ngFor=\"let product of products\">\r\n</div>```",
+    "CodeExample": "```<h2>Products</h2>\r\n\r\n<div *ngFor=\"let product of products\">\r\n</div>```",
     "RandomFact": "",
     "GithubStars": 86092,
     "GitHubLink": "github.com/angular/angular",
@@ -272,7 +272,7 @@
   {
     "Name": "Jest",
     "Description": "Delightful JavaScript Testing.",
-    "CodeExample": "```\ntest('adds 1 + 2 to equal 3', () => {\r\n  expect(sum(1, 2)).toBe(3);\r\n});\r\n// output:\r\n// PASS  ./sum.test.js\r\n// \u2713 adds 1 + 2 to equal 3 (5ms)```",
+    "CodeExample": "```test('adds 1 + 2 to equal 3', () => {\r\n  expect(sum(1, 2)).toBe(3);\r\n});\r\n// output:\r\n// PASS  ./sum.test.js\r\n// \u2713 adds 1 + 2 to equal 3 (5ms)```",
     "RandomFact": "from Facebook",
     "GithubStars": 41310,
     "GitHubLink": "github.com/facebook/jest",
@@ -280,12 +280,12 @@
   },
   {
     "Name": "Prettier",
-    "Description": "",
+    "Description": "... is an opinionated code formatter with support for ...",
     "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
+    "RandomFact": "It removes all original styling* and ensures that all outputted code conforms to a consistent style. ... takes your code and reprints it from scratch by taking the line length into account.",
+    "GithubStars": 44800,
+    "GitHubLink": "https://github.com/prettier/prettier",
+    "WeeklyDownloads": 27801945
   },
   {
     "Name": "electron",
@@ -314,7 +314,52 @@
     "WeeklyDownloads": 0
   },
   {
-    "Name": "",
+    "Name": "yargs",
+    "Description": "... be a node.js library fer hearties tryin' ter parse optstrings",
+    "CodeExample": "```const ... = require('.../...')\nconst { hideBin } = require('.../helpers')\nconst argv = ...(hideBin(process.argv)).argv\n\nif (argv.ships > 3 && argv.distance < 53.5) {\nconsole.log('Plunder more riffiwobbles!')\n} else {\nconsole.log('Retreat from the xupptumblers!')\n}```",
+    "RandomFact": "... helps you build interactive command line tools, by parsing arguments and generating an elegant user interface.",
+    "GithubStars": 10300,
+    "GitHubLink": "github.com/yargs/yargs",
+    "WeeklyDownloads": 81062853
+  },
+  {
+    "Name": "source-map",
+    "Description": "A ...Consumer instance represents a parsed source map which we can query for information about the original file positions by giving it a file position in the generated source.",
+    "CodeExample": "```<script src=\"https://unpkg.com/...@0.7.3/dist/....js\"></script>\n<script>\n....SourceMapConsumer.initialize({\n\"lib/mappings.wasm\": \"https://unpkg.com/...@0.7.3/lib/mappings.wasm\",\n});\n</script>```",
+    "RandomFact": "Consume and generate source maps.",
+    "GithubStars": 3200,
+    "GitHubLink": "github.com/mozilla/source-map",
+    "WeeklyDownloads": 158734500
+  },
+  {
+    "Name": "q",
+    "Description": "If a function cannot return a value or throw an exception without blocking, it can return a promise instead. A promise is an object that represents the return value or the thrown exception that the function may eventually provide. A promise can also be used as a proxy for a remote object to overcome latency. On the first pass, promises can mitigate the “Pyramid of Doom”: the situation where code marches to the right faster than it marches forward.",
+    "CodeExample": "```Q.fcall(promisedStep1)\n.then(promisedStep2)\n.then(promisedStep3)\n.then(promisedStep4)\n.then(function (value4) {\n// Do something with value4\n})\n.catch(function (error) {\n// Handle any error from all above steps\n})\n.done();\n```",
+    "RandomFact": "... isn't going anywhere. The code is still here and bugs will be fixed but further development has been unnecessary for many years. We encourage you to read the code and the explainers to glimpse into the history of the internet.",
+    "GithubStars": 15000,
+    "GitHubLink": "https://github.com/kriskowal/q",
+    "WeeklyDownloads": 15474465
+  },
+  {
+    "Name": "d3",
+    "Description": "Bring data to life with SVG, Canvas and HTML. ",
+    "CodeExample": "```\n```",
+    "RandomFact": ".. is a JavaScript library for visualizing data using web standards. .. helps you bring data to life using SVG, Canvas and HTML. .. combines powerful visualization and interaction techniques with a data-driven approach to DOM manipulation, giving you the full capabilities of modern browsers and the freedom to design the right visual interface for your data.",
+    "GithubStars": 104000,
+    "GitHubLink": "https://github.com/d3/d3",
+    "WeeklyDownloads": 2151974
+  },
+  {
+    "Name": "vizzu",
+    "Description": "Library for animated data visualizations and data stories",
+    "CodeExample": "```import Vizzu from 'https://cdn.jsdelivr.net/npm/vizzu@latest/dist/vizzu.min.js';\n\nlet data = {\nseries: [\n{ name: 'Foo', values: ['Alice', 'Bob', 'Ted'] },\n{ name: 'Bar', values: [15, 32, 12] },\n{ name: 'Baz', values: [5, 3, 2] }\n]\n};\n\nlet chart = new Vizzu('myVizzu', { data });```",
+    "RandomFact": "... is a free, open-source Javascript/C++ library utilizing a generic dataviz engine that generates many types of charts and seamlessly animates between them. It can be used to create static charts but more importantly, it is designed for building animated data stories and interactive explorers as ... enables showing different perspectives of the data that the viewers can easily follow due to the animation.",
+    "GithubStars": 1700,
+    "GitHubLink": "github.com/vizzuhq/vizzu-lib",
+    "WeeklyDownloads": 18
+  },
+  {
+    "Name": "meteorjs",
     "Description": "",
     "CodeExample": "```\n```",
     "RandomFact": "",
@@ -323,7 +368,7 @@
     "WeeklyDownloads": 0
   },
   {
-    "Name": "",
+    "Name": "emberjs",
     "Description": "",
     "CodeExample": "```\n```",
     "RandomFact": "",
@@ -332,7 +377,7 @@
     "WeeklyDownloads": 0
   },
   {
-    "Name": "",
+    "Name": "svelte",
     "Description": "",
     "CodeExample": "```\n```",
     "RandomFact": "",
@@ -341,7 +386,7 @@
     "WeeklyDownloads": 0
   },
   {
-    "Name": "",
+    "Name": "polymerjs",
     "Description": "",
     "CodeExample": "```\n```",
     "RandomFact": "",
@@ -350,7 +395,7 @@
     "WeeklyDownloads": 0
   },
   {
-    "Name": "",
+    "Name": "fastify",
     "Description": "",
     "CodeExample": "```\n```",
     "RandomFact": "",
@@ -359,7 +404,7 @@
     "WeeklyDownloads": 0
   },
   {
-    "Name": "",
+    "Name": "nestjs",
     "Description": "",
     "CodeExample": "```\n```",
     "RandomFact": "",
@@ -368,7 +413,7 @@
     "WeeklyDownloads": 0
   },
   {
-    "Name": "",
+    "Name": "Agenda.js",
     "Description": "",
     "CodeExample": "```\n```",
     "RandomFact": "",
@@ -377,7 +422,7 @@
     "WeeklyDownloads": 0
   },
   {
-    "Name": "",
+    "Name": "backbone.js",
     "Description": "",
     "CodeExample": "```\n```",
     "RandomFact": "",
@@ -386,7 +431,7 @@
     "WeeklyDownloads": 0
   },
   {
-    "Name": "",
+    "Name": "deno",
     "Description": "",
     "CodeExample": "```\n```",
     "RandomFact": "",
@@ -395,7 +440,7 @@
     "WeeklyDownloads": 0
   },
   {
-    "Name": "",
+    "Name": "knockout",
     "Description": "",
     "CodeExample": "```\n```",
     "RandomFact": "",
@@ -404,7 +449,7 @@
     "WeeklyDownloads": 0
   },
   {
-    "Name": "",
+    "Name": "mocha",
     "Description": "",
     "CodeExample": "```\n```",
     "RandomFact": "",
@@ -413,7 +458,7 @@
     "WeeklyDownloads": 0
   },
   {
-    "Name": "",
+    "Name": "Three.js",
     "Description": "",
     "CodeExample": "```\n```",
     "RandomFact": "",
@@ -422,7 +467,7 @@
     "WeeklyDownloads": 0
   },
   {
-    "Name": "",
+    "Name": "Velocity.js",
     "Description": "",
     "CodeExample": "```\n```",
     "RandomFact": "",
@@ -431,7 +476,34 @@
     "WeeklyDownloads": 0
   },
   {
-    "Name": "",
+    "Name": "Anime.js",
+    "Description": "One of the best animation libraries that makes staggering follow-through animations so simple, ... is light-weight and comes with a clean yet powerful API. ",
+    "CodeExample": "```\n```",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "",
+    "WeeklyDownloads": 0
+  },
+  {
+    "Name": "handlebars",
+    "Description": "... provides the power necessary to let you build semantic templates effectively with no frustration.",
+    "CodeExample": "```var source = \"<p>Hello, my name is {{name}}. I am from {{hometown}}. I have \" +\n\"{{kids.length}} kids:</p>\" +\n\"<ul>{{#kids}}<li>{{name}} is {{age}}</li>{{/kids}}</ul>\";\nvar template = Handlebars.compile(source);\n```",
+    "RandomFact": "... is an extension to the Mustache templating language created by Chris Wanstrath",
+    "GithubStars": 17000,
+    "GitHubLink": "github.com/wycats/handlebars.js",
+    "WeeklyDownloads": 11499396
+  },
+  {
+    "Name": "chai",
+    "Description": "BDD / TDD assertion framework for node.js and the browser that can be paired with any testing framework.",
+    "CodeExample": "```var ... = require('...');\nvar assert = ....assert;```",
+    "RandomFact": "... is an assertion library, similar to Node's built-in assert. It makes testing much easier by giving you lots of assertions you can run against your code.",
+    "GithubStars": 7800,
+    "GitHubLink": "https://github.com/chaijs/chai",
+    "WeeklyDownloads": 6500518
+  },
+  {
+    "Name": "eslint",
     "Description": "",
     "CodeExample": "```\n```",
     "RandomFact": "",
@@ -440,7 +512,7 @@
     "WeeklyDownloads": 0
   },
   {
-    "Name": "",
+    "Name": "dotenv",
     "Description": "",
     "CodeExample": "```\n```",
     "RandomFact": "",
@@ -449,7 +521,16 @@
     "WeeklyDownloads": 0
   },
   {
-    "Name": "",
+    "Name": "bootstrap",
+    "Description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development.",
+    "CodeExample": "```\n```",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "github.com/twbs/bootstrap",
+    "WeeklyDownloads": 5272727
+  },
+  {
+    "Name": "tailwindcss",
     "Description": "",
     "CodeExample": "```\n```",
     "RandomFact": "",
@@ -458,7 +539,34 @@
     "WeeklyDownloads": 0
   },
   {
-    "Name": "",
+    "Name": "joi",
+    "Description": "The most powerful schema description language and data validator for JavaScript.",
+    "CodeExample": "```\n```",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "github.com/hapijs/joi",
+    "WeeklyDownloads": 7459163
+  },
+  {
+    "Name": "formik",
+    "Description": "Build forms in React, without the tears.",
+    "CodeExample": "```\n```",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "github.com/formium/formik",
+    "WeeklyDownloads": 2200539
+  },
+  {
+    "Name": "md5",
+    "Description": "a JavaScript function for hashing messages with ...",
+    "CodeExample": "```\n```",
+    "RandomFact": "",
+    "GithubStars": 0,
+    "GitHubLink": "github.com/pvorb/node-md5",
+    "WeeklyDownloads": 5981906
+  },
+  {
+    "Name": "tensorflow",
     "Description": "",
     "CodeExample": "```\n```",
     "RandomFact": "",
@@ -467,7 +575,7 @@
     "WeeklyDownloads": 0
   },
   {
-    "Name": "",
+    "Name": "mithril.js",
     "Description": "",
     "CodeExample": "```\n```",
     "RandomFact": "",
@@ -476,7 +584,7 @@
     "WeeklyDownloads": 0
   },
   {
-    "Name": "",
+    "Name": "node.js",
     "Description": "",
     "CodeExample": "```\n```",
     "RandomFact": "",
@@ -485,7 +593,7 @@
     "WeeklyDownloads": 0
   },
   {
-    "Name": "",
+    "Name": "aurelia",
     "Description": "",
     "CodeExample": "```\n```",
     "RandomFact": "",
@@ -494,7 +602,7 @@
     "WeeklyDownloads": 0
   },
   {
-    "Name": "",
+    "Name": "leaflet",
     "Description": "",
     "CodeExample": "```\n```",
     "RandomFact": "",
@@ -503,7 +611,7 @@
     "WeeklyDownloads": 0
   },
   {
-    "Name": "",
+    "Name": "Cleave.js",
     "Description": "",
     "CodeExample": "```\n```",
     "RandomFact": "",
@@ -512,115 +620,7 @@
     "WeeklyDownloads": 0
   },
   {
-    "Name": "",
-    "Description": "",
-    "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
-  },
-  {
-    "Name": "",
-    "Description": "",
-    "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
-  },
-  {
-    "Name": "",
-    "Description": "",
-    "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
-  },
-  {
-    "Name": "",
-    "Description": "",
-    "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
-  },
-  {
-    "Name": "",
-    "Description": "",
-    "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
-  },
-  {
-    "Name": "",
-    "Description": "",
-    "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
-  },
-  {
-    "Name": "",
-    "Description": "",
-    "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
-  },
-  {
-    "Name": "",
-    "Description": "",
-    "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
-  },
-  {
-    "Name": "",
-    "Description": "",
-    "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
-  },
-  {
-    "Name": "",
-    "Description": "",
-    "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
-  },
-  {
-    "Name": "",
-    "Description": "",
-    "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
-  },
-  {
-    "Name": "",
-    "Description": "",
-    "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
-  },
-  {
-    "Name": "",
+    "Name": "BIDEO.JS",
     "Description": "",
     "CodeExample": "```\n```",
     "RandomFact": "",
