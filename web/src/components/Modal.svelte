@@ -18,9 +18,12 @@
 	transition:fade
 >
 	<div class="bg-white p-8 md:w-8/12" transition:fly={{ y: -100 }}>
-		<h2>Proven your familiarity with the CNCF landscape, flex to others with your score. Share on socials: </h2>
+		<h2>
+			Proven your familiarity with the Javascripts ecosystem, flex to others with your score. Share
+			on socials:
+		</h2>
 		<div class="my-8" id="resultText">
-			{todayResult?.date} CNCF #XORQuiz results:
+			{todayResult?.date} JS #XORQuiz results:
 			{todayResult?.points.join('')}
 		</div>
 

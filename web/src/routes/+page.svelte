@@ -3,7 +3,7 @@
 	const homeContent = `
 👋 Hello,
 <br />
-Every day you get the short description of 5 npm projects and you have to guess what the projects are! You have three attempts per project.
+Every day you get the short description of 5 npm packages and you have to guess what the projects are! You have three attempts per project.
 <br />
 Depending how many hints you use:
 🟢 - You got the project right without any hints.
@@ -14,7 +14,7 @@ Depending how many hints you use:
 
 	const information = `
 Your data is stored client-side (browser local storage). More details [here](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).
-The quiz is reset every noon (UTC) quiz starts on February 3 and runs for 15 days, ending on February 18..
+The quiz is reset every noon (UTC) quiz starts on February 3 and runs for 15 days, ending on February 18.
 <br />
 Have Fun and Good Luck! 🍾
 `;
