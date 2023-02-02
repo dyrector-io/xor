@@ -11,6 +11,8 @@
 	import Modal from '../../components/Modal.svelte';
 	import type { JavascriptQuizItem, QuizResponse } from 'src/types/quiz.type';
 	import type { ResultItem } from 'src/types/result.type';
+	import { PUBLIC_API_PATH } from '$env/static/public';
+
 
 	import quizJson from './javascript-test.json';
 
@@ -41,11 +43,9 @@
 	}
 
 	onMount(async () => {
-		// quiz = await fetch(`${PUBLIC_API_PATH}/quiz`)
-		// 	.then((resp) => resp.json())
-		// 	.catch((err) => console.log(err.message));
-
-		quiz = quizJson;
+		quiz = await fetch(`${PUBLIC_API_PATH}/quiz`)
+			.then((resp) => resp.json())
+			.catch((err) => console.log(err.message));
 
 		todayResult = $resultStore.find((e) => e['date'] === quiz.Date);
 

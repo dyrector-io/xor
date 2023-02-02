@@ -11,7 +11,7 @@ import (
 func main() {
 	seq := processor.ReadJSONData()
 
-	toWrite := processor.CNCFSequence{}
+	toWrite := processor.QuizSequence{}
 	for _, i := range seq {
 		if i.GithubStars > 1000 {
 			toWrite = append(toWrite, i)

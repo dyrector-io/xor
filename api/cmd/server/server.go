@@ -31,6 +31,9 @@ func main() {
 	if err != nil {
 		log.Fatal().Err(err).Send()
 	}
+
+	log.Info().Object("appConfig", appConfig).Send()
+
 	serv := server.GetChi(appConfig)
 
 	log.Info().Msgf("starting server at: %d", appConfig.Port)

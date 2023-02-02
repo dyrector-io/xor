@@ -5,80 +5,36 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
-	"strings"
 
 	"github.com/rs/zerolog/log"
 )
 
-type CNCFRecord struct {
-	Name string `csv:"Name"`
-	// Organization            string
-	// Homepage                string
-	Logo string
-	// Twitter                 string
-	// CrunchbaseURL           string
-	// MarketCap               string
-	// Ticker                  string
-	// Funding                 string
-	// Member                  string
-	// Relation                string
-	// License                 string
-	// Headquarters            string
-	// LatestTweetDate         string
-	// Description           string `csv:"Description"`
-	CrunchbaseDescription string
-	// CrunchbaseHomepage      string
-	// CrunchbaseCity          string
-	// CrunchbaseRegion        string
-	// CrunchbaseCountry       string
-	// CrunchbaseTwitter       string
-	// CrunchbaseLinkedin      string
-	// CrunchbaseTicker        string
-	// CrunchbaseKind          string
-	// CrunchbaseMinEmployees  string
-	// CrunchbaseMaxEmployees  string
-	Category    string
-	Subcategory string
-	// OSS                     string
-	// GithubRepo              string
-	GithubStars       int
-	GithubDescription string
-	// GithubLatestCommitDate  string
-	// GithubLatestCommitLink  string
-	// GithubReleaseDate       string
-	// GithubReleaseLink       string
-	// GithubStartCommitDate   string
-	// GithubStartCommitLink   string
-	GithubContributorsCount int
-	// GithubContributorsLink  string
-	// Accepted                string
-	// Incubation              string
-	// Graduated               string
-	// DevStatsUrl             string
-	// ArtworkUrl              string
-	// BlogUrl                 string
-	// MailingListUrl          string
-	// SlackUrl                string
-	// YoutubeUrl              string
-	// ChatChannel             string
+type QuizRecord struct {
+	Name            string
+	Description     string
+	CodeExample     string
+	RandomFact      string
+	GithubStars     int
+	GithubLink      string
+	WeeklyDownloads int
 }
 
-//go:embed landscape.json
+//go:embed javascript.json
 var data []byte
 
-func (c *CNCFRecord) String() string {
-	return fmt.Sprintf("Company: %v, GH: %v, Crunchbase: %v",
-		c.Name, c.GithubDescription, c.CrunchbaseDescription)
+func (c *QuizRecord) String() string {
+	return fmt.Sprintf("Company: %v, GH: %v,"+
+		c.Name, c.Description)
 }
 
-type CNCFSequence []*CNCFRecord
+type QuizSequence []*QuizRecord
 
-func (c *CNCFRecord) Render(w http.ResponseWriter, r *http.Request) error {
+func (c *QuizRecord) Render(w http.ResponseWriter, r *http.Request) error {
 	return nil
 }
 
-func ReadJSONData() CNCFSequence {
-	list := CNCFSequence{}
+func ReadJSONData() QuizSequence {
+	list := QuizSequence{}
 	fmt.Printf("%d", len(data))
 	err := json.Unmarshal(data, &list)
 	if err != nil {
@@ -88,21 +44,12 @@ func ReadJSONData() CNCFSequence {
 	return list
 }
 
-func Mask(original, mask string) string {
-	return strings.ReplaceAll(original, mask, "...")
-}
-
-func MaskAndFilter(list CNCFSequence, masked bool, startCountFilter int) CNCFSequence {
-	result := CNCFSequence{}
+func MaskAndFilter(list QuizSequence, startCountFilter int) QuizSequence {
+	result := QuizSequence{}
 
 	for _, i := range list {
 		if startCountFilter > 0 && i.GithubStars < startCountFilter {
 			continue
-		}
-
-		if masked {
-			i.GithubDescription = Mask(i.GithubDescription, i.Name)
-			i.CrunchbaseDescription = Mask(i.CrunchbaseDescription, i.Name)
 		}
 		result = append(result, i)
 	}

@@ -20,6 +20,6 @@ export type JavascriptQuizItem = {
 };
 
 export type QuizResponse = {
-	List: Array<QuizItem | JavascriptQuizItem>;
+	List: Array<JavascriptQuizItem>;
 	Date: string;
 };

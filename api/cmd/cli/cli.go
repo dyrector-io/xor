@@ -29,7 +29,11 @@ func quiz() {
 	fmt.Printf("How well do you know the landscape? Find out who has this as a value proposition / GitHub description.")
 	for i := 0; i < qNum; i++ {
 		fmt.Printf("\n%d. Question\n%s\nStars:%d\n",
-			i+1, processor.Mask(records[indices[i]].GithubDescription, records[indices[i]].Name), records[indices[i]].GithubStars)
+			i+1, records[indices[i]].Description, records[indices[i]].GithubStars)
+		fmt.Printf("Code sample:\n%s\n", records[indices[i]].CodeExample)
+		if records[indices[i]].RandomFact != "" {
+			fmt.Printf("Random fact:\n%s\n", records[indices[i]].RandomFact)
+		}
 		for j := attempts; j > 0; j-- {
 			input := ""
 			fmt.Scanln(&input)
@@ -40,7 +44,7 @@ func quiz() {
 				break
 			}
 			if j == attempts {
-				fmt.Printf("Hint: %s\n", records[indices[i]].Category)
+				fmt.Printf("Hint: %s\n", records[indices[i]].CodeExample)
 			}
 			if input == "" {
 				fmt.Printf("You have to write something...\n")

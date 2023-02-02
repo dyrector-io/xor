@@ -13,7 +13,7 @@ import (
 )
 
 type QuizListResponse struct {
-	List processor.CNCFSequence
+	List processor.QuizSequence
 	Date string
 }
 
@@ -37,7 +37,7 @@ func GetQuiz(w http.ResponseWriter, r *http.Request) {
 	}
 	err := render.Render(w, r, &QuizListResponse{
 		List: appState.QuizList,
-		Date: time.Now().Format(database.SimpleDateFormat),
+		Date: time.Now().Add(time.Hour * 24 * time.Duration(appState.QuizCounter)).Format(database.SimpleDateFormat),
 	})
 	if err != nil {
 		log.Error().Err(err)

@@ -1,15 +1,11 @@
 .PHONY: cli
 cli:
-	cd api/cmd/cli && \
-	go run .; \
-	cd -
+	cd api/cmd/cli && go run .
 
 .PHONY: server
 server:
 	cd api/cmd/server && \
-	go run .; \
-	cd -
-
+	go run .
 
 .PHONY: compile
 compile:
@@ -17,6 +13,13 @@ compile:
 	GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -o ./api.bin
 
 .PHONY: build-api
-build-api:
-	cd api && \
-	docker build -t github.com/dyrector-io/xor/api:1.1 .
+build-api: compile
+	docker-compose build api
+
+.PHONY: build-ui
+build-ui:
+	docker-compose build ui
+
+.PHONY: all
+all: build-api build-ui
+	docker-compose push

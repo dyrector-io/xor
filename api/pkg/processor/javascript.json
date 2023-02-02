@@ -5,13 +5,13 @@
     "CodeExample": "```....defaults({ 'a': 1 }, { 'a': 3, 'b': 2 });```",
     "RandomFact": "2015 was big year! ... became the most depended on npm package, passed 1 billion downloads, & its v3 release saw massive adoption!",
     "GithubStars": 55500,
-    "GitHubLink": "",
+    "GitHubLink": "https://github.com/lodash/lodash",
     "WeeklyDownloads": 46000000
   },
   {
     "Name": "Cloudinary",
     "Description": "Effortlessly optimize, transform, upload and manage your cloud's assets.",
-    "CodeExample": "```....url('sample.jpg', {width: 100, height: 150, crop: 'fill', fetch_format: 'auto'})```",
+    "CodeExample": "```*redacted*.url('sample.jpg', {width: 100, height: 150, crop: 'fill', fetch_format: 'auto'})```",
     "RandomFact": "Image and Video API for Powerful Visual Experiences - Store, transform, optimize, and deliver all your media assets with easy-to-use APIs, widgets, or user interface.",
     "GithubStars": 567,
     "GitHubLink": "https://github.com/cloudinary/cloudinary_npm",
@@ -20,7 +20,7 @@
   {
     "Name": "Axios",
     "Description": "Promise based HTTP client for the browser and node.js",
-    "CodeExample": "```...({ method: 'post', url: '/user/12345', data: { firstName: 'Fred', lastName: 'Flintstone'} });```",
+    "CodeExample": "```*redacted*.({ method: 'post', url: '/user/12345', data: { firstName: 'Fred', lastName: 'Flintstone'} });```",
     "RandomFact": "Matt Zabriskie is the founder of the npm package, started in the summer of 2014.",
     "GithubStars": 98500,
     "GitHubLink": "https://github.com/axios/axios",
@@ -29,7 +29,7 @@
   {
     "Name": "chalk",
     "Description": "Terminal string styling done right",
-    "CodeExample": "```log(....blue.bgRed.bold('Hello world!'));```",
+    "CodeExample": "```log(*redacted*.blue.bgRed.bold('Hello world!'));```",
     "RandomFact": "",
     "GithubStars": 19700,
     "GitHubLink": "https://github.com/chalk/chalk",
@@ -92,7 +92,7 @@
   {
     "Name": "express",
     "Description": "Fast, unopinionated, minimalist web framework for Node.js.",
-    "CodeExample": "```app.get('/', function (req, res) {\r\n  res.send('Hello World')\r\n})\r\n\r\napp.listen(3000)```",
+    "CodeExample": "``` app.get('/', function (req, res) {\r\n  res.send('Hello World')\r\n})\r\n\r\napp.listen(3000) ```",
     "RandomFact": "\"Most of nike.com's ecommerce experience is on top of <...>... in fact they've left the x-powered-by headers intact.\" -- Reddit",
     "GithubStars": 59753,
     "GitHubLink": "github.com/expressjs/express",
@@ -109,7 +109,7 @@
   },
   {
     "Name": "async",
-    "Description": "Async is a utility module which provides straight-forward, powerful functions for working with asynchronous JavaScript.",
+    "Description": "... is a utility module which provides straight-forward, powerful functions for working with asynchronous JavaScript.",
     "CodeExample": "```*redacted*.mapLimit(urls, 5, async function(url) {\r\n    const response = await fetch(url)\r\n    return response.body\r\n}, (err, results) => {\r\n    if (err) throw err\r\n    // results is now an array of the response bodies\r\n    console.log(results)\r\n})```",
     "RandomFact": "",
     "GithubStars": 27798,
@@ -289,29 +289,30 @@
   },
   {
     "Name": "electron",
-    "Description": "",
+    "Description": "The ... framework lets you write cross-platform desktop applications using JavaScript, HTML and CSS.",
     "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
+    "RandomFact": "Most people use ... from the command line, but if you require ... inside your Node app (not your ... app) it will return the file path to the binary.",
+    "GithubStars": 105727,
+    "GitHubLink": "https://github.com/electron/electron",
+    "WeeklyDownloads": 605233
   },
   {
     "Name": "gatsby",
-    "Description": "",
+    "Description": "... is a free and open source framework based on React that helps developers build blazing fast websites and apps.",
     "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
+    "RandomFact": "It's been acquired by Netlify recently.",
+    "GithubStars": 54089,
+    "GitHubLink": "https://github.com/gatsbyjs/gatsby",
+    "WeeklyDownloads": 418579
   },
   {
     "Name": "yarn",
-    "Description": "",
+    "Description": "Fast, reliable, and secure dependency management.",
     "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "WeeklyDownloads": 0
+    "RandomFact": "... uses checksums to verify the integrity of every installed package before its code is executed.",
+    "GithubStars": 41047,
+    "GitHubLink": "https://github.com/yarnpkg/yarn",
+    "WeeklyDownloads": 3751289
   },
   {
     "Name": "yargs",
@@ -360,129 +361,129 @@
   },
   {
     "Name": "meteorjs",
-    "Description": "",
+    "Description": "... is an open source platform for seamlessly building and deploying Web, Mobile, and Desktop applications in Javascript or TypeScript.",
     "CodeExample": "```\n```",
     "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
+    "GithubStars": 43253,
+    "GitHubLink": "https://github.com/meteor/meteor",
+    "WeeklyDownloads": 1245
   },
   {
     "Name": "emberjs",
-    "Description": "",
+    "Description": "... is a productive, battle-tested JavaScript framework for building modern web applications. It includes everything you need to build rich UIs that work on any device.",
     "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
+    "RandomFact": "... is built on the Glimmer rendering engine, one of the fastest rendering technologies on the market today, thanks to the way it compiles templates down to a highly-performant virtual machine.",
+    "GithubStars": 12,
+    "GitHubLink": "https://github.com/emberjs/ember",
+    "WeeklyDownloads": 1255
   },
   {
     "Name": "svelte",
-    "Description": "",
+    "Description": "... is a new way to build web applications. It's a compiler that takes your declarative components and converts them into efficient JavaScript that surgically updates the DOM.",
     "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
+    "RandomFact": "Instead of using techniques like virtual DOM diffing, ... writes code that surgically updates the DOM when the state of your app changes.",
+    "GithubStars": 65263,
+    "GitHubLink": "https://github.com/sveltejs/svelte",
+    "WeeklyDownloads": 479923
   },
   {
     "Name": "polymerjs",
-    "Description": "",
+    "Description": "... lets you build encapsulated, reusable Web Components that work just like standard HTML elements, to use in building web applications.",
     "CodeExample": "```\n```",
     "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
+    "GithubStars": 21909,
+    "GitHubLink": "https://github.com/Polymer/polymer",
+    "WeeklyDownloads": 88830
   },
   {
     "Name": "fastify",
-    "Description": "",
+    "Description": "... is a web framework highly focused on providing the best developer experience with the least overhead and a powerful plugin architecture.",
     "CodeExample": "```\n```",
     "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
+    "GithubStars": 26310,
+    "GitHubLink": "https://github.com/fastify/fastify",
+    "WeeklyDownloads": 929803
   },
   {
     "Name": "nestjs",
-    "Description": "",
+    "Description": "A progressive Node.js framework for building efficient, scalable, and enterprise-grade server-side applications on top of TypeScript & JavaScript (ES6, ES7, ES8)",
     "CodeExample": "```\n```",
     "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
+    "GithubStars": 53965,
+    "GitHubLink": "https://github.com/nestjs/nest",
+    "WeeklyDownloads": 2084251
   },
   {
     "Name": "Agenda.js",
-    "Description": "",
+    "Description": "A light-weight job scheduling library for Node.js",
     "CodeExample": "```\n```",
     "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
+    "GithubStars": 8689,
+    "GitHubLink": "https://github.com/agenda/agenda",
+    "WeeklyDownloads": 89740
   },
   {
     "Name": "backbone.js",
-    "Description": "",
+    "Description": "... supplies structure to JavaScript-heavy applications by providing models with key-value binding and custom events, collections with a rich API of enumerable functions, views with declarative event handling, and connects it all to your existing application over a RESTful JSON interface.",
     "CodeExample": "```\n```",
     "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
+    "GithubStars": 27984,
+    "GitHubLink": "https://github.com/jashkenas/backbone",
+    "WeeklyDownloads": 607180
   },
   {
     "Name": "deno",
-    "Description": "",
+    "Description": "A secure JavaScript/TypeScript runtime",
     "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
+    "RandomFact": "Built in linter, code formatter, ability to build a self-contained executable, test runner, IDE integration, and more.",
+    "GithubStars": 87607,
+    "GitHubLink": "https://github.com/denoland/deno",
     "WeeklyDownloads": 0
   },
   {
     "Name": "knockout",
-    "Description": "",
+    "Description": "... is a JavaScript MVVM (a modern variant of MVC) library that makes it easier to create rich, desktop-like user interfaces with JavaScript and HTML.",
     "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
+    "RandomFact": "When your data model's state changes, your UI updates automatically",
+    "GithubStars": 10279,
+    "GitHubLink": "https://github.com/knockout/knockout",
+    "WeeklyDownloads": 70616
   },
   {
     "Name": "mocha",
-    "Description": "",
+    "Description": "Simple, flexible, fun JavaScript test framework for Node.js & The Browser",
     "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
+    "RandomFact": "... is one of the most-depended-upon modules on npm (source: libraries.io)",
+    "GithubStars": 21871,
+    "GitHubLink": "https://github.com/mochajs/mocha",
+    "WeeklyDownloads": 7662359
   },
   {
     "Name": "Three.js",
-    "Description": "",
+    "Description": "The aim of the project is to create an easy to use, lightweight, cross-browser, general purpose 3D library.",
     "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
+    "RandomFact": "The current builds only include a WebGL renderer but WebGPU (experimental), SVG and CSS3D renderers are also available as addons.",
+    "GithubStars": 88640,
+    "GitHubLink": "https://github.com/mrdoob/three.js",
+    "WeeklyDownloads": 922629
   },
   {
     "Name": "Velocity.js",
-    "Description": "",
+    "Description": "... is ... template engine for javascript.",
     "CodeExample": "```\n```",
     "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
+    "GithubStars": 582,
+    "GitHubLink": "https://github.com/shepherdwind/velocity.js",
+    "WeeklyDownloads": 441687
   },
   {
     "Name": "Anime.js",
     "Description": "One of the best animation libraries that makes staggering follow-through animations so simple, ... is light-weight and comes with a clean yet powerful API. ",
     "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
+    "RandomFact": "... works with anything web. CSS, SVG, DOM attributes and JavaScript Objects: animate everything with a single unified API.",
+    "GithubStars": 44292,
+    "GitHubLink": "https://github.com/juliangarnier/anime",
+    "WeeklyDownloads": 139834
   },
   {
     "Name": "handlebars",
@@ -504,46 +505,46 @@
   },
   {
     "Name": "eslint",
-    "Description": "",
+    "Description": "... is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.",
     "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
+    "RandomFact": "... uses Espree for JavaScript parsing.",
+    "GithubStars": 22131,
+    "GitHubLink": "https://github.com/eslint/eslint",
+    "WeeklyDownloads": 30831843
   },
   {
     "Name": "dotenv",
-    "Description": "",
+    "Description": "... is a zero-dependency module that loads environment variables from a .env file into process.env.",
     "CodeExample": "```\n```",
     "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
+    "GithubStars": 16618,
+    "GitHubLink": "https://github.com/motdotla/dotenv",
+    "WeeklyDownloads": 31298221
   },
   {
     "Name": "bootstrap",
     "Description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development.",
     "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
+    "RandomFact": "Add toggleable hidden elements, modals and offcanvas menus, popovers and tooltips, and so much more—all without jQuery.",
+    "GithubStars": 161613,
     "GitHubLink": "github.com/twbs/bootstrap",
     "WeeklyDownloads": 5272727
   },
   {
     "Name": "tailwindcss",
-    "Description": "",
+    "Description": "A utility-first CSS framework for rapidly building custom user interfaces.",
     "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
+    "RandomFact": "Utility classes help you work within the constraints of a system instead of littering your stylesheets with arbitrary values.",
+    "GithubStars": 64720,
+    "GitHubLink": "https://github.com/tailwindlabs/tailwindcss",
+    "WeeklyDownloads": 4919224
   },
   {
     "Name": "joi",
     "Description": "The most powerful schema description language and data validator for JavaScript.",
     "CodeExample": "```\n```",
     "RandomFact": "",
-    "GithubStars": 0,
+    "GithubStars": 19658,
     "GitHubLink": "github.com/hapijs/joi",
     "WeeklyDownloads": 7459163
   },
@@ -551,8 +552,8 @@
     "Name": "formik",
     "Description": "Build forms in React, without the tears.",
     "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
+    "RandomFact": "Since form state is inherently local and ephemeral, ... does not use external state management libraries like Redux or MobX.",
+    "GithubStars": 31853,
     "GitHubLink": "github.com/formium/formik",
     "WeeklyDownloads": 2200539
   },
@@ -561,71 +562,71 @@
     "Description": "a JavaScript function for hashing messages with ...",
     "CodeExample": "```\n```",
     "RandomFact": "",
-    "GithubStars": 0,
+    "GithubStars": 861,
     "GitHubLink": "github.com/pvorb/node-md5",
     "WeeklyDownloads": 5981906
   },
   {
     "Name": "tensorflow",
-    "Description": "",
+    "Description": "A WebGL accelerated JavaScript library for training and deploying ML models.",
     "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
+    "RandomFact": "Use flexible and intuitive APIs to build models from scratch using the low-level JavaScript linear algebra library or the high-level layers API.",
+    "GithubStars": 16978,
+    "GitHubLink": "https://github.com/tensorflow/tfjs",
+    "WeeklyDownloads": 103687
   },
   {
     "Name": "mithril.js",
-    "Description": "",
+    "Description": "A modern client-side JavaScript framework for building Single Page Applications.",
     "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
+    "RandomFact": "It's small (10.05 KB gzipped), fast and provides routing and XHR utilities out of the box.",
+    "GithubStars": 13557,
+    "GitHubLink": "https://github.com/MithrilJS/mithril.js",
+    "WeeklyDownloads": 43136
   },
   {
-    "Name": "node.js",
-    "Description": "",
+    "Name": "prisma",
+    "Description": "Next-generation ORM for Node.js & TypeScript",
     "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
+    "RandomFact": "Every project that uses a tool from the ... toolkit starts with a ... schema file.",
+    "GithubStars": 93096,
+    "GitHubLink": "https://github.com/nodejs/node",
+    "WeeklyDownloads": 940448
   },
   {
     "Name": "aurelia",
-    "Description": "",
+    "Description": "Aurelia is a modern, front-end JavaScript framework for building browser, mobile, and desktop applications.",
     "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
+    "RandomFact": "... applications are built by composing a series of simple components.",
+    "GithubStars": 1255,
+    "GitHubLink": "https://github.com/aurelia/aurelia",
+    "WeeklyDownloads": 932
   },
   {
     "Name": "leaflet",
-    "Description": "",
+    "Description": "JavaScript library for mobile-friendly interactive maps",
     "CodeExample": "```\n```",
-    "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
+    "RandomFact": "Weighing just about 42 KB of gzipped JS plus 4 KB of gzipped CSS code",
+    "GithubStars": 36689,
+    "GitHubLink": "https://github.com/Leaflet/Leaflet",
+    "WeeklyDownloads": 775609
   },
   {
     "Name": "Cleave.js",
-    "Description": "",
+    "Description": "... has a simple purpose: to help you format input text content automatically.",
     "CodeExample": "```\n```",
     "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
-    "WeeklyDownloads": 0
+    "GithubStars": 17682,
+    "GitHubLink": "https://github.com/nosir/cleave.js",
+    "WeeklyDownloads": 255682
   },
   {
     "Name": "BIDEO.JS",
-    "Description": "",
+    "Description": "Fullscreen HTML5 Background Video for the Web.",
     "CodeExample": "```\n```",
     "RandomFact": "",
-    "GithubStars": 0,
-    "GitHubLink": "",
+    "GithubStars": 4283,
+    "GitHubLink": "https://github.com/rishabhp/bideo.js",
     "WeeklyDownloads": 0
   }
 ]

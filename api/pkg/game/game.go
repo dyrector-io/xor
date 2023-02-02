@@ -20,6 +20,7 @@ const (
 
 const (
 	RandomGenMethod = "RANDOM"
+	LinearGenMethod = "LINEAR"
 )
 
 func PickRandom(amount, upperLimit int) []int {
@@ -86,7 +87,7 @@ func GetPicksIfPresent(db *gorm.DB, today time.Time) []int {
 func SelectAQuiz(state *config.AppState) {
 	today := time.Now()
 	log.Info().Msgf("SelectAQuiz running %v", today)
-	listAll := processor.MaskAndFilter(processor.ReadJSONData(), true, FilterIfStartLessThan)
+	listAll := processor.ReadJSONData()
 	var indices []int
 	if state.AppConfig.EndDate != "" {
 		end, err := time.Parse("2006-01-02", state.AppConfig.EndDate)
@@ -95,13 +96,23 @@ func SelectAQuiz(state *config.AppState) {
 		}
 		if today.After(end) {
 			log.Info().Msgf("End date passed %v>%v", today, state.AppConfig.EndDate)
-			state.QuizList = processor.CNCFSequence{}
+			state.QuizList = processor.QuizSequence{}
 			state.Ended = true
 			return
 		}
+	} else if state.QuizCounter*QuestionCount >= len(listAll) {
+		state.QuizList = processor.QuizSequence{}
+		state.Ended = true
+		return
 	} else if state.AppConfig.Method == RandomGenMethod {
 		indices = PickRandom(QuestionCount, len(listAll)-1)
 		log.Info().Msg("generating new random quiz")
+	} else if state.AppConfig.Method == LinearGenMethod {
+		start := state.QuizCounter * QuestionCount
+		for i := start; i < start+QuestionCount; i++ {
+			indices = append(indices, i)
+		}
+		state.QuizCounter++
 	} else {
 		indices = GetPicksIfPresent(state.DBConn, today)
 		if len(indices) == 0 {
@@ -124,7 +135,7 @@ func SelectAQuiz(state *config.AppState) {
 		return
 	}
 
-	selected := processor.CNCFSequence{}
+	selected := processor.QuizSequence{}
 
 	for _, i := range indices {
 		selected = append(selected, listAll[i])

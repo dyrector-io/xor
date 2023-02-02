@@ -8,8 +8,8 @@
 	import SvelteMarkdown, { type Renderers } from 'svelte-markdown';
 	import Code from './Code.svelte';
 
-	export let question: JavascriptQuizItem;
 	export let nextQuestion;
+	export let question: JavascriptQuizItem;
 	export let index;
 
 	let answer = '';
