@@ -290,7 +290,7 @@
   {
     "Name": "electron",
     "Description": "The ... framework lets you write cross-platform desktop applications using JavaScript, HTML and CSS.",
-    "CodeExample": "```\n```",
+    "CodeExample": "```function createWindow () {\r\n  const win = new BrowserWindow({\r\n    width: 800,\r\n    height: 600,\r\n    webPreferences: {\r\n      preload: path.join(__dirname, 'preload.js')\r\n    }\r\n  })\r\n\r\n  win.loadFile('index.html')\r\n}```",
     "RandomFact": "Most people use ... from the command line, but if you require ... inside your Node app (not your ... app) it will return the file path to the binary.",
     "GithubStars": 105727,
     "GitHubLink": "https://github.com/electron/electron",
@@ -299,7 +299,7 @@
   {
     "Name": "gatsby",
     "Description": "... is a free and open source framework based on React that helps developers build blazing fast websites and apps.",
-    "CodeExample": "```\n```",
+    "CodeExample": "```{\r\n  \"trailingComma\": \"es5\",\r\n  \"tabWidth\": 4,\r\n  \"semi\": false,\r\n  \"singleQuote\": true\r\n}```",
     "RandomFact": "It's been acquired by Netlify recently.",
     "GithubStars": 54089,
     "GitHubLink": "https://github.com/gatsbyjs/gatsby",
@@ -308,7 +308,7 @@
   {
     "Name": "yarn",
     "Description": "Fast, reliable, and secure dependency management.",
-    "CodeExample": "```\n```",
+    "CodeExample": "```// Starting a new project\r\n*redacted* init\r\n// Adding a dependency\r\n*redacted* add package@version\r\n// Installing all the dependencies of project\r\n*redacted* // :D```",
     "RandomFact": "... uses checksums to verify the integrity of every installed package before its code is executed.",
     "GithubStars": 41047,
     "GitHubLink": "https://github.com/yarnpkg/yarn",
@@ -317,7 +317,7 @@
   {
     "Name": "yargs",
     "Description": "... be a node.js library fer hearties tryin' ter parse optstrings",
-    "CodeExample": "```const ... = require('.../...')\nconst { hideBin } = require('.../helpers')\nconst argv = ...(hideBin(process.argv)).argv\n\nif (argv.ships > 3 && argv.distance < 53.5) {\nconsole.log('Plunder more riffiwobbles!')\n} else {\nconsole.log('Retreat from the xupptumblers!')\n}```",
+    "CodeExample": "```const argv = *redacted*.(hideBin(process.argv)).argv\n\nif (argv.ships > 3 && argv.distance < 53.5) {\nconsole.log('Plunder more riffiwobbles!')\n} else {\nconsole.log('Retreat from the xupptumblers!')\n}```",
     "RandomFact": "... helps you build interactive command line tools, by parsing arguments and generating an elegant user interface.",
     "GithubStars": 10300,
     "GitHubLink": "github.com/yargs/yargs",
@@ -344,7 +344,7 @@
   {
     "Name": "d3",
     "Description": "Bring data to life with SVG, Canvas and HTML. ",
-    "CodeExample": "```\n```",
+    "CodeExample": "```d3.select(\"body\").style(\"background-color\", \"black\");```",
     "RandomFact": ".. is a JavaScript library for visualizing data using web standards. .. helps you bring data to life using SVG, Canvas and HTML. .. combines powerful visualization and interaction techniques with a data-driven approach to DOM manipulation, giving you the full capabilities of modern browsers and the freedom to design the right visual interface for your data.",
     "GithubStars": 104000,
     "GitHubLink": "https://github.com/d3/d3",
@@ -353,7 +353,7 @@
   {
     "Name": "vizzu",
     "Description": "Library for animated data visualizations and data stories",
-    "CodeExample": "```import Vizzu from 'https://cdn.jsdelivr.net/npm/vizzu@latest/dist/vizzu.min.js';\n\nlet data = {\nseries: [\n{ name: 'Foo', values: ['Alice', 'Bob', 'Ted'] },\n{ name: 'Bar', values: [15, 32, 12] },\n{ name: 'Baz', values: [5, 3, 2] }\n]\n};\n\nlet chart = new Vizzu('myVizzu', { data });```",
+    "CodeExample": "```let data = {\nseries: [\n{ name: 'Foo', values: ['Alice', 'Bob', 'Ted'] },\n{ name: 'Bar', values: [15, 32, 12] },\n{ name: 'Baz', values: [5, 3, 2] }\n]\n};\n\nlet chart = new *redacted*('mything', { data });```",
     "RandomFact": "... is a free, open-source Javascript/C++ library utilizing a generic dataviz engine that generates many types of charts and seamlessly animates between them. It can be used to create static charts but more importantly, it is designed for building animated data stories and interactive explorers as ... enables showing different perspectives of the data that the viewers can easily follow due to the animation.",
     "GithubStars": 1700,
     "GitHubLink": "github.com/vizzuhq/vizzu-lib",
@@ -362,7 +362,7 @@
   {
     "Name": "meteorjs",
     "Description": "... is an open source platform for seamlessly building and deploying Web, Mobile, and Desktop applications in Javascript or TypeScript.",
-    "CodeExample": "```\n```",
+    "CodeExample": "```// On server startup, if the database is empty, create some initial data.\r\nif (*redacted*.isServer) {\r\n  *redacted*.startup(() => {\r\n    if (Rooms.find().count() === 0) {\r\n      Rooms.insert({ name: 'Initial room' });\r\n    }\r\n  });\r\n}```",
     "RandomFact": "",
     "GithubStars": 43253,
     "GitHubLink": "https://github.com/meteor/meteor",
@@ -371,7 +371,7 @@
   {
     "Name": "emberjs",
     "Description": "... is a productive, battle-tested JavaScript framework for building modern web applications. It includes everything you need to build rich UIs that work on any device.",
-    "CodeExample": "```\n```",
+    "CodeExample": "```<h2>List of Scientists</h2>\r\n\r\n<ul>\r\n  {{#each @model as |scientist|}}\r\n    <li>{{scientist}}</li>\r\n  {{/each}}\r\n</ul>```",
     "RandomFact": "... is built on the Glimmer rendering engine, one of the fastest rendering technologies on the market today, thanks to the way it compiles templates down to a highly-performant virtual machine.",
     "GithubStars": 12,
     "GitHubLink": "https://github.com/emberjs/ember",
@@ -380,7 +380,7 @@
   {
     "Name": "svelte",
     "Description": "... is a new way to build web applications. It's a compiler that takes your declarative components and converts them into efficient JavaScript that surgically updates the DOM.",
-    "CodeExample": "```\n```",
+    "CodeExample": "```<script>\r\n\tlet name = 'world';\r\n</script>\r\n\r\n<h1>Hello {name}!</h1>```",
     "RandomFact": "Instead of using techniques like virtual DOM diffing, ... writes code that surgically updates the DOM when the state of your app changes.",
     "GithubStars": 65263,
     "GitHubLink": "https://github.com/sveltejs/svelte",
@@ -389,7 +389,7 @@
   {
     "Name": "polymerjs",
     "Description": "... lets you build encapsulated, reusable Web Components that work just like standard HTML elements, to use in building web applications.",
-    "CodeExample": "```\n```",
+    "CodeExample": "```<!-- Import a component -->\r\n<script src=\"*redacted*/paper-checkbox.js?module\" type=\"module\" ></script>\r\n\r\n<!-- Use it like any other HTML element -->\r\n<paper-checkbox>Web Components!</paper-checkbox>```",
     "RandomFact": "",
     "GithubStars": 21909,
     "GitHubLink": "https://github.com/Polymer/polymer",
@@ -398,7 +398,7 @@
   {
     "Name": "fastify",
     "Description": "... is a web framework highly focused on providing the best developer experience with the least overhead and a powerful plugin architecture.",
-    "CodeExample": "```\n```",
+    "CodeExample": "```// Declare a route\r\n*redacted*.get('/', function (request, reply) {\r\n  reply.send({ hello: 'world' })\r\n})\r\n\r\n// Run the server!\r\n*redacted*.listen({ port: 3000 }, function (err, address) {\r\n  if (err) {\r\n    *redacted*.log.error(err)\r\n    process.exit(1)\r\n  }\r\n  // Server is now listening on ${address}\r\n})```",
     "RandomFact": "",
     "GithubStars": 26310,
     "GitHubLink": "https://github.com/fastify/fastify",
