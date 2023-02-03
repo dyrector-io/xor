@@ -5,7 +5,7 @@
 	import FuzzySet from 'fuzzyset.js';
 	import type { JavascriptQuizItem } from 'src/types/quiz.type';
 	import { onDestroy } from 'svelte';
-	import SvelteMarkdown, { type Renderers } from 'svelte-markdown';
+	import SvelteMarkdown from 'svelte-markdown';
 	import Code from './Code.svelte';
 
 	export let nextQuestion;

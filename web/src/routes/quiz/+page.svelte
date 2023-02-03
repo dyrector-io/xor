@@ -13,16 +13,20 @@
 	import type { ResultItem } from 'src/types/result.type';
 	import { PUBLIC_API_PATH } from '$env/static/public';
 
-
-	import quizJson from './javascript-test.json';
+	const HTTP_STATUS = {
+		OK: 200,
+		GONE: 410
+	};
 
 	let quiz: QuizResponse = {
 		Date: '',
 		List: new Array<JavascriptQuizItem>()
 	};
+
 	let endOfTheQuiz = false;
 	let filledForToday = false;
 	let closed = false;
+	let gone = true;
 	let todayResult: ResultItem | undefined;
 
 	function nextQuestion() {
@@ -44,7 +48,14 @@
 
 	onMount(async () => {
 		quiz = await fetch(`${PUBLIC_API_PATH}/quiz`)
-			.then((resp) => resp.json())
+			.then((resp) => {
+				if (resp.status === HTTP_STATUS.GONE) {
+					gone = true;
+					return { Date: '', List: [] };
+				} else {
+					return resp.json();
+				}
+			})
 			.catch((err) => console.log(err.message));
 
 		todayResult = $resultStore.find((e) => e['date'] === quiz.Date);
@@ -67,7 +78,15 @@
 
 <h1 class="text-2xl pb-8">XOR Quiz</h1>
 
-{#if filledForToday}
+{#if gone}
+	<div class="py-4">
+		The quiz is ended. Please come back later or visit the <a
+			class="text-emerald-300"
+			href="https://github.com/dyrector-io/xor/"
+			target="_blank">repository</a
+		> for more information.
+	</div>
+{:else if filledForToday}
 	<div class="py-4">
 		You are done with the today quiz. Check your results <a class="text-emerald-300" href="/result"
 			>here</a
