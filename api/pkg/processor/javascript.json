@@ -2,7 +2,7 @@
   {
     "Name": "Lodash",
     "Description": "... makes JavaScript easier by taking the hassle out of working with arrays, numbers, objects, strings, etc.",
-    "CodeExample": "```....defaults({ 'a': 1 }, { 'a': 3, 'b': 2 });```",
+    "CodeExample": "````*redacted*.defaults({ 'a': 1 }, { 'a': 3, 'b': 2 });```",
     "RandomFact": "2015 was big year! ... became the most depended on npm package, passed 1 billion downloads, & its v3 release saw massive adoption!",
     "GithubStars": 55500,
     "GitHubLink": "https://github.com/lodash/lodash",
@@ -30,7 +30,7 @@
     "Name": "chalk",
     "Description": "Terminal string styling done right",
     "CodeExample": "```log(*redacted*.blue.bgRed.bold('Hello world!'));```",
-    "RandomFact": "",
+    "RandomFact": "... supports 256 colors and Truecolor (16 million colors) on supported terminal apps. Colors are downsampled from 16 million RGB values to an ANSI color format that is supported by the terminal emulator (or by specifying {level: n} as a Chalk option). For example, Chalk configured to run at level 1 (basic color support) will downsample an RGB value of #FF0000 (red) to 31 (ANSI escape for red).",
     "GithubStars": 19700,
     "GitHubLink": "https://github.com/chalk/chalk",
     "WeeklyDownloads": 233114855
@@ -48,7 +48,7 @@
     "Name": "minimist",
     "Description": "This module is the guts of optimist's argument parser without all the fanciful decoration.",
     "CodeExample": "```$ node example/parse.js -a beep -b boop { _: [], a: 'beep', b: 'boop' }```",
-    "RandomFact": "",
+    "RandomFact": "Parse argument options",
     "GithubStars": 120,
     "GitHubLink": "https://github.com/minimistjs/minimist",
     "WeeklyDownloads": 53595074
@@ -84,7 +84,7 @@
     "Name": "js-tokens",
     "Description": "The tiny, regex powered, lenient, almost spec-compliant JavaScript tokenizer that never fails.",
     "CodeExample": "```// Get all tokens as an array:\r\nconst tokens = Array.from(*redacted*(\"hello, !world\"));```",
-    "RandomFact": "",
+    "RandomFact": "This package exports a generator function, ..., that turns a string of JavaScript code into token objects.",
     "GithubStars": 364,
     "GitHubLink": "github.com/lydell/js-tokens",
     "WeeklyDownloads": 38561642
@@ -92,7 +92,7 @@
   {
     "Name": "express",
     "Description": "Fast, unopinionated, minimalist web framework for Node.js.",
-    "CodeExample": "``` app.get('/', function (req, res) {\r\n  res.send('Hello World')\r\n})\r\n\r\napp.listen(3000) ```",
+    "CodeExample": "```app.get('/', function (req, res) {\r\n  res.send('Hello World')\r\n})\r\n\r\napp.listen(3000) ```",
     "RandomFact": "\"Most of nike.com's ecommerce experience is on top of <...>... in fact they've left the x-powered-by headers intact.\" -- Reddit",
     "GithubStars": 59753,
     "GitHubLink": "github.com/expressjs/express",
@@ -101,8 +101,8 @@
   {
     "Name": "underscore",
     "Description": "... is a utility-belt library for JavaScript that provides support for the usual functional suspects (each, map, reduce, filter...) without extending any core JavaScript objects.",
-    "CodeExample": "```var numbers = [1, 2, 3, 4, 5];\r\n_.each(numbers, function(value, index){\r\nconsole.log(value, index);\r\n});```",
-    "RandomFact": "",
+    "CodeExample": "```var numbers = [1, 2, 3, 4, 5];\r\n*redacted*.each(numbers, function(value, index){\r\nconsole.log(value, index);\r\n});```",
+    "RandomFact": "... is an open-sourced component of DocumentCloud",
     "GithubStars": 26828,
     "GitHubLink": "https://github.com/jashkenas/underscore",
     "WeeklyDownloads": 10716149
@@ -111,7 +111,7 @@
     "Name": "async",
     "Description": "... is a utility module which provides straight-forward, powerful functions for working with asynchronous JavaScript.",
     "CodeExample": "```*redacted*.mapLimit(urls, 5, async function(url) {\r\n    const response = await fetch(url)\r\n    return response.body\r\n}, (err, results) => {\r\n    if (err) throw err\r\n    // results is now an array of the response bodies\r\n    console.log(results)\r\n})```",
-    "RandomFact": "",
+    "RandomFact": "... provides around 70 functions that include the usual 'functional' suspects (map, reduce, filter, each…) as well as some common patterns for asynchronous control flow (parallel, series, waterfall…). ",
     "GithubStars": 27798,
     "GitHubLink": "https://github.com/caolan/async",
     "WeeklyDownloads": 50417200
@@ -120,7 +120,7 @@
     "Name": "moment",
     "Description": "A JavaScript date library for parsing, validating, manipulating, and formatting dates.",
     "CodeExample": "```let now = *redacted*.format('LLLL');\n```",
-    "RandomFact": "",
+    "RandomFact": "... is a legacy project, now in maintenance mode. In most cases, you should choose a different library.",
     "GithubStars": 47187,
     "GitHubLink": "github.com/moment/moment",
     "WeeklyDownloads": 20462039
@@ -129,7 +129,7 @@
     "Name": "glob",
     "Description": "Match files using the patterns the shell uses, like stars and stuff.",
     "CodeExample": "```*redacted*(\"**/*.js\", options, function (er, files) {\r\n  // files is an array of filenames.\r\n  // If the `nonull` option is set, and nothing\r\n  // was found, then files is [\"**/*.js\"]\r\n  // er is an error object or null.\r\n})```",
-    "RandomFact": "",
+    "RandomFact": "This is a ... implementation in JavaScript. It uses the minimatch library to do its matching.",
     "GithubStars": 7837,
     "GitHubLink": "github.com/isaacs/node-glob",
     "WeeklyDownloads": 90118870
@@ -138,7 +138,7 @@
     "Name": "readable-stream",
     "Description": "Some Node.js functionality for userland",
     "CodeExample": "```console.log(\"Every time you press a key, you will see more contents of the source file. Let's begin!\\n\\n\")\r\nprocess.stdin.setRawMode(true)\r\nprocess.stdin.on('data', function () {\r\n  const c = rst.read(100)\r\n  if (!c) {\r\n    return setTimeout(process.exit, 500)\r\n  }\r\n  process.stdout.write(c)\r\n})\r\nprocess.stdin.resume()```",
-    "RandomFact": "",
+    "RandomFact": "This package is a mirror of the s... implementations in Node.js 18.9.0.",
     "GithubStars": 986,
     "GitHubLink": "github.com/nodejs/readable-stream",
     "WeeklyDownloads": 120467683
@@ -156,7 +156,7 @@
     "Name": "mkdirp",
     "Description": "A POSIX feature within Node.js",
     "CodeExample": "```// return value is a Promise resolving to the first directory created\r\n*redacted*('/tmp/foo/bar/baz').then(made =>\r\n  console.log(`made directories, starting with ${made}`)\r\n)```",
-    "RandomFact": "",
+    "RandomFact": "Like mkdir -p, but in Node.js!",
     "GithubStars": 140,
     "GitHubLink": "github.com/isaacs/node-mkdirp",
     "WeeklyDownloads": 70745905
@@ -165,7 +165,7 @@
     "Name": "colors.js",
     "Description": "get colors in your node.js console",
     "CodeExample": "```console.log('hello'.green); // outputs green text\r\nconsole.log('i like cake and pies'.underline.red); // outputs red underlined text\r\nconsole.log('inverse the color'.inverse); // inverses the color\r\nconsole.log('OMG Rainbows!'.rainbow); // rainbow\r\nconsole.log('Run the trap'.trap); // Drops the bass```",
-    "RandomFact": "",
+    "RandomFact": "Used by more than 5 millions.",
     "GithubStars": 5033,
     "GitHubLink": "github.com/Marak/colors.js",
     "WeeklyDownloads": 21357058
@@ -174,7 +174,7 @@
     "Name": "semver",
     "Description": "The semantic versioner for npm",
     "CodeExample": "```*redacted*.minVersion('>=1.0.0'```",
-    "RandomFact": "",
+    "RandomFact": "The ... parser for node (the one npm uses)",
     "GithubStars": 4519,
     "GitHubLink": "github.com/npm/node-semver",
     "WeeklyDownloads": 240233516
@@ -201,7 +201,7 @@
     "Name": "create-t3-app",
     "Description": "Interactive CLI to start a full-stack, typesafe Next.js app.",
     "CodeExample": "```pnpm dlx *redacted*@latest --CI --trpc --tailwind```",
-    "RandomFact": "",
+    "RandomFact": "We made ... to do one thing: Streamline the setup of typesafe Next.js apps WITHOUT compromising modularity.",
     "GithubStars": 13914,
     "GitHubLink": "github.com/t3-oss/create-t3-app",
     "WeeklyDownloads": 3832
@@ -210,7 +210,7 @@
     "Name": "uuid",
     "Description": "For the creation of RFC4122 ....s",
     "CodeExample": "```*redacted*(); // ⇨ '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d'```",
-    "RandomFact": "",
+    "RandomFact": "... is a 128-bit label used for information in computer systems.",
     "GithubStars": 13051,
     "GitHubLink": "github.com/uuidjs/uuid",
     "WeeklyDownloads": 78849945
@@ -219,7 +219,7 @@
     "Name": "webpack",
     "Description": "... is a module bundler. Its main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset.",
     "CodeExample": "```module.exports = {\nentry: './src/index.js',\n  output: {\n  filename: 'main.js',\n  path: path.resolve(__dirname, 'dist'),\n},\n};",
-    "RandomFact": "",
+    "RandomFact": "The motivations behind ... is to gather all your dependencies, which includes not just code, but other assets as well, and generate a dependency graph.",
     "GithubStars": 62454,
     "GitHubLink": "github.com/webpack/webpack",
     "WeeklyDownloads": 26567685
@@ -237,7 +237,7 @@
     "Name": "Next.js",
     "Description": "The React Framework, that has uses cases like: Server-side Rendering or Static Generation, and updating or creating content at runtime with Incremental Static Regeneration.",
     "CodeExample": "```export default function IndexPage() {\r\n  return (\r\n    <div>\r\n      Hello World. <Link href=\"/about\">About</Link>\r\n    </div>\r\n  )\r\n}```",
-    "RandomFact": "",
+    "RandomFact": "It provides out-of-the-box tooling and configuration you need to build fast, SEO-friendly React apps.",
     "GithubStars": 100078,
     "GitHubLink": "https://github.com/vercel/next.js",
     "WeeklyDownloads": 3758910
@@ -246,7 +246,7 @@
     "Name": "Angular",
     "Description": "... is a development platform for building mobile and desktop web applications using Typescript/JavaScript and other languages.",
     "CodeExample": "```<h2>Products</h2>\r\n\r\n<div *ngFor=\"let product of products\">\r\n</div>```",
-    "RandomFact": "",
+    "RandomFact": "... framework is embedded with the original MVC (Model-View-Controller) software architectural setup. However, it is not according to the established standards. ... does not ask developers to split an application into different MVC components and build a code that could unite them.",
     "GithubStars": 86092,
     "GitHubLink": "github.com/angular/angular",
     "WeeklyDownloads": 3175765
@@ -255,7 +255,7 @@
     "Name": "Redux",
     "Description": "... is a predictable state container for JavaScript apps.",
     "CodeExample": "```function counter(state = 0, action) {\r\n  switch (action.type) {\r\n    case 'INCREMENT':\r\n      return state + 1\r\n    case 'DECREMENT':\r\n      return state - 1\r\n    default:\r\n      return state\r\n  }\r\n}\n```",
-    "RandomFact": "",
+    "RandomFact": "... allows you to manage your app's state in a single place and keep changes in your app more predictable and traceable.",
     "GithubStars": 59184,
     "GitHubLink": "https://github.com/reduxjs/redux",
     "WeeklyDownloads": 8788728
@@ -264,7 +264,7 @@
     "Name": "socket.io",
     "Description": "... enables real-time bidirectional event-based communication.",
     "CodeExample": "```\n*redacted*.on('connection', socket => {\r\n  socket.emit('request', /* \u2026 */); // emit an event to the socket\r\n  io.emit('broadcast', /* \u2026 */); // emit an event to all connected sockets\r\n  socket.on('reply', () => { /* \u2026 */ }); // listen to the event\r\n});```",
-    "RandomFact": "",
+    "RandomFact": "... is a JavaScript library for realtime web applications. It enables realtime, bi-directional communication between web clients and servers. ... primarily uses the WebSocket protocol with polling as a fallback option, while providing the same interface.",
     "GithubStars": 57526,
     "GitHubLink": "github.com/socketio/socket.io",
     "WeeklyDownloads": 5232194
@@ -273,7 +273,7 @@
     "Name": "Jest",
     "Description": "Delightful JavaScript Testing.",
     "CodeExample": "```test('adds 1 + 2 to equal 3', () => {\r\n  expect(sum(1, 2)).toBe(3);\r\n});\r\n// output:\r\n// PASS  ./sum.test.js\r\n// \u2713 adds 1 + 2 to equal 3 (5ms)```",
-    "RandomFact": "from Facebook",
+    "RandomFact": "... is a JavaScript testing framework designed to ensure correctness of any JavaScript codebase. It allows you to write tests with an approachable, familiar and feature-rich API that gives you results quickly.",
     "GithubStars": 41310,
     "GitHubLink": "github.com/facebook/jest",
     "WeeklyDownloads": 20194322
@@ -281,7 +281,7 @@
   {
     "Name": "Prettier",
     "Description": "... is an opinionated code formatter with support for ...",
-    "CodeExample": "```\n```",
+    "CodeExample": "```{\r\n  \"trailingComma\": \"es5\",\r\n  \"tabWidth\": 4,\r\n  \"semi\": false,\r\n  \"singleQuote\": true\r\n}```",
     "RandomFact": "It removes all original styling* and ensures that all outputted code conforms to a consistent style. ... takes your code and reprints it from scratch by taking the line length into account.",
     "GithubStars": 44800,
     "GitHubLink": "https://github.com/prettier/prettier",
