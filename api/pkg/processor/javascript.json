@@ -2,7 +2,7 @@
   {
     "Name": "Lodash",
     "Description": "... makes JavaScript easier by taking the hassle out of working with arrays, numbers, objects, strings, etc.",
-    "CodeExample": "````*redacted*.defaults({ 'a': 1 }, { 'a': 3, 'b': 2 });```",
+    "CodeExample": "```*redacted*.defaults({ 'a': 1 }, { 'a': 3, 'b': 2 });```",
     "RandomFact": "2015 was big year! ... became the most depended on npm package, passed 1 billion downloads, & its v3 release saw massive adoption!",
     "GithubStars": 55500,
     "GitHubLink": "https://github.com/lodash/lodash",
@@ -38,7 +38,7 @@
   {
     "Name": "mustache.js",
     "Description": "Logic-less {{...}} templates with JavaScript.  ... is a zero-dependency implementation of the ... template system in JavaScript.",
-    "CodeExample": "```const view = {\r\n  title: \"Joe\",\r\n  calc: () => ( 2 + 4 )\r\n};\r\n\r\nconst output = *redacted*.render(\"{{title}} spends {{calc}}\", view);```",
+    "CodeExample": "```const view = {\r\n  title: \"Joe\",\r\n  calc: () => ( 2 + 4 )\r\n};\r\nconst output = *redacted*.render(\"{{title}} spends {{calc}}\", view);```",
     "RandomFact": "You can use ... to render mustache templates anywhere you can use JavaScript. This includes web browsers, server-side environments such as Node.js, and CouchDB views.",
     "GithubStars": 15700,
     "GitHubLink": "https://github.com/janl/mustache.js",
@@ -92,7 +92,7 @@
   {
     "Name": "express",
     "Description": "Fast, unopinionated, minimalist web framework for Node.js.",
-    "CodeExample": "```app.get('/', function (req, res) {\r\n  res.send('Hello World')\r\n})\r\n\r\napp.listen(3000) ```",
+    "CodeExample": "```app.get('/', function (req, res) {\r\n  res.send('Hello World')\r\n})\r\napp.listen(3000) ```",
     "RandomFact": "\"Most of nike.com's ecommerce experience is on top of <...>... in fact they've left the x-powered-by headers intact.\" -- Reddit",
     "GithubStars": 59753,
     "GitHubLink": "github.com/expressjs/express",

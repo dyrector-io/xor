@@ -51,6 +51,13 @@
 
 		isAnswered = true;
 	}
+
+	function onKeyDown(e) {
+		if (e.key === 'Enter') {
+			console.log('Enter pressed');
+			checkQuestion();
+		}
+	}
 </script>
 
 <div>
@@ -68,7 +75,7 @@
 	<p>
 		<span>Code example:</span><br />
 		<SvelteMarkdown
-			renderers={{ codespan: Code }}
+			renderers={{ codespan: Code, code: Code }}
 			source={question.CodeExample}
 			options={{
 				breaks: true,
@@ -85,7 +92,14 @@
 </div>
 
 <form>
-	<input required type="text" bind:value={answer} class="text-black p-2 pl-2 w-1/2" />
+	<input
+		on:keydown={onKeyDown}
+		required
+		autofocus
+		type="text"
+		bind:value={answer}
+		class="text-black p-2 pl-2 w-1/2"
+	/>
 	{#if index < 4}
 		<Button on:click={checkQuestion}>Submit</Button>
 		<Button on:click={nextQuestion} on:click={skip}>Skip</Button>

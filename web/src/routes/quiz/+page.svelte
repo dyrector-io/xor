@@ -26,7 +26,7 @@
 	let endOfTheQuiz = false;
 	let filledForToday = false;
 	let closed = false;
-	let gone = false;
+	let gone: boolean;
 	let todayResult: ResultItem | undefined;
 
 	function nextQuestion() {
@@ -47,6 +47,8 @@
 	}
 
 	onMount(async () => {
+		gone = false;
+
 		quiz = await fetch(`${PUBLIC_API_PATH}/quiz`)
 			.then((resp) => {
 				if (resp.status === HTTP_STATUS.GONE) {
