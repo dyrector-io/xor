@@ -38,7 +38,7 @@
   {
     "Name": "mustache.js",
     "Description": "Logic-less {{...}} templates with JavaScript.  ... is a zero-dependency implementation of the ... template system in JavaScript.",
-    "CodeExample": "```const view = {\r\n  title: \"Joe\",\r\n  calc: () => ( 2 + 4 )\r\n};\r\nconst output = *redacted*.render(\"{{title}} spends {{calc}}\", view);```",
+    "CodeExample": "```const view = {\n  title: \"Joe\",\n  calc: () => ( 2 + 4 )\n};\n\nconst output = *redacted*.render(\"{{title}} spends {{calc}}\", view);```",
     "RandomFact": "You can use ... to render mustache templates anywhere you can use JavaScript. This includes web browsers, server-side environments such as Node.js, and CouchDB views.",
     "GithubStars": 15700,
     "GitHubLink": "https://github.com/janl/mustache.js",
@@ -56,7 +56,7 @@
   {
     "Name": "Commander.js",
     "Description": "The complete solution for node.js command-line interfaces.",
-    "CodeExample": "```program\r\n  .option('--first')\r\n  .option('-s, --separator <char>');\r\n\r\nprogram.parse();```",
+    "CodeExample": "```program\n  .option('--first')\n  .option('-s, --separator <char>');\n\nprogram.parse();```",
     "RandomFact": "There is an old-school DOS | OS/2 | Windows file manager with a similar name.",
     "GithubStars": 24145,
     "GitHubLink": "github.com/tj/commander.js",
@@ -65,7 +65,7 @@
   {
     "Name": "react",
     "Description": "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
-    "CodeExample": "```function HelloMessage({ name }) {\r\n  return <div>Hello {name}</div>;\r\n}\r\n\r\nconst root = createRoot(document.getElementById('container'));\r\nroot.render(<HelloMessage name=\"Taylor\" />);```",
+    "CodeExample": "```function HelloMessage({ name }) {\n  return <div>Hello {name}</div>;\n}\n\nconst root = createRoot(document.getElementById('container'));\nroot.render(<HelloMessage name=\"Taylor\" />);```",
     "RandomFact": "... is not a framework.",
     "GithubStars": 201267,
     "GitHubLink": "github.com/facebook/react",
@@ -74,7 +74,7 @@
   {
     "Name": "vue",
     "Description": "... is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.",
-    "CodeExample": "```<div id=\"app\">{{ message }}</div>\r\n\r\n<script>\r\n// ...\r\n  createApp({\r\n    data() {\r\n      return {\r\n        message: 'Hello Vue!'\r\n      }\r\n    }\r\n  }).mount('#app')\r\n</script>",
+    "CodeExample": "```<div id=\"app\">{{ message }}</div>\n\n<script>\n// ...\n  createApp({\n    data() {\n      return {\n        message: 'Hello Vue!'\n      }\n    }\n  }).mount('#app')\n</script>",
     "RandomFact": "Single File Components",
     "GithubStars": 202078,
     "GitHubLink": "github.com/vuejs/core",
@@ -83,7 +83,7 @@
   {
     "Name": "js-tokens",
     "Description": "The tiny, regex powered, lenient, almost spec-compliant JavaScript tokenizer that never fails.",
-    "CodeExample": "```// Get all tokens as an array:\r\nconst tokens = Array.from(*redacted*(\"hello, !world\"));```",
+    "CodeExample": "```// Get all tokens as an array:\nconst tokens = Array.from(*redacted*(\"hello, !world\"));```",
     "RandomFact": "This package exports a generator function, ..., that turns a string of JavaScript code into token objects.",
     "GithubStars": 364,
     "GitHubLink": "github.com/lydell/js-tokens",
@@ -92,7 +92,7 @@
   {
     "Name": "express",
     "Description": "Fast, unopinionated, minimalist web framework for Node.js.",
-    "CodeExample": "```app.get('/', function (req, res) {\r\n  res.send('Hello World')\r\n})\r\napp.listen(3000) ```",
+    "CodeExample": "```app.get('/', function (req, res) {\n  res.send('Hello World')\n})\n\napp.listen(3000) ```",
     "RandomFact": "\"Most of nike.com's ecommerce experience is on top of <...>... in fact they've left the x-powered-by headers intact.\" -- Reddit",
     "GithubStars": 59753,
     "GitHubLink": "github.com/expressjs/express",
@@ -101,7 +101,7 @@
   {
     "Name": "underscore",
     "Description": "... is a utility-belt library for JavaScript that provides support for the usual functional suspects (each, map, reduce, filter...) without extending any core JavaScript objects.",
-    "CodeExample": "```var numbers = [1, 2, 3, 4, 5];\r\n*redacted*.each(numbers, function(value, index){\r\nconsole.log(value, index);\r\n});```",
+    "CodeExample": "```var numbers = [1, 2, 3, 4, 5];\n*redacted*.each(numbers, function(value, index){\nconsole.log(value, index);\n});```",
     "RandomFact": "... is an open-sourced component of DocumentCloud",
     "GithubStars": 26828,
     "GitHubLink": "https://github.com/jashkenas/underscore",
@@ -110,7 +110,7 @@
   {
     "Name": "async",
     "Description": "... is a utility module which provides straight-forward, powerful functions for working with asynchronous JavaScript.",
-    "CodeExample": "```*redacted*.mapLimit(urls, 5, async function(url) {\r\n    const response = await fetch(url)\r\n    return response.body\r\n}, (err, results) => {\r\n    if (err) throw err\r\n    // results is now an array of the response bodies\r\n    console.log(results)\r\n})```",
+    "CodeExample": "```*redacted*.mapLimit(urls, 5, async function(url) {\n    const response = await fetch(url)\n    return response.body\n}, (err, results) => {\n    if (err) throw err\n    // results is now an array of the response bodies\n    console.log(results)\n})```",
     "RandomFact": "... provides around 70 functions that include the usual 'functional' suspects (map, reduce, filter, each…) as well as some common patterns for asynchronous control flow (parallel, series, waterfall…). ",
     "GithubStars": 27798,
     "GitHubLink": "https://github.com/caolan/async",
@@ -128,7 +128,7 @@
   {
     "Name": "glob",
     "Description": "Match files using the patterns the shell uses, like stars and stuff.",
-    "CodeExample": "```*redacted*(\"**/*.js\", options, function (er, files) {\r\n  // files is an array of filenames.\r\n  // If the `nonull` option is set, and nothing\r\n  // was found, then files is [\"**/*.js\"]\r\n  // er is an error object or null.\r\n})```",
+    "CodeExample": "```*redacted*(\"**/*.js\", options, function (er, files) {\n  // files is an array of filenames.\n  // If the `nonull` option is set, and nothing\n  // was found, then files is [\"**/*.js\"]\n  // er is an error object or null.\n})```",
     "RandomFact": "This is a ... implementation in JavaScript. It uses the minimatch library to do its matching.",
     "GithubStars": 7837,
     "GitHubLink": "github.com/isaacs/node-glob",
@@ -137,7 +137,7 @@
   {
     "Name": "readable-stream",
     "Description": "Some Node.js functionality for userland",
-    "CodeExample": "```console.log(\"Every time you press a key, you will see more contents of the source file. Let's begin!\\n\\n\")\r\nprocess.stdin.setRawMode(true)\r\nprocess.stdin.on('data', function () {\r\n  const c = rst.read(100)\r\n  if (!c) {\r\n    return setTimeout(process.exit, 500)\r\n  }\r\n  process.stdout.write(c)\r\n})\r\nprocess.stdin.resume()```",
+    "CodeExample": "```console.log(\"Every time you press a key, you will see more contents of the source file. Let's begin!\\n\\n\")\nprocess.stdin.setRawMode(true)\nprocess.stdin.on('data', function () {\n  const c = rst.read(100)\n  if (!c) {\n    return setTimeout(process.exit, 500)\n  }\n  process.stdout.write(c)\n})\nprocess.stdin.resume()```",
     "RandomFact": "This package is a mirror of the s... implementations in Node.js 18.9.0.",
     "GithubStars": 986,
     "GitHubLink": "github.com/nodejs/readable-stream",
@@ -155,7 +155,7 @@
   {
     "Name": "mkdirp",
     "Description": "A POSIX feature within Node.js",
-    "CodeExample": "```// return value is a Promise resolving to the first directory created\r\n*redacted*('/tmp/foo/bar/baz').then(made =>\r\n  console.log(`made directories, starting with ${made}`)\r\n)```",
+    "CodeExample": "```// return value is a Promise resolving to the first directory created\n*redacted*('/tmp/foo/bar/baz').then(made =>\n  console.log(`made directories, starting with ${made}`)\n)```",
     "RandomFact": "Like mkdir -p, but in Node.js!",
     "GithubStars": 140,
     "GitHubLink": "github.com/isaacs/node-mkdirp",
@@ -164,7 +164,7 @@
   {
     "Name": "colors.js",
     "Description": "get colors in your node.js console",
-    "CodeExample": "```console.log('hello'.green); // outputs green text\r\nconsole.log('i like cake and pies'.underline.red); // outputs red underlined text\r\nconsole.log('inverse the color'.inverse); // inverses the color\r\nconsole.log('OMG Rainbows!'.rainbow); // rainbow\r\nconsole.log('Run the trap'.trap); // Drops the bass```",
+    "CodeExample": "```console.log('hello'.green); // outputs green text\nconsole.log('i like cake and pies'.underline.red); // outputs red underlined text\nconsole.log('inverse the color'.inverse); // inverses the color\nconsole.log('OMG Rainbows!'.rainbow); // rainbow\nconsole.log('Run the trap'.trap); // Drops the bass```",
     "RandomFact": "Used by more than 5 millions.",
     "GithubStars": 5033,
     "GitHubLink": "github.com/Marak/colors.js",
@@ -191,7 +191,7 @@
   {
     "Name": "escape-string-regexp",
     "Description": "Escape RegExp special characters",
-    "CodeExample": "```const escapedString = *redacted*('How much $ for a \uD83E\uDD84?');\r\n//=> 'How much \\\\$ for a \uD83E\uDD84\\\\?'\r\n\r\nnew RegExp(escapedString);```",
+    "CodeExample": "```const escapedString = *redacted*('How much $ for a \uD83E\uDD84?');\n//=> 'How much \\\\$ for a \uD83E\uDD84\\\\?'\n\nnew RegExp(escapedString);```",
     "RandomFact": "It is from sindresorhus.",
     "GithubStars": 532,
     "GitHubLink": "github.com/sindresorhus/escape-string-regexp",
@@ -236,7 +236,7 @@
   {
     "Name": "Next.js",
     "Description": "The React Framework, that has uses cases like: Server-side Rendering or Static Generation, and updating or creating content at runtime with Incremental Static Regeneration.",
-    "CodeExample": "```export default function IndexPage() {\r\n  return (\r\n    <div>\r\n      Hello World. <Link href=\"/about\">About</Link>\r\n    </div>\r\n  )\r\n}```",
+    "CodeExample": "```export default function IndexPage() {\n  return (\n    <div>\n      Hello World. <Link href=\"/about\">About</Link>\n    </div>\n  )\n}```",
     "RandomFact": "It provides out-of-the-box tooling and configuration you need to build fast, SEO-friendly React apps.",
     "GithubStars": 100078,
     "GitHubLink": "https://github.com/vercel/next.js",
@@ -245,7 +245,7 @@
   {
     "Name": "Angular",
     "Description": "... is a development platform for building mobile and desktop web applications using Typescript/JavaScript and other languages.",
-    "CodeExample": "```<h2>Products</h2>\r\n\r\n<div *ngFor=\"let product of products\">\r\n</div>```",
+    "CodeExample": "```<h2>Products</h2>\n\n<div *ngFor=\"let product of products\">\n</div>```",
     "RandomFact": "... framework is embedded with the original MVC (Model-View-Controller) software architectural setup. However, it is not according to the established standards. ... does not ask developers to split an application into different MVC components and build a code that could unite them.",
     "GithubStars": 86092,
     "GitHubLink": "github.com/angular/angular",
@@ -254,7 +254,7 @@
   {
     "Name": "Redux",
     "Description": "... is a predictable state container for JavaScript apps.",
-    "CodeExample": "```function counter(state = 0, action) {\r\n  switch (action.type) {\r\n    case 'INCREMENT':\r\n      return state + 1\r\n    case 'DECREMENT':\r\n      return state - 1\r\n    default:\r\n      return state\r\n  }\r\n}\n```",
+    "CodeExample": "```function counter(state = 0, action) {\n  switch (action.type) {\n    case 'INCREMENT':\n      return state + 1\n    case 'DECREMENT':\n      return state - 1\n    default:\n      return state\n  }\n}\n```",
     "RandomFact": "... allows you to manage your app's state in a single place and keep changes in your app more predictable and traceable.",
     "GithubStars": 59184,
     "GitHubLink": "https://github.com/reduxjs/redux",
@@ -263,7 +263,7 @@
   {
     "Name": "socket.io",
     "Description": "... enables real-time bidirectional event-based communication.",
-    "CodeExample": "```\n*redacted*.on('connection', socket => {\r\n  socket.emit('request', /* \u2026 */); // emit an event to the socket\r\n  io.emit('broadcast', /* \u2026 */); // emit an event to all connected sockets\r\n  socket.on('reply', () => { /* \u2026 */ }); // listen to the event\r\n});```",
+    "CodeExample": "```\n*redacted*.on('connection', socket => {\n  socket.emit('request', /* \u2026 */); // emit an event to the socket\n  io.emit('broadcast', /* \u2026 */); // emit an event to all connected sockets\n  socket.on('reply', () => { /* \u2026 */ }); // listen to the event\n});```",
     "RandomFact": "... is a JavaScript library for realtime web applications. It enables realtime, bi-directional communication between web clients and servers. ... primarily uses the WebSocket protocol with polling as a fallback option, while providing the same interface.",
     "GithubStars": 57526,
     "GitHubLink": "github.com/socketio/socket.io",
@@ -272,7 +272,7 @@
   {
     "Name": "Jest",
     "Description": "Delightful JavaScript Testing.",
-    "CodeExample": "```test('adds 1 + 2 to equal 3', () => {\r\n  expect(sum(1, 2)).toBe(3);\r\n});\r\n// output:\r\n// PASS  ./sum.test.js\r\n// \u2713 adds 1 + 2 to equal 3 (5ms)```",
+    "CodeExample": "```test('adds 1 + 2 to equal 3', () => {\n  expect(sum(1, 2)).toBe(3);\n});\n// output:\n// PASS  ./sum.test.js\n// \u2713 adds 1 + 2 to equal 3 (5ms)```",
     "RandomFact": "... is a JavaScript testing framework designed to ensure correctness of any JavaScript codebase. It allows you to write tests with an approachable, familiar and feature-rich API that gives you results quickly.",
     "GithubStars": 41310,
     "GitHubLink": "github.com/facebook/jest",
@@ -281,7 +281,7 @@
   {
     "Name": "Prettier",
     "Description": "... is an opinionated code formatter with support for ...",
-    "CodeExample": "```{\r\n  \"trailingComma\": \"es5\",\r\n  \"tabWidth\": 4,\r\n  \"semi\": false,\r\n  \"singleQuote\": true\r\n}```",
+    "CodeExample": "```{\n  \"trailingComma\": \"es5\",\n  \"tabWidth\": 4,\n  \"semi\": false,\n  \"singleQuote\": true\n}```",
     "RandomFact": "It removes all original styling* and ensures that all outputted code conforms to a consistent style. ... takes your code and reprints it from scratch by taking the line length into account.",
     "GithubStars": 44800,
     "GitHubLink": "https://github.com/prettier/prettier",
@@ -290,7 +290,7 @@
   {
     "Name": "electron",
     "Description": "The ... framework lets you write cross-platform desktop applications using JavaScript, HTML and CSS.",
-    "CodeExample": "```function createWindow () {\r\n  const win = new BrowserWindow({\r\n    width: 800,\r\n    height: 600,\r\n    webPreferences: {\r\n      preload: path.join(__dirname, 'preload.js')\r\n    }\r\n  })\r\n\r\n  win.loadFile('index.html')\r\n}```",
+    "CodeExample": "```function createWindow () {\n  const win = new BrowserWindow({\n    width: 800,\n    height: 600,\n    webPreferences: {\n      preload: path.join(__dirname, 'preload.js')\n    }\n  })\n\n  win.loadFile('index.html')\n}```",
     "RandomFact": "Most people use ... from the command line, but if you require ... inside your Node app (not your ... app) it will return the file path to the binary.",
     "GithubStars": 105727,
     "GitHubLink": "https://github.com/electron/electron",
@@ -299,7 +299,7 @@
   {
     "Name": "gatsby",
     "Description": "... is a free and open source framework based on React that helps developers build blazing fast websites and apps.",
-    "CodeExample": "```{\r\n  \"trailingComma\": \"es5\",\r\n  \"tabWidth\": 4,\r\n  \"semi\": false,\r\n  \"singleQuote\": true\r\n}```",
+    "CodeExample": "```{\n  \"trailingComma\": \"es5\",\n  \"tabWidth\": 4,\n  \"semi\": false,\n  \"singleQuote\": true\n}```",
     "RandomFact": "It's been acquired by Netlify recently.",
     "GithubStars": 54089,
     "GitHubLink": "https://github.com/gatsbyjs/gatsby",
@@ -308,7 +308,7 @@
   {
     "Name": "yarn",
     "Description": "Fast, reliable, and secure dependency management.",
-    "CodeExample": "```// Starting a new project\r\n*redacted* init\r\n// Adding a dependency\r\n*redacted* add package@version\r\n// Installing all the dependencies of project\r\n*redacted* // :D```",
+    "CodeExample": "```// Starting a new project\n*redacted* init\n// Adding a dependency\n*redacted* add package@version\n// Installing all the dependencies of project\n*redacted* // :D```",
     "RandomFact": "... uses checksums to verify the integrity of every installed package before its code is executed.",
     "GithubStars": 41047,
     "GitHubLink": "https://github.com/yarnpkg/yarn",
@@ -362,7 +362,7 @@
   {
     "Name": "meteorjs",
     "Description": "... is an open source platform for seamlessly building and deploying Web, Mobile, and Desktop applications in Javascript or TypeScript.",
-    "CodeExample": "```// On server startup, if the database is empty, create some initial data.\r\nif (*redacted*.isServer) {\r\n  *redacted*.startup(() => {\r\n    if (Rooms.find().count() === 0) {\r\n      Rooms.insert({ name: 'Initial room' });\r\n    }\r\n  });\r\n}```",
+    "CodeExample": "```// On server startup, if the database is empty, create some initial data.\nif (*redacted*.isServer) {\n  *redacted*.startup(() => {\n    if (Rooms.find().count() === 0) {\n      Rooms.insert({ name: 'Initial room' });\n    }\n  });\n}```",
     "RandomFact": "",
     "GithubStars": 43253,
     "GitHubLink": "https://github.com/meteor/meteor",
@@ -371,7 +371,7 @@
   {
     "Name": "emberjs",
     "Description": "... is a productive, battle-tested JavaScript framework for building modern web applications. It includes everything you need to build rich UIs that work on any device.",
-    "CodeExample": "```<h2>List of Scientists</h2>\r\n\r\n<ul>\r\n  {{#each @model as |scientist|}}\r\n    <li>{{scientist}}</li>\r\n  {{/each}}\r\n</ul>```",
+    "CodeExample": "```<h2>List of Scientists</h2>\n\n<ul>\n  {{#each @model as |scientist|}}\n    <li>{{scientist}}</li>\n  {{/each}}\n</ul>```",
     "RandomFact": "... is built on the Glimmer rendering engine, one of the fastest rendering technologies on the market today, thanks to the way it compiles templates down to a highly-performant virtual machine.",
     "GithubStars": 12,
     "GitHubLink": "https://github.com/emberjs/ember",
@@ -380,7 +380,7 @@
   {
     "Name": "svelte",
     "Description": "... is a new way to build web applications. It's a compiler that takes your declarative components and converts them into efficient JavaScript that surgically updates the DOM.",
-    "CodeExample": "```<script>\r\n\tlet name = 'world';\r\n</script>\r\n\r\n<h1>Hello {name}!</h1>```",
+    "CodeExample": "```<script>\n\tlet name = 'world';\n</script>\n\n<h1>Hello {name}!</h1>```",
     "RandomFact": "Instead of using techniques like virtual DOM diffing, ... writes code that surgically updates the DOM when the state of your app changes.",
     "GithubStars": 65263,
     "GitHubLink": "https://github.com/sveltejs/svelte",
@@ -389,7 +389,7 @@
   {
     "Name": "polymerjs",
     "Description": "... lets you build encapsulated, reusable Web Components that work just like standard HTML elements, to use in building web applications.",
-    "CodeExample": "```<!-- Import a component -->\r\n<script src=\"*redacted*/paper-checkbox.js?module\" type=\"module\" ></script>\r\n\r\n<!-- Use it like any other HTML element -->\r\n<paper-checkbox>Web Components!</paper-checkbox>```",
+    "CodeExample": "```<!-- Import a component -->\n<script src=\"*redacted*/paper-checkbox.js?module\" type=\"module\" ></script>\n\n<!-- Use it like any other HTML element -->\n<paper-checkbox>Web Components!</paper-checkbox>```",
     "RandomFact": "",
     "GithubStars": 21909,
     "GitHubLink": "https://github.com/Polymer/polymer",
@@ -398,7 +398,7 @@
   {
     "Name": "fastify",
     "Description": "... is a web framework highly focused on providing the best developer experience with the least overhead and a powerful plugin architecture.",
-    "CodeExample": "```// Declare a route\r\n*redacted*.get('/', function (request, reply) {\r\n  reply.send({ hello: 'world' })\r\n})\r\n\r\n// Run the server!\r\n*redacted*.listen({ port: 3000 }, function (err, address) {\r\n  if (err) {\r\n    *redacted*.log.error(err)\r\n    process.exit(1)\r\n  }\r\n  // Server is now listening on ${address}\r\n})```",
+    "CodeExample": "```// Declare a route\n*redacted*.get('/', function (request, reply) {\n  reply.send({ hello: 'world' })\n})\n\n// Run the server!\n*redacted*.listen({ port: 3000 }, function (err, address) {\n  if (err) {\n    *redacted*.log.error(err)\n    process.exit(1)\n  }\n  // Server is now listening on ${address}\n})```",
     "RandomFact": "",
     "GithubStars": 26310,
     "GitHubLink": "https://github.com/fastify/fastify",
@@ -407,7 +407,7 @@
   {
     "Name": "nestjs",
     "Description": "A progressive Node.js framework for building efficient, scalable, and enterprise-grade server-side applications on top of TypeScript & JavaScript (ES6, ES7, ES8)",
-    "CodeExample": "```import { AppModule } from './app.module';\r\n\r\nasync function bootstrap() {\r\n  const app = await *redacted*.create(AppModule);\r\n  await app.listen(3000);\r\n}\r\nbootstrap();```",
+    "CodeExample": "```import { AppModule } from './app.module';\n\nasync function bootstrap() {\n  const app = await *redacted*.create(AppModule);\n  await app.listen(3000);\n}\nbootstrap();```",
     "RandomFact": "We also dyrectorio also use & love it! :)",
     "GithubStars": 53965,
     "GitHubLink": "https://github.com/nestjs/nest",
@@ -416,7 +416,7 @@
   {
     "Name": "Agenda.js",
     "Description": "A light-weight job scheduling library for Node.js",
-    "CodeExample": "```db.*redacted*Jobs.ensureIndex({\r\n    \"name\" : 1,\r\n    \"nextRunAt\" : 1,\r\n    \"priority\" : -1,\r\n    \"lockedAt\" : 1,\r\n    \"disabled\" : 1\r\n}, \"findAndLockNextJobIndex\")```",
+    "CodeExample": "```db.*redacted*Jobs.ensureIndex({\n    \"name\" : 1,\n    \"nextRunAt\" : 1,\n    \"priority\" : -1,\n    \"lockedAt\" : 1,\n    \"disabled\" : 1\n}, \"findAndLockNextJobIndex\")```",
     "RandomFact": "Mongo backed (replicateble) persistance.",
     "GithubStars": 8689,
     "GitHubLink": "https://github.com/agenda/agenda",
@@ -425,7 +425,7 @@
   {
     "Name": "backbone.js",
     "Description": "Give your JS App some ... with Models, Views, Collections, and Events. ... supplies structure to JavaScript-heavy applications by providing models with key-value binding and custom events, collections with a rich API of enumerable functions, views with declarative event handling, and connects it all to your existing application over a RESTful JSON interface.",
-    "CodeExample": "```$(function () {\r\n  (function () {\r\n    var View = test.View.extend({\r\n      el: \"body\",\r\n      template: _.template(\"<p>Hello, XOR!</p>\"),\r\n\r\n      initialize: function () {\r\n        this.render();\r\n      },\r\n      render: function () {\r\n        this.$el.html(this.template());\r\n      },\r\n    });\r\n\r\n    new View();\r\n  })();\r\n});\r\n```",
+    "CodeExample": "```$(function () {\n  (function () {\n    var View = test.View.extend({\n      el: \"body\",\n      template: _.template(\"<p>Hello, XOR!</p>\"),\n\n      initialize: function () {\n        this.render();\n      },\n      render: function () {\n        this.$el.html(this.template());\n      },\n    });\n\n    new View();\n  })();\n});\n```",
     "RandomFact": "",
     "GithubStars": 27984,
     "GitHubLink": "https://github.com/jashkenas/backbone",
@@ -434,7 +434,7 @@
   {
     "Name": "kibana",
     "Description": "It's an open source (Apache Licensed), browser-based analytics and search dashboard for Elasticsearch.",
-    "CodeExample": "```//a query\r\nhttp.request.method: *```",
+    "CodeExample": "```//a query\nhttp.request.method: *```",
     "RandomFact": "Built in linter, code formatter, ability to build a self-contained executable, test runner, IDE integration, and more.",
     "GithubStars": 18195,
     "GitHubLink": "github.com/elastic/kibana",
@@ -443,7 +443,7 @@
   {
     "Name": "knockout",
     "Description": "... is a JavaScript MVVM (a modern variant of MVC) library that makes it easier to create rich, desktop-like user interfaces with JavaScript and HTML.",
-    "CodeExample": "```// Here's my data model\r\nvar ViewModel = function(first, last) {\r\n    this.firstName = *redacted*.observable(first);\r\n    this.lastName = *redacted*.observable(last);\r\n \r\n    this.fullName = *redacted*.pureComputed(function() {\r\n        // ... tracks dependencies automatically. It knows that fullName depends on firstName and lastName, because these get called when evaluating fullName.\r\n        return this.firstName() + \" \" + this.lastName();\r\n    }, this);\r\n};\r\n \r\n*redacted*.applyBindings(new ViewModel(\"Planet\", \"Earth\")); // This makes ... get to work```",
+    "CodeExample": "```// Here's my data model\nvar ViewModel = function(first, last) {\n    this.firstName = *redacted*.observable(first);\n    this.lastName = *redacted*.observable(last);\n \n    this.fullName = *redacted*.pureComputed(function() {\n        // ... tracks dependencies automatically. It knows that fullName depends on firstName and lastName, because these get called when evaluating fullName.\n        return this.firstName() + \" \" + this.lastName();\n    }, this);\n};\n \n*redacted*.applyBindings(new ViewModel(\"Planet\", \"Earth\")); // This makes ... get to work```",
     "RandomFact": "When your data model's state changes, your UI updates automatically",
     "GithubStars": 10279,
     "GitHubLink": "https://github.com/knockout/knockout",
@@ -452,7 +452,7 @@
   {
     "Name": "mocha",
     "Description": "Simple, flexible, fun JavaScript test framework for Node.js & The Browser",
-    "CodeExample": "```var assert = require('assert');\r\ndescribe('Array', function () {\r\n  describe('#indexOf()', function () {\r\n    it('should return -1 when the value is not present', function () {\r\n      assert.equal([1, 2, 3].indexOf(4), -1);\r\n    });\r\n  });\r\n});```",
+    "CodeExample": "```var assert = require('assert');\ndescribe('Array', function () {\n  describe('#indexOf()', function () {\n    it('should return -1 when the value is not present', function () {\n      assert.equal([1, 2, 3].indexOf(4), -1);\n    });\n  });\n});```",
     "RandomFact": "... is one of the most-depended-upon modules on npm (source: libraries.io)",
     "GithubStars": 21871,
     "GitHubLink": "https://github.com/mochajs/mocha",
@@ -461,7 +461,7 @@
   {
     "Name": "Three.js",
     "Description": "The aim of the project is to create an easy to use, lightweight, cross-browser, general purpose 3D library.",
-    "CodeExample": "```const scene = new *redacted*.Scene();\r\nconst camera = new *redacted*.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );\r\n\r\nconst renderer = new *redacted*.WebGLRenderer();\r\nrenderer.setSize( window.innerWidth, window.innerHeight );\r\ndocument.body.appendChild( renderer.domElement );```",
+    "CodeExample": "```const scene = new *redacted*.Scene();\nconst camera = new *redacted*.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );\n\nconst renderer = new *redacted*.WebGLRenderer();\nrenderer.setSize( window.innerWidth, window.innerHeight );\ndocument.body.appendChild( renderer.domElement );```",
     "RandomFact": "The current builds only include a WebGL renderer but WebGPU (experimental), SVG and CSS3D renderers are also available as addons.",
     "GithubStars": 88640,
     "GitHubLink": "https://github.com/mrdoob/three.js",
@@ -470,7 +470,7 @@
   {
     "Name": "ws",
     "Description": "... is a simple to use, blazing fast, and thoroughly tested WebSocket client and server implementation.",
-    "CodeExample": "```// server-side\r\nconst server = new WebSocketServer({\r\n  port: 8080,\r\n  perMessageDeflate: {\r\n    zlibDeflateOptions: {\r\n      // See zlib defaults.\r\n      chunkSize: 1024,\r\n      memLevel: 7,\r\n      level: 3\r\n    },\r\n    zlibInflateOptions: {\r\n      chunkSize: 10 * 1024\r\n    },\r\n    // Other options settable:\r\n    clientNoContextTakeover: true, // Defaults to negotiated value.\r\n    serverNoContextTakeover: true, // Defaults to negotiated value.\r\n    serverMaxWindowBits: 10, // Defaults to negotiated value.\r\n    // Below options specified as default values.\r\n    concurrencyLimit: 10, // Limits zlib concurrency for perf.\r\n    threshold: 1024 // Size (in bytes) below which messages\r\n    // should not be compressed if context takeover is disabled.\r\n  }\r\n});\r\n// client side\r\nconst client = new WebSocket('ws://www.host.com/path', {\r\n  perMessageDeflate: false\r\n});```",
+    "CodeExample": "```// server-side\nconst server = new WebSocketServer({\n  port: 8080,\n  perMessageDeflate: {\n    zlibDeflateOptions: {\n      // See zlib defaults.\n      chunkSize: 1024,\n      memLevel: 7,\n      level: 3\n    },\n    zlibInflateOptions: {\n      chunkSize: 10 * 1024\n    },\n    // Other options settable:\n    clientNoContextTakeover: true, // Defaults to negotiated value.\n    serverNoContextTakeover: true, // Defaults to negotiated value.\n    serverMaxWindowBits: 10, // Defaults to negotiated value.\n    // Below options specified as default values.\n    concurrencyLimit: 10, // Limits zlib concurrency for perf.\n    threshold: 1024 // Size (in bytes) below which messages\n    // should not be compressed if context takeover is disabled.\n  }\n});\n// client side\nconst client = new WebSocket('ws://www.host.com/path', {\n  perMessageDeflate: false\n});```",
     "RandomFact": "",
     "GithubStars": 19390,
     "GitHubLink": "https://github.com/websockets/ws",
@@ -479,7 +479,7 @@
   {
     "Name": "Anime.js",
     "Description": "One of the best animation libraries that makes staggering follow-through animations so simple, ... is light-weight and comes with a clean yet powerful API.",
-    "CodeExample": "```*redacted*({\r\n  targets: 'div',\r\n  translateX: 250,\r\n  rotate: '1turn',\r\n  backgroundColor: '#FFF',\r\n  duration: 800\r\n});```",
+    "CodeExample": "```*redacted*({\n  targets: 'div',\n  translateX: 250,\n  rotate: '1turn',\n  backgroundColor: '#FFF',\n  duration: 800\n});```",
     "RandomFact": "... works with anything web. CSS, SVG, DOM attributes and JavaScript Objects: animate everything with a single unified API.",
     "GithubStars": 44292,
     "GitHubLink": "https://github.com/juliangarnier/anime",
@@ -497,7 +497,7 @@
   {
     "Name": "chai",
     "Description": "BDD / TDD assertion framework for node.js and the browser that can be paired with any testing framework.",
-    "CodeExample": "```expect(foo).to.be.a('string');\r\nexpect(foo).to.equal('bar');\r\nexpect(foo).to.have.lengthOf(3);\r\nexpect(tea).to.have.property('flavors')\r\n  .with.lengthOf(3);```",
+    "CodeExample": "```expect(foo).to.be.a('string');\nexpect(foo).to.equal('bar');\nexpect(foo).to.have.lengthOf(3);\nexpect(tea).to.have.property('flavors')\n  .with.lengthOf(3);```",
     "RandomFact": "... is an assertion library, similar to Node's built-in assert. It makes testing much easier by giving you lots of assertions you can run against your code.",
     "GithubStars": 7800,
     "GitHubLink": "https://github.com/chaijs/chai",
@@ -506,7 +506,7 @@
   {
     "Name": "eslint",
     "Description": "An AST-based pattern checker for JavaScript.",
-    "CodeExample": "```{\r\n    \"rules\": {\r\n        \"semi\": [\"error\", \"always\"],\r\n        \"quotes\": [\"error\", \"double\"]\r\n    }\r\n}```",
+    "CodeExample": "```{\n    \"rules\": {\n        \"semi\": [\"error\", \"always\"],\n        \"quotes\": [\"error\", \"double\"]\n    }\n}```",
     "RandomFact": "... uses Espree for JavaScript parsing.",
     "GithubStars": 22131,
     "GitHubLink": "https://github.com/eslint/eslint",
@@ -524,7 +524,7 @@
   {
     "Name": "bootstrap",
     "Description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development.",
-    "CodeExample": "```\r\n<div class=\"container-fluid\">\r\n  <h1>Hello World!</h1>\r\n  <p>Resize the browser window to see the effect.</p>\r\n  <p>The columns will automatically stack on top of each other when the screen is less than 768px wide.</p>\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-4\" style=\"background-color:lavender;\">.col-sm-4</div>\r\n    <div class=\"col-sm-4\" style=\"background-color:lavenderblush;\">.col-sm-4</div>\r\n    <div class=\"col-sm-4\" style=\"background-color:lavender;\">.col-sm-4</div>\r\n  </div>\r\n</div>\r\n```",
+    "CodeExample": "```\n<div class=\"container-fluid\">\n  <h1>Hello World!</h1>\n  <p>Resize the browser window to see the effect.</p>\n  <p>The columns will automatically stack on top of each other when the screen is less than 768px wide.</p>\n  <div class=\"row\">\n    <div class=\"col-sm-4\" style=\"background-color:lavender;\">.col-sm-4</div>\n    <div class=\"col-sm-4\" style=\"background-color:lavenderblush;\">.col-sm-4</div>\n    <div class=\"col-sm-4\" style=\"background-color:lavender;\">.col-sm-4</div>\n  </div>\n</div>\n```",
     "RandomFact": "Add toggleable hidden elements, modals and offcanvas menus, popovers and tooltips, and so much more—all without jQuery.",
     "GithubStars": 161613,
     "GitHubLink": "github.com/twbs/bootstrap",
@@ -533,7 +533,7 @@
   {
     "Name": "tailwindcss",
     "Description": "A utility-first CSS framework for rapidly building custom user interfaces.",
-    "CodeExample": "```<figure class=\"bg-slate-100 rounded-xl p-8 dark:bg-slate-800\">\r\n  <img class=\"w-24 h-24 rounded-full mx-auto\" src=\"/sarah-dayan.jpg\" alt=\"\" width=\"384\" height=\"512\">\r\n  <div class=\"pt-6 space-y-4\">\r\n    <blockquote>\r\n      <p class=\"text-lg font-medium\">\r\n        \u201C... is the only framework that I've seen scale\r\n        on large teams. It\u2019s easy to customize, adapts to any design,\r\n        and the build size is tiny.\u201D\r\n      </p>\r\n    </blockquote>\r\n    <figcaption class=\"font-medium\">\r\n      <div class=\"t>\r\n        Sarah Dayan\r\n      </div>\r\n      <div>\r\n        Staff Engineer, Algolia\r\n      </div>\r\n    </figcaption>\r\n  </div>\r\n</figure>```",
+    "CodeExample": "```<figure class=\"bg-slate-100 rounded-xl p-8 dark:bg-slate-800\">\n  <img class=\"w-24 h-24 rounded-full mx-auto\" src=\"/sarah-dayan.jpg\" alt=\"\" width=\"384\" height=\"512\">\n  <div class=\"pt-6 space-y-4\">\n    <blockquote>\n      <p class=\"text-lg font-medium\">\n        \u201C... is the only framework that I've seen scale\n        on large teams. It\u2019s easy to customize, adapts to any design,\n        and the build size is tiny.\u201D\n      </p>\n    </blockquote>\n    <figcaption class=\"font-medium\">\n      <div class=\"t>\n        Sarah Dayan\n      </div>\n      <div>\n        Staff Engineer, Algolia\n      </div>\n    </figcaption>\n  </div>\n</figure>```",
     "RandomFact": "Utility classes help you work within the constraints of a system instead of littering your stylesheets with arbitrary values.",
     "GithubStars": 64720,
     "GitHubLink": "https://github.com/tailwindlabs/tailwindcss",
@@ -542,7 +542,7 @@
   {
     "Name": "joi",
     "Description": "The most powerful schema description language and data validator for JavaScript.",
-    "CodeExample": "```const schema = *redacted*.object({\r\n    username: *redacted*.string()\r\n        .alphanum()\r\n        .min(3)\r\n        .max(30)\r\n        .required(),\r\n   birth_year: *redacted*.number()\r\n        .integer()\r\n        .min(1900)\r\n        .max(2013),\r\n})\r\nschema.validate({ username: 'abc', birth_year: 1994 });\r\n```",
+    "CodeExample": "```const schema = *redacted*.object({\n    username: *redacted*.string()\n        .alphanum()\n        .min(3)\n        .max(30)\n        .required(),\n   birth_year: *redacted*.number()\n        .integer()\n        .min(1900)\n        .max(2013),\n})\nschema.validate({ username: 'abc', birth_year: 1994 });\n```",
     "RandomFact": "The word is similar to an other with this meaning: a feeling of great pleasure and happiness.",
     "GithubStars": 19658,
     "GitHubLink": "github.com/hapijs/joi",
@@ -551,7 +551,7 @@
   {
     "Name": "formik",
     "Description": "Build forms in React, without the tears.",
-    "CodeExample": "```<*redacted*\r\n  initialValues={ {\r\n    firstName: \"\",\r\n    lastName: \"\",\r\n    email: \"\",\r\n  }}\r\n  onSubmit={(values: Values, { setSubmitting }: FormikHelpers<Values>) => {\r\n    setTimeout(() => {\r\n      alert(JSON.stringify(values, null, 2));\r\n      setSubmitting(false);\r\n    }, 500);\r\n  }}\r\n>\r\n  <Form>\r\n    <label htmlFor=\"firstName\">First Name</label>\r\n    <Field id=\"firstName\" name=\"firstName\" placeholder=\"John\" />\r\n\r\n    <label htmlFor=\"lastName\">Last Name</label>\r\n    <Field id=\"lastName\" name=\"lastName\" placeholder=\"Doe\" />\r\n\r\n    <label htmlFor=\"email\">Email</label>\r\n    <Field id=\"email\" name=\"email\" placeholder=\"john@acme.com\" type=\"email\" />\r\n\r\n    <button type=\"submit\">Submit</button>\r\n  </Form>\r\n</*redacted*>;\r\n```",
+    "CodeExample": "```<*redacted*\n  initialValues={ {\n    firstName: \"\",\n    lastName: \"\",\n    email: \"\",\n  }}\n  onSubmit={(values: Values, { setSubmitting }: FormikHelpers<Values>) => {\n    setTimeout(() => {\n      alert(JSON.stringify(values, null, 2));\n      setSubmitting(false);\n    }, 500);\n  }}\n>\n  <Form>\n    <label htmlFor=\"firstName\">First Name</label>\n    <Field id=\"firstName\" name=\"firstName\" placeholder=\"John\" />\n\n    <label htmlFor=\"lastName\">Last Name</label>\n    <Field id=\"lastName\" name=\"lastName\" placeholder=\"Doe\" />\n\n    <label htmlFor=\"email\">Email</label>\n    <Field id=\"email\" name=\"email\" placeholder=\"john@acme.com\" type=\"email\" />\n\n    <button type=\"submit\">Submit</button>\n  </Form>\n</*redacted*>;\n```",
     "RandomFact": "Since form state is inherently local and ephemeral, ... does not use external state management libraries like Redux or MobX.",
     "GithubStars": 31853,
     "GitHubLink": "github.com/formium/formik",
@@ -560,7 +560,7 @@
   {
     "Name": "md5",
     "Description": "a JavaScript function for hashing messages with ...",
-    "CodeExample": "```console.log(*redacted*('message'));\r\n// output: 78e731027d8fd50ed642340b7c9a63b3```",
+    "CodeExample": "```console.log(*redacted*('message'));\n// output: 78e731027d8fd50ed642340b7c9a63b3```",
     "RandomFact": "",
     "GithubStars": 861,
     "GitHubLink": "github.com/pvorb/node-md5",
@@ -569,7 +569,7 @@
   {
     "Name": "tensorflow",
     "Description": "A WebGL accelerated JavaScript library for training and deploying ML models.",
-    "CodeExample": "```import * as tf from '*redacted*';\r\n// You have the Core API: tf.matMul(), tf.softmax(), ...\r\n// You also have Layers API: tf.model(), tf.layers.dense(), ...```",
+    "CodeExample": "```import * as tf from '*redacted*';\n// You have the Core API: tf.matMul(), tf.softmax(), ...\n// You also have Layers API: tf.model(), tf.layers.dense(), ...```",
     "RandomFact": "Use flexible and intuitive APIs to build models from scratch using the low-level JavaScript linear algebra library or the high-level layers API.",
     "GithubStars": 16978,
     "GitHubLink": "https://github.com/tensorflow/tfjs",
@@ -578,7 +578,7 @@
   {
     "Name": "mithril.js",
     "Description": "A modern client-side JavaScript framework for building Single Page Applications.",
-    "CodeExample": "```var root = document.body\r\nm.render(root, \"Hello world\")```",
+    "CodeExample": "```var root = document.body\nm.render(root, \"Hello world\")```",
     "RandomFact": "It's small (10.05 KB gzipped), fast and provides routing and XHR utilities out of the box.",
     "GithubStars": 13557,
     "GitHubLink": "https://github.com/MithrilJS/mithril.js",
@@ -587,7 +587,7 @@
   {
     "Name": "prisma",
     "Description": "Next-generation ORM for Node.js & TypeScript",
-    "CodeExample": "```// schema\r\ndatasource db {\r\n  provider = \"postgresql\"\r\n  url      = env(\"DATABASE_URL\")\r\n}\r\n\r\n// Generator\r\ngenerator client {\r\n  provider = \"...\"\r\n}\r\n\r\n// Data model\r\nmodel Post {\r\n  id        Int     @id @default(autoincrement())\r\n  title     String\r\n  content   String?\r\n  published Boolean @default(false)\r\n  author    User?   @relation(fields:  [authorId], references: [id])\r\n  authorId  Int?\r\n}\r\n\r\nmodel User {\r\n  id    Int     @id @default(autoincrement())\r\n  email String  @unique\r\n  name  String?\r\n  posts Post[]\r\n}```",
+    "CodeExample": "```// schema\ndatasource db {\n  provider = \"postgresql\"\n  url      = env(\"DATABASE_URL\")\n}\n\n// Generator\ngenerator client {\n  provider = \"...\"\n}\n\n// Data model\nmodel Post {\n  id        Int     @id @default(autoincrement())\n  title     String\n  content   String?\n  published Boolean @default(false)\n  author    User?   @relation(fields:  [authorId], references: [id])\n  authorId  Int?\n}\n\nmodel User {\n  id    Int     @id @default(autoincrement())\n  email String  @unique\n  name  String?\n  posts Post[]\n}```",
     "RandomFact": "Every project that uses a tool from the ... toolkit starts with a ... schema file.",
     "GithubStars": 93096,
     "GitHubLink": "https://github.com/nodejs/node",
@@ -596,7 +596,7 @@
   {
     "Name": "aurelia",
     "Description": "... is a modern, front-end JavaScript framework for building browser, mobile, and desktop applications.",
-    "CodeExample": "```//app.js\r\nexport class App {\r\n  welcome = \"Hello World!\";\r\n\r\n  quests = [\r\n    \"To seek the holy grail\",\r\n    \"To take the ring to Mordor\",\r\n    \"To rescue princess Leia\"\r\n  ];\r\n}\r\n<!-- app.html -->\r\n<form>\r\n  <label>\r\n    <span>What is your name?</span>\r\n    <input value.bind=\"name & debounce:500\">\r\n  </label>\r\n\r\n  <label>\r\n    <span>What is your quest?</span>\r\n    <select value.bind=\"quest\">\r\n      <option></option>\r\n      <option repeat.for=\"q of quests\">${q}</option>\r\n    </select>\r\n  </label>\r\n</form>\r\n\r\n<p if.bind=\"name\">${welcome}, ${name}!</p>\r\n<p if.bind=\"quest\">Now set forth ${quest.toLowerCase()}!</p>```",
+    "CodeExample": "```//app.js\nexport class App {\n  welcome = \"Hello World!\";\n\n  quests = [\n    \"To seek the holy grail\",\n    \"To take the ring to Mordor\",\n    \"To rescue princess Leia\"\n  ];\n}\n<!-- app.html -->\n<form>\n  <label>\n    <span>What is your name?</span>\n    <input value.bind=\"name & debounce:500\">\n  </label>\n\n  <label>\n    <span>What is your quest?</span>\n    <select value.bind=\"quest\">\n      <option></option>\n      <option repeat.for=\"q of quests\">${q}</option>\n    </select>\n  </label>\n</form>\n\n<p if.bind=\"name\">${welcome}, ${name}!</p>\n<p if.bind=\"quest\">Now set forth ${quest.toLowerCase()}!</p>```",
     "RandomFact": "Version 2, ... applications are built by composing a series of simple components.",
     "GithubStars": 1255,
     "GitHubLink": "https://github.com/aurelia/aurelia",
@@ -605,7 +605,7 @@
   {
     "Name": "leaflet",
     "Description": "JavaScript library for mobile-friendly interactive maps",
-    "CodeExample": "```var map = L.map('map').setView([51.505, -0.09], 13);\r\n\r\nL.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {\r\n    attribution: '&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors'\r\n}).addTo(map);\r\n\r\nL.marker([51.5, -0.09]).addTo(map)\r\n    .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')\r\n    .openPopup();```",
+    "CodeExample": "```var map = L.map('map').setView([51.505, -0.09], 13);\n\nL.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {\n    attribution: '&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors'\n}).addTo(map);\n\nL.marker([51.5, -0.09]).addTo(map)\n    .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')\n    .openPopup();```",
     "RandomFact": "Weighing just about 42 KB of gzipped JS plus 4 KB of gzipped CSS code",
     "GithubStars": 36689,
     "GitHubLink": "https://github.com/Leaflet/Leaflet",
@@ -614,7 +614,7 @@
   {
     "Name": "Cleave.js",
     "Description": "... has a simple purpose: to help you format input text content automatically.",
-    "CodeExample": "```// template\r\n<input class=\"input-phone\" type=\"text\"/>\r\n// script\r\nvar c = new *redacted*('.input-phone', {\r\n    phone: true,\r\n    phoneRegionCode: '{country}'\r\n});```",
+    "CodeExample": "```// template\n<input class=\"input-phone\" type=\"text\"/>\n// script\nvar c = new *redacted*('.input-phone', {\n    phone: true,\n    phoneRegionCode: '{country}'\n});```",
     "RandomFact": "",
     "GithubStars": 17682,
     "GitHubLink": "https://github.com/nosir/cleave.js",
@@ -623,7 +623,7 @@
   {
     "Name": "alpinejs",
     "Description": "A rugged, minimal framework for composing JavaScript behavior in your markup.",
-    "CodeExample": "```<div x-data=\"{ open: false }\">\r\n    <button @click=\"open = true\">Expand</button>\r\n \r\n    <span x-show=\"open\">\r\n      Content...\r\n    </span>\r\n</div>```",
+    "CodeExample": "```<div x-data=\"{ open: false }\">\n    <button @click=\"open = true\">Expand</button>\n \n    <span x-show=\"open\">\n      Content...\n    </span>\n</div>```",
     "RandomFact": "",
     "GithubStars": 22948,
     "GitHubLink": "github.com/alpinejs/alpine",

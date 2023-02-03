@@ -28,6 +28,13 @@
 
 	function checkQuestion() {
 		$guessNumber++;
+
+		const jsEndPattern = /.?js$/i
+		const fuzzySet = [question.Name]
+		if (question.Name.match(jsEndPattern)) {
+			fuzzySet.concat(question.Name.replace(jsEndPattern, ""))
+		}
+
 		let fuzzy = new FuzzySet([question.Name], true);
 		let res = fuzzy.get(answer);
 
