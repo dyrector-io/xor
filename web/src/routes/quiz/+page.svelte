@@ -26,7 +26,7 @@
 	let endOfTheQuiz = false;
 	let filledForToday = false;
 	let closed = false;
-	let gone = true;
+	let gone = false;
 	let todayResult: ResultItem | undefined;
 
 	function nextQuestion() {
