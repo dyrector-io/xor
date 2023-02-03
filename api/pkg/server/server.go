@@ -18,6 +18,7 @@ import (
 	"github.com/go-co-op/gocron"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/rs/zerolog/log"
+	"gorm.io/gorm"
 )
 
 const (
@@ -64,7 +65,11 @@ func GetChi(appConfig *config.AppConfig) *http.Server {
 		MaxAge:           300,
 	}))
 
-	db := database.InitPostgres(appConfig)
+	var db *gorm.DB
+	if appConfig.DSN != "" {
+		db = database.InitPostgres(appConfig)
+	}
+
 	appState := &config.AppState{
 		AppConfig: appConfig,
 		DBConn:    db,
