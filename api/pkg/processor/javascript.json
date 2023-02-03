@@ -137,7 +137,7 @@
   {
     "Name": "readable-stream",
     "Description": "Some Node.js functionality for userland",
-    "CodeExample": "```console.log(\"Every time you press a key, you will see more contents of the source file. Let's begin!\\n\\n\")\nprocess.stdin.setRawMode(true)\nprocess.stdin.on('data', function () {\n  const c = rst.read(100)\n  if (!c) {\n    return setTimeout(process.exit, 500)\n  }\n  process.stdout.write(c)\n})\nprocess.stdin.resume()```",
+    "CodeExample": "```console.log(\"Every time you press a key, you will see more contents of the source file. Let's begin!\n\n\")\nprocess.stdin.setRawMode(true)\nprocess.stdin.on('data', function () {\n  const c = rst.read(100)\n  if (!c) {\n    return setTimeout(process.exit, 500)\n  }\n  process.stdout.write(c)\n})\nprocess.stdin.resume()```",
     "RandomFact": "This package is a mirror of the s... implementations in Node.js 18.9.0.",
     "GithubStars": 986,
     "GitHubLink": "github.com/nodejs/readable-stream",
