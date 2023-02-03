@@ -452,7 +452,7 @@
   {
     "Name": "mocha",
     "Description": "Simple, flexible, fun JavaScript test framework for Node.js & The Browser",
-    "CodeExample": "```\n```",
+    "CodeExample": "```var assert = require('assert');\r\ndescribe('Array', function () {\r\n  describe('#indexOf()', function () {\r\n    it('should return -1 when the value is not present', function () {\r\n      assert.equal([1, 2, 3].indexOf(4), -1);\r\n    });\r\n  });\r\n});```",
     "RandomFact": "... is one of the most-depended-upon modules on npm (source: libraries.io)",
     "GithubStars": 21871,
     "GitHubLink": "https://github.com/mochajs/mocha",
@@ -461,25 +461,25 @@
   {
     "Name": "Three.js",
     "Description": "The aim of the project is to create an easy to use, lightweight, cross-browser, general purpose 3D library.",
-    "CodeExample": "```\n```",
+    "CodeExample": "```const scene = new *redacted*.Scene();\r\nconst camera = new *redacted*.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );\r\n\r\nconst renderer = new *redacted*.WebGLRenderer();\r\nrenderer.setSize( window.innerWidth, window.innerHeight );\r\ndocument.body.appendChild( renderer.domElement );```",
     "RandomFact": "The current builds only include a WebGL renderer but WebGPU (experimental), SVG and CSS3D renderers are also available as addons.",
     "GithubStars": 88640,
     "GitHubLink": "https://github.com/mrdoob/three.js",
     "WeeklyDownloads": 922629
   },
   {
-    "Name": "Velocity.js",
-    "Description": "... is ... template engine for javascript.",
-    "CodeExample": "```\n```",
+    "Name": "ws",
+    "Description": "... is a simple to use, blazing fast, and thoroughly tested WebSocket client and server implementation.",
+    "CodeExample": "```// server-side\r\nconst server = new WebSocketServer({\r\n  port: 8080,\r\n  perMessageDeflate: {\r\n    zlibDeflateOptions: {\r\n      // See zlib defaults.\r\n      chunkSize: 1024,\r\n      memLevel: 7,\r\n      level: 3\r\n    },\r\n    zlibInflateOptions: {\r\n      chunkSize: 10 * 1024\r\n    },\r\n    // Other options settable:\r\n    clientNoContextTakeover: true, // Defaults to negotiated value.\r\n    serverNoContextTakeover: true, // Defaults to negotiated value.\r\n    serverMaxWindowBits: 10, // Defaults to negotiated value.\r\n    // Below options specified as default values.\r\n    concurrencyLimit: 10, // Limits zlib concurrency for perf.\r\n    threshold: 1024 // Size (in bytes) below which messages\r\n    // should not be compressed if context takeover is disabled.\r\n  }\r\n});\r\n// client side\r\nconst client = new WebSocket('ws://www.host.com/path', {\r\n  perMessageDeflate: false\r\n});```",
     "RandomFact": "",
-    "GithubStars": 582,
-    "GitHubLink": "https://github.com/shepherdwind/velocity.js",
-    "WeeklyDownloads": 441687
+    "GithubStars": 19390,
+    "GitHubLink": "https://github.com/websockets/ws",
+    "WeeklyDownloads": 70632670
   },
   {
     "Name": "Anime.js",
-    "Description": "One of the best animation libraries that makes staggering follow-through animations so simple, ... is light-weight and comes with a clean yet powerful API. ",
-    "CodeExample": "```\n```",
+    "Description": "One of the best animation libraries that makes staggering follow-through animations so simple, ... is light-weight and comes with a clean yet powerful API.",
+    "CodeExample": "```*redacted*({\r\n  targets: 'div',\r\n  translateX: 250,\r\n  rotate: '1turn',\r\n  backgroundColor: '#FFF',\r\n  duration: 800\r\n});```",
     "RandomFact": "... works with anything web. CSS, SVG, DOM attributes and JavaScript Objects: animate everything with a single unified API.",
     "GithubStars": 44292,
     "GitHubLink": "https://github.com/juliangarnier/anime",
@@ -488,7 +488,7 @@
   {
     "Name": "handlebars",
     "Description": "... provides the power necessary to let you build semantic templates effectively with no frustration.",
-    "CodeExample": "```var source = \"<p>Hello, my name is {{name}}. I am from {{hometown}}. I have \" +\n\"{{kids.length}} kids:</p>\" +\n\"<ul>{{#kids}}<li>{{name}} is {{age}}</li>{{/kids}}</ul>\";\nvar template = Handlebars.compile(source);\n```",
+    "CodeExample": "```var source = \"<p>Hello, my name is {{name}}. I am from {{hometown}}. I have \" +\n\"{{kids.length}} kids:</p>\" +\n\"<ul>{{#kids}}<li>{{name}} is {{age}}</li>{{/kids}}</ul>\";\nvar template = *redacted*.compile(source);\n```",
     "RandomFact": "... is an extension to the Mustache templating language created by Chris Wanstrath",
     "GithubStars": 17000,
     "GitHubLink": "github.com/wycats/handlebars.js",
@@ -497,7 +497,7 @@
   {
     "Name": "chai",
     "Description": "BDD / TDD assertion framework for node.js and the browser that can be paired with any testing framework.",
-    "CodeExample": "```var ... = require('...');\nvar assert = ....assert;```",
+    "CodeExample": "```expect(foo).to.be.a('string');\r\nexpect(foo).to.equal('bar');\r\nexpect(foo).to.have.lengthOf(3);\r\nexpect(tea).to.have.property('flavors')\r\n  .with.lengthOf(3);```",
     "RandomFact": "... is an assertion library, similar to Node's built-in assert. It makes testing much easier by giving you lots of assertions you can run against your code.",
     "GithubStars": 7800,
     "GitHubLink": "https://github.com/chaijs/chai",
@@ -505,8 +505,8 @@
   },
   {
     "Name": "eslint",
-    "Description": "... is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.",
-    "CodeExample": "```\n```",
+    "Description": "An AST-based pattern checker for JavaScript.",
+    "CodeExample": "```{\r\n    \"rules\": {\r\n        \"semi\": [\"error\", \"always\"],\r\n        \"quotes\": [\"error\", \"double\"]\r\n    }\r\n}```",
     "RandomFact": "... uses Espree for JavaScript parsing.",
     "GithubStars": 22131,
     "GitHubLink": "https://github.com/eslint/eslint",
@@ -515,7 +515,7 @@
   {
     "Name": "dotenv",
     "Description": "... is a zero-dependency module that loads environment variables from a .env file into process.env.",
-    "CodeExample": "```\n```",
+    "CodeExample": "```ENV_VAR1=value1\nENV_VAR2=value2```",
     "RandomFact": "",
     "GithubStars": 16618,
     "GitHubLink": "https://github.com/motdotla/dotenv",
@@ -524,7 +524,7 @@
   {
     "Name": "bootstrap",
     "Description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development.",
-    "CodeExample": "```\n```",
+    "CodeExample": "```\r\n<div class=\"container-fluid\">\r\n  <h1>Hello World!</h1>\r\n  <p>Resize the browser window to see the effect.</p>\r\n  <p>The columns will automatically stack on top of each other when the screen is less than 768px wide.</p>\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-4\" style=\"background-color:lavender;\">.col-sm-4</div>\r\n    <div class=\"col-sm-4\" style=\"background-color:lavenderblush;\">.col-sm-4</div>\r\n    <div class=\"col-sm-4\" style=\"background-color:lavender;\">.col-sm-4</div>\r\n  </div>\r\n</div>\r\n```",
     "RandomFact": "Add toggleable hidden elements, modals and offcanvas menus, popovers and tooltips, and so much more—all without jQuery.",
     "GithubStars": 161613,
     "GitHubLink": "github.com/twbs/bootstrap",
@@ -533,7 +533,7 @@
   {
     "Name": "tailwindcss",
     "Description": "A utility-first CSS framework for rapidly building custom user interfaces.",
-    "CodeExample": "```\n```",
+    "CodeExample": "```<figure class=\"bg-slate-100 rounded-xl p-8 dark:bg-slate-800\">\r\n  <img class=\"w-24 h-24 rounded-full mx-auto\" src=\"/sarah-dayan.jpg\" alt=\"\" width=\"384\" height=\"512\">\r\n  <div class=\"pt-6 space-y-4\">\r\n    <blockquote>\r\n      <p class=\"text-lg font-medium\">\r\n        \u201C... is the only framework that I've seen scale\r\n        on large teams. It\u2019s easy to customize, adapts to any design,\r\n        and the build size is tiny.\u201D\r\n      </p>\r\n    </blockquote>\r\n    <figcaption class=\"font-medium\">\r\n      <div class=\"t>\r\n        Sarah Dayan\r\n      </div>\r\n      <div>\r\n        Staff Engineer, Algolia\r\n      </div>\r\n    </figcaption>\r\n  </div>\r\n</figure>```",
     "RandomFact": "Utility classes help you work within the constraints of a system instead of littering your stylesheets with arbitrary values.",
     "GithubStars": 64720,
     "GitHubLink": "https://github.com/tailwindlabs/tailwindcss",
@@ -542,8 +542,8 @@
   {
     "Name": "joi",
     "Description": "The most powerful schema description language and data validator for JavaScript.",
-    "CodeExample": "```\n```",
-    "RandomFact": "",
+    "CodeExample": "```const schema = *redacted*.object({\r\n    username: *redacted*.string()\r\n        .alphanum()\r\n        .min(3)\r\n        .max(30)\r\n        .required(),\r\n   birth_year: *redacted*.number()\r\n        .integer()\r\n        .min(1900)\r\n        .max(2013),\r\n})\r\nschema.validate({ username: 'abc', birth_year: 1994 });\r\n```",
+    "RandomFact": "The word is similar to an other with this meaning: a feeling of great pleasure and happiness.",
     "GithubStars": 19658,
     "GitHubLink": "github.com/hapijs/joi",
     "WeeklyDownloads": 7459163
@@ -551,7 +551,7 @@
   {
     "Name": "formik",
     "Description": "Build forms in React, without the tears.",
-    "CodeExample": "```\n```",
+    "CodeExample": "```<*redacted*\r\n  initialValues={ {\r\n    firstName: \"\",\r\n    lastName: \"\",\r\n    email: \"\",\r\n  }}\r\n  onSubmit={(values: Values, { setSubmitting }: FormikHelpers<Values>) => {\r\n    setTimeout(() => {\r\n      alert(JSON.stringify(values, null, 2));\r\n      setSubmitting(false);\r\n    }, 500);\r\n  }}\r\n>\r\n  <Form>\r\n    <label htmlFor=\"firstName\">First Name</label>\r\n    <Field id=\"firstName\" name=\"firstName\" placeholder=\"John\" />\r\n\r\n    <label htmlFor=\"lastName\">Last Name</label>\r\n    <Field id=\"lastName\" name=\"lastName\" placeholder=\"Doe\" />\r\n\r\n    <label htmlFor=\"email\">Email</label>\r\n    <Field id=\"email\" name=\"email\" placeholder=\"john@acme.com\" type=\"email\" />\r\n\r\n    <button type=\"submit\">Submit</button>\r\n  </Form>\r\n</*redacted*>;\r\n```",
     "RandomFact": "Since form state is inherently local and ephemeral, ... does not use external state management libraries like Redux or MobX.",
     "GithubStars": 31853,
     "GitHubLink": "github.com/formium/formik",
@@ -560,7 +560,7 @@
   {
     "Name": "md5",
     "Description": "a JavaScript function for hashing messages with ...",
-    "CodeExample": "```\n```",
+    "CodeExample": "```console.log(*redacted*('message'));\r\n// output: 78e731027d8fd50ed642340b7c9a63b3```",
     "RandomFact": "",
     "GithubStars": 861,
     "GitHubLink": "github.com/pvorb/node-md5",
@@ -569,7 +569,7 @@
   {
     "Name": "tensorflow",
     "Description": "A WebGL accelerated JavaScript library for training and deploying ML models.",
-    "CodeExample": "```\n```",
+    "CodeExample": "```import * as tf from '*redacted*';\r\n// You have the Core API: tf.matMul(), tf.softmax(), ...\r\n// You also have Layers API: tf.model(), tf.layers.dense(), ...```",
     "RandomFact": "Use flexible and intuitive APIs to build models from scratch using the low-level JavaScript linear algebra library or the high-level layers API.",
     "GithubStars": 16978,
     "GitHubLink": "https://github.com/tensorflow/tfjs",
@@ -578,7 +578,7 @@
   {
     "Name": "mithril.js",
     "Description": "A modern client-side JavaScript framework for building Single Page Applications.",
-    "CodeExample": "```\n```",
+    "CodeExample": "```var root = document.body\r\nm.render(root, \"Hello world\")```",
     "RandomFact": "It's small (10.05 KB gzipped), fast and provides routing and XHR utilities out of the box.",
     "GithubStars": 13557,
     "GitHubLink": "https://github.com/MithrilJS/mithril.js",
@@ -587,7 +587,7 @@
   {
     "Name": "prisma",
     "Description": "Next-generation ORM for Node.js & TypeScript",
-    "CodeExample": "```\n```",
+    "CodeExample": "```// schema\r\ndatasource db {\r\n  provider = \"postgresql\"\r\n  url      = env(\"DATABASE_URL\")\r\n}\r\n\r\n// Generator\r\ngenerator client {\r\n  provider = \"...\"\r\n}\r\n\r\n// Data model\r\nmodel Post {\r\n  id        Int     @id @default(autoincrement())\r\n  title     String\r\n  content   String?\r\n  published Boolean @default(false)\r\n  author    User?   @relation(fields:  [authorId], references: [id])\r\n  authorId  Int?\r\n}\r\n\r\nmodel User {\r\n  id    Int     @id @default(autoincrement())\r\n  email String  @unique\r\n  name  String?\r\n  posts Post[]\r\n}```",
     "RandomFact": "Every project that uses a tool from the ... toolkit starts with a ... schema file.",
     "GithubStars": 93096,
     "GitHubLink": "https://github.com/nodejs/node",
@@ -595,9 +595,9 @@
   },
   {
     "Name": "aurelia",
-    "Description": "Aurelia is a modern, front-end JavaScript framework for building browser, mobile, and desktop applications.",
-    "CodeExample": "```\n```",
-    "RandomFact": "... applications are built by composing a series of simple components.",
+    "Description": "... is a modern, front-end JavaScript framework for building browser, mobile, and desktop applications.",
+    "CodeExample": "```//app.js\r\nexport class App {\r\n  welcome = \"Hello World!\";\r\n\r\n  quests = [\r\n    \"To seek the holy grail\",\r\n    \"To take the ring to Mordor\",\r\n    \"To rescue princess Leia\"\r\n  ];\r\n}\r\n<!-- app.html -->\r\n<form>\r\n  <label>\r\n    <span>What is your name?</span>\r\n    <input value.bind=\"name & debounce:500\">\r\n  </label>\r\n\r\n  <label>\r\n    <span>What is your quest?</span>\r\n    <select value.bind=\"quest\">\r\n      <option></option>\r\n      <option repeat.for=\"q of quests\">${q}</option>\r\n    </select>\r\n  </label>\r\n</form>\r\n\r\n<p if.bind=\"name\">${welcome}, ${name}!</p>\r\n<p if.bind=\"quest\">Now set forth ${quest.toLowerCase()}!</p>```",
+    "RandomFact": "Version 2, ... applications are built by composing a series of simple components.",
     "GithubStars": 1255,
     "GitHubLink": "https://github.com/aurelia/aurelia",
     "WeeklyDownloads": 932
@@ -605,7 +605,7 @@
   {
     "Name": "leaflet",
     "Description": "JavaScript library for mobile-friendly interactive maps",
-    "CodeExample": "```\n```",
+    "CodeExample": "```var map = L.map('map').setView([51.505, -0.09], 13);\r\n\r\nL.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {\r\n    attribution: '&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors'\r\n}).addTo(map);\r\n\r\nL.marker([51.5, -0.09]).addTo(map)\r\n    .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')\r\n    .openPopup();```",
     "RandomFact": "Weighing just about 42 KB of gzipped JS plus 4 KB of gzipped CSS code",
     "GithubStars": 36689,
     "GitHubLink": "https://github.com/Leaflet/Leaflet",
@@ -614,19 +614,19 @@
   {
     "Name": "Cleave.js",
     "Description": "... has a simple purpose: to help you format input text content automatically.",
-    "CodeExample": "```\n```",
+    "CodeExample": "```// template\r\n<input class=\"input-phone\" type=\"text\"/>\r\n// script\r\nvar c = new *redacted*('.input-phone', {\r\n    phone: true,\r\n    phoneRegionCode: '{country}'\r\n});```",
     "RandomFact": "",
     "GithubStars": 17682,
     "GitHubLink": "https://github.com/nosir/cleave.js",
     "WeeklyDownloads": 255682
   },
   {
-    "Name": "BIDEO.JS",
-    "Description": "Fullscreen HTML5 Background Video for the Web.",
-    "CodeExample": "```\n```",
+    "Name": "alpinejs",
+    "Description": "A rugged, minimal framework for composing JavaScript behavior in your markup.",
+    "CodeExample": "```<div x-data=\"{ open: false }\">\r\n    <button @click=\"open = true\">Expand</button>\r\n \r\n    <span x-show=\"open\">\r\n      Content...\r\n    </span>\r\n</div>```",
     "RandomFact": "",
-    "GithubStars": 4283,
-    "GitHubLink": "https://github.com/rishabhp/bideo.js",
-    "WeeklyDownloads": 0
+    "GithubStars": 22948,
+    "GitHubLink": "github.com/alpinejs/alpine",
+    "WeeklyDownloads": 135126
   }
 ]
