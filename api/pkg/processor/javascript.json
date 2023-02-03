@@ -407,8 +407,8 @@
   {
     "Name": "nestjs",
     "Description": "A progressive Node.js framework for building efficient, scalable, and enterprise-grade server-side applications on top of TypeScript & JavaScript (ES6, ES7, ES8)",
-    "CodeExample": "```\n```",
-    "RandomFact": "",
+    "CodeExample": "```import { AppModule } from './app.module';\r\n\r\nasync function bootstrap() {\r\n  const app = await *redacted*.create(AppModule);\r\n  await app.listen(3000);\r\n}\r\nbootstrap();```",
+    "RandomFact": "We also dyrectorio also use & love it! :)",
     "GithubStars": 53965,
     "GitHubLink": "https://github.com/nestjs/nest",
     "WeeklyDownloads": 2084251
@@ -416,34 +416,34 @@
   {
     "Name": "Agenda.js",
     "Description": "A light-weight job scheduling library for Node.js",
-    "CodeExample": "```\n```",
-    "RandomFact": "",
+    "CodeExample": "```db.*redacted*Jobs.ensureIndex({\r\n    \"name\" : 1,\r\n    \"nextRunAt\" : 1,\r\n    \"priority\" : -1,\r\n    \"lockedAt\" : 1,\r\n    \"disabled\" : 1\r\n}, \"findAndLockNextJobIndex\")```",
+    "RandomFact": "Mongo backed (replicateble) persistance.",
     "GithubStars": 8689,
     "GitHubLink": "https://github.com/agenda/agenda",
     "WeeklyDownloads": 89740
   },
   {
     "Name": "backbone.js",
-    "Description": "... supplies structure to JavaScript-heavy applications by providing models with key-value binding and custom events, collections with a rich API of enumerable functions, views with declarative event handling, and connects it all to your existing application over a RESTful JSON interface.",
-    "CodeExample": "```\n```",
+    "Description": "Give your JS App some ... with Models, Views, Collections, and Events. ... supplies structure to JavaScript-heavy applications by providing models with key-value binding and custom events, collections with a rich API of enumerable functions, views with declarative event handling, and connects it all to your existing application over a RESTful JSON interface.",
+    "CodeExample": "```$(function () {\r\n  (function () {\r\n    var View = test.View.extend({\r\n      el: \"body\",\r\n      template: _.template(\"<p>Hello, XOR!</p>\"),\r\n\r\n      initialize: function () {\r\n        this.render();\r\n      },\r\n      render: function () {\r\n        this.$el.html(this.template());\r\n      },\r\n    });\r\n\r\n    new View();\r\n  })();\r\n});\r\n```",
     "RandomFact": "",
     "GithubStars": 27984,
     "GitHubLink": "https://github.com/jashkenas/backbone",
     "WeeklyDownloads": 607180
   },
   {
-    "Name": "deno",
-    "Description": "A secure JavaScript/TypeScript runtime",
-    "CodeExample": "```\n```",
+    "Name": "kibana",
+    "Description": "It's an open source (Apache Licensed), browser-based analytics and search dashboard for Elasticsearch.",
+    "CodeExample": "```//a query\r\nhttp.request.method: *```",
     "RandomFact": "Built in linter, code formatter, ability to build a self-contained executable, test runner, IDE integration, and more.",
-    "GithubStars": 87607,
-    "GitHubLink": "https://github.com/denoland/deno",
-    "WeeklyDownloads": 0
+    "GithubStars": 18195,
+    "GitHubLink": "github.com/elastic/kibana",
+    "WeeklyDownloads": 8
   },
   {
     "Name": "knockout",
     "Description": "... is a JavaScript MVVM (a modern variant of MVC) library that makes it easier to create rich, desktop-like user interfaces with JavaScript and HTML.",
-    "CodeExample": "```\n```",
+    "CodeExample": "```// Here's my data model\r\nvar ViewModel = function(first, last) {\r\n    this.firstName = *redacted*.observable(first);\r\n    this.lastName = *redacted*.observable(last);\r\n \r\n    this.fullName = *redacted*.pureComputed(function() {\r\n        // ... tracks dependencies automatically. It knows that fullName depends on firstName and lastName, because these get called when evaluating fullName.\r\n        return this.firstName() + \" \" + this.lastName();\r\n    }, this);\r\n};\r\n \r\n*redacted*.applyBindings(new ViewModel(\"Planet\", \"Earth\")); // This makes ... get to work```",
     "RandomFact": "When your data model's state changes, your UI updates automatically",
     "GithubStars": 10279,
     "GitHubLink": "https://github.com/knockout/knockout",
