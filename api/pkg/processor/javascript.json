@@ -623,7 +623,7 @@
   {
     "Name": "alpinejs",
     "Description": "A rugged, minimal framework for composing JavaScript behavior in your markup.",
-    "CodeExample": "```<div x-data="{ open: false }"> \n <button @click="open = true"> Expand </button> \n<span x-show="open"> \nContent... \n    </span> \n </div>```",
+    "CodeExample": "```<div x-data=\"{ open: false }\"> \n <button @click=\"open = true\"> Expand </button> \n<span x-show=\"open\"> \nContent... \n    </span> \n </div>```",
     "RandomFact": "... is a rugged, minimal tool for composing behavior directly in your markup. Think of it like jQuery for the modern web. ",
     "GithubStars": 22948,
     "GitHubLink": "github.com/alpinejs/alpine",
