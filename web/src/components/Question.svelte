@@ -30,9 +30,9 @@
 		$guessNumber++;
 
 		let fuzzy = new FuzzySet([question.Name], true);
-		const jsEndPattern = /.?js$/i
+		const jsEndPattern = /.?js$/i;
 		if (question.Name.match(jsEndPattern)) {
-			fuzzy.add(question.Name.replace(jsEndPattern, ""))
+			fuzzy.add(question.Name.replace(jsEndPattern, ''));
 		}
 
 		let res = fuzzy.get(answer);
@@ -84,7 +84,7 @@
 			source={question.CodeExample}
 			options={{
 				breaks: true,
-				sanitize: true,
+				sanitize: false,
 				langPrefix: 'language-js'
 			}}
 		/>

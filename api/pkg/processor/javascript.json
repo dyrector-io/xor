@@ -182,7 +182,7 @@
   {
     "Name": "fs-extra",
     "Description": "... adds file system methods that aren't included in the native fs module and adds promise support to the fs methods. It also uses graceful-fs to prevent EMFILE errors. It should be a drop in replacement for fs.",
-    "CodeExample": "```// Async with promises: ....copy('/tmp/myfile', '/tmp/mynewfile') .then(() => console.log('success!')).catch(err => console.error(err))```",
+    "CodeExample": "```// Async with promises: ....copy('/tmp/myfile', '/tmp/mynewfile')\n.then(() => console.log('success!'))\n.catch(err => console.error(err))```",
     "RandomFact": "Why? I got tired of including mkdirp, rimraf, and ncp in most of my projects.",
     "GithubStars": 8885,
     "GitHubLink": "github.com/jprichardson/node-fs-extra",
@@ -245,7 +245,7 @@
   {
     "Name": "Angular",
     "Description": "... is a development platform for building mobile and desktop web applications using Typescript/JavaScript and other languages.",
-    "CodeExample": "```<h2>Products</h2>\n<div *ngFor=\"let product of products\">\n</div>```",
+    "CodeExample": "```import { Component } from ' @angular/core';\n@Component ({\n   selector: 'my-app',\n   template: 'Products',\n})\nexport   class   Appproduct  {\n}```",
     "RandomFact": "... framework is embedded with the original MVC (Model-View-Controller) software architectural setup. However, it is not according to the established standards. ... does not ask developers to split an application into different MVC components and build a code that could unite them.",
     "GithubStars": 86092,
     "GitHubLink": "github.com/angular/angular",
@@ -326,7 +326,7 @@
   {
     "Name": "source-map",
     "Description": "A ...Consumer instance represents a parsed source map which we can query for information about the original file positions by giving it a file position in the generated source.",
-    "CodeExample": "```<script src=\"https://unpkg.com/...@0.7.3/dist/....js\"></script>\n<script>\n....SourceMapConsumer.initialize({\n\"lib/mappings.wasm\": \"https://unpkg.com/...@0.7.3/lib/mappings.wasm\",\n});\n</script>```",
+    "CodeExample": "```<script src=\"https://unpkg.com/...@0.7.3/dist/....js\"></script> \n <script> \n....SourceMapConsumer.initialize({ \n \"lib/mappings.wasm\": \"https://unpkg.com/...@0.7.3/lib/mappings.wasm\", \n }); \n </script>```",
     "RandomFact": "Consume and generate source maps.",
     "GithubStars": 3200,
     "GitHubLink": "github.com/mozilla/source-map",
@@ -371,7 +371,7 @@
   {
     "Name": "emberjs",
     "Description": "... is a productive, battle-tested JavaScript framework for building modern web applications. It includes everything you need to build rich UIs that work on any device.",
-    "CodeExample": "```<h2>List of Scientists</h2>\n<ul>\n  {{#each @model as |scientist|}}\n    <li>{{scientist}}</li>\n  {{/each}}\n</ul>```",
+    "CodeExample": "```<h2>List of Scientists</h2> \n <ul> \n  {{#each @model as |scientist|}} \n    <li>{{scientist}}</li> \n  {{/each}} \n </ul>```",
     "RandomFact": "... is built on the Glimmer rendering engine, one of the fastest rendering technologies on the market today, thanks to the way it compiles templates down to a highly-performant virtual machine.",
     "GithubStars": 12,
     "GitHubLink": "https://github.com/emberjs/ember",
@@ -380,7 +380,7 @@
   {
     "Name": "svelte",
     "Description": "... is a new way to build web applications. It's a compiler that takes your declarative components and converts them into efficient JavaScript that surgically updates the DOM.",
-    "CodeExample": "```<script>\n\tlet name = 'world';\n</script>\n<h1>Hello {name}!</h1>```",
+    "CodeExample": "```<script> \n let name = 'world'; \n </script> \n <h1>Hello {name}!</h1>```",
     "RandomFact": "Instead of using techniques like virtual DOM diffing, ... writes code that surgically updates the DOM when the state of your app changes.",
     "GithubStars": 65263,
     "GitHubLink": "https://github.com/sveltejs/svelte",
@@ -389,7 +389,7 @@
   {
     "Name": "polymerjs",
     "Description": "... lets you build encapsulated, reusable Web Components that work just like standard HTML elements, to use in building web applications.",
-    "CodeExample": "```<!-- Import a component -->\n<script src=\"*redacted*/paper-checkbox.js?module\" type=\"module\" ></script>\n<!-- Use it like any other HTML element -->\n<paper-checkbox>Web Components!</paper-checkbox>```",
+    "CodeExample": "```<!-- Import a component --> \n <script src=\"*redacted*/paper-checkbox.js?module\" type=\"module\" ></script> \n <!-- Use it like any other HTML element --> \n <paper-checkbox>Web Components!</paper-checkbox>```",
     "RandomFact": "",
     "GithubStars": 21909,
     "GitHubLink": "https://github.com/Polymer/polymer",
@@ -533,7 +533,7 @@
   {
     "Name": "tailwindcss",
     "Description": "A utility-first CSS framework for rapidly building custom user interfaces.",
-    "CodeExample": "```<figure class=\"bg-slate-100 rounded-xl p-8 dark:bg-slate-800\">\n  <img class=\"w-24 h-24 rounded-full mx-auto\" src=\"/sarah-dayan.jpg\" alt=\"\" width=\"384\" height=\"512\">\n  <div class=\"pt-6 space-y-4\">\n    <blockquote>\n      <p class=\"text-lg font-medium\">\n        \u201C... is the only framework that I've seen scale\n        on large teams. It\u2019s easy to customize, adapts to any design,\n        and the build size is tiny.\u201D\n      </p>\n    </blockquote>\n    <figcaption class=\"font-medium\">\n      <div class=\"t>\n        Sarah Dayan\n      </div>\n      <div>\n        Staff Engineer, Algolia\n      </div>\n    </figcaption>\n  </div>\n</figure>```",
+    "CodeExample": "```<figure class=\"bg-slate-100 rounded-xl p-8 dark:bg-slate-800\"> \n  <img class=\"w-24 h-24 rounded-full mx-auto\" src=\"/sarah-dayan.jpg\" alt=\"\" width=\"384\" height=\"512\"> \n  <div class=\"pt-6 space-y-4\"> \n    <blockquote> \n      <p class=\"text-lg font-medium\"> \n        \u201C... is the only framework that I've seen scale \n        on large teams. It\u2019s easy to customize, adapts to any design, \n        and the build size is tiny.\u201D\n      </p> \n    </blockquote> \n    <figcaption class=\"font-medium\"> \n      <div class=\"t> \n        Sarah Dayan \n      </div> \n      <div> \n        Staff Engineer, Algolia \n      </div> \n    </figcaption> \n  </div> \n </figure>```",
     "RandomFact": "Utility classes help you work within the constraints of a system instead of littering your stylesheets with arbitrary values.",
     "GithubStars": 64720,
     "GitHubLink": "https://github.com/tailwindlabs/tailwindcss",
@@ -596,7 +596,7 @@
   {
     "Name": "aurelia",
     "Description": "... is a modern, front-end JavaScript framework for building browser, mobile, and desktop applications.",
-    "CodeExample": "```//app.js\nexport class App {\n  welcome = \"Hello World!\";\n  quests = [\n    \"To seek the holy grail\",\n    \"To take the ring to Mordor\",\n    \"To rescue princess Leia\"\n  ];\n}\n<!-- app.html -->\n<form>\n  <label>\n    <span>What is your name?</span>\n    <input value.bind=\"name & debounce:500\">\n  </label>\n  <label>\n    <span>What is your quest?</span>\n    <select value.bind=\"quest\">\n      <option></option>\n      <option repeat.for=\"q of quests\">${q}</option>\n    </select>\n  </label>\n</form>\n<p if.bind=\"name\">${welcome}, ${name}!</p>\n<p if.bind=\"quest\">Now set forth ${quest.toLowerCase()}!</p>```",
+    "CodeExample": "```//app.js \n export class App { \n  welcome = \"Hello World!\"; \n  quests = [ \n    \"To seek the holy grail\", \n    \"To take the ring to Mordor\", \n    \"To rescue princess Leia\" \n  ]; \n } \n <!-- app.html --> \n <form> \n  <label> \n    <span>What is your name?</span> \n    <input value.bind=\"name & debounce:500\"> \n  </label> \n  <label> \n    <span>What is your quest?</span> \n    <select value.bind=\"quest\"> \n      <option></option> \n      <option repeat.for=\"q of quests\">${q}</option> \n    </select> \n  </label> \n </form> \n <p if.bind=\"name\">${welcome}, ${name}!</p> \n <p if.bind=\"quest\">Now set forth ${quest.toLowerCase()}!</p>```",
     "RandomFact": "Version 2, ... applications are built by composing a series of simple components.",
     "GithubStars": 1255,
     "GitHubLink": "https://github.com/aurelia/aurelia",
@@ -623,7 +623,7 @@
   {
     "Name": "alpinejs",
     "Description": "A rugged, minimal framework for composing JavaScript behavior in your markup.",
-    "CodeExample": "```<div x-data=\"{ open: false }\">\n    <button @click=\"open = true\">Expand</button>\n \n    <span x-show=\"open\">\n      Content...\n    </span>\n</div>```",
+    "CodeExample": "```<div x-data="{ open: false }"> \n <button @click="open = true"> Expand </button> \n<span x-show="open"> \nContent... \n    </span> \n </div>```",
     "RandomFact": "... is a rugged, minimal tool for composing behavior directly in your markup. Think of it like jQuery for the modern web. ",
     "GithubStars": 22948,
     "GitHubLink": "github.com/alpinejs/alpine",
