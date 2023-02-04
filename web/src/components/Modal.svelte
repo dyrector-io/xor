@@ -8,7 +8,7 @@
 	export let todayResult: ResultItem | undefined;
 
 	const copy = () => {
-		const text = document.getElementById('resultText').innerText;
+		const text = document.getElementById('resultText')!.innerText;
 		navigator.clipboard.writeText(text);
 	};
 </script>

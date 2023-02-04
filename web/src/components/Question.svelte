@@ -29,15 +29,13 @@
 	function checkQuestion() {
 		$guessNumber++;
 
+		let fuzzy = new FuzzySet([question.Name], true);
 		const jsEndPattern = /.?js$/i
-		const fuzzySet = [question.Name]
 		if (question.Name.match(jsEndPattern)) {
-			fuzzySet.concat(question.Name.replace(jsEndPattern, ""))
+			fuzzy.add(question.Name.replace(jsEndPattern, ""))
 		}
 
-		let fuzzy = new FuzzySet([question.Name], true);
 		let res = fuzzy.get(answer);
-
 		// maybe 0.87 is enough
 		if (res && res[0][0] > 0.87) {
 			isCorrect = true;
