@@ -74,7 +74,7 @@
   {
     "Name": "vue",
     "Description": "... is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.",
-    "CodeExample": "```<div id=\"app\">{{ message }}</div>\n<script>\n// ...\n  createApp({\n    data() {\n      return {\n        message: 'Hello Vue!'\n      }\n    }\n  }).mount('#app')\n</script>```",
+    "CodeExample": "```<div id=\"app\">{{ message }}</div> \n <script> \n // ...\n  createApp({ \n    data() { \n      return { \n        message: 'Hello Vue!' \n      } \n    } \n  }).mount('#app') \n</script>```",
     "RandomFact": "Single File Components",
     "GithubStars": 202078,
     "GitHubLink": "github.com/vuejs/core",
@@ -263,7 +263,7 @@
   {
     "Name": "socket.io",
     "Description": "... enables real-time bidirectional event-based communication.",
-    "CodeExample": "```\n*redacted*.on('connection', socket => {\n  socket.emit('request', /* \u2026 */); // emit an event to the socket\n  io.emit('broadcast', /* \u2026 */); // emit an event to all connected sockets\n  socket.on('reply', () => { /* \u2026 */ }); // listen to the event\n});```",
+    "CodeExample": "```*redacted*.on('connection', socket => {\n  socket.emit('request', /* \u2026 */); // emit an event to the socket\n  io.emit('broadcast', /* \u2026 */); // emit an event to all connected sockets\n  socket.on('reply', () => { /* \u2026 */ }); // listen to the event\n});```",
     "RandomFact": "... is a JavaScript library for realtime web applications. It enables realtime, bi-directional communication between web clients and servers. ... primarily uses the WebSocket protocol with polling as a fallback option, while providing the same interface.",
     "GithubStars": 57526,
     "GitHubLink": "github.com/socketio/socket.io",
@@ -443,7 +443,7 @@
   {
     "Name": "knockout",
     "Description": "... is a JavaScript MVVM (a modern variant of MVC) library that makes it easier to create rich, desktop-like user interfaces with JavaScript and HTML.",
-    "CodeExample": "```// Here's my data model\nvar ViewModel = function(first, last) {\nthis.firstName = *redacted*.observable(first);\nthis.lastNme = *redacted*.observable(last);\n\n this.fullName = *redacted*.pureComputed(function() {\n        // ... tracks dependencies automatically. It knows that fullName depends on firstName and lastName, because these get called when evaluating fullName.\nreturn this.firstName() + \" \" + this.lastName();\n}, this);\n};\n \n*redacted*.applyBindings(new ViewModel(\"Planet\", \"Earth\")); // This makes ... get to work```",
+    "CodeExample": "```// Here's my data model \n var ViewModel = function(first, last) { \n this.firstName = *redacted*.observable(first); \n this.lastNme = *redacted*.observable(last); \n this.fullName = *redacted*.pureComputed(function() { \n        // ... tracks dependencies automatically. It knows that fullName depends on firstName and lastName, because these get called when evaluating fullName. \n return this.firstName() + \" \" + this.lastName(); \n }, this); \n }; \n *redacted*.applyBindings(new ViewModel(\"Planet\", \"Earth\")); // This makes ... get to work```",
     "RandomFact": "When your data model's state changes, your UI updates automatically",
     "GithubStars": 10279,
     "GitHubLink": "https://github.com/knockout/knockout",
