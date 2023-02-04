@@ -74,7 +74,7 @@
   {
     "Name": "vue",
     "Description": "... is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.",
-    "CodeExample": "```<div id=\"app\">{{ message }}</div>\n<script>\n// ...\n  createApp({\n    data() {\n      return {\n        message: 'Hello Vue!'\n      }\n    }\n  }).mount('#app')\n</script>",
+    "CodeExample": "```<div id=\"app\">{{ message }}</div>\n<script>\n// ...\n  createApp({\n    data() {\n      return {\n        message: 'Hello Vue!'\n      }\n    }\n  }).mount('#app')\n</script>```",
     "RandomFact": "Single File Components",
     "GithubStars": 202078,
     "GitHubLink": "github.com/vuejs/core",
@@ -218,7 +218,7 @@
   {
     "Name": "webpack",
     "Description": "... is a module bundler. Its main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset.",
-    "CodeExample": "```module.exports = {\nentry: './src/index.js',\n  output: {\n  filename: 'main.js',\n  path: path.resolve(__dirname, 'dist'),\n},\n};",
+    "CodeExample": "```module.exports = {\nentry: './src/index.js',\n  output: {\n  filename: 'main.js',\n  path: path.resolve(__dirname, 'dist'),\n},\n};```",
     "RandomFact": "The motivations behind ... is to gather all your dependencies, which includes not just code, but other assets as well, and generate a dependency graph.",
     "GithubStars": 62454,
     "GitHubLink": "github.com/webpack/webpack",
@@ -443,7 +443,7 @@
   {
     "Name": "knockout",
     "Description": "... is a JavaScript MVVM (a modern variant of MVC) library that makes it easier to create rich, desktop-like user interfaces with JavaScript and HTML.",
-    "CodeExample": "```// Here's my data model\nvar ViewModel = function(first, last) {\n    this.firstName = *redacted*.observable(first);\n    this.lastName = *redacted*.observable(last);\n \n    this.fullName = *redacted*.pureComputed(function() {\n        // ... tracks dependencies automatically. It knows that fullName depends on firstName and lastName, because these get called when evaluating fullName.\n        return this.firstName() + \" \" + this.lastName();\n    }, this);\n};\n \n*redacted*.applyBindings(new ViewModel(\"Planet\", \"Earth\")); // This makes ... get to work```",
+    "CodeExample": "```// Here's my data model\nvar ViewModel = function(first, last) {\nthis.firstName = *redacted*.observable(first);\nthis.lastNme = *redacted*.observable(last);\n\n this.fullName = *redacted*.pureComputed(function() {\n        // ... tracks dependencies automatically. It knows that fullName depends on firstName and lastName, because these get called when evaluating fullName.\nreturn this.firstName() + \" \" + this.lastName();\n}, this);\n};\n \n*redacted*.applyBindings(new ViewModel(\"Planet\", \"Earth\")); // This makes ... get to work```",
     "RandomFact": "When your data model's state changes, your UI updates automatically",
     "GithubStars": 10279,
     "GitHubLink": "https://github.com/knockout/knockout",
@@ -516,7 +516,7 @@
     "Name": "dotenv",
     "Description": "... is a zero-dependency module that loads environment variables from a .env file into process.env.",
     "CodeExample": "```ENV_VAR1=value1\nENV_VAR2=value2```",
-    "RandomFact": "",
+    "RandomFact": "... using BSD-2-Clause license",
     "GithubStars": 16618,
     "GitHubLink": "https://github.com/motdotla/dotenv",
     "WeeklyDownloads": 31298221
@@ -524,7 +524,7 @@
   {
     "Name": "bootstrap",
     "Description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development.",
-    "CodeExample": "```\n<div class=\"container-fluid\">\n  <h1>Hello World!</h1>\n  <p>Resize the browser window to see the effect.</p>\n  <p>The columns will automatically stack on top of each other when the screen is less than 768px wide.</p>\n  <div class=\"row\">\n    <div class=\"col-sm-4\" style=\"background-color:lavender;\">.col-sm-4</div>\n    <div class=\"col-sm-4\" style=\"background-color:lavenderblush;\">.col-sm-4</div>\n    <div class=\"col-sm-4\" style=\"background-color:lavender;\">.col-sm-4</div>\n  </div>\n</div>\n```",
+    "CodeExample": "```<div class=\"container-fluid\">\n  <h1>Hello World!</h1>\n  <p>Resize the browser window to see the effect.</p>\n  <p>The columns will automatically stack on top of each other when the screen is less than 768px wide.</p>\n  <div class=\"row\">\n    <div class=\"col-sm-4\" style=\"background-color:lavender;\">.col-sm-4</div>\n    <div class=\"col-sm-4\" style=\"background-color:lavenderblush;\">.col-sm-4</div>\n    <div class=\"col-sm-4\" style=\"background-color:lavender;\">.col-sm-4</div>\n  </div>\n</div>\n```",
     "RandomFact": "Add toggleable hidden elements, modals and offcanvas menus, popovers and tooltips, and so much more—all without jQuery.",
     "GithubStars": 161613,
     "GitHubLink": "github.com/twbs/bootstrap",
@@ -561,7 +561,7 @@
     "Name": "md5",
     "Description": "a JavaScript function for hashing messages with ...",
     "CodeExample": "```console.log(*redacted*('message'));\n// output: 78e731027d8fd50ed642340b7c9a63b3```",
-    "RandomFact": "",
+    "RandomFact": "The ... message-digest algorithm is a widely used hash function producing a 128-bit hash value. ... was designed by Ronald Rivest in 1991 to replace an earlier hash function ..., and was specified in 1992 as RFC 1321.",
     "GithubStars": 861,
     "GitHubLink": "github.com/pvorb/node-md5",
     "WeeklyDownloads": 5981906
@@ -615,7 +615,7 @@
     "Name": "Cleave.js",
     "Description": "... has a simple purpose: to help you format input text content automatically.",
     "CodeExample": "```// template\n<input class=\"input-phone\" type=\"text\"/>\n// script\nvar c = new *redacted*('.input-phone', {\n    phone: true,\n    phoneRegionCode: '{country}'\n});```",
-    "RandomFact": "",
+    "RandomFact": "Used by more than 10700 projects on GitHub.",
     "GithubStars": 17682,
     "GitHubLink": "https://github.com/nosir/cleave.js",
     "WeeklyDownloads": 255682
@@ -624,7 +624,7 @@
     "Name": "alpinejs",
     "Description": "A rugged, minimal framework for composing JavaScript behavior in your markup.",
     "CodeExample": "```<div x-data=\"{ open: false }\">\n    <button @click=\"open = true\">Expand</button>\n \n    <span x-show=\"open\">\n      Content...\n    </span>\n</div>```",
-    "RandomFact": "",
+    "RandomFact": "... is a rugged, minimal tool for composing behavior directly in your markup. Think of it like jQuery for the modern web. ",
     "GithubStars": 22948,
     "GitHubLink": "github.com/alpinejs/alpine",
     "WeeklyDownloads": 135126
