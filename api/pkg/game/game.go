@@ -100,7 +100,8 @@ func SelectAQuiz(state *config.AppState) {
 			state.Ended = true
 			return
 		}
-	} else if state.QuizCounter*QuestionCount >= len(listAll) {
+	}
+	if state.QuizCounter*QuestionCount >= len(listAll) {
 		state.QuizList = processor.QuizSequence{}
 		state.Ended = true
 		return

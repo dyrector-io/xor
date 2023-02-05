@@ -7,6 +7,10 @@ server:
 	cd api/cmd/server && \
 	go run .
 
+.PHONY: ui
+ui:
+	cd web && npm start
+
 .PHONY: compile
 compile:
 	cd api/cmd/server && \
