@@ -299,7 +299,7 @@
   {
     "Name": "gatsby",
     "Description": "... is a free and open source framework based on React that helps developers build blazing fast websites and apps.",
-    "CodeExample": "```{\n  \"trailingComma\": \"es5\",\n  \"tabWidth\": 4,\n  \"semi\": false,\n  \"singleQuote\": true\n}```",
+    "CodeExample": "```module.exports = { \n  graphqlTypegen: { \n    typesOutputPath: `...-types.d.ts`, \n    generateOnBuild: false, \n    documentSearchPaths: [`./...-node.ts`, `./plugins/**/...-node.ts`], \n    // Other options... \n  }, \n}```",
     "RandomFact": "It's been acquired by Netlify recently.",
     "GithubStars": 54089,
     "GitHubLink": "https://github.com/gatsbyjs/gatsby",
