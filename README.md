@@ -22,7 +22,7 @@ Depending how many hints you use:
 ### Info
 
 Your data is stored client-side (browser local storage). More details [here](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).
-The quiz is reset every noon (UTC) quiz starts on February 3 and runs for 15 days, ending on February 18. Have Fun and Good Luck! 🍾
+The quiz is reset every noon (UTC) quiz starts on February 5 and runs for 15 days, ending on February 20. Have Fun and Good Luck! 🍾
 
 ⭐ **Drop a star if you want to see more like this!**
 
