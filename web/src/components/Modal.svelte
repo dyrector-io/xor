@@ -19,14 +19,26 @@
 >
 	<div class="bg-white p-8 md:w-8/12" transition:fly={{ y: -100 }}>
 		<h2>
-			Proven your familiarity with the Javascripts ecosystem, flex to others with your score. Share
-			on socials:
+			You have proven your familiarity with the JavaScript ecosystem, you may flex to others with
+			your score. Share on socials:
 		</h2>
 		<div class="my-8" id="resultText">
 			{todayResult?.date} JS #XORQuiz results:
-			{todayResult?.points.join('')}
+			{todayResult?.points.join('')}<br />
+			https://xor.dyrectorio.com
 		</div>
 
+		<Button on:click={copy}
+			><a
+				class="twitter-share-button"
+				href="https://twitter.com/intent/tweet?text={todayResult?.date}&nbsp;JS&nbsp;ecosystem&nbsp;XOR&nbsp;Quiz&nbsp;results:&nbsp;{todayResult?.points.join(
+					''
+				)}&hashtags=XORQuiz,JavaScript,Quiz&url=https://xor.dyrectorio.com"
+				data-size="large"
+			>
+				Twitter</a
+			></Button
+		>
 		<Button on:click={copy}>Copy</Button>
 		<Button on:click={() => dispatch('close')}>Close</Button>
 	</div>
