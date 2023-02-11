@@ -55,7 +55,7 @@ func sdbmHash(data []byte) uint64 {
 }
 
 func PickByDate(today time.Time, amount, upperLimit int, excluded []int) []int {
-	if len(excluded)+amount >= upperLimit {
+	if len(excluded)+amount-1 >= upperLimit {
 		log.Info().Msgf("ran out of item indices %v/%v", len(excluded), upperLimit)
 		return []int{}
 	}
@@ -68,11 +68,11 @@ func PickByDate(today time.Time, amount, upperLimit int, excluded []int) []int {
 	for i := 0; i < amount; i++ {
 		gen := hash % uint64(upperLimit)
 		hash -= slice
-		if i > 0 {
-			for j := 1; slices.Contains(picked, int(gen)) || slices.Contains(excluded, int(gen)); j++ {
-				gen = (hash + uint64(j)) % uint64(upperLimit)
-			}
+
+		for j := 1; slices.Contains(picked, int(gen)) || slices.Contains(excluded, int(gen)); j++ {
+			gen = (hash + uint64(j)) % uint64(upperLimit)
 		}
+
 		picked = append(picked, int(gen))
 	}
 
